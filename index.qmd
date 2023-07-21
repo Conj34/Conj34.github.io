@@ -51,3 +51,4 @@ function validatePass(lol){
 ```{=html}
 <button onclick="javascript:return validatePass('prova')">Go</button>
 ```
+
