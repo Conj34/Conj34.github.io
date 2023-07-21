@@ -1,0 +1,8 @@
+---
+title: "Homepage"
+format: html
+---
+
+I am currently a *PhD student* in the department of Mathematics of LSE; my interests are mainly in Graph Theory and at the moment I am working on Ramsey Theory. Outside the areas of my PhD, I am passionate but not proficient about a lot of other topics, mainly [Machine Learning](https://sgfin.github.io/files/notes/CS229_Lecture_Notes.pdf), [Neurosciences](https://www.youtube.com/watch?v=NNnIGh9g6fA&list=PL848F2368C90DDC3D) and [Philosophy](https://www.youtube.com/watch?v=kBdfcR-8hEY&list=PL30C13C91CFFEFEA6).
+
+

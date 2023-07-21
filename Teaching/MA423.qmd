@@ -1,0 +1,6 @@
+---
+title: "MA423 <small><small><small>(Fundamentals of Operations Research)</small></small></small>"
+format: html
+---
+
+{{< include /support/_margins_Teaching.qmd >}}

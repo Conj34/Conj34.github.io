@@ -1,0 +1,35 @@
+---
+title: "[1758A](https://codeforces.com/contest/1758/problem/A)"
+format: html
+---
+
+{{< include /support/_margins_Learning.qmd >}}
+
+<i> Click the title to see the text of the problem on Codeforces </i>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

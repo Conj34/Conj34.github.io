@@ -1,0 +1,49 @@
+---
+title: "Everyday email"
+format: html
+---
+
+{{< include /support/_margins_Learning.qmd >}}
+
+Every morning, I receive an email from [Arxiv](https://arxiv.org). Arxiv is an online platform used in the scientific community to share new results, quite similar to a Facebook, LinkedIn or Instagram for ~~nerds~~ scientists.
+These emails are super cool: they contain all the results published on the platform about your area(s) of interest in the last 24hrs, and a link to the relevant papers. This is quite useful and it allows you to keep track of the recent results without too much effort.
+
+However, there is a (small) problem: every new article has a page and a pdf. The page only contains the abstract, the pdf contains the whole article. Here's the pickle: in the email is only contained the link **to the page** of the article, and not to the pdf.
+
+So every morning I have to click the link to the papers I'm interested in, and THEN click again in the page to find the pdf. **TWO CLICKS TO READ AN ARTICLE?** That's too much. From today, no more!
+
+
+
+```{.python eval=FALSE code-line-numbers="true"}
+
+def get_pdf_url(line: "line of email with url") -> "url of the pdf":
+    ### We assume a lot about the structure of the line of the link.
+    if "/abs/" not in line:
+        return "https://www.google.com"
+    sta = line.split("/abs/")[1]
+    end = sta.find(" , ")
+    return "https://arxiv.org/pdf/"+sta[:end]+".pdf"
+
+import webbrowser
+today = open("./today.txt","r")
+for line in today.readlines():
+    print(line)
+    if "https" in line:
+        url = get_pdf_url(line)
+        print(url)
+        webbrowser.open(url)
+```
+
+To use this code is enough to:
+
+1. Save the code above in a file with filename ending in .py,
+2. Every morning, copy your email in a file with name "today.txt" in the same folder as the Python file,
+3. Execute the Python file.
+
+Make sure you have installed `webbrowser` with `pip install webbrowser` in the terminal.
+
+
+
+
+
+

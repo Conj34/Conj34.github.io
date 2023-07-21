@@ -1,0 +1,6 @@
+---
+title: "Pre-sessionals for Management"
+format: html
+---
+
+{{< include /support/_margins_Teaching.qmd >}}
