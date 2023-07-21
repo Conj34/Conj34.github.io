@@ -1,3 +1,4 @@
+theme: cosmo
 project:
   type: website
   output-dir: docs
