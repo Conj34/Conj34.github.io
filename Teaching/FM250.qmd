@@ -1,0 +1,6 @@
+---
+title: "FM250 <small><small><small>(Finance)</small></small></small>"
+format: html
+---
+
+{{< include /support/_margins_Teaching.qmd >}}
