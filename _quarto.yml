@@ -16,6 +16,8 @@ website:
       - section: "Teaching"
         href: Teaching/Teaching.qmd
         contents:
+          - href: Teaching/FM250.qmd
+            text: FM250
           - href: Teaching/MA102_MA103.qmd
             text: MA102/MA103
           - href: Teaching/MA210.qmd

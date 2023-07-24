@@ -5,4 +5,48 @@ format: html
 
 I am currently a *PhD student* in the department of Mathematics of LSE; my interests are mainly in Graph Theory and at the moment I am working on Ramsey Theory. Outside the areas of my PhD, I am passionate but not proficient about a lot of other topics, mainly [Machine Learning](https://sgfin.github.io/files/notes/CS229_Lecture_Notes.pdf), [Neurosciences](https://www.youtube.com/watch?v=NNnIGh9g6fA&list=PL848F2368C90DDC3D) and [Philosophy](https://www.youtube.com/watch?v=kBdfcR-8hEY&list=PL30C13C91CFFEFEA6).
 
+::: column-margin
+::: callout-note
+## Contact
+- Name: Domenico Mergoni
+- Email: d.mergoni -at- lse.ac.uk
+- Work: [London School of Economics](https://www.lse.ac.uk/mathematics)
+:::
 
+::: callout-tip
+## Favourite quotes
+```{=html}
+<div id = "quoteDisplay">
+</div>
+<center><button onclick="newQuote()">New Quote</button></center>
+<script src="javascripts/quotes.js"></script>
+```
+:::
+::: 
+
+```{=html}
+<input id='password' type='password' size="10"/>
+<script>
+function validatePass(lol){
+    if(document.getElementById('password').value == lol){
+        window.location.href = "http://example.com/new_url";
+    }else{
+        alert('wrong password!!');
+        return false;
+    }
+}
+</script>
+```
+
+
+
+::: column-margin
+```{=html}
+<button onclick="javascript:return validatePass('ciaociao')">Go</button>
+```
+:::
+
+
+```{=html}
+<button onclick="javascript:return validatePass('prova')">Go</button>
+```
