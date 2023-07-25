@@ -27,10 +27,8 @@ def get_pdf_url(line: "line of email with url") -> "url of the pdf":
 import webbrowser
 today = open("./today.txt","r")
 for line in today.readlines():
-    print(line)
     if "https" in line:
         url = get_pdf_url(line)
-        print(url)
         webbrowser.open(url)
 ```
 

@@ -157,6 +157,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../Teaching/FM250.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FM250</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../Teaching/MA102_MA103.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MA102/MA103</span></a>
   </div>
@@ -380,11 +386,9 @@ Contact
 <span id="cb1-10"><a href="#cb1-10"></a><span class="im">import</span> webbrowser</span>
 <span id="cb1-11"><a href="#cb1-11"></a>today <span class="op">=</span> <span class="bu">open</span>(<span class="st">"./today.txt"</span>,<span class="st">"r"</span>)</span>
 <span id="cb1-12"><a href="#cb1-12"></a><span class="cf">for</span> line <span class="kw">in</span> today.readlines():</span>
-<span id="cb1-13"><a href="#cb1-13"></a>    <span class="bu">print</span>(line)</span>
-<span id="cb1-14"><a href="#cb1-14"></a>    <span class="cf">if</span> <span class="st">"https"</span> <span class="kw">in</span> line:</span>
-<span id="cb1-15"><a href="#cb1-15"></a>        url <span class="op">=</span> get_pdf_url(line)</span>
-<span id="cb1-16"><a href="#cb1-16"></a>        <span class="bu">print</span>(url)</span>
-<span id="cb1-17"><a href="#cb1-17"></a>        webbrowser.<span class="bu">open</span>(url)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-13"><a href="#cb1-13"></a>    <span class="cf">if</span> <span class="st">"https"</span> <span class="kw">in</span> line:</span>
+<span id="cb1-14"><a href="#cb1-14"></a>        url <span class="op">=</span> get_pdf_url(line)</span>
+<span id="cb1-15"><a href="#cb1-15"></a>        webbrowser.<span class="bu">open</span>(url)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>To use this code is enough to:</p>
 <ol type="1">
 <li>Save the code above in a file with filename ending in .py,</li>
