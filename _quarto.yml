@@ -57,10 +57,12 @@ website:
             contents:
               - href: Learning/RL/abd.qmd
                 text: Problem3
-      - href: research.qmd
+      - href: main_pages/research.qmd
         text: Research
-      - href: curriculum.qmd
+      - href: main_pages/curriculum.qmd
         text: Curriculum Vitae
+      - href: main_pages/miscellanea.qmd
+        text: Mischellanea
           
   navbar:
     logo: images/logo.png
