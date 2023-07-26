@@ -47,7 +47,7 @@ format: html
 | [Studio della dimensione di Hausdorff del Moto Browniano](../Documents_files/Theses/BSc_Thesis.compressed.pdf) | Jul '18 | BSc defense | Pisa |
 : {.striped .hover tbl-colwidths="\[50,30,20\]"} 
 
-## Theses, Reports and Other Projects
+## Theses and Projects
 | What  | When | Where | Why | 
 |------------------|------------------|------------------|------------------|
 | [Graph-theoretical Tools in Statistics](../Documents_files/Presentations/) | 2022 | LSE | Mini-internship |
@@ -57,7 +57,7 @@ format: html
 | [On the Hausdorff Dimension of Brownian Motion](../Documents_files/Theses/BSc_Thesis.compressed.pdf) | 2018 | Pisa Univ. | BSc Thesis |
 : {.striped .hover tbl-colwidths="\[60,10,10,20\]"} 
 
-## Events (Research trips)
+## Trips
 | What  | When | Where | Instit. | Type | Funded | 
 |------------------|------------------|------------------|------------------|------------------|------------------| 
 | DMV  |  Oct '23 |  Ilmenau |   |  Conference (invited) | LSE  |
@@ -76,13 +76,13 @@ format: html
 | Research visit | May '22 | Hamburg | TU Hamburg | Visit | TU Hamburg | 
 : {.striped .hover tbl-colwidths="\[30,15,20,20,30,15\]"} 
 
-## Grants, awards, organisation
+## Other
 - Organiser
   - PCC (Main organiser), Apr 2023, University of London and BCC. (National conference for postgraduate students).
   - LSE PhD CGO Seminar (Main Organiser), 2022/23.
 
 - Grants and invitations
-  - DMV Invited Speaker. Ilmenaur. 2023.
+  - DMV Invited Speaker. Ilmenau. 2023.
   - LMS Computer Science Small Grant (700£). London Mathematical Society. Funded visit to Berlin. 2022.
   - LSE Contribution Award. Dept of Mathematics. LSE. 2021.
   

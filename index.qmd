@@ -8,14 +8,15 @@ I am currently a *PhD student* in the department of Mathematics of LSE; my inter
 ::: column-margin
 ::: callout-note
 ## Contact
-- Name: Domenico Mergoni
-- Email: d.mergoni -at- lse.ac.uk
-- Work: [London School of Economics](https://www.lse.ac.uk/mathematics)
-:::
 
+-   Name: Domenico Mergoni
+-   Email: d.mergoni -at- lse.ac.uk
+-   Work: [London School of Economics](https://www.lse.ac.uk/mathematics)
+:::
 
 ::: callout-tip
 ## Favourite quotes
+
 ```{=html}
 <div id = "quoteDisplay">
 </div>
@@ -23,6 +24,4 @@ I am currently a *PhD student* in the department of Mathematics of LSE; my inter
 <script src="javascripts/quotes.js"></script>
 ```
 :::
-::: 
-
-
+:::
