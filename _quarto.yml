@@ -62,7 +62,7 @@ website:
       - href: main_pages/curriculum.qmd
         text: Curriculum Vitae
       - href: main_pages/miscellanea.qmd
-        text: Mischellanea
+        text: Miscellanea
           
   navbar:
     logo: images/logo.png

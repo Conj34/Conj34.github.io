@@ -109,14 +109,14 @@
     "href": "main_pages/curriculum.html",
     "title": "Curriculum",
     "section": "",
-    "text": "Contact\n\n\n\n\nName: Domenico Mergoni\nEmail: d.mergoni -at- lse.ac.uk\nWork: London School of Economics\n\n\n\n\n\n\n\ngantt\n    title Education\n    dateFormat DD-MM-YYYY\n    axisFormat   %b %Y\n    section BSc\n    Pisa Univ - GPA 110/110: L1, 01-09-2015, 1048d\n    section MSc\n    ETHZ - GPA 5.8/6: L1, 01-09-2018, 700d\n    section PhD\n    London School of Economics: L1, 01-09-2020, 1450d"
+    "text": "Contact\n\n\n\n\nName: Domenico Mergoni\nEmail: d.mergoni -at- lse.ac.uk\nWork: London School of Economics\n\n\n\n\n\n\n\ngantt\n    title Education\n    dateFormat DD-MM-YYYY\n    axisFormat   %b %Y\n    section BSc\n    Pisa Univ - GPA 110/110: L1, 01-09-2015, 1048d\n    section MSc\n    ETHZ - GPA 5.8/6: L1, 01-09-2018, 700d\n    section PhD\n    London School of Economics: L1, 01-09-2020, 1450d\n    \n\n\n\n\n\n\n\n\n\njourney\n    title My Technical Skills\n      Maths: 9: Research, Taught\n      Reinforcement Learning: 8: Taught, Research\n      Machine Learning: 7: Taught\n      Python: 7: Hobby, Taught\n      Finance: 5: Taught\n      R, C, C++, Matlab: 4: Uni"
   },
   {
     "objectID": "main_pages/miscellanea.html",
     "href": "main_pages/miscellanea.html",
-    "title": "Homepage",
+    "title": "Miscellanea",
     "section": "",
-    "text": "I am currently a PhD student in the department of Mathematics of LSE; my interests are mainly in Graph Theory and at the moment I am working on Ramsey Theory. Outside the areas of my PhD, I am passionate but not proficient about a lot of other topics, mainly Machine Learning, Neurosciences and Philosophy.\n\n\n\n\n\n\n\n\n\n\n\nContact\n\n\n\n\nName: Domenico Mergoni\nEmail: d.mergoni -at- lse.ac.uk\nWork: London School of Economics\n\n\n\n\n\n\n\n\n\nFavourite quotes\n\n\n\n\n\nNew Quote"
+    "text": "Contact\n\n\n\n\nName: Domenico Mergoni\nEmail: d.mergoni -at- lse.ac.uk\nWork: London School of Economics\n\n\n\nAmongst the things I like: Books, Movies, Cooking.\n\nBooks  (Since Jan. 2023)\n\n\n\n\n\n\n\n\n\n\n\nTitle\nAuthor\nStatus\nCompl. on\n\n\n\n\nThe Remains of the Day\nKazuo Ishiguro\n\n\n\n\nThe Return of the King\nJ.R.R. Tolkien\n\n\n\n\nSwimming in the Dark\nTomasz Jedrowski\n\nJul ’23\n\n\nThe Two Towers\nJ.R.R. Tolkien\n\nJun ’23\n\n\nThe Fellowship of the Ring\nJ.R.R. Tolkien\n\nJun ’23\n\n\nIl Bar sotto il Mare\nStefano Benni\n\nMay ’23\n\n\n2001: A Space Odyssey\nArthur C. Clarke\n\nMay ’23\n\n\nNever let Me go\nKazuo Ishiguro\n\nMay ’23\n\n\nNocturnes\nKazuo Ishiguro\n\nMay ’23\n\n\nThe Time Machine\nH.G. Wells\n\nMay ’23\n\n\nA little Life\nHanya Yanagihara\n\nMay ’23\n\n\nA Room with a View\nE.M. Forster\n\nApr ’23\n\n\nDrive your Plow over the Bones of the Dead\nOlga Tokarczuk\n\nMar ’23\n\n\n\n\nBooks, Next up (Suggestions appreciated)\n\n\n\n\n\n\n\n\n\nTitle\nAuthor\n\n\n\n\nTo the Lighthouse\nVirginia Woolf\n\n\nAtonement\nIan McEwan\n\n\nThe Sense of an Ending\nJulian Barnes\n\n\nHowards End\nE.M. Forster\n\n\nDancing Paradiso\nStefano Benni\n\n\nBlues in Sedici\nStefano Benni\n\n\nWar of the Worlds\nH. G. Wells\n\n\nSphere\nMichael Crichton\n\n\nThe Line of Beauty\nAlan Hollinghurst"
   },
   {
     "objectID": "main_pages/research.html#papers",

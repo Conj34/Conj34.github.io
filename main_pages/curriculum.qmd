@@ -27,3 +27,17 @@ gantt
     
 ```
 
+
+```{mermaid}
+journey
+    title My Technical Skills
+      Maths: 9: Research, Taught
+      Reinforcement Learning: 8: Taught, Research
+      Machine Learning: 7: Taught
+      Python: 7: Hobby, Taught
+      Finance: 5: Taught
+      R, C, C++, Matlab: 4: Uni
+      
+```
+
+
