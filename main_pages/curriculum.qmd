@@ -13,7 +13,22 @@ format: html
 :::
 :::
 
+Relevant documents:
+
+-   [Course content](../Documents_files/Other/Details%20of%20courses.pdf) of many courses I followed and all courses I taught.
+
+-   [Transcript of Records](../Documents_files/Other/Transcript%20of%20Records.pdf) of BSc and MSc.
+
+-   Normal [CV](../Documents_files/Other/CV.pdf).
+
+    ```{=html}
+    <style>
+    .mermaid svg { height: auto; }
+    </style>
+    ```
+
 ```{mermaid}
+%%| fig-height: 6.5
 gantt
     title Education
     dateFormat DD-MM-YYYY
@@ -24,20 +39,23 @@ gantt
     ETHZ - GPA 5.8/6: L1, 01-09-2018, 700d
     section PhD
     London School of Economics: L1, 01-09-2020, 1450d
-    
 ```
-
-
+<!--
+```{mermaid}
+%%| height: auto
+journey
+    title Experiences
+      Indep. Research: 9: ETHZ, UniPi, LSE
+      Teaching: 9: LSE
+      Coding: 8: Hobby, LSE, UniPi
+      Teamwor: 8: LSE, Internship
+```
+-->
 ```{mermaid}
 journey
-    title My Technical Skills
+    title Technical Skills
       Maths: 9: Research, Taught
-      Reinforcement Learning: 8: Taught, Research
-      Machine Learning: 7: Taught
+      ML, RL and Stats: 8: Taught, Research
       Python: 7: Hobby, Taught
-      Finance: 5: Taught
-      R, C, C++, Matlab: 4: Uni
-      
+      Finance: 4: Taught
 ```
-
-

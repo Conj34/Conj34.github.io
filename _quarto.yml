@@ -51,12 +51,8 @@ website:
                   text: 1758A
           - section: "Machine Learning and Statistics"
             contents:
-            - href: Learning/ML/abc.qmd
-              text: Problem4
           - section: "Reinforcement Learning"
             contents:
-              - href: Learning/RL/abd.qmd
-                text: Problem3
       - href: main_pages/research.qmd
         text: Research
       - href: main_pages/curriculum.qmd
