@@ -5,26 +5,27 @@ format: html
 
 {{< include /support/_margins_Teaching.qmd >}}
 
-
 <h3>Course content <small><small><small>(Official)</small></small></small></h3>
 
-- Methods for generating samples from a given probability distribution,
-- Monte Carlo estimation,
-- Variance reduction techniques,
-- The binomial asset pricing model and the concept of no-arbitrage,
-- The Black-Scholes option pricing model as a limit of the binomial model,
-- Application of Monte Carlo methods to pricing financial derivatives,
-- Introduction to programming in Python,
-- Introduction to option pricing with multiple periods in financial markets.
+-   Methods for generating samples from a given probability distribution,
+-   Monte Carlo estimation,
+-   Variance reduction techniques,
+-   The binomial asset pricing model and the concept of no-arbitrage,
+-   The Black-Scholes option pricing model as a limit of the binomial model,
+-   Application of Monte Carlo methods to pricing financial derivatives,
+-   Introduction to programming in Python,
+-   Introduction to option pricing with multiple periods in financial markets.
 
 <h4>Lecture Notes</h4>
+
 [These](../Documents_files/ME200/LectureNotesME200.pdf) are the lecture notes, by Johannes Ruf and Luitgard Veraart. [This](../Documents_files/ME200/HomeworkME200.pdf) is the collection of the assignments due for this course.
 
 <h4>Solutions</h4>
+
 I did not write the following solutions. My role was simply to present them in class. The text of the exercises is in the link above.
 
-| Week    | Solution  |
-|----------------------|-------------------------|
+| Week   | Solution                                                            |
+|----------------------------------|--------------------------------------|
 | Day 1  | [Solutions](../Documents_files/ME200/Solutions_Assignment_1.ipynb)  |
 | Day 2  | [Solutions](../Documents_files/ME200/Solutions_Assignment_2.ipynb)  |
 | Day 3  | [Solutions](../Documents_files/ME200/Solutions_Assignment_3.ipynb)  |
@@ -34,6 +35,6 @@ I did not write the following solutions. My role was simply to present them in c
 | Day 7  | [Solutions](../Documents_files/ME200/Solutions_Assignment_7.ipynb)  |
 | Day 8  | [Solutions](../Documents_files/ME200/Solutions_Assignment_8.ipynb)  |
 | Day 9  | [Solutions](../Documents_files/ME200/Solutions_Assignment_9.ipynb)  |
-| Day 10  | [Solutions](../Documents_files/ME200/Solutions_Assignment_10.ipynb)  |
-| Day 11  | [Solutions](../Documents_files/ME200/Solutions_Assignment_11.ipynb)  |
-| Day 12  | [Solutions](../Documents_files/ME200/Solutions_Assignment_11.ipynb)  |
+| Day 10 | [Solutions](../Documents_files/ME200/Solutions_Assignment_10.ipynb) |
+| Day 11 | [Solutions](../Documents_files/ME200/Solutions_Assignment_11.ipynb) |
+| Day 12 | [Solutions](../Documents_files/ME200/Solutions_Assignment_11.ipynb) |
