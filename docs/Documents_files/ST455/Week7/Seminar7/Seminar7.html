@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Seminar 7: TD Learning (Case Study)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../images/logo.png" rel="icon" type="image/png">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../images/logo.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="dropdown-header">
+ <span class="menu-text">Domenico Mergoni Cecchelli</span></li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Seminar 7: TD Learning (Case Study)</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homepage</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../Teaching/Teaching.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Teaching/FM250.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FM250</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Teaching/MA102_MA103.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MA102/MA103</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Teaching/MA210.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MA210</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Teaching/MA423.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MA423</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Teaching/ME200.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ME200</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Teaching/ME306.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ME306</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Teaching/ST310.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ST310</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Teaching/ST455.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ST455</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Teaching/Pre-sessionals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pre-sessionals (MiM/GMiM)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../Learning/Learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Learning</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Python</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Useful</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Learning/Python/Useful/Arxiv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arxiv</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text">Codeforces</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Easy</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../Learning/Python/CF/Easy/1758A.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1758A</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Machine Learning and Statistics</span></span>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Reinforcement Learning</span></span>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../main_pages/research.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../main_pages/curriculum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Curriculum Vitae</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../main_pages/miscellanea.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Miscellanea</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Seminar 7: TD Learning (Case Study)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>In this seminar, we will design a toy example to simulate the ridesharing market and implement the MDP order dispatch policy in this example. We will discuss DQN in the next seminar class. Although the algorithm is being motivated by applications in ridesharing platforms, similar ideas can be employed in other two sided marketplaces (e.g., food delivery companies) that involve sequential decision making over time and space as well.</p>
+<p>First, let us import all the required modules. Here, the <a href="https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.optimize.linear_sum_assignment.html"><code>linear_sum_assignment</code></a> function from <code>scipy.optimize</code> allows us to solve matching problem to assign drivers to call orders by maximizing the advantage function or minimizing the total distance. It is designed to solve the general linear sum assignment problem, e.g., <span class="math display">\[\begin{eqnarray*}
+    \sum_{i=1}^m \sum_{j=1}^n C_{i,j} a_{i,j},
+\end{eqnarray*}\]</span> where <span class="math inline">\(C_{i,j}\)</span> is the cost of matching vertex <span class="math inline">\(i\)</span> of the first set (e.g., drivers) to vertex <span class="math inline">\(j\)</span> of the second set (e.g., orders) and <span class="math inline">\(a_{i,j}\)</span> equals 1 if <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> are matched and 0 otherwise. In addition, each row is assignment to at most one column, and each column to at most one row. If it has more rows than columns, then not every row needs to be assigned to a column, and vice versa.</p>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> itertools <span class="im">import</span> count</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy.stats <span class="im">as</span> stats</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> linear_sum_assignment </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.sparse.csgraph <span class="im">import</span> min_weight_full_bipartite_matching</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We next detail the experimental setup. Consider orders and drivers operating in a simple map of 9 × 9 spatial grids with 20 time steps. Meanwhile, orders can only be dispatched to drivers in Manhattan distance that are no greater than 2. An order will be canceled if not being assigned to any driver for a long time, with the cancelation time modeled as a truncated Gaussian in the range 0 to 5 with mean 2.5 and standard deviation 2 along the temporal axis.</p>
+<p>The Manhattan distance is different from the Euclidean distance. See the following figure for details. Take from <a href="https://www.researchgate.net/publication/343237167_Game_AI_techniques_applied_to_city_simulations">here</a></p>
+<p><img src="./graph/manhattan_distance.png" width="750"></p>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>NUMBER_OF_GRID_TILES_X <span class="op">=</span> <span class="dv">9</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>NUMBER_OF_GRID_TILES_Y<span class="op">=</span> <span class="dv">9</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>NUMBER_OF_TIME_STEPS <span class="op">=</span> <span class="dv">20</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>MAX_MANHATTAN_DISTANCE <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> manhattan_distance(p1,p2):</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.<span class="bu">abs</span>(p1[<span class="dv">0</span>]<span class="op">-</span>p2[<span class="dv">0</span>]) <span class="op">+</span> np.<span class="bu">abs</span>(p1[<span class="dv">1</span>]<span class="op">-</span>p2[<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We fix the number of orders to 100. The following code allows us to generate waiting time for all the orders.</p>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>NUMBER_OF_ORDERS <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>LOWER_BOUND_WAITING_TIME <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>UPPER_BOUND_WAITING_TIME <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>MEAN_WAITING_TIME <span class="op">=</span> <span class="fl">2.5</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>STANDARD_DEVIATION_WAITING_TIME <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>waiting_time_sampler <span class="op">=</span> stats.truncnorm(</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    (LOWER_BOUND_WAITING_TIME <span class="op">-</span> MEAN_WAITING_TIME) <span class="op">/</span> STANDARD_DEVIATION_WAITING_TIME, (UPPER_BOUND_WAITING_TIME <span class="op">-</span> MEAN_WAITING_TIME) <span class="op">/</span> STANDARD_DEVIATION_WAITING_TIME, loc<span class="op">=</span>MEAN_WAITING_TIME, scale<span class="op">=</span>STANDARD_DEVIATION_WAITING_TIME)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>waiting_times <span class="op">=</span> waiting_time_sampler.rvs(NUMBER_OF_ORDERS)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>For data generation, we want to simulate realistic traffic patterns with a morning-peak and a night-peak, centralized on different locations of residential areas and working areas, respectively. Therefore, orders’ starting locations are sampled according to a two-component mixture of Gaussians and then truncated to integers in the spatiotemporal grids. Afterwards, orders’ destinations and drivers’ initial locations are randomly sampled from a discrete uniform distribution defined on the grids. Parameters of the mixture of Gaussians are as follows.</p>
+<p><span class="math display">\[\begin{eqnarray*}
+    \pi^{(1)}=1/3, &amp;\,\,&amp; \pi^{(2)}=2/3;\\
+    \mu^{(1)}=[3,3,5], &amp;\,\,&amp; \mu^{(2)}=[6,6,15];\\
+    \sigma^{(1)}=[2,2,3], &amp;\,\,&amp; \sigma^{(2)}=[2,2,3].
+\end{eqnarray*}\]</span></p>
+<p>The following code allows us to generate random samples from the two-component mixture distribution.</p>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>PROBABILITY_FIRST_GAUSSIAN <span class="op">=</span> <span class="fl">1.</span><span class="op">/</span><span class="dv">3</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>PROBABILITY_SECOND_GAUSSIAN <span class="op">=</span> <span class="fl">2.</span><span class="op">/</span><span class="dv">3</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>MEAN_FIRST_GAUSSIAN <span class="op">=</span> [<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">5</span>]</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>MEAN_SECOND_GAUSSIAN <span class="op">=</span> [<span class="dv">6</span>,<span class="dv">6</span>,<span class="dv">15</span>]</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>STANDARD_DEVIATION_FIRST_GAUSSIAN <span class="op">=</span> [<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>STANDARD_DEVIATION_SECOND_GAUSSIAN <span class="op">=</span> [<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>LOWER_LIMITS_BY_DIMENSION <span class="op">=</span> [<span class="dv">0</span> <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>)]</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>UPPER_LIMITS_BY_DIMENSION <span class="op">=</span> [NUMBER_OF_GRID_TILES_X <span class="op">-</span> <span class="dv">1</span>, NUMBER_OF_GRID_TILES_Y <span class="op">-</span> <span class="dv">1</span>, NUMBER_OF_TIME_STEPS <span class="op">-</span> <span class="dv">1</span>]</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TruncatedMultivariateNormalInteger():</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, normals):</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>._normals <span class="op">=</span> []</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> [lower, upper, mean, standard_deviation] <span class="kw">in</span> normals:</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>            X <span class="op">=</span> stats.truncnorm(</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    (lower <span class="op">-</span> mean) <span class="op">/</span> standard_deviation, (upper <span class="op">-</span> mean) <span class="op">/</span> standard_deviation, loc<span class="op">=</span>mean, scale<span class="op">=</span>standard_deviation)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>._normals.append(X)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># size equals 3 (e.g., 3 independent truncated normals per mixture component) in our example</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> rvs(<span class="va">self</span>, size):</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> np.array([[normal.rvs(size<span class="op">=</span><span class="dv">1</span>) <span class="cf">for</span> normal <span class="kw">in</span> <span class="va">self</span>._normals] <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(size)])</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> MixtureModel():</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, submodels, weights, <span class="op">*</span>args, <span class="op">**</span>kwargs):</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>(<span class="op">*</span>args, <span class="op">**</span>kwargs)</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.submodels <span class="op">=</span> submodels</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.weights <span class="op">=</span> weights<span class="op">/</span>np.<span class="bu">sum</span>(weights) </span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> rvs(<span class="va">self</span>, size):</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>        rvs <span class="op">=</span> [] </span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(size):</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>            random_model <span class="op">=</span> np.random.choice(<span class="bu">range</span>(<span class="bu">len</span>(<span class="va">self</span>.submodels)), p<span class="op">=</span><span class="va">self</span>.weights)</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>            rvs.append(<span class="va">self</span>.submodels[random_model].rvs(size<span class="op">=</span><span class="dv">1</span>))</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> np.<span class="bu">round</span>(np.squeeze(np.array(rvs))).astype(<span class="bu">int</span>)</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>first_truncated_multivariate_normal <span class="op">=</span> TruncatedMultivariateNormalInteger([[LOWER_LIMITS_BY_DIMENSION[i], UPPER_LIMITS_BY_DIMENSION[i], MEAN_FIRST_GAUSSIAN[i], STANDARD_DEVIATION_FIRST_GAUSSIAN[i]] <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>)])</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>second_truncated_multivariate_normal <span class="op">=</span> TruncatedMultivariateNormalInteger([[LOWER_LIMITS_BY_DIMENSION[i], UPPER_LIMITS_BY_DIMENSION[i], MEAN_SECOND_GAUSSIAN[i], STANDARD_DEVIATION_SECOND_GAUSSIAN[i]] <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>)])</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>mixture_gaussian_model <span class="op">=</span> MixtureModel([first_truncated_multivariate_normal, second_truncated_multivariate_normal],[<span class="fl">1.</span><span class="op">/</span><span class="dv">3</span>,<span class="fl">2.</span><span class="op">/</span><span class="dv">3</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The following code allows us to randomly generate the orders’ destinations and drivers’ initial locations from a discrete uniform distribution on the grids</p>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> spawn_uniformly_x_y_location():</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [np.random.choice(<span class="bu">range</span>(NUMBER_OF_GRID_TILES_X)), np.random.choice(<span class="bu">range</span>(NUMBER_OF_GRID_TILES_Y))]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We next calculate the reward associated with each trip. In this example, we use the completion rate (e.g., the percentage of orders being completed) as our objective. As such, for each order, the immediate reward is a binary variable, depending on whether it is being completed or not.</p>
+<p>We adopt a discounted setting. The discounted factor is fixed to 0.9. Recall from the lecture that the discounted reward is calculated in the following manner.</p>
+<p><img src="./graph/discount_reward.png" width="750"></p>
+<p>The following function calculates the discounted reward based on the observed reward.</p>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>DISCOUNT_FACTOR <span class="op">=</span> <span class="fl">0.9</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> discounted_reward_mdp(gamma, T, R):</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    total_gamma <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    discounted_gamma <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(T):</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        total_gamma <span class="op">+=</span> discounted_gamma </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        discounted_gamma <span class="op">*=</span> gamma</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> total_gamma <span class="op">*</span> R <span class="op">/</span> T</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Next, we start to implement the MDP order dispatch policy. Recall from the lecture that the algorithm consists of two steps, corresponding to policy evaluation based on temporal difference learning and order dispatch by maximizing the total advantage function. Consider the policy evaluation step first. Let us review the policy evaluation algorithm.</p>
+<p><img src="./graph/policy_evaluation.png" width="750"> <img src="./graph/pe_pseudocode.png" width="750"></p>
+<p>The following function implements the policy evaluation algorithm.</p>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Elements in state_transactions are quadruples state, action, reward, next_state</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># action is a quadruple consisting of [idle = 0 / serve = 1, serving position [x,y], destination posotion [x,y]]</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># V and N are 9*9*20 (3-d) matrices</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># delta_t corresponds to the serving time, calculated based on the Manhanttan distance</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>time_ <span class="op">=</span> <span class="dv">2</span> <span class="co"># The last component of state</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> policy_evaluation(state_transactions, V, N, starting_index, method):</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> V <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        V <span class="op">=</span> np.zeros(np.array(UPPER_LIMITS_BY_DIMENSION) <span class="op">-</span> np.array(LOWER_LIMITS_BY_DIMENSION) <span class="op">+</span> [<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>])</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> N <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        N <span class="op">=</span> np.zeros(np.array(UPPER_LIMITS_BY_DIMENSION) <span class="op">-</span> np.array(LOWER_LIMITS_BY_DIMENSION) <span class="op">+</span> [<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>])</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(NUMBER_OF_TIME_STEPS, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> state, action, reward, next_state <span class="kw">in</span> state_transactions[starting_index:]:</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> state[time_] <span class="op">==</span> t:</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>                N[<span class="bu">tuple</span>(state)] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>                delta_t <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> action[<span class="dv">0</span>] <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>                    delta_t <span class="op">+=</span> manhattan_distance(state[:<span class="dv">2</span>], action[<span class="dv">1</span>]) <span class="op">+</span> manhattan_distance(action[<span class="dv">1</span>], action[<span class="dv">2</span>])    </span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>                future_value <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> next_state[time_] <span class="op">&lt;</span> NUMBER_OF_TIME_STEPS:</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>                    future_value <span class="op">=</span> np.power(DISCOUNT_FACTOR, delta_t) <span class="op">*</span> V[<span class="bu">tuple</span>(next_state)]</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> method <span class="op">==</span> <span class="st">'mdp'</span>:</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>                    modified_reward <span class="op">=</span> discounted_reward_mdp(DISCOUNT_FACTOR, delta_t ,reward)</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>                <span class="cf">elif</span> method <span class="op">==</span> <span class="st">'myopic'</span>:</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>                    modified_reward <span class="op">=</span> reward</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>                V[<span class="bu">tuple</span>(state)] <span class="op">+=</span> <span class="fl">1.</span><span class="op">/</span>(N[<span class="bu">tuple</span>(state)]) <span class="op">*</span> (future_value <span class="op">+</span> modified_reward <span class="op">-</span> V[<span class="bu">tuple</span>(state)])</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> V, N</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>ratios_of_served_orders <span class="op">=</span> []</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Finally, let us review the order dispatch step.</p>
+<p><img src="./graph/CD.png" width="750"> <img src="./graph/MDP.png" width="750"></p>
+<p>The definition of the advantage function is given below.</p>
+<p><img src="./graph/ad_fun.png" width="750"></p>
+<p>The following code implements the entire algorithm when being applied to the toy example. In a first phase it creates a historical dataset that lasts for 450 days (450 episodes) by running the ‘distance’ method (e.g., the closest-driver policy). Then, with this historical data the value function <span class="math inline">\(V\)</span> gets computed, based on which a new matching algorithm is devised. Next, we generate another 50-day dataset (50 epsidodes) to evaluate the performance of different policies.</p>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>BASE_REWARD_PER_TRIP <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>REWARD_FOR_DISTANCE_PARAMETER <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> real_time_order_dispatch_algorithm():</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    NUM_EPISODES <span class="op">=</span> <span class="dv">500</span> </span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    BENCHMARK_RUNS <span class="op">=</span> <span class="dv">50</span> </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    NUM_INDEPENDENT_RUNS <span class="op">=</span> NUM_EPISODES <span class="op">-</span> BENCHMARK_RUNS </span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Consider three settings where the number of drivers equals 25, 50 and 75, respectively. Recall that the total number of orders is given by 100.</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    number_of_drivers_list <span class="op">=</span> [<span class="dv">25</span>,<span class="dv">50</span>,<span class="dv">75</span>]</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Consider three methods, distance (closest driver policy), myopic policy (gamma=0) and MDP policy</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    method_list <span class="op">=</span> [<span class="st">'distance'</span>, <span class="st">'myopic'</span>, <span class="st">'mdp'</span>]</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Consider two measurements, the completion rate and the average distance between orders and drivers</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    measurement_keypoints <span class="op">=</span> [<span class="st">'ratio served'</span>, <span class="st">'average distance to driver'</span>]</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    stored_mdp_V_functions <span class="op">=</span> [] </span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Measures the performance for each algorithm</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    benchmark_data <span class="op">=</span> np.zeros((<span class="bu">len</span>(number_of_drivers_list), <span class="bu">len</span>(method_list), <span class="bu">len</span>(measurement_keypoints),BENCHMARK_RUNS))</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> number_of_drivers_ind, number_of_drivers <span class="kw">in</span> <span class="bu">enumerate</span>(number_of_drivers_list):</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> method_ind, method <span class="kw">in</span> <span class="bu">enumerate</span>(method_list):</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>            transition_data <span class="op">=</span> []</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> method <span class="kw">in</span> [<span class="st">'mdp'</span>, <span class="st">'myopic'</span>]:</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>                <span class="co">## Initialize the value and the state counter</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>                V, N <span class="op">=</span> policy_evaluation(transition_data, <span class="va">None</span>, <span class="va">None</span>, <span class="dv">0</span>, method)</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>                starting_index <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> episode <span class="kw">in</span> <span class="bu">range</span>(NUM_EPISODES): </span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>                order_driver_distances <span class="op">=</span> []</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Generate 450 episodes as historical data and then 50 episodes to evaluate difference policies</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> episode <span class="op">&gt;=</span> NUM_INDEPENDENT_RUNS <span class="kw">and</span> method <span class="kw">in</span> [<span class="st">'mdp'</span>, <span class="st">'myopic'</span>]:</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>                    V, N <span class="op">=</span> policy_evaluation(transition_data, V, N, starting_index, method)</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>                    starting_index <span class="op">=</span> <span class="bu">len</span>(transition)</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>                destinations <span class="op">=</span> []</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(NUMBER_OF_ORDERS):</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># destination is drawn uniformly randomly from the grid</span></span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>                    destinations.append(spawn_uniformly_x_y_location())</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>                <span class="co"># in orders first entry is boolean corresponding to wether it is served.</span></span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>                orders <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="bu">list</span>, <span class="bu">zip</span>([<span class="va">False</span>] <span class="op">*</span> NUMBER_OF_ORDERS, mixture_gaussian_model.rvs(NUMBER_OF_ORDERS), np.<span class="bu">round</span>(waiting_times).astype(<span class="bu">int</span>), destinations, <span class="bu">range</span>(NUMBER_OF_ORDERS))))</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>                drivers <span class="op">=</span> []</span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(number_of_drivers):</span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># first entry describes the first time the driver is available again</span></span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># driver's location is drawn uniformly randomly from the grid</span></span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>                    drivers.append([<span class="dv">0</span>, spawn_uniformly_x_y_location(), i])</span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>                    </span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(NUMBER_OF_TIME_STEPS):</span>
+<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># obtain active orders</span></span>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a>                    active_orders <span class="op">=</span> [order <span class="cf">for</span> order <span class="kw">in</span> orders <span class="cf">if</span> (order[<span class="dv">0</span>] <span class="op">==</span> <span class="va">False</span>) <span class="kw">and</span> (order[<span class="dv">1</span>][<span class="dv">2</span>] <span class="op">&lt;=</span> t) <span class="kw">and</span> (order[<span class="dv">1</span>][<span class="dv">2</span>] <span class="op">+</span> order[<span class="dv">2</span>] <span class="op">&gt;=</span> t)]</span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a>                    available_drivers <span class="op">=</span> [driver <span class="cf">for</span> driver <span class="kw">in</span> drivers <span class="cf">if</span> driver[<span class="dv">0</span>] <span class="op">&lt;=</span> t]</span>
+<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># print(len(active_orders), len(available_drivers)) </span></span>
+<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># print(drivers)</span></span>
+<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>                    allowed_match <span class="op">=</span> np.ones((<span class="bu">len</span>(active_orders), <span class="bu">len</span>(available_drivers)), dtype<span class="op">=</span><span class="bu">bool</span>)</span>
+<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">for</span> order_count, active_order <span class="kw">in</span> <span class="bu">enumerate</span>(active_orders):</span>
+<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">for</span> driver_count, available_driver <span class="kw">in</span> <span class="bu">enumerate</span>(available_drivers):</span>
+<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># only consider drivers whose manhattan distance is slower than 2</span></span>
+<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a>                            <span class="cf">if</span> manhattan_distance(available_driver[<span class="dv">1</span>], active_order[<span class="dv">1</span>][:<span class="dv">2</span>]) <span class="op">&gt;</span> MAX_MANHATTAN_DISTANCE:</span>
+<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a>                                allowed_match[order_count, driver_count] <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># print(allowed_match)</span></span>
+<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># computation of advantage function</span></span>
+<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">if</span> method <span class="kw">in</span> [<span class="st">'mdp'</span>, <span class="st">'myopic'</span>]:</span>
+<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a>                        <span class="co">#Could also initialize with - infinity.</span></span>
+<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a>                        advantage_function <span class="op">=</span> np.zeros((<span class="bu">len</span>(active_orders), <span class="bu">len</span>(available_drivers))) </span>
+<span id="cb8-71"><a href="#cb8-71" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">for</span> order_count, active_order <span class="kw">in</span> <span class="bu">enumerate</span>(active_orders):</span>
+<span id="cb8-72"><a href="#cb8-72" aria-hidden="true" tabindex="-1"></a>                            <span class="cf">for</span> driver_count, available_driver <span class="kw">in</span> <span class="bu">enumerate</span>(available_drivers):</span>
+<span id="cb8-73"><a href="#cb8-73" aria-hidden="true" tabindex="-1"></a>                                <span class="cf">if</span>(allowed_match[order_count, driver_count]):</span>
+<span id="cb8-74"><a href="#cb8-74" aria-hidden="true" tabindex="-1"></a>                                    <span class="co"># the pickup time</span></span>
+<span id="cb8-75"><a href="#cb8-75" aria-hidden="true" tabindex="-1"></a>                                    delta_t <span class="op">=</span> <span class="dv">1</span> <span class="op">+</span> manhattan_distance(available_driver[<span class="dv">1</span>], active_order[<span class="dv">1</span>][:<span class="dv">2</span>]) <span class="op">+</span> manhattan_distance(active_order[<span class="dv">1</span>][:<span class="dv">2</span>], active_order[<span class="dv">3</span>])    </span>
+<span id="cb8-76"><a href="#cb8-76" aria-hidden="true" tabindex="-1"></a>                                    reward <span class="op">=</span> BASE_REWARD_PER_TRIP <span class="op">+</span> REWARD_FOR_DISTANCE_PARAMETER  <span class="op">*</span> manhattan_distance(active_order[<span class="dv">1</span>][:<span class="dv">2</span>], active_order[<span class="dv">3</span>])  </span>
+<span id="cb8-77"><a href="#cb8-77" aria-hidden="true" tabindex="-1"></a>                                    <span class="co">#If the completion time is later than the last time step, we just stop set the future value to zero</span></span>
+<span id="cb8-78"><a href="#cb8-78" aria-hidden="true" tabindex="-1"></a>                                    future_value <span class="op">=</span> <span class="fl">0.</span></span>
+<span id="cb8-79"><a href="#cb8-79" aria-hidden="true" tabindex="-1"></a>                                    <span class="cf">if</span> t <span class="op">+</span> delta_t <span class="op">&lt;</span> NUMBER_OF_TIME_STEPS: </span>
+<span id="cb8-80"><a href="#cb8-80" aria-hidden="true" tabindex="-1"></a>                                        discount <span class="op">=</span> DISCOUNT_FACTOR</span>
+<span id="cb8-81"><a href="#cb8-81" aria-hidden="true" tabindex="-1"></a>                                        <span class="cf">if</span> method <span class="op">==</span> <span class="st">'myopic'</span>:</span>
+<span id="cb8-82"><a href="#cb8-82" aria-hidden="true" tabindex="-1"></a>                                            discount <span class="op">=</span> <span class="fl">0.</span></span>
+<span id="cb8-83"><a href="#cb8-83" aria-hidden="true" tabindex="-1"></a>                                        future_value <span class="op">=</span> np.power(discount, delta_t) <span class="op">*</span> V[active_order[<span class="dv">3</span>][<span class="dv">0</span>],active_order[<span class="dv">3</span>][<span class="dv">1</span>], t <span class="op">+</span> delta_t]</span>
+<span id="cb8-84"><a href="#cb8-84" aria-hidden="true" tabindex="-1"></a>                                    current_value <span class="op">=</span> V[available_driver[<span class="dv">1</span>][<span class="dv">0</span>], available_driver[<span class="dv">1</span>][<span class="dv">1</span>], t]</span>
+<span id="cb8-85"><a href="#cb8-85" aria-hidden="true" tabindex="-1"></a>                                    modified_reward <span class="op">=</span> reward</span>
+<span id="cb8-86"><a href="#cb8-86" aria-hidden="true" tabindex="-1"></a>                                    <span class="cf">if</span> method <span class="op">==</span> <span class="st">'mdp'</span>:</span>
+<span id="cb8-87"><a href="#cb8-87" aria-hidden="true" tabindex="-1"></a>                                        modified_reward <span class="op">=</span> discounted_reward_mdp(DISCOUNT_FACTOR, delta_t, reward)</span>
+<span id="cb8-88"><a href="#cb8-88" aria-hidden="true" tabindex="-1"></a>                                    advantage_function[order_count, driver_count] <span class="op">=</span> future_value <span class="op">-</span> current_value <span class="op">+</span> modified_reward</span>
+<span id="cb8-89"><a href="#cb8-89" aria-hidden="true" tabindex="-1"></a>                        </span>
+<span id="cb8-90"><a href="#cb8-90" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># plot_sample_histogram(np.array([active_order[1] for active_order in active_orders]), "Active Orders at time {}".format(t))</span></span>
+<span id="cb8-91"><a href="#cb8-91" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># plot_sample_histogram(np.array([available_driver[1] for available_driver in available_drivers]), "Available Drivers at time {}".format(t))</span></span>
+<span id="cb8-92"><a href="#cb8-92" aria-hidden="true" tabindex="-1"></a>                        </span>
+<span id="cb8-93"><a href="#cb8-93" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># print(advantage_function)</span></span>
+<span id="cb8-94"><a href="#cb8-94" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># print(advantage_function.shape)</span></span>
+<span id="cb8-95"><a href="#cb8-95" aria-hidden="true" tabindex="-1"></a>                        </span>
+<span id="cb8-96"><a href="#cb8-96" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># Matchs orders to drivers. Note the important subtelty that the function linear_sum_assignment returns a full matching. But we are happy with a partial matching already.</span></span>
+<span id="cb8-97"><a href="#cb8-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-98"><a href="#cb8-98" aria-hidden="true" tabindex="-1"></a>                    row_ind <span class="op">=</span> [] </span>
+<span id="cb8-99"><a href="#cb8-99" aria-hidden="true" tabindex="-1"></a>                    col_ind <span class="op">=</span> []</span>
+<span id="cb8-100"><a href="#cb8-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-101"><a href="#cb8-101" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># The initial independent runs should use the 'distance' policy to find the matching.</span></span>
+<span id="cb8-102"><a href="#cb8-102" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># Later runs could either use 'mdp', 'myopic' or 'distance' policy</span></span>
+<span id="cb8-103"><a href="#cb8-103" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">if</span> episode <span class="op">&gt;=</span> NUM_INDEPENDENT_RUNS <span class="kw">and</span> method <span class="kw">in</span> [<span class="st">'mdp'</span>,<span class="st">'myopic'</span>]:</span>
+<span id="cb8-104"><a href="#cb8-104" aria-hidden="true" tabindex="-1"></a>                        penalized_advantage_matrix <span class="op">=</span> advantage_function</span>
+<span id="cb8-105"><a href="#cb8-105" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(active_orders)):</span>
+<span id="cb8-106"><a href="#cb8-106" aria-hidden="true" tabindex="-1"></a>                            <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(available_drivers)):</span>
+<span id="cb8-107"><a href="#cb8-107" aria-hidden="true" tabindex="-1"></a>                                <span class="cf">if</span> <span class="kw">not</span> allowed_match[i,j]:</span>
+<span id="cb8-108"><a href="#cb8-108" aria-hidden="true" tabindex="-1"></a>                                    penalized_advantage_matrix[i,j] <span class="op">=</span> <span class="op">-</span> <span class="dv">100</span> <span class="op">*</span> NUMBER_OF_ORDERS</span>
+<span id="cb8-109"><a href="#cb8-109" aria-hidden="true" tabindex="-1"></a>                        row_ind, col_ind <span class="op">=</span> linear_sum_assignment(<span class="op">-</span>penalized_advantage_matrix)</span>
+<span id="cb8-110"><a href="#cb8-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-111"><a href="#cb8-111" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">else</span>:</span>
+<span id="cb8-112"><a href="#cb8-112" aria-hidden="true" tabindex="-1"></a>                        <span class="co">#Use distance matrix to compute assignment</span></span>
+<span id="cb8-113"><a href="#cb8-113" aria-hidden="true" tabindex="-1"></a>                        distance_matrix <span class="op">=</span> <span class="op">-</span>np.ones((<span class="bu">len</span>(active_orders), <span class="bu">len</span>(available_drivers))) <span class="op">*</span> <span class="dv">100</span> <span class="op">*</span> NUMBER_OF_ORDERS</span>
+<span id="cb8-114"><a href="#cb8-114" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(active_orders)):</span>
+<span id="cb8-115"><a href="#cb8-115" aria-hidden="true" tabindex="-1"></a>                            <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(available_drivers)):</span>
+<span id="cb8-116"><a href="#cb8-116" aria-hidden="true" tabindex="-1"></a>                                <span class="cf">if</span> allowed_match[i,j]:</span>
+<span id="cb8-117"><a href="#cb8-117" aria-hidden="true" tabindex="-1"></a>                                    distance_matrix[i,j] <span class="op">=</span> <span class="op">-</span>manhattan_distance(available_drivers[j][<span class="dv">1</span>], active_orders[i][<span class="dv">1</span>][:<span class="dv">2</span>]) </span>
+<span id="cb8-118"><a href="#cb8-118" aria-hidden="true" tabindex="-1"></a>                        row_ind, col_ind <span class="op">=</span> linear_sum_assignment(<span class="op">-</span>distance_matrix) </span>
+<span id="cb8-119"><a href="#cb8-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-120"><a href="#cb8-120" aria-hidden="true" tabindex="-1"></a>                    matched_order_ind <span class="op">=</span> []</span>
+<span id="cb8-121"><a href="#cb8-121" aria-hidden="true" tabindex="-1"></a>                    matched_driver_ind <span class="op">=</span> []</span>
+<span id="cb8-122"><a href="#cb8-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-123"><a href="#cb8-123" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(row_ind)):</span>
+<span id="cb8-124"><a href="#cb8-124" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">if</span> row_ind[i] <span class="op">&lt;</span> <span class="bu">len</span>(active_orders) <span class="kw">and</span> col_ind[i] <span class="op">&lt;</span> <span class="bu">len</span>(available_drivers) <span class="kw">and</span> allowed_match[row_ind[i],col_ind[i]]:</span>
+<span id="cb8-125"><a href="#cb8-125" aria-hidden="true" tabindex="-1"></a>                            matched_order_ind.append(row_ind[i])</span>
+<span id="cb8-126"><a href="#cb8-126" aria-hidden="true" tabindex="-1"></a>                            matched_driver_ind.append(col_ind[i])</span>
+<span id="cb8-127"><a href="#cb8-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-128"><a href="#cb8-128" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># print(f"Matched orders in iteration {t}")</span></span>
+<span id="cb8-129"><a href="#cb8-129" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(matched_order_ind)):</span>
+<span id="cb8-130"><a href="#cb8-130" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">if</span> allowed_match[matched_order_ind[i]][matched_driver_ind[i]]:</span>
+<span id="cb8-131"><a href="#cb8-131" aria-hidden="true" tabindex="-1"></a>                            matched_order <span class="op">=</span> active_orders[matched_order_ind[i]]</span>
+<span id="cb8-132"><a href="#cb8-132" aria-hidden="true" tabindex="-1"></a>                            matched_driver <span class="op">=</span> available_drivers[matched_driver_ind[i]]</span>
+<span id="cb8-133"><a href="#cb8-133" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># if method == 'mdp':</span></span>
+<span id="cb8-134"><a href="#cb8-134" aria-hidden="true" tabindex="-1"></a>                                <span class="co"># print(f'Order {matched_order[-1]} at {matched_order[1][:2]} is matched to driver {matched_driver[-1]} at {matched_driver[1]}')</span></span>
+<span id="cb8-135"><a href="#cb8-135" aria-hidden="true" tabindex="-1"></a>                            matched_order[<span class="dv">0</span>] <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb8-136"><a href="#cb8-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-137"><a href="#cb8-137" aria-hidden="true" tabindex="-1"></a>                            order_driver_distance <span class="op">=</span> manhattan_distance(matched_driver[<span class="dv">1</span>], matched_order[<span class="dv">1</span>][:<span class="dv">2</span>])</span>
+<span id="cb8-138"><a href="#cb8-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-139"><a href="#cb8-139" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># continue to run the code only when the assertion is satisfied. Stop and return an error otherwise</span></span>
+<span id="cb8-140"><a href="#cb8-140" aria-hidden="true" tabindex="-1"></a>                            <span class="cf">assert</span>(order_driver_distance <span class="op">&lt;=</span> <span class="dv">2</span>)</span>
+<span id="cb8-141"><a href="#cb8-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-142"><a href="#cb8-142" aria-hidden="true" tabindex="-1"></a>                            order_driver_distances.append(order_driver_distance)</span>
+<span id="cb8-143"><a href="#cb8-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-144"><a href="#cb8-144" aria-hidden="true" tabindex="-1"></a>                            delta_t <span class="op">=</span> <span class="dv">1</span> <span class="op">+</span> manhattan_distance(matched_driver[<span class="dv">1</span>], matched_order[<span class="dv">1</span>][:<span class="dv">2</span>]) <span class="op">+</span> manhattan_distance(matched_order[<span class="dv">1</span>][:<span class="dv">2</span>], matched_order[<span class="dv">3</span>])    </span>
+<span id="cb8-145"><a href="#cb8-145" aria-hidden="true" tabindex="-1"></a>                            matched_driver[<span class="dv">0</span>] <span class="op">=</span> t <span class="op">+</span> delta_t </span>
+<span id="cb8-146"><a href="#cb8-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-147"><a href="#cb8-147" aria-hidden="true" tabindex="-1"></a>                            <span class="co">#Append to transition data.</span></span>
+<span id="cb8-148"><a href="#cb8-148" aria-hidden="true" tabindex="-1"></a>                            </span>
+<span id="cb8-149"><a href="#cb8-149" aria-hidden="true" tabindex="-1"></a>                            reward <span class="op">=</span> BASE_REWARD_PER_TRIP <span class="op">+</span> REWARD_FOR_DISTANCE_PARAMETER  <span class="op">*</span> manhattan_distance(matched_order[<span class="dv">1</span>][:<span class="dv">2</span>], matched_order[<span class="dv">3</span>])  </span>
+<span id="cb8-150"><a href="#cb8-150" aria-hidden="true" tabindex="-1"></a>                            </span>
+<span id="cb8-151"><a href="#cb8-151" aria-hidden="true" tabindex="-1"></a>                            transition <span class="op">=</span> [[matched_driver[<span class="dv">1</span>][<span class="dv">0</span>], matched_driver[<span class="dv">1</span>][<span class="dv">1</span>], t], [<span class="dv">1</span>, matched_order[<span class="dv">1</span>][:<span class="dv">2</span>], matched_order[<span class="dv">3</span>]], reward, [matched_order[<span class="dv">3</span>][<span class="dv">0</span>], matched_order[<span class="dv">3</span>][<span class="dv">1</span>], t <span class="op">+</span> delta_t]]</span>
+<span id="cb8-152"><a href="#cb8-152" aria-hidden="true" tabindex="-1"></a>                            transition_data.append(transition.copy())</span>
+<span id="cb8-153"><a href="#cb8-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-154"><a href="#cb8-154" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># Set transition data for unmatched drivers </span></span>
+<span id="cb8-155"><a href="#cb8-155" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">for</span> i, unmatched_driver <span class="kw">in</span> <span class="bu">enumerate</span>(available_drivers):</span>
+<span id="cb8-156"><a href="#cb8-156" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">if</span> i <span class="kw">not</span> <span class="kw">in</span> matched_driver_ind:</span>
+<span id="cb8-157"><a href="#cb8-157" aria-hidden="true" tabindex="-1"></a>                            transition <span class="op">=</span> [[unmatched_driver[<span class="dv">1</span>][<span class="dv">0</span>], unmatched_driver[<span class="dv">1</span>][<span class="dv">1</span>], t],[<span class="dv">0</span>],<span class="dv">0</span>,[unmatched_driver[<span class="dv">1</span>][<span class="dv">0</span>], unmatched_driver[<span class="dv">1</span>][<span class="dv">1</span>], t <span class="op">+</span> <span class="dv">1</span>]]</span>
+<span id="cb8-158"><a href="#cb8-158" aria-hidden="true" tabindex="-1"></a>                            transition_data.append(transition.copy())</span>
+<span id="cb8-159"><a href="#cb8-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-160"><a href="#cb8-160" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> episode <span class="op">&gt;=</span> NUM_INDEPENDENT_RUNS: </span>
+<span id="cb8-161"><a href="#cb8-161" aria-hidden="true" tabindex="-1"></a>                    number_of_served_orders <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb8-162"><a href="#cb8-162" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(orders)):</span>
+<span id="cb8-163"><a href="#cb8-163" aria-hidden="true" tabindex="-1"></a>                        number_of_served_orders <span class="op">+=</span> orders[i][<span class="dv">0</span>]</span>
+<span id="cb8-164"><a href="#cb8-164" aria-hidden="true" tabindex="-1"></a>                        </span>
+<span id="cb8-165"><a href="#cb8-165" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># calculate the completion rate</span></span>
+<span id="cb8-166"><a href="#cb8-166" aria-hidden="true" tabindex="-1"></a>                    ratio_served <span class="op">=</span> <span class="bu">float</span>(number_of_served_orders)<span class="op">/</span> NUMBER_OF_ORDERS</span>
+<span id="cb8-167"><a href="#cb8-167" aria-hidden="true" tabindex="-1"></a>                    benchmark_data[number_of_drivers_ind, method_ind, :,  episode <span class="op">-</span> NUM_INDEPENDENT_RUNS] <span class="op">=</span> [ratio_served, np.mean(np.array(order_driver_distances))]</span>
+<span id="cb8-168"><a href="#cb8-168" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">if</span> method <span class="op">==</span> <span class="st">'mdp'</span> <span class="kw">and</span> episode <span class="op">==</span> NUM_EPISODES <span class="op">-</span> <span class="dv">1</span>:</span>
+<span id="cb8-169"><a href="#cb8-169" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># Used for visualising value functions</span></span>
+<span id="cb8-170"><a href="#cb8-170" aria-hidden="true" tabindex="-1"></a>                        stored_mdp_V_functions.append(V.copy()) </span>
+<span id="cb8-171"><a href="#cb8-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-172"><a href="#cb8-172" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(benchmark_data) </span>
+<span id="cb8-173"><a href="#cb8-173" aria-hidden="true" tabindex="-1"></a>    plot_benchmarks(benchmark_data, number_of_drivers_list, method_list, measurement_keypoints) </span>
+<span id="cb8-174"><a href="#cb8-174" aria-hidden="true" tabindex="-1"></a>    plot_value_functions(stored_mdp_V_functions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Here are the plotting functions:</p>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_benchmarks(benchmark_data, number_of_drivers_list, method_list, measurement_keypoints):</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, benchmark_data.shape[<span class="dv">2</span>]) </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    benchmark_mean <span class="op">=</span> np.mean(benchmark_data, axis <span class="op">=</span> <span class="dv">3</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    benchmark_std <span class="op">=</span> np.std(benchmark_data, axis <span class="op">=</span> <span class="dv">3</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    barWidth <span class="op">=</span> <span class="fl">0.25</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    barColors <span class="op">=</span> [<span class="st">'tab:red'</span>, <span class="st">'tab:green'</span>, <span class="st">'tab:blue'</span>]</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> idx, ax <span class="kw">in</span> <span class="bu">enumerate</span>(axes):</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>        data_mean <span class="op">=</span> benchmark_mean[:,:,idx] </span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>        data_std <span class="op">=</span> benchmark_std[:,:,idx]</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>        <span class="co"># The x position of bars</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>        x_pos <span class="op">=</span> []</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>        r1 <span class="op">=</span> np.arange(<span class="bu">len</span>(number_of_drivers_list))</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(method_list)): </span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>            x_pos.append([x <span class="op">+</span> i <span class="op">*</span> barWidth <span class="cf">for</span> x <span class="kw">in</span> r1]) </span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> method_idx, method <span class="kw">in</span> <span class="bu">enumerate</span>(method_list):</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>            ax.bar(x_pos[method_idx], data_mean[:,method_idx], width <span class="op">=</span> barWidth, color <span class="op">=</span> barColors[method_idx], yerr<span class="op">=</span>data_std[:,method_idx], capsize<span class="op">=</span><span class="dv">7</span>, label<span class="op">=</span>method)</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>        <span class="co"># general layout</span></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>        ax.set_xticks([r <span class="op">+</span> barWidth <span class="cf">for</span> r <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(number_of_drivers_list))])</span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>        ax.set_xticklabels(number_of_drivers_list)</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>        ax.set_title(measurement_keypoints[idx]) </span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    handles, labels <span class="op">=</span> ax.get_legend_handles_labels()</span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    fig.legend(handles, labels, loc<span class="op">=</span><span class="st">'upper center'</span>, ncol<span class="op">=</span><span class="bu">len</span>(method_list)) </span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Show graphic</span></span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>    plt.show() </span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_value_functions(value_functions):</span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>    time_step <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>    fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">8</span>))</span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> idx <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(value_functions)):</span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>        ax <span class="op">=</span> fig.add_subplot(<span class="dv">1</span>,<span class="bu">len</span>(value_functions),idx<span class="op">+</span><span class="dv">1</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>        plot_values <span class="op">=</span> value_functions[idx][:,:,time_step]</span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>        <span class="co"># print("Value function is ", plot_values)</span></span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>        X <span class="op">=</span> np.arange(NUMBER_OF_GRID_TILES_X)</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>        Y <span class="op">=</span> np.arange(NUMBER_OF_GRID_TILES_Y)</span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>        X, Y <span class="op">=</span> np.meshgrid(X,Y)</span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>        ax.plot_surface(X, Y, plot_values, cmap<span class="op">=</span>plt.cm.coolwarm, linewidth<span class="op">=</span><span class="dv">1</span>, rstride<span class="op">=</span><span class="dv">1</span>, cstride<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a>        ax.set_xlabel(<span class="st">"X"</span>)</span>
+<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>        ax.set_ylabel(<span class="st">"Y"</span>)</span>
+<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a>        ax.set_zlabel(<span class="st">"Value"</span>)</span>
+<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a>    plt.suptitle(<span class="st">"Values at time </span><span class="sc">{}</span><span class="st">"</span>.<span class="bu">format</span>(time_step))</span>
+<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a>    plt.show()    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Let us run the algorithm. It takes more than 10 minutes to finish running the algorithm.</p>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>real_time_order_dispatch_algorithm()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[[[0.55       0.52       0.52       0.53       0.53       0.42
+    0.5        0.5        0.53       0.6        0.39       0.57
+    0.47       0.52       0.5        0.48       0.58       0.49
+    0.57       0.42       0.52       0.46       0.46       0.53
+    0.53       0.48       0.46       0.48       0.47       0.52
+    0.49       0.5        0.53       0.46       0.52       0.52
+    0.43       0.52       0.53       0.48       0.54       0.46
+    0.58       0.41       0.48       0.34       0.5        0.48
+    0.42       0.45      ]
+   [0.92727273 1.36538462 1.01923077 1.16981132 1.26415094 1.42857143
+    1.         1.24       1.37735849 1.23333333 1.28205128 1.33333333
+    1.06382979 1.21153846 1.08       1.14583333 1.12068966 1.18367347
+    1.22807018 1.11904762 1.03846154 1.26086957 1.2826087  1.33962264
+    1.22641509 1.02083333 1.43478261 1.22916667 1.19148936 1.28846154
+    1.18367347 1.3        1.11320755 1.2826087  1.21153846 1.11538462
+    1.23255814 1.17307692 1.18867925 1.25       1.03703704 1.2826087
+    1.31034483 1.12195122 1.22916667 1.35294118 1.16       1.10416667
+    1.21428571 1.06666667]]
+
+  [[0.44       0.52       0.54       0.41       0.44       0.49
+    0.49       0.51       0.54       0.5        0.49       0.37
+    0.45       0.46       0.49       0.53       0.54       0.55
+    0.49       0.39       0.51       0.49       0.5        0.43
+    0.52       0.5        0.49       0.47       0.42       0.36
+    0.43       0.44       0.48       0.46       0.47       0.47
+    0.48       0.45       0.43       0.46       0.48       0.47
+    0.47       0.43       0.39       0.49       0.45       0.47
+    0.51       0.48      ]
+   [1.59090909 1.53846154 1.55555556 1.58536585 1.59090909 1.73469388
+    1.51020408 1.60784314 1.48148148 1.58       1.65306122 1.62162162
+    1.57777778 1.58695652 1.55102041 1.64150943 1.64814815 1.63636364
+    1.69387755 1.66666667 1.62745098 1.57142857 1.76       1.55813953
+    1.59615385 1.68       1.75510204 1.68085106 1.57142857 1.55555556
+    1.48837209 1.65909091 1.625      1.67391304 1.55319149 1.68085106
+    1.5625     1.53333333 1.6744186  1.60869565 1.70833333 1.59574468
+    1.72340426 1.58139535 1.58974359 1.69387755 1.75555556 1.53191489
+    1.45098039 1.52083333]]
+
+  [[0.53       0.47       0.48       0.56       0.48       0.49
+    0.49       0.52       0.51       0.48       0.49       0.54
+    0.53       0.53       0.55       0.47       0.52       0.52
+    0.49       0.52       0.51       0.49       0.46       0.49
+    0.48       0.51       0.54       0.52       0.47       0.52
+    0.57       0.42       0.34       0.48       0.48       0.45
+    0.49       0.5        0.53       0.49       0.54       0.49
+    0.48       0.48       0.5        0.52       0.46       0.5
+    0.55       0.53      ]
+   [1.35849057 1.4893617  1.5625     1.30357143 1.5        1.34693878
+    1.48979592 1.38461538 1.52941176 1.45833333 1.59183673 1.51851852
+    1.43396226 1.47169811 1.43636364 1.46808511 1.55769231 1.55769231
+    1.40816327 1.34615385 1.43137255 1.65306122 1.45652174 1.6122449
+    1.5        1.60784314 1.37037037 1.57692308 1.5106383  1.53846154
+    1.66666667 1.54761905 1.58823529 1.58333333 1.4375     1.44444444
+    1.48979592 1.44       1.24528302 1.34693878 1.37037037 1.63265306
+    1.52083333 1.35416667 1.42       1.51923077 1.5        1.44
+    1.45454545 1.50943396]]]
+
+
+ [[[0.71       0.76       0.73       0.69       0.67       0.71
+    0.77       0.72       0.78       0.65       0.78       0.75
+    0.7        0.82       0.72       0.78       0.79       0.72
+    0.76       0.86       0.69       0.82       0.67       0.61
+    0.79       0.82       0.77       0.79       0.82       0.83
+    0.84       0.72       0.71       0.76       0.76       0.68
+    0.77       0.83       0.72       0.83       0.8        0.8
+    0.78       0.74       0.76       0.67       0.8        0.8
+    0.68       0.75      ]
+   [1.11267606 1.11842105 1.09589041 1.33333333 0.92537313 1.04225352
+    1.         1.13888889 1.17948718 1.07692308 1.06410256 1.16
+    1.18571429 1.03658537 1.125      1.02564103 1.01265823 1.11111111
+    1.02631579 1.20930233 1.14492754 1.08536585 1.13432836 0.96721311
+    0.98734177 0.96341463 1.12987013 0.94936709 1.12195122 1.14457831
+    1.03571429 1.16666667 1.05633803 1.         1.03947368 1.11764706
+    0.97402597 1.09638554 1.19444444 1.02409639 1.025      1.05
+    0.98717949 1.06756757 1.10526316 1.31343284 1.0375     1.175
+    0.98529412 0.96      ]]
+
+  [[0.82       0.8        0.75       0.82       0.65       0.76
+    0.79       0.74       0.66       0.79       0.72       0.81
+    0.76       0.66       0.72       0.84       0.72       0.67
+    0.68       0.73       0.82       0.73       0.71       0.83
+    0.86       0.72       0.84       0.66       0.7        0.83
+    0.76       0.7        0.67       0.79       0.73       0.86
+    0.77       0.75       0.83       0.75       0.78       0.82
+    0.73       0.78       0.77       0.78       0.81       0.84
+    0.76       0.76      ]
+   [1.7804878  1.7625     1.68       1.59756098 1.6        1.61842105
+    1.7721519  1.59459459 1.68181818 1.70886076 1.68055556 1.66666667
+    1.68421053 1.86363636 1.70833333 1.54761905 1.63888889 1.65671642
+    1.64705882 1.71232877 1.63414634 1.68493151 1.6056338  1.72289157
+    1.72093023 1.65277778 1.57142857 1.68181818 1.71428571 1.6746988
+    1.67105263 1.58571429 1.76119403 1.72151899 1.75342466 1.61627907
+    1.68831169 1.66666667 1.74698795 1.70666667 1.70512821 1.6097561
+    1.65753425 1.53846154 1.74025974 1.6025641  1.60493827 1.5952381
+    1.68421053 1.65789474]]
+
+  [[0.69       0.82       0.74       0.81       0.7        0.73
+    0.71       0.74       0.72       0.72       0.8        0.69
+    0.81       0.81       0.63       0.79       0.73       0.8
+    0.83       0.7        0.77       0.76       0.77       0.78
+    0.75       0.73       0.79       0.84       0.84       0.75
+    0.82       0.79       0.79       0.84       0.7        0.89
+    0.76       0.83       0.81       0.81       0.76       0.71
+    0.82       0.77       0.78       0.75       0.64       0.83
+    0.84       0.71      ]
+   [1.47826087 1.46341463 1.43243243 1.51851852 1.4        1.57534247
+    1.26760563 1.52702703 1.48611111 1.41666667 1.5625     1.44927536
+    1.50617284 1.54320988 1.41269841 1.44303797 1.52054795 1.5875
+    1.43373494 1.55714286 1.4025974  1.57894737 1.46753247 1.51282051
+    1.34666667 1.52054795 1.39240506 1.32142857 1.38095238 1.44
+    1.42682927 1.48101266 1.46835443 1.47619048 1.61428571 1.48314607
+    1.57894737 1.4939759  1.41975309 1.5308642  1.39473684 1.56338028
+    1.35365854 1.37662338 1.6025641  1.38666667 1.59375    1.36144578
+    1.46428571 1.42253521]]]
+
+
+ [[[0.91       0.86       0.9        0.77       0.92       0.98
+    0.84       0.98       0.83       1.         0.91       0.98
+    0.91       0.85       0.9        0.96       0.88       0.97
+    0.89       0.91       0.98       0.85       0.75       0.83
+    1.         0.89       0.86       0.93       0.98       0.85
+    0.97       0.93       0.81       0.87       0.88       0.96
+    0.87       0.95       0.97       0.97       0.9        0.91
+    0.79       0.92       0.96       0.89       0.83       0.86
+    0.84       0.89      ]
+   [0.94505495 1.20930233 0.84444444 0.84415584 0.81521739 0.70408163
+    0.97619048 0.86734694 0.75903614 0.76       0.91208791 1.
+    0.83516484 1.03529412 1.         0.95833333 0.93181818 0.79381443
+    1.03370787 0.83516484 0.89795918 0.81176471 0.90666667 0.93975904
+    0.86       0.91011236 0.89534884 0.89247312 0.91836735 0.96470588
+    0.79381443 0.76344086 0.87654321 0.87356322 0.70454545 0.71875
+    0.83908046 0.94736842 0.92783505 0.94845361 0.93333333 0.85714286
+    0.98734177 0.91304348 0.85416667 0.93258427 0.95180723 0.86046512
+    0.92857143 1.07865169]]
+
+  [[0.88       0.92       0.89       0.89       0.9        0.97
+    0.96       0.92       0.93       0.87       0.87       0.89
+    0.83       0.92       0.95       0.86       0.92       0.94
+    0.88       0.92       0.89       0.98       0.86       0.94
+    0.98       0.98       0.87       0.91       0.9        0.93
+    0.91       0.91       0.88       0.86       0.82       0.87
+    0.84       0.87       0.87       0.88       0.78       0.91
+    1.         0.91       0.95       0.87       0.99       0.81
+    0.94       0.9       ]
+   [1.78409091 1.75       1.87640449 1.70786517 1.8        1.77319588
+    1.8125     1.69565217 1.7311828  1.71264368 1.81609195 1.73033708
+    1.77108434 1.7173913  1.72631579 1.70930233 1.69565217 1.72340426
+    1.71590909 1.7173913  1.70786517 1.74489796 1.80232558 1.73404255
+    1.70408163 1.68367347 1.71264368 1.69230769 1.75555556 1.72043011
+    1.7032967  1.74725275 1.77272727 1.6744186  1.75609756 1.70114943
+    1.73809524 1.72413793 1.63218391 1.72727273 1.78205128 1.82417582
+    1.61       1.65934066 1.67368421 1.73563218 1.72727273 1.71604938
+    1.74468085 1.8       ]]
+
+  [[0.93       0.91       0.98       0.96       0.96       0.99
+    0.9        0.99       0.94       0.91       1.         0.98
+    0.88       0.97       0.83       0.96       0.9        0.97
+    0.92       1.         0.97       0.96       0.95       1.
+    0.99       0.93       0.98       0.79       1.         0.89
+    0.93       0.97       0.91       0.94       0.84       0.89
+    0.94       0.85       0.93       1.         0.95       0.97
+    0.93       0.95       0.99       0.91       0.86       0.92
+    0.91       0.9       ]
+   [1.53763441 1.63736264 1.43877551 1.55208333 1.47916667 1.4040404
+    1.42222222 1.51515152 1.4787234  1.67032967 1.4        1.41836735
+    1.43181818 1.54639175 1.56626506 1.51041667 1.5        1.58762887
+    1.57608696 1.29       1.5257732  1.51041667 1.61052632 1.51
+    1.33333333 1.53763441 1.47959184 1.56962025 1.27       1.53932584
+    1.5483871  1.34020619 1.59340659 1.54255319 1.47619048 1.64044944
+    1.58510638 1.44705882 1.43010753 1.45       1.31578947 1.35051546
+    1.55913978 1.53684211 1.44444444 1.61538462 1.48837209 1.54347826
+    1.38461538 1.58888889]]]]</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Seminar7_files/figure-html/cell-11-output-2.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Seminar7_files/figure-html/cell-11-output-3.png" class="img-fluid"></p>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

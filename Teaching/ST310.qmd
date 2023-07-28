@@ -4,3 +4,39 @@ format: html
 ---
 
 {{< include /support/_margins_Teaching.qmd >}}
+
+
+<h3>Course content <small><small><small>(Official)</small></small></small></h3>
+
+The primary focus of this course is on the core machine learning techniques in the context of high-dimensional or large datasets (i.e. big data). The first part of the course covers elementary and important statistical methods including nearest neighbours, linear regression, logistic regression, regularisation, cross-validation, and variable selection. The second part of the course deals with more advanced machine learning methods including regression and classification trees, random forests, bagging, boosting, deep neural networks, k-means clustering and hierarchical clustering. The course will also introduce causal inference motivated by analogy between double machine learning and two-stage least squares. All the topics will be delivered using illustrative real data examples. Students will also gain hands-on experience using R or Python (programming languages and software environments for data analysis, computing and visualisation).
+
+<h3>Material <small><small><small>(Official and mine)</small></small></small></h3>
+
+The following material should help the student preparing for this course. It contains both lecture notes, problem sets, and some solutions prepared by me.
+
+<h4>Lecture Notes and Assignments</h4>
+
+| Weeks Covered | Author      | Link                                             |
+|----------------------|-------------------------|-------------------------|
+| 1-2           | Peter Allen | [link](../Documents_files/MA210/NotesEx1-2.pdf)  |
+| 3-4           | Peter Allen | [link](../Documents_files/MA210/NotesEx3-4.pdf)  |
+| 5-6           | Peter Allen | [link](../Documents_files/MA210/NotesEx5-6.pdf)  |
+| 7-8           | Peter Allen | [link](../Documents_files/MA210/NotesEx7-8.pdf)  |
+| 9-10          | Peter Allen | [link](../Documents_files/MA210/NotesEx9-10.pdf) |
+
+<h4>My solutions</h4>
+
+The text of the exercises is in the links above.
+
+| Week   | Solution                                                             |
+|----------------------------------|--------------------------------------|
+| Week 1 | [My solutions](../Documents_files/MA210/MA210_Class1.compressed.pdf) |
+| Week 2 | [My solutions](../Documents_files/MA210/MA210_Class2.compressed.pdf) |
+| Week 3 | [My solutions](../Documents_files/MA210/MA210_Class3.compressed.pdf) |
+| Week 4 | [My solutions](../Documents_files/MA210/MA210_Class4.compressed.pdf) |
+| Week 5 | [My solutions](../Documents_files/MA210/MA210_Class5.compressed.pdf) |
+| Week 6 | [My solutions](../Documents_files/MA210/MA210_Class6.compressed.pdf) |
+| Week 7 | [My solutions](../Documents_files/MA210/MA210_Class7.compressed.pdf) |
+| Week 8 | [My solutions](../Documents_files/MA210/MA210_Class8.compressed.pdf) |
+| Week 9 | [My solutions](../Documents_files/MA210/MA210_Class9.compressed.pdf) |
+

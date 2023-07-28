@@ -20,7 +20,7 @@ Amongst the things I like: Books, Movies, Cooking.
 | Title | Author  |  Status | Compl. on |
 |---------------|---------------|---------------|---------------|
 | The Remains of the Day  | Kazuo Ishiguro  | ![](../images/50.png){width="0.8cm"}  | |
-| The Return of the King | J.R.R. Tolkien  | ![](../images/100.png){width="0.8cm"}  | |
+| The Return of the King | J.R.R. Tolkien  | ![](../images/100.png){width="0.8cm"}  | Jul '23 |
 | Swimming in the Dark  | Tomasz Jedrowski  | ![](../images/100.png){width="0.8cm"}  |  Jul '23 |
 | The Two Towers | J.R.R. Tolkien  | ![](../images/100.png){width="0.8cm"}  | Jun '23 |
 | The Fellowship of the Ring | J.R.R. Tolkien  | ![](../images/100.png){width="0.8cm"}  | Jun '23 |
