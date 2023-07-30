@@ -4,3 +4,29 @@ format: html
 ---
 
 {{< include /support/_margins_Teaching.qmd >}}
+
+
+<h3>Course content <small><small><small>(Official)</small></small></small></h3>
+
+- Net Present Value technique,
+- Introduction to portfolio theory,
+- The Capital Asset Pricing Model (CAPM),
+- Stock market efficiency,
+- Forward and futures contracts, option pricing,
+- Investment decisions and the significance of real options,
+- Capital structure and dividend decisions,
+- Capital restructuring: Initial Public Offering.
+
+
+<h3>Course material <small><small><small>(Official)</small></small></small></h3>
+
+I did not create the following material. The lectures were presented by Professors Ashwini Agrawal and Linyan Zhu. My role was simply to present the solution to exercises in class. 
+
+| Day   | Material | Assignment | Solution     |
+|----------|--------------|----------|--------------|
+| Day 1  | [Slides](../Documents_files/FM250/Lecture1.pdf)  |  [Problem set 1](../Documents_files/FM250/Assignment1.pdf) | [Solutions](../Documents_files/FM250/Solution1.pdf) |
+| Day 2  | [Slides](../Documents_files/FM250/Lecture2.pdf)  |  [Problem set 2](../Documents_files/FM250/Assignment2.pdf) | [Solutions](../Documents_files/FM250/Solution2.pdf) |
+| Day 3  | [Slides](../Documents_files/FM250/Lecture3.pdf)  |  [Problem set 3](../Documents_files/FM250/Assignment3.pdf) | [Solutions](../Documents_files/FM250/Solution3.pdf) |
+| Day 4  | [Slides](../Documents_files/FM250/Lecture4.pdf)  |  [Problem set 4](../Documents_files/FM250/Assignment4.pdf) | [Solutions](../Documents_files/FM250/Solution4.pdf) |
+| Day 5  | [Slides](../Documents_files/FM250/Lecture5.pdf)  |  [Problem set 5](../Documents_files/FM250/Assignment5.pdf) | [Solutions](../Documents_files/FM250/Solution5.pdf) |
+| Day 6  | [Slides](../Documents_files/FM250/Lecture6.pdf)  |  [Problem set 6](../Documents_files/FM250/Assignment6.pdf) | [Solutions](../Documents_files/FM250/Solution6.pdf) |

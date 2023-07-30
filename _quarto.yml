@@ -13,6 +13,27 @@ website:
     contents:
       - href: index.qmd
         text: Homepage
+      - section: "Teaching"
+        href: Teaching/Teaching.qmd
+        contents:
+          - href: Teaching/FM250.qmd
+            text: FM250
+          - href: Teaching/MA102_MA103.qmd
+            text: MA102/MA103
+          - href: Teaching/MA210.qmd
+            text: MA210
+          - href: Teaching/MA423.qmd
+            text: MA423
+          - href: Teaching/ME200.qmd
+            text: ME200
+          - href: Teaching/ME306.qmd
+            text: ME306
+          - href: Teaching/ST310.qmd
+            text: ST310
+          - href: Teaching/ST455.qmd
+            text: ST455
+          - href: Teaching/Pre-sessionals.qmd
+            text: Pre-sessionals (MiM/GMiM)
       - section: "Learning"
         href: Learning/Learning.qmd
         contents:

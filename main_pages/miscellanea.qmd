@@ -17,52 +17,37 @@ Amongst the things I like: Books, Movies, Cooking.
 
 <h1>Books <small><small><small><small><small> (Since Jan. 2023)</small></small></small></small></small></h1>
 
-| Title | Author  |  Status | Compl. on |
-|---------------|---------------|---------------|---------------|
-| The Remains of the Day  | Kazuo Ishiguro  | ![](../images/50.png){width="0.8cm"}  | |
-| The Return of the King | J.R.R. Tolkien  | ![](../images/100.png){width="0.8cm"}  | Jul '23 |
-| Swimming in the Dark  | Tomasz Jedrowski  | ![](../images/100.png){width="0.8cm"}  |  Jul '23 |
-| The Two Towers | J.R.R. Tolkien  | ![](../images/100.png){width="0.8cm"}  | Jun '23 |
-| The Fellowship of the Ring | J.R.R. Tolkien  | ![](../images/100.png){width="0.8cm"}  | Jun '23 |
-| Il Bar sotto il Mare  | Stefano Benni  | ![](../images/100.png){width="0.8cm"}  | May '23 |
-| 2001: A Space Odyssey  | Arthur C. Clarke  | ![](../images/100.png){width="0.8cm"}  | May '23 |
-| Never let Me go  | Kazuo Ishiguro  | ![](../images/100.png){width="0.8cm"}  | May '23 |
-| Nocturnes  | Kazuo Ishiguro  | ![](../images/100.png){width="0.8cm"}  | May '23 |
-| The Time Machine  | H.G. Wells  | ![](../images/100.png){width="0.8cm"}  | May '23 |
-| A little Life | Hanya Yanagihara  | ![](../images/100.png){width="0.8cm"}  | May '23 |
-| A Room with a View  | E.M. Forster  | ![](../images/100.png){width="0.8cm"}  | Apr '23 |
-|Drive your Plow over the Bones of the Dead | Olga Tokarczuk | ![](../images/100.png){width="0.8cm"}| Mar '23 |
+| Title                                      | Author           | Status                                | Compl. on |
+|------------------|------------------|------------------|------------------|
+| The Pastures of Heaven     | John Steinbeck   | ![](../images/50.png){width="0.8cm"} |          |
+| The Remains of the Day                     | Kazuo Ishiguro   | ![](../images/100.png){width="0.8cm"} | Jul '23         |
+| The Return of the King                     | J.R.R. Tolkien   | ![](../images/100.png){width="0.8cm"} | Jul '23   |
+| Swimming in the Dark                       | Tomasz Jedrowski | ![](../images/100.png){width="0.8cm"} | Jul '23   |
+| The Two Towers                             | J.R.R. Tolkien   | ![](../images/100.png){width="0.8cm"} | Jun '23   |
+| The Fellowship of the Ring                 | J.R.R. Tolkien   | ![](../images/100.png){width="0.8cm"} | Jun '23   |
+| Il Bar sotto il Mare                       | Stefano Benni    | ![](../images/100.png){width="0.8cm"} | May '23   |
+| 2001: A Space Odyssey                      | Arthur C. Clarke | ![](../images/100.png){width="0.8cm"} | May '23   |
+| Never let Me go                            | Kazuo Ishiguro   | ![](../images/100.png){width="0.8cm"} | May '23   |
+| Nocturnes                                  | Kazuo Ishiguro   | ![](../images/100.png){width="0.8cm"} | May '23   |
+| The Time Machine                           | H.G. Wells       | ![](../images/100.png){width="0.8cm"} | May '23   |
+| A little Life                              | Hanya Yanagihara | ![](../images/100.png){width="0.8cm"} | May '23   |
+| A Room with a View                         | E.M. Forster     | ![](../images/100.png){width="0.8cm"} | Apr '23   |
+| Drive your Plow over the Bones of the Dead | Olga Tokarczuk   | ![](../images/100.png){width="0.8cm"} | Mar '23   |
+
 : {.striped .hover tbl-colwidths="\[50,30,10, 20\]"}
 
 <h1>Books<small><small><small><small><small>, Next up (Suggestions appreciated)</small></small></small></small></small></h1>
-| Title | Author  | 
-|---------------|---------------|
-|  To the Lighthouse | Virginia Woolf |
-| Atonement | Ian McEwan |
-| The Sense of an Ending | Julian Barnes |
-| Howards End | E.M. Forster |
-| Dancing Paradiso | Stefano Benni |
-| Blues in Sedici | Stefano Benni |
-| War of the Worlds | H. G. Wells |
-| Sphere  | Michael Crichton  |
-| The Line of Beauty | Alan Hollinghurst |
+
+| Title                  | Author            |
+|------------------------|-------------------|
+| To the Lighthouse      | Virginia Woolf    |
+| Atonement              | Ian McEwan        |
+| The Sense of an Ending | Julian Barnes     |
+| Howards End            | E.M. Forster      |
+| Dancing Paradiso       | Stefano Benni     |
+| Blues in Sedici        | Stefano Benni     |
+| War of the Worlds      | H. G. Wells       |
+| Sphere                 | Michael Crichton  |
+| The Line of Beauty     | Alan Hollinghurst |
+
 : {.striped .hover tbl-colwidths="\[60,40\]"}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

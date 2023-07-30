@@ -24,7 +24,7 @@ format: html
 
 I did not write the following solutions. My role was simply to present them in class. The text of the exercises is in the link above.
 
-| Week   | Solution                                                            |
+| Day   | Solution                                                            |
 |----------------------------------|--------------------------------------|
 | Day 1  | [Solutions](../Documents_files/ME200/Solutions_Assignment_1.ipynb)  |
 | Day 2  | [Solutions](../Documents_files/ME200/Solutions_Assignment_2.ipynb)  |

@@ -26,9 +26,9 @@ The following material should help the student preparing for this course. It con
 | Week    | Problem set                                       | Solution                                                              |
 |----------------------|-------------------------|-------------------------|
 | Week 1  | [Assignment 1](../Documents_files/MA103/Ex1.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class1.compressed.pdf)  |
-| Week 2  | [Assignment 1](../Documents_files/MA103/Ex2.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class2.compressed.pdf)  |
-| Week 3  | [Assignment 1](../Documents_files/MA103/Ex3.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class3.compressed.pdf)  |
-| Week 4  | [Assignment 1](../Documents_files/MA103/Ex4.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class4.compressed.pdf)  |
-| Week 5  | [Assignment 1](../Documents_files/MA103/Ex5.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class5.compressed.pdf)  |
-| Week 7  | [Assignment 1](../Documents_files/MA103/Ex7.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class7.compressed.pdf)  |
-| Week 10 | [Assignment 1](../Documents_files/MA103/Ex10.pdf) | [My solutions](../Documents_files/MA103/MA103_Class10.compressed.pdf) |
+| Week 2  | [Assignment 2](../Documents_files/MA103/Ex2.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class2.compressed.pdf)  |
+| Week 3  | [Assignment 3](../Documents_files/MA103/Ex3.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class3.compressed.pdf)  |
+| Week 4  | [Assignment 4](../Documents_files/MA103/Ex4.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class4.compressed.pdf)  |
+| Week 5  | [Assignment 5](../Documents_files/MA103/Ex5.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class5.compressed.pdf)  |
+| Week 7  | [Assignment 7](../Documents_files/MA103/Ex7.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class7.compressed.pdf)  |
+| Week 10 | [Assignment 10](../Documents_files/MA103/Ex10.pdf) | [My solutions](../Documents_files/MA103/MA103_Class10.compressed.pdf) |
