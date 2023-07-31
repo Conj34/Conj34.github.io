@@ -1,9 +1,10 @@
 ::: column-margin
 ::: callout-note
 ## Contact
-- Name: Domenico Mergoni
-- Email: d.mergoni -at- lse.ac.uk
-- Work: [London School of Economics](https://www.lse.ac.uk/mathematics)
+
+-   Name: Domenico Mergoni
+-   Email: d.mergoni -at- lse.ac.uk
+-   Work: [London School of Economics](https://www.lse.ac.uk/mathematics)
 :::
 :::
 
@@ -23,6 +24,6 @@ Internet is a great resource. Use it. Some resources I like:
 ::: callout-warning
 ## Beware, the Crime!
 
-It is illegal to download articles and books from pages like [LibGen](http://libgen.li/), [Sci-hub](https://sci-hub.se/) or from Telegram bots like [\@scihubot](http://t.me/scihubot). Also, DO NOT use VPN to protect your freedom of education ([Opera](https://www.opera.com) offers a free VPN).
+It is illegal to download articles and books from pages like [LibGen](http://libgen.is/), [Sci-hub](https://sci-hub.se/) or from Telegram bots like [\@scihubot](http://t.me/scihubot). Also, DO NOT use VPN to protect your freedom of education ([Opera](https://www.opera.com) offers a free VPN).
 :::
 :::

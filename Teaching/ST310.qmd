@@ -12,7 +12,7 @@ The primary focus of this course is on the core machine learning techniques in t
 
 
 <h3>Material and solutions</h3>
-I did not write the following material. My role was simply to present the content of the seminars and the solutions in class.
+I did not write the following material, which was prepared by Joshua Loftus. My role was simply to present the content of the seminars and the solutions in class.
 
 +------------+----------------------------------------------------------------------------+
 | Week       | Seminar Material                                                           |
