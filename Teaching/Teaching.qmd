@@ -7,18 +7,17 @@ format: html
 
 For a quick overview of my teaching, you can consult the following table.
 
-| Code     | Name                                           | Year(s)        | Department    | Main Lecturer    |
-|------------------|------------------|------------------|------------------|------------------|
-| FM250  | Finance           | 2023 | Finance | Ashwini Agrawal      |
-| MA102/3  | Introduction to Abstract Mathematics           | 2020/21; 21/22 | Maths | Peter Allen      |
-| MA210    | Discrete Mathematics                           | 2021/22        | Maths | Peter Allen      |
-| MA423    | Fundamentals of Operations Research            | 2021/22        | Maths | Ahmad Abdi       |
-| ME200    | Computational Methods in Financial Mathematics | 2023           | Maths | Luitgard Veraart |
-| ME306    | Real Analysis                                  | 2021           | Maths | Johannes Ruf     |
-| ST310    | Machine Learning                               | 2022/23        | Stats | Joshua Loftus    |
-| ST455    | Reinforcement Learning                         | 2022/23        | Stats | Chengchun Shi    |
-| -- -- -- | MiM/GMiM pre-sessionals                        | 2022; 23       | Manag. | Myself           |
-
+| Code     | Name                                           | Year(s)        | Department | Main Lecturer    |
+|---------------|---------------|---------------|---------------|---------------|
+| MA102/3  | Introduction to Abstract Mathematics           | 2020/21; 21/22 | Maths      | Peter Allen      |
+| MA210    | Discrete Mathematics                           | 2021/22        | Maths      | Peter Allen      |
+| MA423    | Fundamentals of Operations Research            | 2021/22        | Maths      | Ahmad Abdi       |
+| ME200    | Computational Methods in Financial Mathematics | 2023           | Maths      | Luitgard Veraart |
+| ST310    | Machine Learning                               | 2022/23        | Stats      | Joshua Loftus    |
+| ST455    | Reinforcement Learning                         | 2022/23        | Stats      | Chengchun Shi    |
 : Courses taught {.striped .hover tbl-colwidths="\[10,40,20,10,20\]"}
+<!--| FM250    | Finance                                        | 2023           | Finance    | Ashwini Agrawal  |-->
+<!--| ME306    | Real Analysis                                  | 2021           | Maths      | Johannes Ruf     |-->
+<!--| -- -- -- | MiM/GMiM pre-sessionals                        | 2022; 23       | Manag.     | Myself           |-->
 
 For privacy reasons, I won't add my students' feedbacks in this page. If you are interested in additional information about my teaching, please contact me.
