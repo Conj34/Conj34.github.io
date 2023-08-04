@@ -43,6 +43,8 @@ website:
               contents:
               - href: Learning/Python/Useful/Arxiv.qmd
                 text: "Arxiv"
+              - href: Learning/Python/Useful/Greatest_authors.qmd
+                text: "Greatest Authors"
             - section: "Codeforces"
               contents:
               - section: "Easy"

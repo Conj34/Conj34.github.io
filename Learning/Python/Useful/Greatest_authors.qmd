@@ -3,6 +3,7 @@ title: "Greatest Authors"
 format: html
 code-annotations: below
 ---
+
 {{< include /support/_margins_Learning.qmd >}}
 
 I appreciate a lot [this project](https://thegreatestbooks.org) by Shane Sherman, which is an attempt to create a list of "best books" based on the compound information found on various highly accredited lists (there are obvious critiques, about western, white, male biases etc., but I don't think this is relevant in the context of this page). What I am going to do in this page is to have an idea of which authors have more works considered the best.
@@ -10,7 +11,7 @@ I appreciate a lot [this project](https://thegreatestbooks.org) by Shane Sherman
 One can proceed as follows: download the .csv file from the website of the [aforementioned project](https://thegreatestbooks.org). Modify the .csv file such that the first row reads:
 
 | Position | Title | Author | Year |
-| -------- | ----- | ------ | ---- |
+|----------|-------|--------|------|
 
 In the same folder where you saved the .csv file, you can create a .py file with the following code.
 
@@ -39,15 +40,17 @@ for i in range(N): #<6>
     print("These are the authors that have the most (at least "+str(Lower[i])+") publications\namongst the first "+str(splittings[i])+""" many "Best books" """)#<6>
     print(Final_list_authors[i].to_string()+"\n")#<6>
 ```
-1. Import the `pandas` library. Useful for statistics.
-2. Read the `.csv` file and save in a pandas array the column with header `Author` (this is why a modification of the file was necessary).
-3. We create 4 lists. The first analyses the first 100 books, the second the first 500 books and so on. `Partial_lists` is a list that contains in entry `i` a pandas list with the authors of the first `splittings[i]`-many books.
-4. We count the occurrencies in each of the partial lists.
-5. We select in each list `Partial_lists[i]` the first authors. These are the authors that have at least `Lower[i]` many books in that list. `Lower[i]` is choosen in such a way that the authors as as few as possible above `At_least`. So for example in the first list, if we set `Lower[0]=3` we would only obtain 5 authors, this is why we set `Lower[0]=2`. 
-6. Printing
+
+1.  Import the `pandas` library. Useful for statistics.
+2.  Read the `.csv` file and save in a pandas array the column with header `Author` (this is why a modification of the file was necessary).
+3.  We create 4 lists. The first analyses the first 100 books, the second the first 500 books and so on. `Partial_lists` is a list that contains in entry `i` a pandas list with the authors of the first `splittings[i]`-many books.
+4.  We count the occurrencies in each of the partial lists.
+5.  We select in each list `Partial_lists[i]` the first authors. These are the authors that have at least `Lower[i]` many books in that list. `Lower[i]` is choosen in such a way that the authors as as few as possible above `At_least`. So for example in the first list, if we set `Lower[0]=3` we would only obtain 5 authors, this is why we set `Lower[0]=2`.
+6.  Printing.
 
 The output is:
-```
+
+```         
 These are the authors that have the most (at least 2) publications
 amongst the first 100 many "Best books" 
 Ernest Hemingway      4
@@ -120,9 +123,7 @@ J M Coetzee             8
 Molière                 8
 Alice Munro             8
 ```
+
 Faulkner, Hemingway and Dickens are the only authors present in all 4 lists. Sheakerspeare appears in all the list with the exception of the first one, and has 1.5 times the second author (Faulkner and Dickens) books in the complete list, while Sophocles is also doing quite well. The only women appearing are Virginia Woold, Jane Austen, Edith Wharton, J.K. Rowling, Iris Murdoch, Margaret Atwood and Alice Munro; with Woolf and Austen being the only ones in the first list.
 
 ChatGPT is a mess, but it seems that the only author not born in Europe (including Russia) or US/Canada is Coetzee (South Africa). This seems to indicate that these lists are incredibly biased.
-
-
-
