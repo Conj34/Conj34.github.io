@@ -135,11 +135,11 @@ For more analysis, you can try to run this for a more complete print.
 ```{.python eval="FALSE" code-line-numbers="true"}
 for i in range(N):
     print("#############################################################################\nThese are the authors that have the most (at least "+str(Lower[i])+") publications\namongst the first "+str(splittings[i])+""" many "Best books"\n############################################################################# """)
-    for j in Final_list_authors[i].index:
+    for j, A in zip(Final_list_authors[i], Final_list_authors[i].index):
         print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-        print(j)
-        L=df[:splittings[i]][df[:splittings[i]]["Author"]==j]["Title"]
-        Num=df[:splittings[i]][df[:splittings[i]]["Author"]==j]["Number"]
+        print(A + " ("+str(j)+")")
+        L=df[:splittings[i]][df[:splittings[i]]["Author"]==A]["Title"]
+        Num=df[:splittings[i]][df[:splittings[i]]["Author"]==A]["Number"]
         Num=list(Num)
         T=list(L)
         for k in range(len(Num)):
@@ -158,7 +158,7 @@ These are the authors that have the most (at least 2) publications
 amongst the first 100 many "Best books"
 ############################################################################# 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Ernest Hemingway
+Ernest Hemingway (4)
 	 44 	 The Sun Also Rises 
 	 57 	 The Old Man and the Sea
 	 60 	 For Whom the Bell Tolls
@@ -166,7 +166,7 @@ Ernest Hemingway
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Franz Kafka
+Franz Kafka (4)
 	 33 	 The Trial
 	 61 	 The Complete Stories of Franz Kafka
 	 62 	 The Metamorphosis
@@ -174,7 +174,7 @@ Franz Kafka
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Fyodor Dostoyevsky
+Fyodor Dostoyevsky (4)
 	 13 	 The Brothers Karamazov 
 	 14 	 Crime and Punishment 
 	 54 	 The Idiot
@@ -182,76 +182,77 @@ Fyodor Dostoyevsky
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-William Faulkner
+William Faulkner (3)
 	 25 	 The Sound and the Fury
 	 30 	 Absalom, Absalom!
 	 67 	 As I Lay Dying
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Virginia Woolf
+Virginia Woolf (3)
 	 22 	 To the Lighthouse 
 	 38 	 Mrs. Dalloway 
 	 79 	 Orlando: A Biography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Vladimir Nabokov
+Vladimir Nabokov (2)
 	 12 	 Lolita 
 	 65 	 Pale Fire 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Sophocles
+Sophocles (2)
 	 51 	 Oedipus the King
 	 66 	 Antigone
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-James Joyce
+James Joyce (2)
 	 2 	 Ulysses
 	 49 	 A Portrait of the Artist as a Young Man 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Stendhal
+Stendhal (2)
 	 34 	 The Red and the Black
 	 93 	 The Charterhouse of Parma
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Charles Dickens
+Charles Dickens (2)
 	 27 	 Great Expectations
 	 45 	 David Copperfield
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Jane Austen
+Jane Austen (2)
 	 17 	 Pride and Prejudice
 	 59 	 Emma
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-George Orwell
+George Orwell (2)
 	 26 	 Nineteen Eighty Four
 	 78 	 Animal Farm
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Gustave Flaubert
+Gustave Flaubert (2)
 	 10 	 Madame Bovary
 	 87 	 A Sentimental Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Homer
-	 9 	 The Odyssey
+Homer (2)
+	 9  	 The Odyssey
 	 21 	 The Iliad
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Leo Tolstoy
-	 7 	 War and Peace
+Leo Tolstoy (2)
+	 7  	 War and Peace
 	 19 	 Anna Karenina
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 ```
