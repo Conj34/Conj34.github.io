@@ -380,27 +380,27 @@ Contact
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="1" data-code-annotation="1">Import the <code>pandas</code> library. Useful for statistics.</span>
+<span data-code-annotation="1" data-code-lines="1" data-code-cell="annotated-cell-1">Import the <code>pandas</code> library. Useful for statistics.</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="3,4" data-code-annotation="2">Read the <code>.csv</code> file and save in a pandas array the column with header <code>Author</code> (this is why a modification of the file was necessary).</span>
+<span data-code-annotation="2" data-code-lines="3,4" data-code-cell="annotated-cell-1">Read the <code>.csv</code> file and save in a pandas array the column with header <code>Author</code> (this is why a modification of the file was necessary).</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="6,7,8" data-code-annotation="3">We create 4 lists. The first analyses the first 100 books, the second the first 500 books and so on. <code>Partial_lists</code> is a list that contains in entry <code>i</code> a pandas list with the authors of the first <code>splittings[i]</code>-many books.</span>
+<span data-code-annotation="3" data-code-lines="6,7,8" data-code-cell="annotated-cell-1">We create 4 lists. The first analyses the first 100 books, the second the first 500 books and so on. <code>Partial_lists</code> is a list that contains in entry <code>i</code> a pandas list with the authors of the first <code>splittings[i]</code>-many books.</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="10" data-code-annotation="4">We count the occurrencies in each of the partial lists.</span>
+<span data-code-annotation="4" data-code-lines="10" data-code-cell="annotated-cell-1">We count the occurrencies in each of the partial lists.</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="12,13,14,15,16,17,18,19" data-code-annotation="5">We select in each list <code>Partial_lists[i]</code> the first authors. These are the authors that have at least <code>Lower[i]</code> many books in that list. <code>Lower[i]</code> is choosen in such a way that the authors as as few as possible above <code>At_least</code>. So for example in the first list, if we set <code>Lower[0]=3</code> we would only obtain 5 authors, this is why we set <code>Lower[0]=2</code>.</span>
+<span data-code-annotation="5" data-code-lines="12,13,14,15,16,17,18,19" data-code-cell="annotated-cell-1">We select in each list <code>Partial_lists[i]</code> the first authors. These are the authors that have at least <code>Lower[i]</code> many books in that list. <code>Lower[i]</code> is choosen in such a way that the authors as as few as possible above <code>At_least</code>. So for example in the first list, if we set <code>Lower[0]=3</code> we would only obtain 5 authors, this is why we set <code>Lower[0]=2</code>.</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="21,22,23" data-code-annotation="6">Printing.</span>
+<span data-code-annotation="6" data-code-lines="21,22,23" data-code-cell="annotated-cell-1">Printing.</span>
 </dd>
 </dl>
 <p>The output is:</p>
@@ -477,6 +477,124 @@ Molière                 8
 Alice Munro             8</code></pre>
 <p>Faulkner, Hemingway and Dickens are the only authors present in all 4 lists. Sheakerspeare appears in all the list with the exception of the first one, and has 1.5 times the second author (Faulkner and Dickens) books in the complete list, while Sophocles is also doing quite well. The only women appearing are Virginia Woold, Jane Austen, Edith Wharton, J.K. Rowling, Iris Murdoch, Margaret Atwood and Alice Munro; with Woolf and Austen being the only ones in the first list.</p>
 <p>ChatGPT is a mess, but it seems that the only author not born in Europe (including Russia) or US/Canada is Coetzee (South Africa). This seems to indicate that these lists are incredibly biased.</p>
+<p>For more analysis, you can try to run this for a more complete print.</p>
+<div class="sourceCode" id="cb2" data-eval="FALSE"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(N):</span>
+<span id="cb2-2"><a href="#cb2-2"></a>    <span class="bu">print</span>(<span class="st">"#############################################################################</span><span class="ch">\n</span><span class="st">These are the authors that have the most (at least "</span><span class="op">+</span><span class="bu">str</span>(Lower[i])<span class="op">+</span><span class="st">") publications</span><span class="ch">\n</span><span class="st">amongst the first "</span><span class="op">+</span><span class="bu">str</span>(splittings[i])<span class="op">+</span><span class="st">""" many "Best books"</span><span class="ch">\n</span><span class="st">############################################################################# """</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a>    <span class="cf">for</span> j <span class="kw">in</span> Final_list_authors[i].index:</span>
+<span id="cb2-4"><a href="#cb2-4"></a>        <span class="bu">print</span>(<span class="st">"</span><span class="sc">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span><span class="st">%"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5"></a>        <span class="bu">print</span>(j)</span>
+<span id="cb2-6"><a href="#cb2-6"></a>        L<span class="op">=</span>df[:splittings[i]][df[:splittings[i]][<span class="st">"Author"</span>]<span class="op">==</span>j][<span class="st">"Title"</span>]</span>
+<span id="cb2-7"><a href="#cb2-7"></a>        Num<span class="op">=</span>df[:splittings[i]][df[:splittings[i]][<span class="st">"Author"</span>]<span class="op">==</span>j][<span class="st">"Number"</span>]</span>
+<span id="cb2-8"><a href="#cb2-8"></a>        Num<span class="op">=</span><span class="bu">list</span>(Num)</span>
+<span id="cb2-9"><a href="#cb2-9"></a>        T<span class="op">=</span><span class="bu">list</span>(L)</span>
+<span id="cb2-10"><a href="#cb2-10"></a>        <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(Num)):</span>
+<span id="cb2-11"><a href="#cb2-11"></a>            <span class="bu">print</span>(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>, <span class="bu">int</span>(Num[k]), <span class="st">"</span><span class="ch">\t</span><span class="st">"</span>, T[k])</span>
+<span id="cb2-12"><a href="#cb2-12"></a>        <span class="bu">print</span>(<span class="st">"</span><span class="sc">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span><span class="st">%"</span>)</span>
+<span id="cb2-13"><a href="#cb2-13"></a>        <span class="bu">print</span>()</span>
+<span id="cb2-14"><a href="#cb2-14"></a>    <span class="bu">print</span>()</span>
+<span id="cb2-15"><a href="#cb2-15"></a>    <span class="bu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>An example of the first part of the output is:</p>
+<pre><code>#############################################################################
+These are the authors that have the most (at least 2) publications
+amongst the first 100 many "Best books"
+############################################################################# 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Ernest Hemingway
+     44      The Sun Also Rises 
+     57      The Old Man and the Sea
+     60      For Whom the Bell Tolls
+     84      A Farewell to Arms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Franz Kafka
+     33      The Trial
+     61      The Complete Stories of Franz Kafka
+     62      The Metamorphosis
+     86      The Castle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fyodor Dostoyevsky
+     13      The Brothers Karamazov 
+     14      Crime and Punishment 
+     54      The Idiot
+     69      The Possessed
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+William Faulkner
+     25      The Sound and the Fury
+     30      Absalom, Absalom!
+     67      As I Lay Dying
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Virginia Woolf
+     22      To the Lighthouse 
+     38      Mrs. Dalloway 
+     79      Orlando: A Biography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vladimir Nabokov
+     12      Lolita 
+     65      Pale Fire 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Sophocles
+     51      Oedipus the King
+     66      Antigone
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+James Joyce
+     2   Ulysses
+     49      A Portrait of the Artist as a Young Man 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Stendhal
+     34      The Red and the Black
+     93      The Charterhouse of Parma
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Charles Dickens
+     27      Great Expectations
+     45      David Copperfield
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Jane Austen
+     17      Pride and Prejudice
+     59      Emma
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+George Orwell
+     26      Nineteen Eighty Four
+     78      Animal Farm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Gustave Flaubert
+     10      Madame Bovary
+     87      A Sentimental Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Homer
+     9   The Odyssey
+     21      The Iliad
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Leo Tolstoy
+     7   War and Peace
+     19      Anna Karenina
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</code></pre>
 
 
 

@@ -23,7 +23,7 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 <h3><small> Read since Jan. 2023 </small></h3>
 | Title                                      | Author           | Status                                | Compl. on |
 |------------------|------------------|------------------|------------------|
-| Pantera                                    | Stefano Benni   | ![](../images/50.png){width="0.8cm"}  |   |
+| Pantera                                    | Stefano Benni   | ![](../images/100.png){width="0.8cm"}  | Aug '23  |
 | Blues in Sedici                            | Stefano Benni   | ![](../images/100.png){width="0.8cm"}  |  Aug '23 |
 | The Pastures of Heaven                     | John Steinbeck   | ![](../images/100.png){width="0.8cm"}  | Aug '23   |
 | The Remains of the Day                     | Kazuo Ishiguro   | ![](../images/100.png){width="0.8cm"} | Jul '23   |
