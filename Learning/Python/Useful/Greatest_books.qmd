@@ -1,0 +1,128 @@
+---
+title: "Greatest Authors"
+format: html
+code-annotations: below
+---
+{{< include /support/_margins_Learning.qmd >}}
+
+I appreciate a lot [this project](https://thegreatestbooks.org) by Shane Sherman, which is an attempt to create a list of "best books" based on the compound information found on various highly accredited lists (there are obvious critiques, about western, white, male biases etc., but I don't think this is relevant in the context of this page). What I am going to do in this page is to have an idea of which authors have more works considered the best.
+
+One can proceed as follows: download the .csv file from the website of the [aforementioned project](https://thegreatestbooks.org). Modify the .csv file such that the first row reads:
+
+| Position | Title | Author | Year |
+| -------- | ----- | ------ | ---- |
+
+In the same folder where you saved the .csv file, you can create a .py file with the following code.
+
+``` {.python eval="FALSE" code-line-numbers="true"}
+import pandas as pd                                           #<1>
+
+df = pd.read_csv("tgb_1.csv")                                 #<2>
+mylist = df["Author"]                                         #<2>
+
+splittings = [100, 500, 1000, len(mylist)]                    #<3>
+N = len(splittings)                                           #<3>
+Partial_lists = [mylist[:i] for i in splittings]              #<3>
+
+Counts = [pd.Series(Partial_lists[j]).value_counts() for j in range(N)] #<4>
+
+Lower = [0 for i in range(N)]                                 #<5>
+At_least = 10                                   #<5>
+for i in range(N):                              #<5>
+    for j in range(30, -1, -1):                              #<5>
+        if len(Counts[i][Counts[i]>=j])>=At_least:            #<5>
+            Lower[i]=j                              #<5>
+            break                              #<5>
+Final_list_authors = [Counts[i][Counts[i]>=Lower[i]] for i in range(N)] #<5>
+
+for i in range(N): #<6>
+    print("These are the authors that have the most (at least "+str(Lower[i])+") publications\namongst the first "+str(splittings[i])+""" many "Best books" """)#<6>
+    print(Final_list_authors[i].to_string()+"\n")#<6>
+```
+1. Import the `pandas` library. Useful for statistics.
+2. Read the `.csv` file and save in a pandas array the column with header `Author` (this is why a modification of the file was necessary).
+3. We create 4 lists. The first analyses the first 100 books, the second the first 500 books and so on. `Partial_lists` is a list that contains in entry `i` a pandas list with the authors of the first `splittings[i]`-many books.
+4. We count the occurrencies in each of the partial lists.
+5. We select in each list `Partial_lists[i]` the first authors. These are the authors that have at least `Lower[i]` many books in that list. `Lower[i]` is choosen in such a way that the authors as as few as possible above `At_least`. So for example in the first list, if we set `Lower[0]=3` we would only obtain 5 authors, this is why we set `Lower[0]=2`. 
+6. Printing
+
+The output is:
+```
+These are the authors that have the most (at least 2) publications
+amongst the first 100 many "Best books" 
+Ernest Hemingway      4
+Franz Kafka           4
+Fyodor Dostoyevsky    4
+William Faulkner      3
+Virginia Woolf        3
+Vladimir Nabokov      2
+Sophocles             2
+James Joyce           2
+Stendhal              2
+Charles Dickens       2
+Jane Austen           2
+George Orwell         2
+Gustave Flaubert      2
+Homer                 2
+Leo Tolstoy           2
+
+These are the authors that have the most (at least 4) publications
+amongst the first 500 many "Best books" 
+Sophocles              7
+Charles Dickens        7
+Ernest Hemingway       6
+William Shakespeare    6
+C. S. Lewis            6
+John Galsworthy        5
+Aeschylus              5
+Fyodor Dostoyevsky     5
+Samuel Beckett         4
+John Updike            4
+Saul Bellow            4
+Honoré de Balzac       4
+William Faulkner       4
+Joseph Conrad          4
+Virginia Woolf         4
+Edith Wharton          4
+John Dos Passos        4
+D. H. Lawrence         4
+Thomas Mann            4
+James Joyce            4
+Franz Kafka            4
+
+These are the authors that have the most (at least 6) publications
+amongst the first 1000 many "Best books" 
+William Shakespeare    11
+Charles Dickens         9
+William Faulkner        9
+Samuel Beckett          8
+Sophocles               7
+J. K Rowling            7
+C. S. Lewis             6
+Philip Roth             6
+Henry James             6
+Ernest Hemingway        6
+
+These are the authors that have the most (at least 8) publications
+amongst the first 2706 many "Best books" 
+William Shakespeare    19
+William Faulkner       13
+Charles Dickens        13
+Unknown                11
+Henry James            11
+Iris Murdoch           10
+Margaret Atwood        10
+Philip Roth            10
+John Updike             8
+Samuel Beckett          8
+Ernest Hemingway        8
+J M Coetzee             8
+Molière                 8
+Alice Munro             8
+```
+Faulkner, Hemingway and Dickens are the only authors present in all 4 lists. Sheakerspeare appears in all the list with the exception of the first one, and has 1.5 times the second author (Faulkner and Dickens) books in the complete list, while Sophocles is also doing quite well. The only women appearing are Virginia Woold, Jane Austen, Edith Wharton, J.K. Rowling, Iris Murdoch, Margaret Atwood and Alice Munro; with Woolf and Austen being the only ones in the first list.
+
+ChatGPT is a mess, but it seems that the only author not born in Europe (including Russia) or US/Canada is Coetzee (South Africa). This seems to indicate that these lists are incredibly biased.
+
+
+

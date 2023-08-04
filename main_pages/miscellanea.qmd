@@ -15,12 +15,18 @@ format: html
 
 Amongst the things I like: Books, Movies, Cooking.
 
-<h1>Books <small><small><small><small><small> (Since Jan. 2023)</small></small></small></small></small></h1>
+<h1>Books</h1>
+I like reading books. [This](https://thegreatestbooks.org) is a great website to find your next read (if you're stuck for ideas); using the list provided on this website, [I decided](../Learning/Python/Useful/Greatest_books.qmd) I want to put some work in reading the works of Dostoyevsky, Kafka, Hemingway, Faulkner, Woolf, Dickens, Sheakespere, Henry James, Beckett, Updike, Coetzee and Alice Munro. This will take me many years, but you got to start somewhere.
 
+Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), which allows you to listen to unabridged readings.  
+
+<h3><small> Read since Jan. 2023 </small></h3>
 | Title                                      | Author           | Status                                | Compl. on |
 |------------------|------------------|------------------|------------------|
-| The Pastures of Heaven     | John Steinbeck   | ![](../images/50.png){width="0.8cm"} |          |
-| The Remains of the Day                     | Kazuo Ishiguro   | ![](../images/100.png){width="0.8cm"} | Jul '23         |
+| Pantera                                    | Stefano Benni   | ![](../images/50.png){width="0.8cm"}  |   |
+| Blues in Sedici                            | Stefano Benni   | ![](../images/100.png){width="0.8cm"}  |  Aug '23 |
+| The Pastures of Heaven                     | John Steinbeck   | ![](../images/100.png){width="0.8cm"}  | Aug '23   |
+| The Remains of the Day                     | Kazuo Ishiguro   | ![](../images/100.png){width="0.8cm"} | Jul '23   |
 | The Return of the King                     | J.R.R. Tolkien   | ![](../images/100.png){width="0.8cm"} | Jul '23   |
 | Swimming in the Dark                       | Tomasz Jedrowski | ![](../images/100.png){width="0.8cm"} | Jul '23   |
 | The Two Towers                             | J.R.R. Tolkien   | ![](../images/100.png){width="0.8cm"} | Jun '23   |
@@ -36,18 +42,18 @@ Amongst the things I like: Books, Movies, Cooking.
 
 : {.striped .hover tbl-colwidths="\[50,30,10, 20\]"}
 
-<h1>Books<small><small><small><small><small>, Next up (Suggestions appreciated)</small></small></small></small></small></h1>
-
+<h3><small>Next up (Suggestions appreciated) </small></h3>
 | Title                  | Author            |
 |------------------------|-------------------|
 | To the Lighthouse      | Virginia Woolf    |
 | Atonement              | Ian McEwan        |
 | The Sense of an Ending | Julian Barnes     |
 | Howards End            | E.M. Forster      |
-| Dancing Paradiso       | Stefano Benni     |
-| Blues in Sedici        | Stefano Benni     |
 | War of the Worlds      | H. G. Wells       |
 | Sphere                 | Michael Crichton  |
 | The Line of Beauty     | Alan Hollinghurst |
 
 : {.striped .hover tbl-colwidths="\[60,40\]"}
+
+
+

@@ -10,7 +10,12 @@ var quotes = [
 " And then I went to college, and I met people who, for whatever reason, decided to be my friends, and they taught me—everything, really. They made me, and make me, into someone better than I really am.  <p><center><i>-H. Yanagihara-</i></center></p>", 
 "The only trick of friendship, I think, is to find people who are better than you are—not smarter, not cooler, but kinder, and more generous, and more forgiving—and then to appreciate them for what they can teach you, and to try to listen to them when they tell you something about yourself, no matter how bad—or good—it might be, and to trust them, which is the hardest thing of all. But the best, as well.  <p><center><i>-H. Yanagihara-</i></center></p>", 
 "At least you’re in the arts. I might as well be working for an arms dealer. Dorothy Wharton asked me tonight how it felt waking up each morning knowing I’d sacrificed yet another piece of my soul the day before. <p><center><i>-H. Yanagihara-</i></center></p>", 
-"Enjoying as he always did the pleasure of walking by himself, of feeling alone in a city of so many.  <p><center><i>-H. Yanagihara-</i></center></p>"]
+"Enjoying as he always did the pleasure of walking by himself, of feeling alone in a city of so many.  <p><center><i>-H. Yanagihara-</i></center></p>",
+"Per quali prodigi e qual disegno un albero cresca ramo dopo ramo prendendosi il cielo, non so. Né so perché i miei occhi di bambino guardino ora dal volto di un vecchio.<p><center><i>-S. Benni-</i></center></p>",
+"Sa Dio cosa costa una scatoletta di pomodori? [...] Sa Dio cosa vuol dire contare le monete in tasca quasi tornando bambini? Dio non pemette questo, lo vuole! Nella sua infinita stanchezza. Così lo incontriamo finalmente a un passo, col sorriso morente della cassiera, dopo dieci ore di lavoro, [...] scegliendo detersivi per lavare in eterno gli abiti che toglieremo e rimetteremo.<p><center><i>-S. Benni-</i></center></p>",
+"Lo grido, ma non puoi sentirmi.<p><center><i>-S. Benni-</i></center></p>",
+"Esisterà un giorno un eroe che ride sdentato?<p><center><i>-S. Benni-</i></center></p>",
+]
 var quote;
 function newQuote() {
   var randomNumber = Math.floor(Math.random() * (quotes.length))
