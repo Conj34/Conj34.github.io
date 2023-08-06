@@ -15,6 +15,7 @@ var quotes = [
 "Sa Dio cosa costa una scatoletta di pomodori? [...] Sa Dio cosa vuol dire contare le monete in tasca quasi tornando bambini? Dio non pemette questo, lo vuole! Nella sua infinita stanchezza. Così lo incontriamo finalmente a un passo, col sorriso morente della cassiera, dopo dieci ore di lavoro, [...] scegliendo detersivi per lavare in eterno gli abiti che toglieremo e rimetteremo.<p><center><i>-S. Benni-</i></center></p>",
 "Lo grido, ma non puoi sentirmi.<p><center><i>-S. Benni-</i></center></p>",
 "Esisterà un giorno un eroe che ride sdentato?<p><center><i>-S. Benni-</i></center></p>",
+"People who boast about their IQ are losers.<p><center><i>-S. Hawking-</i></center></p>",
 ]
 var quote;
 function newQuote() {
