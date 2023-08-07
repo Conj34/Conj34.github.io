@@ -1,7 +1,10 @@
 var quotes = [
-"Be realistic, demand the impossible.  <p><center><i>-Che Guevara-</i></center></p>", 
-"It took a few years, but bit by bit, Lindy began to love me. I didn’t dare believe it at first, but after a while there was nothing else to believe.  <p><center><i>-K. Ishiguro-</i></center></p>", 
-"We don't get the families we deserve.  <p><center><i>-H. Yanagihara-</i></center></p>", 
+"Be realistic, demand the impossible.  <p><center><i>-Che Guevara-</i></center></p>",
+"It took a few years, but bit by bit, Lindy began to love me. I didn’t dare believe it at first, but after a while there was nothing else to believe.  <p><center><i>-K. Ishiguro-</i></center></p>",
+"Naturally, when one looks back to such instances today, they may indeed take the appearance of being crucial, precious moments in one's life; but of course, at the time, this was not the impression one had. Rather, it was as though one had available a never-ending number of days, months, years in which to sort out the vagaries of one's relationship with Miss Kenton; an infinite number of further opportunities in which to remedy the effect of this or that misunderstanding. <p><center><i>-K. Ishiguro-</i></center></p>",
+"Lord Darlington wasn't a bad man. He wasn't a bad man at all. And at least he had the privilege of being able to say at the end of his life that he made his own mistakes. [...] I can't even say I made my own mistakes. Really - one has to ask oneself - what dignity is there in that? <p><center><i>-K. Ishiguro-</i></center></p>",
+"You've got to enjoy yourself. The evening's the best part of the day. You've done your day's work. Now you can put your feet up and enjoy it.<p><center><i>-K. Ishiguro-</i></center></p>",
+"We don\'t get the families we deserve.  <p><center><i>-H. Yanagihara-</i></center></p>", 
 "Stepping out into the world in which no one knew him, and in which he could be anyone.  <p><center><i>-H. Yanagihara-</i></center></p>", 
 "But at what point had Findlay decided he would give up acting, and how had it happened? Was it simply age? [...]. How did you know that it was time to give up? [...] How did you know when to stop? <p><center><i>-H. Yanagihara-</i></center></p>", 
 "In their deaths, Willem was able to remember that he had loved them after all, and that they had taught him things he treasured knowing.  <p><center><i>-H. Yanagihara-</i></center></p>", 
@@ -17,9 +20,24 @@ var quotes = [
 "Esisterà un giorno un eroe che ride sdentato?<p><center><i>-S. Benni-</i></center></p>",
 "People who boast about their IQ are losers.<p><center><i>-S. Hawking-</i></center></p>",
 "He sat down on a grassy bank and looked at the city that surrounded him, and thought, one day he would have to go home. And one day he would have to make a home to go back to. He wondered whether home was a thing that happened to a place after a while, or if it was something that you found in the end, if you simply walked and waited and willed it long enough.<p><center><i>-N. Gaiman-</i></center></p>",
-"""'Don’t the great tales never end?''No, they never end as tales, But the people in them come, and go when their part’s ended. Our part will end later – or sooner'. 'And then we can have some rest and some sleep. And I mean just that, Mr. Frodo. I mean plain ordinary rest, and sleep, and waking up to a morning’s work in the garden. [...]. All the big important plans are not for my sort. Still, I wonder if we shall ever be put into songs or tales. We’re in one, of course; but I mean: put into words, you know, told by the fireside, or read out of a great big book with red and black letters, years and years afterwards'. <p><center><i>-J.R.R. Tolkien-</i></center></p>""",
+"I think I would rather be a man than a god. We don\'t need anyone to believe in us. We just keep going anyhow. It\'s what we do.<p><center><i>-N. Gaiman-</i></center></p>",
+"Don’t the great tales never end?\'\'No, they never end as tales, But the people in them come, and go when their part’s ended. Our part will end later – or sooner\'. \'And then we can have some rest and some sleep. And I mean just that, Mr. Frodo. I mean plain ordinary rest, and sleep, and waking up to a morning’s work in the garden. [...]. All the big important plans are not for my sort. Still, I wonder if we shall ever be put into songs or tales. We’re in one, of course; but I mean: put into words, you know, told by the fireside, or read out of a great big book with red and black letters, years and years afterwards'. <p><center><i>-J.R.R. Tolkien-</i></center></p>",
 "And we shouldn’t be here at all, if we’d known more about it before we started. But I suppose it’s often that way. The brave things in the old tales and songs, Mr. Frodo: adventures, as I used to call them. I used to think that they were things the wonderful folk of the stories went out and looked for, because they wanted them, because they were exciting and life was a bit dull, a kind of a sport, as you might say. But that’s not the way of it with the tales that really mattered, or the ones that stay in the mind. Folk seem to have been just landed in them, usually – their paths were laid that way, as you put it. But I expect they had lots of chances, like us, of turning back, only they didn’t. And if they had, we shouldn’t know, because they’d have been forgotten. We hear about those as just went on – and not all to a good end, mind you; at least not to what folk inside a story and not outside it call a good end. You know, coming home, and finding things all right, though not quite the same. But those aren’t always the best tales to hear, though they may be the best tales to get landed in! I wonder what sort of a tale we’ve fallen into?<p><center><i>-J.R.R. Tolkien-</i></center></p>",
-"It was Sam’s first view of a battle of Men against Men, and he did not like it much. He was glad that he could not see the dead face. He wondered what the man’s name was and where he came from; and if he was really evil of heart, or what lies or threats had led him on the long march from his home; and if he would not really rather have stayed there in peace.<p><center><i>-J.R.R. Tolkien-</i></center></p>"
+"It was Sam’s first view of a battle of Men against Men, and he did not like it much. He was glad that he could not see the dead face. He wondered what the man’s name was and where he came from; and if he was really evil of heart, or what lies or threats had led him on the long march from his home; and if he would not really rather have stayed there in peace.<p><center><i>-J.R.R. Tolkien-</i></center></p>",
+"Other evils there are that may come.[...]. Yet it is not our part to master all the tides of the world, but to do what is in us for the succour of those years wherein we are set, uprooting the evil in the fields that we know, so that those who live after may have clean earth to till. What weather they shall have is not ours to rule.<p><center><i>-J.R.R. Tolkien-</i></center></p>",
+"I am glad you are here with me. Here at the end of all things.<p><center><i>-J.R.R. Tolkien-</i></center></p>",
+"Do not scorn pity that is the gift of a gentle heart.<p><center><i>-J.R.R. Tolkien-</i></center></p>",
+"Never is too long a word, even for me.<p><center><i>-J.R.R. Tolkien-</i></center></p>",
+"For it will be better to ride back three together than one alone. [...] Go in peace! I will not say: do not weep; for not all tears are an evil.<p><center><i>-J.R.R. Tolkien-</i></center></p>",
+"I hold it true, whate\'er befall;<br>I feel it, when I sorrow most;<br>\'Tis better to have loved and lost<br>Than never to have loved at all.<p><center><i>-A. Tennyson-</i></center></p>",
+"E le porte dell\'inferno, sono large abbastanza per qualsiasi pancia.<p><center><i>-S. Benni-</i></center></p>",
+"Porzioni da convento di suore nane.<p><center><i>-S. Benni-</i></center></p>",
+"Non importa la qualità, l\'importante è che sia troppo. L\'occidente mangia sulla terrazza, e da basso, il resto del mondo aspetta gli avanzi. Il migliore condimento di un pranzo, è la fame degli altri. <p><center><i>-S. Benni-</i></center></p>",
+"\'Le sembra che Belzebù possa piangere per un tartarughino?\' \'No, e non solo lui, ma neanche il signore Iddio, Primo Chef del cosmo. [...]. Quando verrà Pangelone con sciabola e berretto di ordinanza tuonando: -Ouralphe, il Signore ha qualcosa da dirti-, io risponderò: -no, ho io qualcosa da dirgli! Io Gaspar Benedict Ouralphe chiedo al tuo Datore di lavoro dove era in tutti questi anni di peste e terremoti e guerre insensate, mentre noi nel bene e nel male c’eravamo e tiravamo avanti.- È vero, il conto lo paga chi mangia, ma un cattivo chef va licenziato. Invece lui giudica da lassù, dove da milleottocento anni si vendica di noi per non essere morto su un sofà.<p><center><i>-S. Benni-</i></center></p>",
+"Passiamo metà della vita a deridere ciò in cui altri credono, e l’altra metà a credere in ciò che altri deridono.<p><center><i>-S. Benni-</i></center></p>",
+"Era un posto così, di sogni che cadevano a terra come cappelli, e uno se li rimetteva in testa, sempre più sformati e impolverati. Ma ci sono quelli che col cappello sembrano Bogart e quelli che sembrano Bertoldo.<p><center><i>-S. Benni-</i></center></p>",
+"Because you were right when you said that people can’t always give us what we want from them; that you can’t ask them to love you the way you want. No one can be blamed for that. And the odds had been stacked against us from the start: we had no manual, no one to show us the way. Not one example of a happy couple made up of boys. How were we supposed to know what to do? Did we even believe that we deserved to get away with happiness?<p><center><i>-T. Jedrowski-</i></center></p>",
+"I was unable to accept the shame he wanted me to feel. It was too familiar to be imposed.<p><center><i>-T. Jedrowski-</i></center></p>",
 ]
 var quote;
 function newQuote() {
@@ -29,3 +47,12 @@ function newQuote() {
       quote = quotes[randomNumber];
 }
 newQuote();
+
+
+
+
+
+
+
+
+
