@@ -18,11 +18,15 @@ Amongst the things I like: Books, Movies, Cooking.
 <h1>Books</h1>
 I like reading books. [This](https://thegreatestbooks.org) is a great website to find your next read (if you're stuck for ideas); using the list provided on this website, [I decided](../Learning/Python/Useful/Greatest_authors.qmd) I want to put some work in reading the works of Dostoyevsky, Kafka, Hemingway, Faulkner, Woolf, Dickens, Sheakespere, Henry James, Beckett, Updike, Coetzee and Alice Munro. This will take me many years, but you got to start somewhere.
 
+<!--<progress id="file" max="100" value="100"></progress>-->
+
+
 Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), which allows you to listen to unabridged readings.  
 
 <h3><small> Read since Jan. 2023 </small></h3>
 | Title                                      | Author           | Status                                | Compl. on |
 |------------------|------------------|------------------|------------------|
+| La Storia      | Elsa Morante  | ![](../images/50.png){width="0.8cm"}  |   |
 | Pantera                                    | Stefano Benni   | ![](../images/100.png){width="0.8cm"}  | Aug '23  |
 | Blues in Sedici                            | Stefano Benni   | ![](../images/100.png){width="0.8cm"}  |  Aug '23 |
 | The Pastures of Heaven                     | John Steinbeck   | ![](../images/100.png){width="0.8cm"}  | Aug '23   |
@@ -45,6 +49,7 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 <h3><small>Next up (Suggestions appreciated) </small></h3>
 | Title                  | Author            |
 |------------------------|-------------------|
+| Ensaio sobre a cegueira| José Saramago     |
 | To the Lighthouse      | Virginia Woolf    |
 | Atonement              | Ian McEwan        |
 | The Sense of an Ending | Julian Barnes     |
