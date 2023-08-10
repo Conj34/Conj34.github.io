@@ -28,17 +28,17 @@ A summary of the course is as follows:
 1. **Introduction to Functions:**
    - What is a function?
    - Domain and range of a function.
-   - Notation: f(x), domain, range, etc.
+   - Notation: $f(x)$, domain, range, etc.
 
 2. **Linear Functions:**
    - Definition of linear functions.
    - Graphing linear functions.
-   - Finding the slope and y-intercept.
-   - Writing equations in slope-intercept form: y = mx + b.
+   - Finding the slope and $y$-intercept.
+   - Writing equations in slope-intercept form: $y = mx + b$.
    
 3. **Polynomial Functions of Degree 2:**
    - Definition of polynomial functions.
-   - Quadratic functions: f(x) = ax^2 + bx + c.
+   - Quadratic functions: $f(x) = ax^2 + bx + c$.
    - Graphing quadratic functions.
    - Finding the vertex, axis of symmetry, and intercepts.
 
@@ -52,7 +52,7 @@ A summary of the course is as follows:
 1. **Introduction to Derivatives:**
    - What is a derivative?
    - The concept of instantaneous rate of change.
-   - Notation: f'(x), dy/dx.
+   - Notation: $f'(x)$, $dy/dx$.
 
 2. **Basic Rules of Differentiation:**
    - Power rule for differentiation.
@@ -168,3 +168,89 @@ A summary of the course is as follows:
    - Extracting information from frequency tables.
    - Interpreting data presented in tabular form.
 :::
+
+
+::: panel-tabset
+## Assessments
+
+You can find here some questions that will assess your previous knowledge of these topics. Do not worry if you cannot answer these, as we will go through the knowledge required to answer them during the lectures.
+
+## Maths
+
+
+
+
+**Pre-Lecture Assessment: Mathematics Knowledge Check**
+
+1. Which of the following equations represents a quadratic function?
+   a) $y = 3x + 2$
+   b) $y = x^3 - 2x$
+   c) $y = 2x - 5$
+   d) $y = 4x^2 - 7x + 1$
+
+2. What is the y-intercept of the linear function $y = 2x - 3$?
+   a) $(2, -3)$
+   b) $(-2, 3)$
+   c) $(0, -3)$
+   d) $(0, 2)$
+
+3. If $f(x) = 4x^3 - 2x^2 + 7x - 1$, what is the derivative $f'(x)$?
+   a) $12x^2 - 4x + 7$
+   b) $12x^2 - 4x - 7$
+   c) $12x^3 - 4x^2 + 7$
+   d) $12x^3 - 4x^2 - 7$
+
+4. How many solutions can a system of linear equations have if the lines are parallel and distinct?
+   a) One solution
+   b) Two solutions
+   c) Infinite solutions
+   d) No solution
+
+5. Solve the quadratic equation for $x$: $x^2 - 9 = 0$.
+   a) $x = -3$
+   b) $x = 0$
+   c) $x = 3$
+   d) $x = \pm 3$
+
+6. Which of the following equations represents a vertical line?
+   a) $y = 2x + 1$
+   b) $x = -3$
+   c) $y = x^2 - 4$
+   d) $y = -2x$
+
+7. Given the system of two equations: $2x + y = 5$ and $3x + 2y = 8$. What is the solution $(x, y)$?
+   a) $(1, 3)$
+   b) $(2, 1)$
+   c) $(3, 2)$
+   d) $(-1, -3)$
+
+8. What is the slope of the line passing through the points $(2, 4)$ and $(4, 8)$?
+   a) $2$
+   b) $4$
+   c) $1/2$
+   d) $1$
+
+9. What is the mean of the numbers $5, 8, 10, 12$, and $15$?
+    a) $8$
+    b) $10$
+    c) $11$
+    d) $12$
+
+
+## Statistics
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
