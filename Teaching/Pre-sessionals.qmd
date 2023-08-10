@@ -8,7 +8,21 @@ This Pre-sessional course consists of two section, four hours each. In the first
 
 A summary of the course is as follows:
 
-<h2>Maths</h2>
+::: panel-tabset
+## Very generic
+<h3>Maths</h3>
+1. Introduction to Functions and Linear Equations
+2. Introduction to Derivatives
+3. Systems of Linear Equations
+4. Supply and Demand Problems
+
+<h3>Statistics</h3>
+1. Introduction to Basic Statistics
+2. Exploring Data and Plots
+3. Probability and Reading Table
+
+## Maths
+<h3>Maths</h3>
 **Lecture 1: Introduction to Functions and Linear Equations (1 hour)**
 
 1. **Introduction to Functions:**
@@ -91,7 +105,8 @@ A summary of the course is as follows:
    - Applying supply and demand analysis to real-world scenarios (e.g., price ceilings, shortages, surpluses).
    - Understanding market dynamics and changes.
 
-<h2>Statistics</h2>
+## Statistics
+<h3>Statistics</h3>
 **Lecture 1: Introduction to Basic Statistics (2 hours)**
 
 1. **Introduction to Statistics:**
@@ -152,4 +167,4 @@ A summary of the course is as follows:
    - Understanding data tables and formats.
    - Extracting information from frequency tables.
    - Interpreting data presented in tabular form.
-
+:::
