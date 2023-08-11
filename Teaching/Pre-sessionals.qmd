@@ -238,7 +238,67 @@ You can find here some questions that will assess your previous knowledge of the
 
 
 ## Statistics
+**Pre-Lecture Assessment: Statistics Knowledge Check**
 
+1. What is the mean of the numbers 5, 8, 10, 12, and 15?
+   a) 8
+   b) 10
+   c) 11
+   d) 12
+
+2. If the range of a data set is 20 and the smallest value is 5, what is the largest value?
+   a) 20
+   b) 25
+   c) 15
+   d) 10
+
+3. Which statistical measure is most affected by outliers?
+   a) Mean
+   b) Median
+   c) Mode
+   d) Range
+
+4. What is the purpose of a scatter plot?
+   a) To display categorical data.
+   b) To show the relationship between two numerical variables.
+   c) To represent the distribution of a single variable.
+   d) To compare different groups of data.
+
+5. Which of the following represents a positively skewed distribution?
+   a) Mean < Median
+   b) Mean > Median
+   c) Mean = Median
+   d) No relationship between Mean and Median
+
+6. What does a correlation coefficient of -0.85 indicate?
+   a) Strong positive correlation
+   b) Moderate negative correlation
+   c) Weak positive correlation
+   d) Strong negative correlation
+
+7. If two events are independent, what is the probability of both events occurring?
+   a) P(A and B) = P(A) + P(B)
+   b) P(A and B) = P(A) * P(B)
+   c) P(A and B) = P(A) - P(B)
+   d) P(A and B) = P(A) / P(B)
+
+8. What is the main purpose of calculating quantiles in statistics?
+   a) To find the mean of the data.
+   b) To identify the median of the data.
+   c) To measure the spread of the data.
+   d) To divide the data into equal parts.
+
+9. What is the difference between variance and standard deviation?
+   a) Variance is the square root of standard deviation.
+   b) Variance measures spread, while standard deviation measures average deviation.
+   c) Variance is always positive, while standard deviation can be negative.
+   d) Variance is used for categorical data, while standard deviation is used for numerical data.
+
+10. In a normal distribution, what percentage of data falls within one standard deviation from the mean?
+    a) Approximately 34%
+    b) Approximately 68%
+    c) Approximately 95%
+    d) Approximately 99.7%
 :::
 
 
