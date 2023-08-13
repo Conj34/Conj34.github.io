@@ -11,8 +11,8 @@ A summary of the course is as follows:
 ::: panel-tabset
 ## Very generic
 <h3>Maths</h3>
-1. Introduction to Functions and Linear Equations
-2. Introduction to Derivatives
+1. [Introduction to Functions and Linear Equations](../Teaching/Pre-sessionals/Maths1.qmd)
+2. [Introduction to Derivatives](../Teaching/Pre-sessionals/Maths2.qmd)
 3. Systems of Linear Equations
 4. Supply and Demand Problems
 
@@ -23,7 +23,7 @@ A summary of the course is as follows:
 
 ## Maths
 <h3>Maths</h3>
-**Lecture 1: Introduction to Functions and Linear Equations (1 hour)**
+**Lecture 1:**  [**Introduction to Functions and Linear Equations (1 hour)**](../Teaching/Pre-sessionals/Maths1.qmd)
 
 1. **Introduction to Functions:**
    - What is a function?
@@ -47,22 +47,22 @@ A summary of the course is as follows:
    - Modeling with linear and quadratic functions.
    - Simple problems involving functions.
 
-**Lecture 2: Introduction to Derivatives (1 hour)**
+**Lecture 2:** [**Introduction to Derivatives (1 hour)**](../Teaching/Pre-sessionals/Maths2.qmd)
 
 1. **Introduction to Derivatives:**
    - What is a derivative?
    - The concept of instantaneous rate of change.
-   - Notation: $f'(x)$, $dy/dx$.
-
-2. **Basic Rules of Differentiation:**
-   - Power rule for differentiation.
-   - Constant rule and sum rule.
-   - Differentiating polynomial functions.
-
-3. **Derivatives of Linear and Quadratic Functions:**
+   - Notation: $f'(x)$, $df/dx$.
+   
+2. **Derivatives of Linear and Quadratic Functions:**
    - Finding the derivative of linear functions.
    - Finding the derivative of quadratic functions.
    - Tangent lines and rates of change.
+
+3. **Basic Rules of Differentiation:**
+   - Power rule for differentiation.
+   - Constant rule and sum rule.
+   - Differentiating polynomial functions.
 
 4. **Applications of Derivatives:**
    - Finding maxima and minima using derivatives.
