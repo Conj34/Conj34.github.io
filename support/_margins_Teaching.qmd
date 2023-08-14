@@ -25,5 +25,7 @@ Internet is a great resource. Use it. Some resources I like:
 ## Beware, the Crime!
 
 It is illegal to download articles and books from pages like [LibGen](http://libgen.is/), [Sci-hub](https://sci-hub.se/) or from Telegram bots like [\@scihubot](http://t.me/scihubot). Also, DO NOT use VPN to protect your freedom of education ([Opera](https://www.opera.com) offers a free VPN).
+
+<center>&#128579;</center>
 :::
 :::
