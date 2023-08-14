@@ -1,0 +1,65 @@
+---
+title: "Pre-sessionals - Stats 3"
+format: html
+---
+
+{{< include /support/_margins_Teaching.qmd >}}
+
+<h3>Report <small><small><small>(of Stats Lecture 3)</small></small></small></h3>
+
+- **Introduction to Probability** 
+  - **Basic Concepts of Probability** 
+    - Define probability as the measure of likelihood of an event.
+    - Introduce the concept of sample space and events.
+    - Example: Tossing a fair coin as a simple probability experiment.
+  
+  - **Probability as a Ratio** 
+    - Explain how probability is calculated as a ratio of favorable outcomes to total outcomes.
+    - Discuss the range of probability from 0 to 1.
+    - Exercise: Calculate the probability of rolling a specific number on a fair six-sided die.
+  
+  - **Probability vs. Odds** 
+    - Define odds as the ratio of favorable outcomes to unfavorable outcomes.
+    - Compare and contrast probability and odds.
+    - Example: Compare the probability and odds of drawing a red card from a deck.
+  
+- **Probability Distributions** 
+  - **Discrete vs. Continuous Probability Distributions** 
+    - Differentiate between discrete and continuous random variables.
+    - Discuss examples of each type of distribution.
+    - Exercise: Identify whether given scenarios involve discrete or continuous random variables.
+  
+  - **Probability Mass Function (PMF) and Probability Density Function (PDF)** 
+    - Explain the concepts of PMF for discrete distributions and PDF for continuous distributions.
+    - Discuss how they represent probabilities of specific outcomes and ranges.
+    - Example: Calculate and interpret the PMF of a binomial distribution.
+    - Exercise: Determine the PDF of a given continuous distribution.
+  
+  - **Examples of Uniform, Binomial, and Normal Distributions** 
+    - Introduce uniform, binomial, and normal distributions.
+    - Explain scenarios where each distribution is applicable.
+    - Example: Describe the characteristics of a normal distribution.
+    - Exercise: Identify situations where specific distributions might be observed.
+  
+- **Reading Data Tables** 
+  - **Understanding Data Tables and Formats** 
+    - Define data tables as organized representations of data.
+    - Explain columns, rows, and headings in data tables.
+    - Exercise: Interpret the structure of a given data table.
+  
+  - **Extracting Information from Frequency Tables** 
+    - Discuss frequency tables and their role in summarizing categorical data.
+    - Explain how to calculate relative frequencies and percentages from frequency tables.
+    - Example: Calculate relative frequencies from a frequency table of survey responses.
+    - Exercise: Calculate relative frequencies for various categories in a given frequency table.
+  
+  - **Interpreting Data Presented in Tabular Form** 
+    - Guide students in extracting meaningful insights from data tables.
+    - Discuss patterns, trends, and comparisons that can be made using data tables.
+    - Example: Interpret a frequency table of ages in a population.
+    - Exercise: Analyze and draw conclusions from a provided data table.
+
+-   **Conclusion and Recap**
+    -   Summarize the key concepts covered in the lecture.
+    -   Highlight the importance of functions in various fields.
+-   **Q&A Session**

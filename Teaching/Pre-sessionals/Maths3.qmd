@@ -7,63 +7,63 @@ format: html
 
 <h3>Report <small><small><small>(of Maths Lecture 3)</small></small></small></h3>   
 
-* **Introduction to Systems of Equations** (10 minutes)
-    +   **What is a System of Equations?** (3 minutes) 
+* **Introduction to Systems of Equations** 
+    +   **What is a System of Equations?**  
         - Definition of a system of equations as a set of equations with common variables. 
         - Example: Discuss a system representing the total cost of items purchased.
 
-    +   **Methods for Solving Systems** (4 minutes) 
+    +   **Methods for Solving Systems**  
         - Briefly explain graphing, substitution, and elimination methods. 
         - Highlight when each method is most suitable. 
         - Exercise: Identify which method is best for a given system.
 
-    +   **Importance and Applications** (3 minutes) 
+    +   **Importance and Applications**  
         - Emphasize the significance of systems of equations in solving real-world problems. 
         - Mention applications in various fields. 
         - Exercise: Brainstorm other scenarios where systems could be applied.
 
-* **Graphical Solution** (15 minutes) 
-  +  **Solving Systems Graphically** (7 minutes) 
+* **Graphical Solution**  
+  +  **Solving Systems Graphically**  
       - Explain the concept of solution points as intersections of graphs. 
       - Example: Solve the system $2x + y = 5$ and $3x -y = 1$ graphically. 
       - Exercise: Graph and solve simple systems of equations.
 
-  + **Interpreting Solutions on Graphs** (4 minutes) 
+  + **Interpreting Solutions on Graphs**  
     - Discuss the significance of unique solutions, no solutions, and infinite solutions. 
     - Interpret the graphical meaning of these cases. 
     - Exercise: Analyze different scenarios on graphs.
 
-  + **Advantages and Limitations** (4 minutes) 
+  + **Advantages and Limitations**  
     - Compare graphical method with other methods. 
     - Discuss accuracy and limitations of graphical solutions.
 
-* **Substitution and Elimination Methods** (20 minutes) 
-  + **Solving Systems using Substitution** (10 minutes) 
+* **Substitution and Elimination Methods**  
+  + **Solving Systems using Substitution**  
     - Explain the substitution method step by step. 
     - Example: Solve the system $3x -2y = 8$ and $x + y = 3$ using substitution. 
     - Exercise: Practice solving systems using the substitution method.
 
-  + **Solving Systems using Elimination** (10 minutes) 
+  + **Solving Systems using Elimination**  
     - Explain the elimination (addition) method step by step.
     - Example: Solve the system $2x + 3y = 7$ and $4x -y = 5$ using elimination. 
     - Exercise: Practice solving systems using the elimination method.
 
-* **Applications of Systems of Equations** (15 minutes) 
-  + **Real-World Examples of Systems** (5 minutes) 
+* **Applications of Systems of Equations**  
+  + **Real-World Examples of Systems**  
     - Discuss examples from fields like economics, chemistry, and engineering. 
     - Example: Discuss a mixture problem involving two solutions. 
     - Exercise: Brainstorm more real-world examples.
 
-  + **Using Systems to Solve Practical Problems** (8 minutes) 
+  + **Using Systems to Solve Practical Problems**  
     - Explain how to set up and solve practical problems using systems. 
     - Example: Solve a money-related problem involving different types of coins. 
     - Exercise: Solve practical problems related to mixtures, interest, or other scenarios.
 
-  + **Reflection on Problem-Solving** (2 minutes) 
+  + **Reflection on Problem-Solving**  
     - Highlight the problem-solving process and the role of systems.
     - Encourage students to think critically and apply these methods.
 
-*   **Conclusion and Recap** (5 minutes)
+*   **Conclusion and Recap** 
     +   Summarize the key concepts covered in the lecture.
     +   Highlight the importance of functions in various fields.
-*   **Q&A Session** (5 minutes)
+*   **Q&A Session** 

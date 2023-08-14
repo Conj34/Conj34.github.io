@@ -13,13 +13,13 @@ A summary of the course is as follows:
 <h3>Maths</h3>
 1. [Introduction to Functions and Linear Equations](../Teaching/Pre-sessionals/Maths1.qmd)
 2. [Introduction to Derivatives](../Teaching/Pre-sessionals/Maths2.qmd)
-3. Systems of Linear Equations
-4. Supply and Demand Problems
+3. [Systems of Linear Equations](../Teaching/Pre-sessionals/Maths3.qmd)
+4. [Supply and Demand Problems](../Teaching/Pre-sessionals/Maths4.qmd)
 
 <h3>Statistics</h3>
-1. Introduction to Basic Statistics
-2. Exploring Data and Plots
-3. Probability and Reading Table
+1. [Introduction to Basic Statistics](../Teaching/Pre-sessionals/Stats1.qmd)
+2. [Exploring Data and Plots](../Teaching/Pre-sessionals/Stats2.qmd)
+3. [Probability and Reading Table](../Teaching/Pre-sessionals/Stats3.qmd)
 
 ## Maths
 <h3>Maths</h3>
@@ -69,7 +69,7 @@ A summary of the course is as follows:
    - Tangent lines as approximations.
    - Simple optimization problems.
 
-**Lecture 3: Systems of Linear Equations (1 hour)**
+**Lecture 3**: [**Systems of Linear Equations (1 hour)**](../Teaching/Pre-sessionals/Maths3.qmd)
 
 1. **Introduction to Systems of Equations:**
    - What is a system of equations?
@@ -87,7 +87,7 @@ A summary of the course is as follows:
    - Real-world examples of systems.
    - Using systems to solve practical problems (e.g., mixtures, interest).
 
-**Lecture 4: Supply and Demand Problems (1 hour)**
+**Lecture 4:** [**Supply and Demand Problems (1 hour)**](../Teaching/Pre-sessionals/Maths4.qmd)
 
 1. **Introduction to Supply and Demand:**
    - Basic concepts of supply and demand.
@@ -107,7 +107,7 @@ A summary of the course is as follows:
 
 ## Statistics
 <h3>Statistics</h3>
-**Lecture 1: Introduction to Basic Statistics (2 hours)**
+**Lecture 1:** [**Introduction to Basic Statistics (2 hours)**](../Teaching/Pre-sessionals/Stats1.qmd)
 
 1. **Introduction to Statistics:**
    - What is statistics and its importance.
@@ -129,7 +129,7 @@ A summary of the course is as follows:
    - Calculation and interpretation.
    - Box plots and their use in visualizing quantiles.
 
-**Lecture 2: Exploring Data and Plots (1 hour)**
+**Lecture 2:** [**Exploring Data and Plots (1 hour)**](../Teaching/Pre-sessionals/Stats2.qmd)
 
 1. **Histograms and Frequency Distributions:**
    - Creating histograms.
@@ -151,7 +151,7 @@ A summary of the course is as follows:
    - Positive, negative, and no correlation.
    - Calculating and interpreting correlation coefficients.
 
-**Lecture 3: Probability and Reading Tables (1 hour)**
+**Lecture 3:** [**Probability and Reading Tables (1 hour)**](../Teaching/Pre-sessionals/Stats3.qmd)
 
 1. **Introduction to Probability:**
    - Basic concepts of probability.
