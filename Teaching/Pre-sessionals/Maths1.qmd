@@ -2,72 +2,68 @@
 title: "Pre-sessionals - Maths 1"
 format: html
 ---
-{{< include /support/_margins_Teaching.qmd >}}
-<h3> Report <small><small><small>(of Maths Lecture 1)</small></small></small> </h3>
 
-* **Introduction to Functions** (15 minutes)
-  + **What is a function?** (5 minutes)
-    - Definition: A function is a relation between a set of inputs (domain) and a set of possible outputs (range), such that each input is related to exactly one output.
-    - Example: Temperature conversion function.
-    - Exercise: Identify whether given relations are functions or not.
-  + **Domain and Range of a function** (5 minutes)
-    - Definition of domain and range.
-    - Example: Find the domain and range of the function $f(x) = \sqrt{x}$.
-    - Exercise: Determine the domain and range of a given function.
-  + **Notation and Terminology** (5 minutes)
-    - Notation: $f(x)$ represents the output of function $f$ for input $x$.
-    - Terminology: Input, output, independent variable, dependent variable, etc.
-    - Exercise: Translate word problems into function notation.
-    
-    
-* **Linear Functions** (15 minutes)
-  + **Definition of Linear Functions** (5 minutes)
-    - A linear function is a function whose graph is a straight line.
-    - Example: $f(x) = 2x + 3$ is a linear function.
-    - Exercise: Determine whether given functions are linear or not.
-  + **Graphing Linear Functions** (5 minutes)
-    - Plotting points and connecting with a line.
-    - Example: Graph the function $f(x) = -0.5x + 2$.
-    - Exercise: Graph a set of linear functions.
-  + **Slope and $y$-Intercept** (5 minutes)
-    - Definition of slope and $y$-intercept.
-    - Calculation of slope and $y$-intercept from an equation.
-    - Example: Find the slope and $y$-intercept of $f(x) = 3x - 1$.
-    - Exercise: Calculate slope and $y$-intercept of given functions.
-    
-* **Polynomial Functions of Degree 2** (15 minutes)
-  + **Definition of Polynomial Functions** (5 minutes)
-    - A polynomial function is a function consisting of terms with non-negative integer powers.
-    - Example: $f(x) = 2x^2 - 4x + 1$ is a polynomial function.
-    - Exercise: Identify polynomial functions among given expressions.
-  + **Quadratic Functions** (5 minutes)
-    - Definition and standard form: $f(x) = ax^2 + bx + c$.
-    - Example: Identify coefficients of $a$, $b$, and $c$ in $f(x) = 5x^2 - 2x + 7$.
-    - Exercise: Write quadratic functions in standard form.
-  + **Graphing Quadratic Functions** (5 minutes)
-    - Plotting quadratic curves.
-    - Finding vertex and axis of symmetry.
-    - Example: Graph $f(x) = x^2 - 4x + 3$ and find its vertex.
-    - Exercise: Graph given quadratic functions and locate their vertices.
-    
-* **Applications of Functions** (10 minutes)
-  +   **Real-World Examples of Functions** (4 minutes)
-      - Distance-time and temperature-time functions.
-      - Example: Express the height of an object in terms of time.
-      - Exercise: Identify functions in everyday scenarios.
-  + **Modeling with Linear and Quadratic Functions** (3 minutes)
-    - Using linear functions for proportional relationships.
-    - Using quadratic functions for parabolic motion.
-    - Example: Model the height of a ball thrown vertically upward.
-    - Exercise: Model a real-world scenario using a linear or quadratic function.
-  + **Simple Problems Involving Functions** (3 minutes)
-    - Solving basic problems using functions.
-    - Example: Find the time when a car reaches a certain distance.
-    - Exercise: Solve problems involving linear and quadratic functions.
-    
-* **Conclusion and Recap** (5 minutes)
-    - Summarize the key concepts covered in the lecture.
-    - Highlight the importance of functions in various fields.
-    - Encourage students to practice and explore more examples.
-    
-* **Q&A Session** (5 minutes)
+{{< include /support/_margins_Teaching.qmd >}}
+
+<h3>Report <small><small><small>(of Maths Lecture 1)</small></small></small></h3>
+
+-   **Introduction to Functions** (15 minutes)
+    -   **What is a function?** (5 minutes)
+        -   Definition: A function is a relation between a set of inputs (domain) and a set of possible outputs (range), such that each input is related to exactly one output.
+        -   Example: Temperature conversion function.
+        -   Exercise: Identify whether given relations are functions or not.
+    -   **Domain and Range of a function** (5 minutes)
+        -   Definition of domain and range.
+        -   Example: Find the domain and range of the function $f(x) = \sqrt{x}$.
+        -   Exercise: Determine the domain and range of a given function.
+    -   **Notation and Terminology** (5 minutes)
+        -   Notation: $f(x)$ represents the output of function $f$ for input $x$.
+        -   Terminology: Input, output, independent variable, dependent variable, etc.
+        -   Exercise: Translate word problems into function notation.
+-   **Linear Functions** (15 minutes)
+    -   **Definition of Linear Functions** (5 minutes)
+        -   A linear function is a function whose graph is a straight line.
+        -   Example: $f(x) = 2x + 3$ is a linear function.
+        -   Exercise: Determine whether given functions are linear or not.
+    -   **Graphing Linear Functions** (5 minutes)
+        -   Plotting points and connecting with a line.
+        -   Example: Graph the function $f(x) = -0.5x + 2$.
+        -   Exercise: Graph a set of linear functions.
+    -   **Slope and** $y$-Intercept (5 minutes)
+        -   Definition of slope and $y$-intercept.
+        -   Calculation of slope and $y$-intercept from an equation.
+        -   Example: Find the slope and $y$-intercept of $f(x) = 3x - 1$.
+        -   Exercise: Calculate slope and $y$-intercept of given functions.
+-   **Polynomial Functions of Degree 2** (15 minutes)
+    -   **Definition of Polynomial Functions** (5 minutes)
+        -   A polynomial function is a function consisting of terms with non-negative integer powers.
+        -   Example: $f(x) = 2x^2 - 4x + 1$ is a polynomial function.
+        -   Exercise: Identify polynomial functions among given expressions.
+    -   **Quadratic Functions** (5 minutes)
+        -   Definition and standard form: $f(x) = ax^2 + bx + c$.
+        -   Example: Identify coefficients of $a$, $b$, and $c$ in $f(x) = 5x^2 - 2x + 7$.
+        -   Exercise: Write quadratic functions in standard form.
+    -   **Graphing Quadratic Functions** (5 minutes)
+        -   Plotting quadratic curves.
+        -   Finding vertex and axis of symmetry.
+        -   Example: Graph $f(x) = x^2 - 4x + 3$ and find its vertex.
+        -   Exercise: Graph given quadratic functions and locate their vertices.
+-   **Applications of Functions** (10 minutes)
+    -   **Real-World Examples of Functions** (4 minutes)
+        -   Distance-time and temperature-time functions.
+        -   Example: Express the height of an object in terms of time.
+        -   Exercise: Identify functions in everyday scenarios.
+    -   **Modeling with Linear and Quadratic Functions** (3 minutes)
+        -   Using linear functions for proportional relationships.
+        -   Using quadratic functions for parabolic motion.
+        -   Example: Model the height of a ball thrown vertically upward.
+        -   Exercise: Model a real-world scenario using a linear or quadratic function.
+    -   **Simple Problems Involving Functions** (3 minutes)
+        -   Solving basic problems using functions.
+        -   Example: Find the time when a car reaches a certain distance.
+        -   Exercise: Solve problems involving linear and quadratic functions.
+-   **Conclusion and Recap** (5 minutes)
+    -   Summarize the key concepts covered in the lecture.
+    -   Highlight the importance of functions in various fields.
+    -   Encourage students to practice and explore more examples.
+-   **Q&A Session** (5 minutes)

@@ -30,7 +30,7 @@ Of the following material, I only created the notes in the last column. The solu
 | Day 6 | [Slides](../Documents_files/FM250/Lecture6.pdf) | [Problem set 6](../Documents_files/FM250/Assignment6.pdf) | [Solutions](../Documents_files/FM250/Solution6.pdf) |  Exam |
 | Day 7 | [Slides](../Documents_files/FM250/Lecture7.pdf) | [Problem set 7](../Documents_files/FM250/Assignment7.pdf) | [Solutions](../Documents_files/FM250/Solution7.pdf) |  [Notes 7](../Documents_files/FM250/Notes_class7.compressed.pdf)  |
 | Day 8 | [Slides](../Documents_files/FM250/Lecture8.pdf) | [Problem set 8](../Documents_files/FM250/Assignment8.pdf) |  |  [8.1](../Documents_files/FM250/Solution8_2.xlsx)-[8.2](../Documents_files/FM250/Solution8_1.xlsx)<br>[Notes](../Documents_files/FM250/Notes_class8.compressed.pdf)  |
-<!-- | Day 9 | [Slides](../Documents_files/FM250/Lecture9.pdf) | [Problem set 9](../Documents_files/FM250/Assignment9.pdf) | [Solutions](../Documents_files/FM250/Solution9.pdf) |    |
-| Day 10 | [Slides](../Documents_files/FM250/Lecture10.pdf) | [Problem set 10](../Documents_files/FM250/Assignment10.pdf) | [Solutions](../Documents_files/FM250/Solution10.pdf) |    |
+| Day 9 | [Slides](../Documents_files/FM250/Lecture9.pdf) | [Problem set 9](../Documents_files/FM250/Assignment9.pdf) | [Solutions](../Documents_files/FM250/Solution9.pdf) |   [Notes 9](../Documents_files/FM250/Notes_class9.compressed.pdf)   |
+<!-- | Day 10 | [Slides](../Documents_files/FM250/Lecture10.pdf) | [Problem set 10](../Documents_files/FM250/Assignment10.pdf) | [Solutions](../Documents_files/FM250/Solution10.pdf) |    |
 | Day 11 | [Slides](../Documents_files/FM250/Lecture11.pdf) | [Problem set 11](../Documents_files/FM250/Assignment11.pdf) | [Solutions](../Documents_files/FM250/Solution11.pdf) |    |-->
 

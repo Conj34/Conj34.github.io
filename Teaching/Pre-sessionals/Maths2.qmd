@@ -2,68 +2,64 @@
 title: "Pre-sessionals - Maths 2"
 format: html
 ---
+
 {{< include /support/_margins_Teaching.qmd >}}
-<h3> Report <small><small><small>(of Maths Lecture 2)</small></small></small> </h3>
 
-* **Introduction to Derivatives** (15 minutes)
-  + **What is a Derivative?** (7 minutes)
-    - Definition of a derivative as the instantaneous rate of change.
-    - Notation: $f'(x)$, $\frac{dy}{dx}$.
-    - Example: Calculate the derivative of $f(x) = 3x^2 - 2x + 5$.
-    - Exercise: Find the derivative of given functions.
-  + **The Concept of Instantaneous Rate of Change** (3 minutes)
-    - Understanding how derivatives relate to slopes of tangent lines.
-    - Example: Interpret the derivative of a position function as velocity.
-    - Exercise: Interpret derivatives in real-world contexts.
-  + **Notation and Interpretation** (5 minutes)
-    - Discuss the meaning of $f'(x)$ and $\frac{dy}{dx}$ in context.
-    - Emphasize the connection between slope and rate of change.
-    - Exercise: Match graphs of functions with their derivatives.
-    
-* **Derivatives of Linear and Quadratic Functions** (15 minutes)
-  +  **Finding the Derivative of Linear Functions** (7 minutes)
-     - Deriving the derivative of linear functions.
-     - Example: Find the derivative of $L(x) = 2x + 4$.
-     - Exercise: Differentiate linear functions with different coefficients.
-  + **Finding the Derivative of Quadratic Functions** (5 minutes)
-     - Differentiating quadratic functions using the power rule.
-     - Example: Differentiate $q(x) = -3x^2 + 5x - 1$.
-     - Exercise: Derive quadratic functions with various coefficients.
-  + **Tangent Lines and Rates of Change** (3 minutes)
-     - Connecting derivatives to slopes of tangent lines.
-     - Calculating slopes of tangent lines at specific points.
-     - Example: Find the equation of the tangent line to $f(x) = x^2$ at $x = 2$.
+<h3>Report <small><small><small>(of Maths Lecture 2)</small></small></small></h3>
 
-* **Basic Rules of Differentiation** (15 minutes)
-  + **Power Rule for Differentiation** (5 minutes)
-     - Statement and derivation of the power rule.
-     - Example: Differentiate $g(x) = 4x^3 - 2x^2 + 7x$ using the power rule.
-     - Exercise: Apply the power rule to various functions.
-  + **Constant Rule and Sum Rule** (5 minutes)
-     - Using the constant rule and sum rule to differentiate functions.
-     - Example: Find the derivative of $h(x) = 3 + 2x^2 - 5x$.
-    - Exercise: Differentiate expressions involving constants and sums.
-  + **Differentiating Polynomial Functions** (5 minutes)
-     - Applying differentiation rules to polynomial functions.
-     - Example: Differentiate $p(x) = 6x^4 + 2x^3 - 9x^2 + 5$.
-     - Exercise: Differentiate given polynomial functions.
-
-* **Applications of Derivatives** (15 minutes)
-  + **Finding Maxima and Minima** (6 minutes)
-      - Using derivatives to locate critical points.
-      - Identifying maxima, minima, and points of inflection.
-      - Example: Find the critical points of $g(x) = 2x^3 - 9x^2 + 12x$.
-  + **Tangent Lines as Approximations** (5 minutes)
-     - Using tangent lines for linear approximations.
-     - Example: Estimate $\sqrt{9.2}$ using the tangent line at $x = 9$ for $f(x) = \sqrt{x}$.
-     
-  + **Simple Optimization Problems** (4 minutes)
-     - Applying derivatives to solve basic optimization problems.
-     - Example: Find the dimensions of a rectangle with maximum area given a fixed perimeter.
-
-* **Conclusion and Recap** (5 minutes)
-    - Summarize the key concepts covered in the lecture.
-    - Highlight the importance of functions in various fields.
-    - Encourage students to practice and explore more examples.
-    
-* **Q&A Session** (5 minutes)
+-   **Introduction to Derivatives** (15 minutes)
+    -   **What is a Derivative?** (7 minutes)
+        -   Definition of a derivative as the instantaneous rate of change.
+        -   Notation: $f'(x)$, $\frac{dy}{dx}$.
+        -   Example: Calculate the derivative of $f(x) = 3x^2 - 2x + 5$.
+        -   Exercise: Find the derivative of given functions.
+    -   **The Concept of Instantaneous Rate of Change** (3 minutes)
+        -   Understanding how derivatives relate to slopes of tangent lines.
+        -   Example: Interpret the derivative of a position function as velocity.
+        -   Exercise: Interpret derivatives in real-world contexts.
+    -   **Notation and Interpretation** (5 minutes)
+        -   Discuss the meaning of $f'(x)$ and $\frac{dy}{dx}$ in context.
+        -   Emphasize the connection between slope and rate of change.
+        -   Exercise: Match graphs of functions with their derivatives.
+-   **Derivatives of Linear and Quadratic Functions** (15 minutes)
+    -   **Finding the Derivative of Linear Functions** (7 minutes)
+        -   Deriving the derivative of linear functions.
+        -   Example: Find the derivative of $L(x) = 2x + 4$.
+        -   Exercise: Differentiate linear functions with different coefficients.
+    -   **Finding the Derivative of Quadratic Functions** (5 minutes)
+        -   Differentiating quadratic functions using the power rule.
+        -   Example: Differentiate $q(x) = -3x^2 + 5x - 1$.
+        -   Exercise: Derive quadratic functions with various coefficients.
+    -   **Tangent Lines and Rates of Change** (3 minutes)
+        -   Connecting derivatives to slopes of tangent lines.
+        -   Calculating slopes of tangent lines at specific points.
+        -   Example: Find the equation of the tangent line to $f(x) = x^2$ at $x = 2$.
+-   **Basic Rules of Differentiation** (15 minutes)
+    -   **Power Rule for Differentiation** (5 minutes)
+        -   Statement and derivation of the power rule.
+        -   Example: Differentiate $g(x) = 4x^3 - 2x^2 + 7x$ using the power rule.
+        -   Exercise: Apply the power rule to various functions.
+    -   **Constant Rule and Sum Rule** (5 minutes)
+        -   Using the constant rule and sum rule to differentiate functions.
+        -   Example: Find the derivative of $h(x) = 3 + 2x^2 - 5x$.
+        -   Exercise: Differentiate expressions involving constants and sums.
+    -   **Differentiating Polynomial Functions** (5 minutes)
+        -   Applying differentiation rules to polynomial functions.
+        -   Example: Differentiate $p(x) = 6x^4 + 2x^3 - 9x^2 + 5$.
+        -   Exercise: Differentiate given polynomial functions.
+-   **Applications of Derivatives** (15 minutes)
+    -   **Finding Maxima and Minima** (6 minutes)
+        -   Using derivatives to locate critical points.
+        -   Identifying maxima, minima, and points of inflection.
+        -   Example: Find the critical points of $g(x) = 2x^3 - 9x^2 + 12x$.
+    -   **Tangent Lines as Approximations** (5 minutes)
+        -   Using tangent lines for linear approximations.
+        -   Example: Estimate $\sqrt{9.2}$ using the tangent line at $x = 9$ for $f(x) = \sqrt{x}$.
+    -   **Simple Optimization Problems** (4 minutes)
+        -   Applying derivatives to solve basic optimization problems.
+        -   Example: Find the dimensions of a rectangle with maximum area given a fixed perimeter.
+-   **Conclusion and Recap** (5 minutes)
+    -   Summarize the key concepts covered in the lecture.
+    -   Highlight the importance of functions in various fields.
+    -   Encourage students to practice and explore more examples.
+-   **Q&A Session** (5 minutes)
