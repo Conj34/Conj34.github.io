@@ -5,7 +5,7 @@ format: html
 
 {{< include /support/_margins_Teaching.qmd >}}
 
-<h3>Report <small><small><small>(of Maths Lecture 4)</small></small></small></h3>
+<h2>Supply and Demand Problems</h2> 
 
 
 - **Introduction to Supply and Demand** 

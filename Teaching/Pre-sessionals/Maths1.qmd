@@ -5,8 +5,8 @@ format: html
 
 {{< include /support/_margins_Teaching.qmd >}}
 
-<h3>Report <small><small><small>(of Maths Lecture 1)</small></small></small></h3>
 
+<h2>Introduction to Functions and Linear Equations</h2>
 -   **Introduction to Functions** 
     -   **What is a function?** 
         -   Definition: A function is a relation between a set of inputs (domain) and a set of possible outputs (range), such that each input is related to exactly one output.

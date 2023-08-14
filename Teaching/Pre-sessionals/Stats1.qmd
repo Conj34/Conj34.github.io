@@ -5,77 +5,65 @@ format: html
 
 {{< include /support/_margins_Teaching.qmd >}}
 
-<h3>Report <small><small><small>(of Stats Lecture 1)</small></small></small></h3>
+<h2>Introduction to Basic Statistics</h2> 
 
 
-- **Introduction to Statistics** 
-  - **What is Statistics and its Importance** 
-    - Define statistics as the study of data collection, analysis, and interpretation.
-    - Explain the importance of statistics in decision-making and research.
-    - Example: Discuss how statistics are used in medical research.
-  
-  - **Descriptive vs. Inferential Statistics** 
-    - Differentiate between descriptive and inferential statistics.
-    - Emphasize the role of each in understanding and drawing conclusions from data.
-    - Exercise: Provide scenarios and determine whether descriptive or inferential statistics would be used.
-  
-  - **Types of Data: Categorical and Numerical** 
-    - Explain the distinction between categorical and numerical data.
-    - Provide examples of each type of data.
-    - Exercise: Classify given data sets as categorical or numerical.
-  
-- **Measures of Central Tendency** 
-  - **Mean, Median, and Mode** 
-    - Define and explain the concepts of mean, median, and mode.
-    - Illustrate how to calculate each measure.
-    - Example: Calculate mean, median, and mode for a set of exam scores.
-    - Exercise: Compute mean, median, and mode for different data sets.
-  
-  - **Calculating and Interpreting Each Measure** 
-    - Discuss the interpretation of mean, median, and mode in terms of centrality.
-    - Highlight scenarios where each measure is useful.
-    - Exercise: Analyze the implications of outliers on measures of central tendency.
-  
-  - **Real-World Examples** 
-    - Provide real-world examples where mean, median, and mode are applied.
-    - Discuss their relevance in various contexts, such as finance or education.
-    - Exercise: Analyze a dataset from a real-world scenario and calculate central tendency measures.
-  
-- **Measures of Dispersion** 
-  - **Range, Variance, and Standard Deviation** 
-    - Define and explain the concepts of range, variance, and standard deviation.
-    - Demonstrate how to calculate each measure.
-    - Example: Calculate the range, variance, and standard deviation for a data set.
-    - Exercise: Compute range, variance, and standard deviation for different datasets.
-  
-  - **Interpreting Variability** 
-    - Discuss the importance of measures of dispersion in understanding data spread.
-    - Explain how variability affects the interpretation of central tendency measures.
-    - Exercise: Compare and contrast datasets with different measures of dispersion.
-  
-  - **Variance and Standard Deviation for Populations vs. Samples** 
-    - Explain the difference between calculating variance and standard deviation for populations and samples.
-    - Discuss when to use the population formula versus the sample formula.
-    - Example: Calculate the population and sample variance and standard deviation for a dataset.
-  
-- **Quantiles and Percentiles** 
-  - **Definition of Quantiles and Percentiles** 
-    - Define quantiles and percentiles as measures of position in a dataset.
-    - Explain how they divide data into equal parts.
-    - Exercise: Calculate the quartiles and percentiles for a dataset.
-  
-  - **Calculation and Interpretation** 
-    - Discuss how to calculate quantiles and percentiles using order statistics.
-    - Interpret the meaning of specific quantiles and percentiles.
-    - Example: Calculate the interquartile range and 75th percentile for a dataset.
-    - Exercise: Calculate and interpret quantiles and percentiles for various datasets.
-  
-  - **Box Plots and Their Use in Visualizing Quantiles** 
-    - Explain how box plots represent the five-number summary and outliers.
-    - Discuss the components of a box plot (whiskers, box, median, outliers).
-    - Example: Create a box plot for a dataset and analyze its features.
-    - Exercise: Construct box plots for given datasets and identify characteristics.
-
+-   **Introduction to Statistics**
+    -   **What is Statistics and its Importance**
+        -   Define statistics as the study of data collection, analysis, and interpretation.
+        -   Explain the importance of statistics in decision-making and research.
+        -   Example: Discuss how statistics are used in medical research.
+    -   **Descriptive vs. Inferential Statistics**
+        -   Differentiate between descriptive and inferential statistics.
+        -   Emphasize the role of each in understanding and drawing conclusions from data.
+        -   Exercise: Provide scenarios and determine whether descriptive or inferential statistics would be used.
+    -   **Types of Data: Categorical and Numerical**
+        -   Explain the distinction between categorical and numerical data.
+        -   Provide examples of each type of data.
+        -   Exercise: Classify given data sets as categorical or numerical.
+-   **Measures of Central Tendency**
+    -   **Mean, Median, and Mode**
+        -   Define and explain the concepts of mean, median, and mode.
+        -   Illustrate how to calculate each measure.
+        -   Example: Calculate mean, median, and mode for a set of exam scores.
+        -   Exercise: Compute mean, median, and mode for different data sets.
+    -   **Calculating and Interpreting Each Measure**
+        -   Discuss the interpretation of mean, median, and mode in terms of centrality.
+        -   Highlight scenarios where each measure is useful.
+        -   Exercise: Analyze the implications of outliers on measures of central tendency.
+    -   **Real-World Examples**
+        -   Provide real-world examples where mean, median, and mode are applied.
+        -   Discuss their relevance in various contexts, such as finance or education.
+        -   Exercise: Analyze a dataset from a real-world scenario and calculate central tendency measures.
+-   **Measures of Dispersion**
+    -   **Range, Variance, and Standard Deviation**
+        -   Define and explain the concepts of range, variance, and standard deviation.
+        -   Demonstrate how to calculate each measure.
+        -   Example: Calculate the range, variance, and standard deviation for a data set.
+        -   Exercise: Compute range, variance, and standard deviation for different datasets.
+    -   **Interpreting Variability**
+        -   Discuss the importance of measures of dispersion in understanding data spread.
+        -   Explain how variability affects the interpretation of central tendency measures.
+        -   Exercise: Compare and contrast datasets with different measures of dispersion.
+    -   **Variance and Standard Deviation for Populations vs. Samples**
+        -   Explain the difference between calculating variance and standard deviation for populations and samples.
+        -   Discuss when to use the population formula versus the sample formula.
+        -   Example: Calculate the population and sample variance and standard deviation for a dataset.
+-   **Quantiles and Percentiles**
+    -   **Definition of Quantiles and Percentiles**
+        -   Define quantiles and percentiles as measures of position in a dataset.
+        -   Explain how they divide data into equal parts.
+        -   Exercise: Calculate the quartiles and percentiles for a dataset.
+    -   **Calculation and Interpretation**
+        -   Discuss how to calculate quantiles and percentiles using order statistics.
+        -   Interpret the meaning of specific quantiles and percentiles.
+        -   Example: Calculate the interquartile range and 75th percentile for a dataset.
+        -   Exercise: Calculate and interpret quantiles and percentiles for various datasets.
+    -   **Box Plots and Their Use in Visualizing Quantiles**
+        -   Explain how box plots represent the five-number summary and outliers.
+        -   Discuss the components of a box plot (whiskers, box, median, outliers).
+        -   Example: Create a box plot for a dataset and analyze its features.
+        -   Exercise: Construct box plots for given datasets and identify characteristics.
 -   **Conclusion and Recap**
     -   Summarize the key concepts covered in the lecture.
     -   Highlight the importance of functions in various fields.

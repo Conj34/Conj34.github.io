@@ -5,82 +5,70 @@ format: html
 
 {{< include /support/_margins_Teaching.qmd >}}
 
-<h3>Report <small><small><small>(of Stats Lecture 2)</small></small></small></h3>
-
-- **Histograms and Frequency Distributions** 
-  - **Creating Histograms** 
-    - Define histograms as graphical representations of data distributions.
-    - Explain the concept of bins and their role in constructing histograms.
-    - Example: Create a histogram for a set of exam scores.
-    - Exercise: Construct a histogram for a given dataset.
-  
-  - **Understanding Frequency Distributions** 
-    - Define frequency distributions as tables summarizing data frequency.
-    - Explain how to organize data into intervals and record frequencies.
-    - Example: Create a frequency distribution table for a dataset.
-    - Exercise: Create frequency distribution tables for various datasets.
-  
-  - **Choosing Appropriate Bin Sizes** 
-    - Discuss considerations for selecting bin sizes in histograms.
-    - Explain the trade-off between too few and too many bins.
-    - Exercise: Determine suitable bin sizes for different datasets.
-  
-- **Bar Plots and Pie Charts** 
-  - **Constructing Bar Plots for Categorical Data** 
-    - Define bar plots as visual representations of categorical data.
-    - Explain how to create vertical and horizontal bar plots.
-    - Example: Construct a bar plot for survey responses.
-    - Exercise: Create bar plots for given categorical data.
-  
-  - **Interpreting Pie Charts** 
-    - Define pie charts as circular representations of parts of a whole.
-    - Explain how to calculate angles and percentages for each category.
-    - Example: Interpret a pie chart depicting distribution of expenses.
-    - Exercise: Interpret and analyze pie charts.
-  
-  - **Use Cases and Limitations of Each Plot** 
-    - Discuss when to use bar plots and pie charts based on data characteristics.
-    - Highlight limitations and potential misinterpretations of these plots.
-    - Exercise: Determine which plot is more suitable for a given dataset.
-  
-- **Box Plots (Box-and-Whisker Plots)** 
-  - **Definition and Components of a Box Plot** 
-    - Define box plots as visualizations of the five-number summary.
-    - Explain the components: median, quartiles, whiskers, and outliers.
-    - Example: Describe the features of a box plot.
-    - Exercise: Identify components of box plots from provided data.
-  
-  - **Creating Box Plots for Numerical Data** 
-    - Explain how to create a box plot using numerical data.
-    - Discuss the process of identifying quartiles and outliers.
-    - Example: Create a box plot for a dataset of test scores.
-    - Exercise: Construct box plots for given numerical datasets.
-  
-  - **Identifying Median, Quartiles, Outliers, and Range** 
-    - Demonstrate how to locate median, quartiles, and outliers on a box plot.
-    - Explain how to calculate the interquartile range (IQR).
-    - Exercise: Analyze box plots and calculate IQR for different datasets.
-  
-- **Scatter Plots and Correlation** 
-  - **Creating Scatter Plots** 
-    - Define scatter plots as representations of relationships between two numerical variables.
-    - Explain how to plot data points and interpret patterns.
-    - Example: Create a scatter plot for height and weight data.
-    - Exercise: Create scatter plots for various pairs of numerical variables.
-  
-  - **Positive, Negative, and No Correlation** 
-    - Define positive, negative, and no correlation between variables.
-    - Explain how to visually identify correlation patterns in scatter plots.
-    - Example: Interpret the correlation between study hours and exam scores.
-    - Exercise: Determine correlation types in given scatter plots.
-  
-  - **Calculating and Interpreting Correlation Coefficients** 
-    - Define the correlation coefficient and its range.
-    - Explain how to calculate and interpret correlation coefficients.
-    - Example: Calculate and interpret the correlation coefficient for a dataset.
-    - Exercise: Calculate correlation coefficients and analyze their meanings.
+<h2>Exploring Data and Plots</h2> 
 
 
+-   **Histograms and Frequency Distributions**
+    -   **Creating Histograms**
+        -   Define histograms as graphical representations of data distributions.
+        -   Explain the concept of bins and their role in constructing histograms.
+        -   Example: Create a histogram for a set of exam scores.
+        -   Exercise: Construct a histogram for a given dataset.
+    -   **Understanding Frequency Distributions**
+        -   Define frequency distributions as tables summarizing data frequency.
+        -   Explain how to organize data into intervals and record frequencies.
+        -   Example: Create a frequency distribution table for a dataset.
+        -   Exercise: Create frequency distribution tables for various datasets.
+    -   **Choosing Appropriate Bin Sizes**
+        -   Discuss considerations for selecting bin sizes in histograms.
+        -   Explain the trade-off between too few and too many bins.
+        -   Exercise: Determine suitable bin sizes for different datasets.
+-   **Bar Plots and Pie Charts**
+    -   **Constructing Bar Plots for Categorical Data**
+        -   Define bar plots as visual representations of categorical data.
+        -   Explain how to create vertical and horizontal bar plots.
+        -   Example: Construct a bar plot for survey responses.
+        -   Exercise: Create bar plots for given categorical data.
+    -   **Interpreting Pie Charts**
+        -   Define pie charts as circular representations of parts of a whole.
+        -   Explain how to calculate angles and percentages for each category.
+        -   Example: Interpret a pie chart depicting distribution of expenses.
+        -   Exercise: Interpret and analyze pie charts.
+    -   **Use Cases and Limitations of Each Plot**
+        -   Discuss when to use bar plots and pie charts based on data characteristics.
+        -   Highlight limitations and potential misinterpretations of these plots.
+        -   Exercise: Determine which plot is more suitable for a given dataset.
+-   **Box Plots (Box-and-Whisker Plots)**
+    -   **Definition and Components of a Box Plot**
+        -   Define box plots as visualizations of the five-number summary.
+        -   Explain the components: median, quartiles, whiskers, and outliers.
+        -   Example: Describe the features of a box plot.
+        -   Exercise: Identify components of box plots from provided data.
+    -   **Creating Box Plots for Numerical Data**
+        -   Explain how to create a box plot using numerical data.
+        -   Discuss the process of identifying quartiles and outliers.
+        -   Example: Create a box plot for a dataset of test scores.
+        -   Exercise: Construct box plots for given numerical datasets.
+    -   **Identifying Median, Quartiles, Outliers, and Range**
+        -   Demonstrate how to locate median, quartiles, and outliers on a box plot.
+        -   Explain how to calculate the interquartile range (IQR).
+        -   Exercise: Analyze box plots and calculate IQR for different datasets.
+-   **Scatter Plots and Correlation**
+    -   **Creating Scatter Plots**
+        -   Define scatter plots as representations of relationships between two numerical variables.
+        -   Explain how to plot data points and interpret patterns.
+        -   Example: Create a scatter plot for height and weight data.
+        -   Exercise: Create scatter plots for various pairs of numerical variables.
+    -   **Positive, Negative, and No Correlation**
+        -   Define positive, negative, and no correlation between variables.
+        -   Explain how to visually identify correlation patterns in scatter plots.
+        -   Example: Interpret the correlation between study hours and exam scores.
+        -   Exercise: Determine correlation types in given scatter plots.
+    -   **Calculating and Interpreting Correlation Coefficients**
+        -   Define the correlation coefficient and its range.
+        -   Explain how to calculate and interpret correlation coefficients.
+        -   Example: Calculate and interpret the correlation coefficient for a dataset.
+        -   Exercise: Calculate correlation coefficients and analyze their meanings.
 -   **Conclusion and Recap**
     -   Summarize the key concepts covered in the lecture.
     -   Highlight the importance of functions in various fields.

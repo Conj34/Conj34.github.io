@@ -5,7 +5,7 @@ format: html
 
 {{< include /support/_margins_Teaching.qmd >}}
 
-<h3>Report <small><small><small>(of Maths Lecture 3)</small></small></small></h3>   
+<h2>Systems of Linear Equations</h2> 
 
 * **Introduction to Systems of Equations** 
     +   **What is a System of Equations?**  
