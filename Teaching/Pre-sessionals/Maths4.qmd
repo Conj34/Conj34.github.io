@@ -7,28 +7,73 @@ format: html
 
 <h3>Report <small><small><small>(of Maths Lecture 3)</small></small></small></h3>
 
--   **Introduction to Systems of Equations** (10 minutes)
-    -   **What is a System of Equations?** (3 minutes) -Definition of a system of equations as a set of equations with common variables. -Example: Discuss a system representing the total cost of items purchased.
+Certainly! Here's a timeline for a one-hour lecture on the topics you've mentioned, along with examples and exercises:
 
-    -   **Methods for Solving Systems** (4 minutes) -Briefly explain graphing, substitution, and elimination methods. -Highlight when each method is most suitable. -Exercise: Identify which method is best for a given system.
+**Introduction to Systems of Equations** (10 minutes)
+- **What is a System of Equations?** (3 minutes)
+  - Definition of a system of equations as a set of equations with common variables.
+  - Example: Discuss a system representing the total cost of items purchased.
 
-    -   **Importance and Applications** (3 minutes) -Emphasize the significance of systems of equations in solving real-world problems. -Mention applications in various fields. -Exercise: Brainstorm other scenarios where systems could be applied.
+- **Methods for Solving Systems** (4 minutes)
+  - Briefly explain graphing, substitution, and elimination methods.
+  - Highlight when each method is most suitable.
+  - Exercise: Identify which method is best for a given system.
 
-**Graphical Solution** (15 minutes) + **Solving Systems Graphically** (7 minutes) -Explain the concept of solution points as intersections of graphs. -Example: Solve the system $2x + y = 5$ and $3x -y = 1$ graphically. -Exercise: Graph and solve simple systems of equations.
+- **Importance and Applications** (3 minutes)
+  - Emphasize the significance of systems of equations in solving real-world problems.
+  - Mention applications in various fields.
+  - Exercise: Brainstorm other scenarios where systems could be applied.
 
--   **Interpreting Solutions on Graphs** (4 minutes) -Discuss the significance of unique solutions, no solutions, and infinite solutions. -Interpret the graphical meaning of these cases. -Exercise: Analyze different scenarios on graphs.
+**Graphical Solution** (15 minutes)
+- **Solving Systems Graphically** (7 minutes)
+  - Explain the concept of solution points as intersections of graphs.
+  - Example: Solve the system $2x + y = 5$ and $3x - y = 1$ graphically.
+  - Exercise: Graph and solve simple systems of equations.
 
--   **Advantages and Limitations** (4 minutes) -Compare graphical method with other methods. -Discuss accuracy and limitations of graphical solutions.
+- **Interpreting Solutions on Graphs** (4 minutes)
+  - Discuss the significance of unique solutions, no solutions, and infinite solutions.
+  - Interpret the graphical meaning of these cases.
+  - Exercise: Analyze different scenarios on graphs.
 
-**Substitution and Elimination Methods** (20 minutes) + **Solving Systems using Substitution** (10 minutes) -Explain the substitution method step by step. -Example: Solve the system $3x -2y = 8$ and $x + y = 3$ using substitution. -Exercise: Practice solving systems using the substitution method.
+- **Advantages and Limitations** (4 minutes)
+  - Compare graphical method with other methods.
+  - Discuss accuracy and limitations of graphical solutions.
 
--   **Solving Systems using Elimination** (10 minutes) -Explain the elimination (addition) method step by step. -Example: Solve the system $2x + 3y = 7$ and $4x -y = 5$ using elimination. -Exercise: Practice solving systems using the elimination method.
+**Substitution and Elimination Methods** (20 minutes)
+- **Solving Systems using Substitution** (10 minutes)
+  - Explain the substitution method step by step.
+  - Example: Solve the system $3x - 2y = 8$ and $x + y = 3$ using substitution.
+  - Exercise: Practice solving systems using the substitution method.
 
-**Applications of Systems of Equations** (15 minutes) + **Real-World Examples of Systems** (5 minutes) -Discuss examples from fields like economics, chemistry, and engineering. -Example: Discuss a mixture problem involving two solutions. -Exercise: Brainstorm more real-world examples.
+- **Solving Systems using Elimination** (10 minutes)
+  - Explain the elimination (addition) method step by step.
+  - Example: Solve the system $2x + 3y = 7$ and $4x - y = 5$ using elimination.
+  - Exercise: Practice solving systems using the elimination method.
 
--   **Using Systems to Solve Practical Problems** (8 minutes) -Explain how to set up and solve practical problems using systems. -Example: Solve a money-related problem involving different types of coins. -Exercise: Solve practical problems related to mixtures, interest, or other scenarios.
+**Applications of Systems of Equations** (15 minutes)
+- **Real-World Examples of Systems** (5 minutes)
+  - Discuss examples from fields like economics, chemistry, and engineering.
+  - Example: Discuss a mixture problem involving two solutions.
+  - Exercise: Brainstorm more real-world examples.
 
--   **Reflection on Problem-Solving** (2 minutes) -Highlight the problem-solving process and the role of systems. -Encourage students to think critically and apply these methods.
+- **Using Systems to Solve Practical Problems** (8 minutes)
+  - Explain how to set up and solve practical problems using systems.
+  - Example: Solve a money-related problem involving different types of coins.
+  - Exercise: Solve practical problems related to mixtures, interest, or other scenarios.
 
+- **Reflection on Problem-Solving** (2 minutes)
+  - Highlight the problem-solving process and the role of systems.
+  - Encourage students to think critically and apply these methods.
+
+**Conclusion and Recap** (5 minutes)
+- Summarize the key concepts covered in the lecture.
+- Emphasize the importance of systems of equations in various contexts.
+- Encourage students to practice solving systems using different methods.
+
+**Q&A Session** (5 minutes)
+- Address any questions or concerns from the students related to the lecture content.
+- Clarify doubts and provide additional explanations if needed.
+
+Remember, the timing for each segment is approximate, and you can adjust it based on the pace of your lecture and the level of interaction with the students. Modify the examples and exercises to suit the complexity and level of your audience.
     -   **Conclusion and Recap** (5 minutes) -Summarize the key concepts covered in the lecture. -Highlight the importance of functions in various fields. -Encourage students to practice and explore more examples.
     -   **Q&A Session** (5 minutes)
