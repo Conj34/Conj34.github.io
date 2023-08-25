@@ -154,99 +154,99 @@ amongst the first 100 many "Best books"
 ############################################################################# 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Ernest Hemingway (4)
-	 44  	 The Sun Also Rises 
-	 57  	 The Old Man and the Sea
-	 60  	 For Whom the Bell Tolls
-	 84  	 A Farewell to Arms
+     44      The Sun Also Rises 
+     57      The Old Man and the Sea
+     60      For Whom the Bell Tolls
+     84      A Farewell to Arms
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Franz Kafka (4)
-	 33  	 The Trial
-	 61  	 The Complete Stories of Franz Kafka
-	 62  	 The Metamorphosis
-	 86  	 The Castle
+     33      The Trial
+     61      The Complete Stories of Franz Kafka
+     62      The Metamorphosis
+     86      The Castle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Fyodor Dostoyevsky (4)
-	 13  	 The Brothers Karamazov 
-	 14  	 Crime and Punishment 
-	 54  	 The Idiot
-	 69  	 The Possessed
+     13      The Brothers Karamazov 
+     14      Crime and Punishment 
+     54      The Idiot
+     69      The Possessed
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 William Faulkner (3)
-	 25  	 The Sound and the Fury
-	 30  	 Absalom, Absalom!
-	 67  	 As I Lay Dying
+     25      The Sound and the Fury
+     30      Absalom, Absalom!
+     67      As I Lay Dying
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Virginia Woolf (3)
-	 22  	 To the Lighthouse 
-	 38  	 Mrs. Dalloway 
-	 79  	 Orlando: A Biography
+     22      To the Lighthouse 
+     38      Mrs. Dalloway 
+     79      Orlando: A Biography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Vladimir Nabokov (2)
-	 12  	 Lolita 
-	 65  	 Pale Fire 
+     12      Lolita 
+     65      Pale Fire 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Sophocles (2)
-	 51  	 Oedipus the King
-	 66  	 Antigone
+     51      Oedipus the King
+     66      Antigone
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 James Joyce (2)
-	 2  	 Ulysses
-	 49  	 A Portrait of the Artist as a Young Man 
+     2       Ulysses
+     49      A Portrait of the Artist as a Young Man 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Stendhal (2)
-	 34  	 The Red and the Black
-	 93  	 The Charterhouse of Parma
+     34      The Red and the Black
+     93      The Charterhouse of Parma
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Charles Dickens (2)
-	 27  	 Great Expectations
-	 45  	 David Copperfield
+     27      Great Expectations
+     45      David Copperfield
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Jane Austen (2)
-	 17  	 Pride and Prejudice
-	 59  	 Emma
+     17      Pride and Prejudice
+     59      Emma
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 George Orwell (2)
-	 26  	 Nineteen Eighty Four
-	 78  	 Animal Farm
+     26      Nineteen Eighty Four
+     78      Animal Farm
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Gustave Flaubert (2)
-	 10  	 Madame Bovary
-	 87  	 A Sentimental Education
+     10      Madame Bovary
+     87      A Sentimental Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Homer (2)
-	 9  	 The Odyssey
-	 21  	 The Iliad
+     9       The Odyssey
+     21      The Iliad
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Leo Tolstoy (2)
-	 7  	 War and Peace
-	 19  	 Anna Karenina
+     7       War and Peace
+     19      Anna Karenina
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ```
