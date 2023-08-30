@@ -1,6 +1,8 @@
 ---
 title: "Research"
-format: html
+format: 
+  html:
+    page-layout: article
 ---
 
 ::: column-margin
@@ -19,7 +21,7 @@ format: html
 | Title                                                                                                         | People                                               | Date    | Instit. | Status                                |
 |---------------|---------------|---------------|---------------|---------------|
 | Density of small diameter subgraphs in $K_r$-free graphs (II)                                                 | D.M.                                                 | 2023-   | LSE     | ![](../images/0.png){width="0.8cm"}   |
-| Partition universality for hypergraphs                                                                        | P. Allen, J. Böttcher, D.M.                          | 2023-   | LSE     | ![](../images/0.png){width="0.8cm"}   |
+| Partition universality for hypergraphs                                                                        | P. Allen, J. Böttcher, D.M.                          | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}   |
 | Convergence of policy-gradiente methods in repeated games                                                     | G. Ashkenazi-Golan, D.M., E. Plumb                   | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
 | Product-free subsets of $[n]$                                                                                 | L. Mattos, D.M., O. Parczyk                          | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
 | Maker Breaker Games in the square lattice                                                                     | F. Illingworth, D.M., A. Pokrovskiy                  | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
@@ -31,19 +33,54 @@ format: html
 
 ## Talks
 
-| Title                                                                                                                                         | Date    | Occasion            | Place                |
+
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+
+| Title                                                                                                     | Date                         | Occasion                         | Place                  |
++===========================================================================================================+==============================+==================================+========================+
+| [Parititon Universality](../Documents_files/Presentations/Partit_uni.pdf)                                 |   Aug '23                    |   Eurocomb                       |   Prague               |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+
+| [The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$](../Documents_files/Presentations/Ram_num.pdf)           |   Sep '23                    |   DMV (Invited speaker)          |   Ilmenau              |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+         
+|                                                                                                           |   Apr '23                    |   Invited seminar                |   Prague               |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+         
+|                                                                                                           |   Jul '22                    |   ICGT                           |   Montpellier          |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+         
+|                                                                                                           |   Jul '22                    |   Invited seminar                |   TU Hamburg           |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+         
+| [Chromatic profile of $\{C_3,\dots{},C_{2k-1}\}$](../Documents_files/Presentations/3_chrom.pdf)           |   Mar '23                    |   PCC                            |   Birmingham           |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+         
+|                                                                                                           |   Jul '22                    |   RSA                            |   Poznan               |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+         
+|                                                                                                           |   Jul '22                    |   ICGT                           |   Montpellier          |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+         
+|                                                                                                           |   Jul '22                    |   Invited seminar                |   TU Hamburg           |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+
+| [About the Pentagon Conjecture](../Documents_files/Theses/MSc_pres.pdf)                                   |   Nov '20                    |   LSE Seminar                    |   London               |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+
+| [Minimal Ramsey Graphs for Ciclicity](../Documents_files/Presentations/Min_cicl.pdf)                      |   May '19                    |   ETHZ Mittagsseminar            |   Zurich               |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+
+| [Dimensione di Hausdorff del Moto Browniano](../Documents_files/Theses/BSc_Thesis.compr.pdf)              |   May '19                    |   BSc Defense                    |   Pisa                 |
++-----------------------------------------------------------------------------------------------------------+------------------------------+----------------------------------+------------------------+
+
+<!--
+[About the Pentagon Conjecture](../Documents_files/Theses/MSc_pres.pdf) 
+[Dimensione di Hausdorff del Moto Browniano](../Documents_files/Theses/BSc_Thesis.compr.pdf)
+
+| Title                                                                              | Date    | Occasion            | Place                |
 |------------------|------------------|------------------|------------------|
-| [The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$](../Documents_files/Presentations/Ramsey_number_of_square_of_paths__slides.pdf)              | Sep '23 | DMV (Invited)       | Ilmenau              |
-|                                                                                                                                               | Apr '23 | Invited seminar     | Charles Univ. Prague |
-|                                                                                                                                               | Jun '22 | Invited seminar     | TU Hamburg           |
-|                                                                                                                                               | Jul '22 | ICGT                | Montpellier          |
-| [Chromatic profile of $\{C_3,\dots{},C_{2k-1}\}$](../Documents_files/Presentations/3_chromatic___Slides.pdf)                                  | Mar '23 | PCC                 | Birmingham           |
-|                                                                                                                                               | Jul '22 | RSA                 | Poznan               |
-| [About the Pentagon Conjecture](../Documents_files/Theses/MSc_presentation_LSE.pdf)                                                           | Nov '20 | LSE Seminar         | London               |
-| [Minimal Ramsey Graphs for Ciclicity](../Documents_files/Presentations/Seminar___Minimal_Ramsey_Graphs_for_cyclicity___Domenico__slides_.pdf) | May '19 | ETHZ Mittagsseminar | Zurich               |
-| [Studio della dimensione di Hausdorff del Moto Browniano](../Documents_files/Theses/BSc_Thesis.compressed.pdf)                                | Jul '18 | BSc defense         | Pisa                 |
+| [The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$](../Documents_files/Presentations/Ram_num.pdf)              | Sep '23 | DMV (Invited)       | Ilmenau              |
+| Partition universality                                                                                                                         | Aug '23 | Eurocomb       | Prague              |
+|  The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$                                                                                               | Apr '23 | Invited seminar     | Charles Univ. Prague |
+| [Chromatic profile of $\{C_3,\dots{},C_{2k-1}\}$](../Documents_files/Presentations/3_chrom.pdf)                                  | Mar '23 | PCC                 | Birmingham           |
+|  The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$                                                                                              | Jul '22 | ICGT                | Montpellier          |
+|  Chromatic profile of $\{C_3,\dots{},C_{2k-1}\}$                                                                                              | Jul '22 | RSA                 | Poznan               |
+| The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$                                                                                                 | Jun '22 | Invited seminar     | TU Hamburg           |
+| [About the Pentagon Conjecture](../Documents_files/Theses/MSc_pres.pdf)                                                           | Nov '20 | LSE Seminar         | London               |
+| [Minimal Ramsey Graphs for Ciclicity](../Documents_files/Presentations/Min_cicl.pdf) | May '19 | ETHZ Mittagsseminar | Zurich               |
+| [Studio della dimensione di Hausdorff del Moto Browniano](../Documents_files/Theses/BSc_Thesis.compr.pdf)                                | Jul '18 | BSc defense         | Pisa                 |
 
 : {.striped .hover tbl-colwidths="\[50,30,20\]"}
+-->
 
 ## Theses and Projects
 
