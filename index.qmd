@@ -24,4 +24,15 @@ I am currently a *PhD student* in the department of Mathematics of LSE; my inter
 <script src="javascripts/quotes.js"></script>
 ```
 :::
+
+::: callout-caution
+## Songs I like
+
+```{=html}
+<div id = "musicDisplay">
+</div>
+<center><button onclick="newMusic()">New Song</button></center>
+<script src="javascripts/music.js"></script>
+```
+:::
 :::
