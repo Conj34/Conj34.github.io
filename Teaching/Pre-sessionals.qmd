@@ -3,172 +3,157 @@ title: "Pre-sessionals for Management"
 format: html
 ---
 
-{{< include /support/_margins_Teaching.qmd >}}
-This Pre-sessional course consists of two section, four hours each. In the first section, we are gonig to see an introduction to fundamental mathematical tools, in the second, we are going to examin fundamentals of statistics.
+{{< include /support/_margins_Teaching.qmd >}} This Pre-sessional course consists of two section, four hours each. In the first section, we are gonig to see an introduction to fundamental mathematical tools, in the second, we are going to examin fundamentals of statistics.
 
 A summary of the course is as follows:
 
 ::: panel-tabset
 ## Very generic
+
 <h3>Maths</h3>
-1. [Introduction to Functions and Linear Equations](../Teaching/Pre-sessionals/Maths1.qmd)
-2. [Introduction to Derivatives](../Teaching/Pre-sessionals/Maths2.qmd)
-3. [Systems of Linear Equations](../Teaching/Pre-sessionals/Maths3.qmd)
-4. [Supply and Demand Problems](../Teaching/Pre-sessionals/Maths4.qmd)
+
+1.  [Introduction to Functions and Linear Equations](../Teaching/Pre-sessionals/Maths1.qmd)
+2.  [Introduction to Derivatives](../Teaching/Pre-sessionals/Maths2.qmd)
+3.  [Systems of Linear Equations](../Teaching/Pre-sessionals/Maths3.qmd)
+4.  [Supply and Demand Problems](../Teaching/Pre-sessionals/Maths4.qmd)
 
 <h3>Statistics</h3>
-1. [Introduction to Basic Statistics](../Teaching/Pre-sessionals/Stats1.qmd)
-2. [Exploring Data and Plots](../Teaching/Pre-sessionals/Stats2.qmd)
-3. [Probability and Reading Table](../Teaching/Pre-sessionals/Stats3.qmd)
+
+1.  [Introduction to Basic Statistics](../Teaching/Pre-sessionals/Stats1.qmd)
+2.  [Exploring Data and Plots](../Teaching/Pre-sessionals/Stats2.qmd)
+3.  [Probability and Reading Table](../Teaching/Pre-sessionals/Stats3.qmd)
 
 ## Maths
+
 <h3>Maths</h3>
-**Lecture 1:**  [**Introduction to Functions and Linear Equations (1 hour)**](../Teaching/Pre-sessionals/Maths1.qmd)
 
-1. **Introduction to Functions:**
-   - What is a function?
-   - Domain and range of a function.
-   - Notation: $f(x)$, domain, range, etc.
+**Lecture 1:** [**Introduction to Functions and Linear Equations (1 hour)**](../Teaching/Pre-sessionals/Maths1.qmd)
 
-2. **Linear Functions:**
-   - Definition of linear functions.
-   - Graphing linear functions.
-   - Finding the slope and $y$-intercept.
-   - Writing equations in slope-intercept form: $y = mx + b$.
-   
-3. **Polynomial Functions of Degree 2:**
-   - Definition of polynomial functions.
-   - Quadratic functions: $f(x) = ax^2 + bx + c$.
-   - Graphing quadratic functions.
-   - Finding the vertex, axis of symmetry, and intercepts.
-
-4. **Applications of Functions:**
-   - Real-world examples of functions.
-   - Modeling with linear and quadratic functions.
-   - Simple problems involving functions.
+1.  **Introduction to Functions:**
+    -   What is a function?
+    -   Domain and range of a function.
+    -   Notation: $f(x)$, domain, range, etc.
+2.  **Linear Functions:**
+    -   Definition of linear functions.
+    -   Graphing linear functions.
+    -   Finding the slope and $y$-intercept.
+    -   Writing equations in slope-intercept form: $y = mx + b$.
+3.  **Polynomial Functions of Degree 2:**
+    -   Definition of polynomial functions.
+    -   Quadratic functions: $f(x) = ax^2 + bx + c$.
+    -   Graphing quadratic functions.
+    -   Finding the vertex, axis of symmetry, and intercepts.
+4.  **Applications of Functions:**
+    -   Real-world examples of functions.
+    -   Modeling with linear and quadratic functions.
+    -   Simple problems involving functions.
 
 **Lecture 2:** [**Introduction to Derivatives (1 hour)**](../Teaching/Pre-sessionals/Maths2.qmd)
 
-1. **Introduction to Derivatives:**
-   - What is a derivative?
-   - The concept of instantaneous rate of change.
-   - Notation: $f'(x)$, $df/dx$.
-   
-2. **Derivatives of Linear and Quadratic Functions:**
-   - Finding the derivative of linear functions.
-   - Finding the derivative of quadratic functions.
-   - Tangent lines and rates of change.
-
-3. **Basic Rules of Differentiation:**
-   - Power rule for differentiation.
-   - Constant rule and sum rule.
-   - Differentiating polynomial functions.
-
-4. **Applications of Derivatives:**
-   - Finding maxima and minima using derivatives.
-   - Tangent lines as approximations.
-   - Simple optimization problems.
+1.  **Introduction to Derivatives:**
+    -   What is a derivative?
+    -   The concept of instantaneous rate of change.
+    -   Notation: $f'(x)$, $df/dx$.
+2.  **Derivatives of Linear and Quadratic Functions:**
+    -   Finding the derivative of linear functions.
+    -   Finding the derivative of quadratic functions.
+    -   Tangent lines and rates of change.
+3.  **Basic Rules of Differentiation:**
+    -   Power rule for differentiation.
+    -   Constant rule and sum rule.
+    -   Differentiating polynomial functions.
+4.  **Applications of Derivatives:**
+    -   Finding maxima and minima using derivatives.
+    -   Tangent lines as approximations.
+    -   Simple optimization problems.
 
 **Lecture 3**: [**Systems of Linear Equations (1 hour)**](../Teaching/Pre-sessionals/Maths3.qmd)
 
-1. **Introduction to Systems of Equations:**
-   - What is a system of equations?
-   - Methods for solving systems: graphing, substitution, elimination.
-
-2. **Graphical Solution:**
-   - Solving systems graphically.
-   - Interpreting solutions on graphs.
-   
-3. **Substitution and Elimination Methods:**
-   - Solving systems using substitution method.
-   - Solving systems using elimination (addition) method.
-
-4. **Applications of Systems of Equations:**
-   - Real-world examples of systems.
-   - Using systems to solve practical problems (e.g., mixtures, interest).
+1.  **Introduction to Systems of Equations:**
+    -   What is a system of equations?
+    -   Methods for solving systems: graphing, substitution, elimination.
+2.  **Graphical Solution:**
+    -   Solving systems graphically.
+    -   Interpreting solutions on graphs.
+3.  **Substitution and Elimination Methods:**
+    -   Solving systems using substitution method.
+    -   Solving systems using elimination (addition) method.
+4.  **Applications of Systems of Equations:**
+    -   Real-world examples of systems.
+    -   Using systems to solve practical problems (e.g., mixtures, interest).
 
 **Lecture 4:** [**Supply and Demand Problems (1 hour)**](../Teaching/Pre-sessionals/Maths4.qmd)
 
-1. **Introduction to Supply and Demand:**
-   - Basic concepts of supply and demand.
-   - Equilibrium point and market equilibrium.
-
-2. **Supply and Demand Equations:**
-   - Modeling supply and demand using linear equations.
-   - Equilibrium price and quantity.
-
-3. **Shifts in Supply and Demand:**
-   - Factors causing shifts in supply and demand curves.
-   - Effects on equilibrium price and quantity.
-
-4. **Applications to Real-World Scenarios:**
-   - Applying supply and demand analysis to real-world scenarios (e.g., price ceilings, shortages, surpluses).
-   - Understanding market dynamics and changes.
+1.  **Introduction to Supply and Demand:**
+    -   Basic concepts of supply and demand.
+    -   Equilibrium point and market equilibrium.
+2.  **Supply and Demand Equations:**
+    -   Modeling supply and demand using linear equations.
+    -   Equilibrium price and quantity.
+3.  **Shifts in Supply and Demand:**
+    -   Factors causing shifts in supply and demand curves.
+    -   Effects on equilibrium price and quantity.
+4.  **Applications to Real-World Scenarios:**
+    -   Applying supply and demand analysis to real-world scenarios (e.g., price ceilings, shortages, surpluses).
+    -   Understanding market dynamics and changes.
 
 ## Statistics
+
 <h3>Statistics</h3>
+
 **Lecture 1:** [**Introduction to Basic Statistics (2 hours)**](../Teaching/Pre-sessionals/Stats1.qmd)
 
-1. **Introduction to Statistics:**
-   - What is statistics and its importance.
-   - Descriptive vs. inferential statistics.
-   - Types of data: categorical and numerical.
-
-2. **Measures of Central Tendency:**
-   - Mean, median, and mode.
-   - Calculating and interpreting each measure.
-   - Real-world examples.
-
-3. **Measures of Dispersion:**
-   - Range, variance, and standard deviation.
-   - Interpreting variability.
-   - Variance and standard deviation for populations vs. samples.
-
-4. **Quantiles and Percentiles:**
-   - Definition of quantiles and percentiles.
-   - Calculation and interpretation.
-   - Box plots and their use in visualizing quantiles.
+1.  **Introduction to Statistics:**
+    -   What is statistics and its importance.
+    -   Descriptive vs. inferential statistics.
+    -   Types of data: categorical and numerical.
+2.  **Measures of Central Tendency:**
+    -   Mean, median, and mode.
+    -   Calculating and interpreting each measure.
+    -   Real-world examples.
+3.  **Measures of Dispersion:**
+    -   Range, variance, and standard deviation.
+    -   Interpreting variability.
+    -   Variance and standard deviation for populations vs. samples.
+4.  **Quantiles and Percentiles:**
+    -   Definition of quantiles and percentiles.
+    -   Calculation and interpretation.
+    -   Box plots and their use in visualizing quantiles.
 
 **Lecture 2:** [**Exploring Data and Plots (1 hour)**](../Teaching/Pre-sessionals/Stats2.qmd)
 
-1. **Histograms and Frequency Distributions:**
-   - Creating histograms.
-   - Understanding frequency distributions.
-   - Choosing appropriate bin sizes.
-
-2. **Bar Plots and Pie Charts:**
-   - Constructing bar plots for categorical data.
-   - Interpreting pie charts.
-   - Use cases and limitations of each plot.
-
-3. **Box Plots (Box-and-Whisker Plots):**
-   - Definition and components of a box plot.
-   - Creating box plots for numerical data.
-   - Identifying median, quartiles, outliers, and range.
-
-4. **Scatter Plots and Correlation:**
-   - Creating scatter plots.
-   - Positive, negative, and no correlation.
-   - Calculating and interpreting correlation coefficients.
+1.  **Histograms and Frequency Distributions:**
+    -   Creating histograms.
+    -   Understanding frequency distributions.
+    -   Choosing appropriate bin sizes.
+2.  **Bar Plots and Pie Charts:**
+    -   Constructing bar plots for categorical data.
+    -   Interpreting pie charts.
+    -   Use cases and limitations of each plot.
+3.  **Box Plots (Box-and-Whisker Plots):**
+    -   Definition and components of a box plot.
+    -   Creating box plots for numerical data.
+    -   Identifying median, quartiles, outliers, and range.
+4.  **Scatter Plots and Correlation:**
+    -   Creating scatter plots.
+    -   Positive, negative, and no correlation.
+    -   Calculating and interpreting correlation coefficients.
 
 **Lecture 3:** [**Probability and Reading Tables (1 hour)**](../Teaching/Pre-sessionals/Stats3.qmd)
 
-1. **Introduction to Probability:**
-   - Basic concepts of probability.
-   - Probability as a ratio.
-   - Probability vs. odds.
-
-2. **Probability Distributions:**
-   - Discrete vs. continuous probability distributions.
-   - Probability mass function (PMF) and probability density function (PDF).
-   - Examples: uniform, binomial, and normal distributions.
-
-3. **Reading Data Tables:**
-   - Understanding data tables and formats.
-   - Extracting information from frequency tables.
-   - Interpreting data presented in tabular form.
+1.  **Introduction to Probability:**
+    -   Basic concepts of probability.
+    -   Probability as a ratio.
+    -   Probability vs. odds.
+2.  **Probability Distributions:**
+    -   Discrete vs. continuous probability distributions.
+    -   Probability mass function (PMF) and probability density function (PDF).
+    -   Examples: uniform, binomial, and normal distributions.
+3.  **Reading Data Tables:**
+    -   Understanding data tables and formats.
+    -   Extracting information from frequency tables.
+    -   Interpreting data presented in tabular form.
 :::
-
 
 ::: panel-tabset
 ## Assessments
@@ -177,140 +162,106 @@ You can find here some questions that will assess your previous knowledge of the
 
 ## Maths
 
-
-
-
 **Pre-Lecture Assessment: Mathematics Knowledge Check**
 
-1. Which of the following equations represents a quadratic function?
-   a) $y = 3x + 2$
-   b) $y = x^3 - 2x$
-   c) $y = 2x - 5$
-   d) $y = 4x^2 - 7x + 1$
-
-2. What is the y-intercept of the linear function $y = 2x - 3$?
-   a) $(2, -3)$
-   b) $(-2, 3)$
-   c) $(0, -3)$
-   d) $(0, 2)$
-
-3. If $f(x) = 4x^3 - 2x^2 + 7x - 1$, what is the derivative $f'(x)$?
-   a) $12x^2 - 4x + 7$
-   b) $12x^2 - 4x - 7$
-   c) $12x^3 - 4x^2 + 7$
-   d) $12x^3 - 4x^2 - 7$
-
-4. How many solutions can a system of linear equations have if the lines are parallel and distinct?
-   a) One solution
-   b) Two solutions
-   c) Infinite solutions
-   d) No solution
-
-5. Solve the quadratic equation for $x$: $x^2 - 9 = 0$.
-   a) $x = -3$
-   b) $x = 0$
-   c) $x = 3$
-   d) $x = \pm 3$
-
-6. Which of the following equations represents a vertical line?
-   a) $y = 2x + 1$
-   b) $x = -3$
-   c) $y = x^2 - 4$
-   d) $y = -2x$
-
-7. Given the system of two equations: $2x + y = 5$ and $3x + 2y = 8$. What is the solution $(x, y)$?
-   a) $(1, 3)$
-   b) $(2, 1)$
-   c) $(3, 2)$
-   d) $(-1, -3)$
-
-8. What is the slope of the line passing through the points $(2, 4)$ and $(4, 8)$?
-   a) $2$
-   b) $4$
-   c) $1/2$
-   d) $1$
-
-9. What is the mean of the numbers $5, 8, 10, 12$, and $15$?
-    a) $8$
-    b) $10$
-    c) $11$
-    d) $12$
-
+1.  Which of the following equations represents a quadratic function?
+    a)  $y = 3x + 2$
+    b)  $y = x^3 - 2x$
+    c)  $y = 2x - 5$
+    d)  $y = 4x^2 - 7x + 1$
+2.  What is the y-intercept of the linear function $y = 2x - 3$?
+    a)  $(2, -3)$
+    b)  $(-2, 3)$
+    c)  $(0, -3)$
+    d)  $(0, 2)$
+3.  If $f(x) = 4x^3 - 2x^2 + 7x - 1$, what is the derivative $f'(x)$?
+    a)  $12x^2 - 4x + 7$
+    b)  $12x^2 - 4x - 7$
+    c)  $12x^3 - 4x^2 + 7$
+    d)  $12x^3 - 4x^2 - 7$
+4.  How many solutions can a system of linear equations have if the lines are parallel and distinct?
+    a)  One solution
+    b)  Two solutions
+    c)  Infinite solutions
+    d)  No solution
+5.  Solve the quadratic equation for $x$: $x^2 - 9 = 0$.
+    a)  $x = -3$
+    b)  $x = 0$
+    c)  $x = 3$
+    d)  $x = \pm 3$
+6.  Which of the following equations represents a vertical line?
+    a)  $y = 2x + 1$
+    b)  $x = -3$
+    c)  $y = x^2 - 4$
+    d)  $y = -2x$
+7.  Given the system of two equations: $2x + y = 5$ and $3x + 2y = 8$. What is the solution $(x, y)$?
+    a)  $(1, 3)$
+    b)  $(2, 1)$
+    c)  $(3, 2)$
+    d)  $(-1, -3)$
+8.  What is the slope of the line passing through the points $(2, 4)$ and $(4, 8)$?
+    a)  $2$
+    b)  $4$
+    c)  $1/2$
+    d)  $1$
+9.  What is the mean of the numbers $5, 8, 10, 12$, and $15$?
+    a)  $8$
+    b)  $10$
+    c)  $11$
+    d)  $12$
 
 ## Statistics
+
 **Pre-Lecture Assessment: Statistics Knowledge Check**
 
-1. What is the mean of the numbers 5, 8, 10, 12, and 15?
-   a) 8
-   b) 10
-   c) 11
-   d) 12
-
-2. If the range of a data set is 20 and the smallest value is 5, what is the largest value?
-   a) 20
-   b) 25
-   c) 15
-   d) 10
-
-3. Which statistical measure is most affected by outliers?
-   a) Mean
-   b) Median
-   c) Mode
-   d) Range
-
-4. What is the purpose of a scatter plot?
-   a) To display categorical data.
-   b) To show the relationship between two numerical variables.
-   c) To represent the distribution of a single variable.
-   d) To compare different groups of data.
-
-5. Which of the following represents a positively skewed distribution?
-   a) Mean < Median
-   b) Mean > Median
-   c) Mean = Median
-   d) No relationship between Mean and Median
-
-6. What does a correlation coefficient of -0.85 indicate?
-   a) Strong positive correlation
-   b) Moderate negative correlation
-   c) Weak positive correlation
-   d) Strong negative correlation
-
-7. If two events are independent, what is the probability of both events occurring?
-   a) P(A and B) = P(A) + P(B)
-   b) P(A and B) = P(A) * P(B)
-   c) P(A and B) = P(A) - P(B)
-   d) P(A and B) = P(A) / P(B)
-
-8. What is the main purpose of calculating quantiles in statistics?
-   a) To find the mean of the data.
-   b) To identify the median of the data.
-   c) To measure the spread of the data.
-   d) To divide the data into equal parts.
-
-9. What is the difference between variance and standard deviation?
-   a) Variance is the square root of standard deviation.
-   b) Variance measures spread, while standard deviation measures average deviation.
-   c) Variance is always positive, while standard deviation can be negative.
-   d) Variance is used for categorical data, while standard deviation is used for numerical data.
-
+1.  What is the mean of the numbers 5, 8, 10, 12, and 15?
+    a)  8
+    b)  10
+    c)  11
+    d)  12
+2.  If the range of a data set is 20 and the smallest value is 5, what is the largest value?
+    a)  20
+    b)  25
+    c)  15
+    d)  10
+3.  Which statistical measure is most affected by outliers?
+    a)  Mean
+    b)  Median
+    c)  Mode
+    d)  Range
+4.  What is the purpose of a scatter plot?
+    a)  To display categorical data.
+    b)  To show the relationship between two numerical variables.
+    c)  To represent the distribution of a single variable.
+    d)  To compare different groups of data.
+5.  Which of the following represents a positively skewed distribution?
+    a)  Mean \< Median
+    b)  Mean \> Median
+    c)  Mean = Median
+    d)  No relationship between Mean and Median
+6.  What does a correlation coefficient of -0.85 indicate?
+    a)  Strong positive correlation
+    b)  Moderate negative correlation
+    c)  Weak positive correlation
+    d)  Strong negative correlation
+7.  If two events are independent, what is the probability of both events occurring?
+    a)  P(A and B) = P(A) + P(B)
+    b)  P(A and B) = P(A) \* P(B)
+    c)  P(A and B) = P(A) - P(B)
+    d)  P(A and B) = P(A) / P(B)
+8.  What is the main purpose of calculating quantiles in statistics?
+    a)  To find the mean of the data.
+    b)  To identify the median of the data.
+    c)  To measure the spread of the data.
+    d)  To divide the data into equal parts.
+9.  What is the difference between variance and standard deviation?
+    a)  Variance is the square root of standard deviation.
+    b)  Variance measures spread, while standard deviation measures average deviation.
+    c)  Variance is always positive, while standard deviation can be negative.
+    d)  Variance is used for categorical data, while standard deviation is used for numerical data.
 10. In a normal distribution, what percentage of data falls within one standard deviation from the mean?
-    a) Approximately 34%
-    b) Approximately 68%
-    c) Approximately 95%
-    d) Approximately 99.7%
+    a)  Approximately 34%
+    b)  Approximately 68%
+    c)  Approximately 95%
+    d)  Approximately 99.7%
 :::
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -71,3 +71,5 @@ format: html
 
 
 - [**Exercises**](../../Documents_files/PreSessional/Maths_Class1.pdf)
+- [**References**](https://www.stitz-zeager.com/Precalculus4.pdf)
+
