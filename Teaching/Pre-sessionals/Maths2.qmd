@@ -61,3 +61,6 @@ format: html
 -   **Conclusion and Recap**
     -   Summarize the key concepts covered in the lecture.
 -   **Q&A Session**
+
+
+- [**References (with exercises)**](https://www.sfu.ca/math-coursenotes/Math%20157%20Course%20Notes/sec_Slope.html) 
