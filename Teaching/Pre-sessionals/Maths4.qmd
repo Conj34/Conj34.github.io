@@ -5,57 +5,45 @@ format: html
 
 {{< include /support/_margins_Teaching.qmd >}}
 
-<h2>Supply and Demand Problems</h2> 
+<h2>Supply and Demand Problems</h2>
 
-
-- **Introduction to Supply and Demand** 
-  - **Basic Concepts of Supply and Demand** 
-    - Define supply and demand as fundamental economic concepts.
-    - Explain how they determine prices and quantities in markets.
-    - Example: Discuss the relationship between gas prices and demand during holidays.
-  
-  - **Equilibrium Point and Market Equilibrium** 
-    - Define equilibrium point as the intersection of supply and demand curves.
-    - Emphasize the role of equilibrium in establishing market prices.
-    - Exercise: Analyze a simple supply and demand graph to find equilibrium.
-  
-- **Supply and Demand Equations** 
-  - **Modeling Supply and Demand using Linear Equations** 
-    - Discuss how linear equations can represent supply and demand relationships.
-    - Example: Construct a linear demand equation based on given data.
-    - Exercise: Write linear supply and demand equations from provided information.
-  
-  - **Equilibrium Price and Quantity** 
-    - Explain how to find equilibrium price and quantity from supply and demand equations.
-    - Example: Solve for equilibrium point using a supply and demand equation.
-    - Exercise: Calculate equilibrium price and quantity for different scenarios.
-  
-- **Shifts in Supply and Demand** 
-  - **Factors Causing Shifts in Supply and Demand Curves** 
-    - Identify factors that can lead to shifts in supply and demand curves.
-    - Discuss examples such as changes in consumer preferences or technological advancements.
-    - Exercise: Identify possible shifts due to external factors.
-  
-  - **Effects on Equilibrium Price and Quantity** 
-    - Explain how shifts affect equilibrium price and quantity.
-    - Discuss scenarios of price increases, decreases, and quantity changes.
-    - Example: Analyze the impact of a decrease in production costs on equilibrium.
-    - Exercise: Predict the outcomes of shifts in supply and demand curves.
-  
-- **Applications to Real-World Scenarios** 
-  - **Applying Supply and Demand Analysis to Real-World Scenarios** 
-    - Present scenarios like price ceilings, shortages, and surpluses.
-    - Discuss the implications of government interventions on markets.
-    - Exercise: Analyze the effects of a price ceiling on a graph.
-  
-  - **Understanding Market Dynamics and Changes** 
-    - Emphasize the importance of understanding supply and demand dynamics in decision-making.
-    - Discuss how businesses and policymakers use these concepts.
-    - Example: Explain how supply and demand analysis can help plan for seasonal products.
-  
-- **Conclusion and Recap** 
+-   **Introduction to Supply and Demand**
+    -   **Basic Concepts of Supply and Demand**
+        -   Define supply and demand as fundamental economic concepts.
+        -   Explain how they determine prices and quantities in markets.
+        -   Example: Discuss the relationship between gas prices and demand during holidays.
+    -   **Equilibrium Point and Market Equilibrium**
+        -   Define equilibrium point as the intersection of supply and demand curves.
+        -   Emphasize the role of equilibrium in establishing market prices.
+        -   Exercise: Analyze a simple supply and demand graph to find equilibrium.
+-   **Supply and Demand Equations**
+    -   **Modeling Supply and Demand using Linear Equations**
+        -   Discuss how linear equations can represent supply and demand relationships.
+        -   Example: Construct a linear demand equation based on given data.
+        -   Exercise: Write linear supply and demand equations from provided information.
+    -   **Equilibrium Price and Quantity**
+        -   Explain how to find equilibrium price and quantity from supply and demand equations.
+        -   Example: Solve for equilibrium point using a supply and demand equation.
+        -   Exercise: Calculate equilibrium price and quantity for different scenarios.
+-   **Shifts in Supply and Demand**
+    -   **Factors Causing Shifts in Supply and Demand Curves**
+        -   Identify factors that can lead to shifts in supply and demand curves.
+        -   Discuss examples such as changes in consumer preferences or technological advancements.
+        -   Exercise: Identify possible shifts due to external factors.
+    -   **Effects on Equilibrium Price and Quantity**
+        -   Explain how shifts affect equilibrium price and quantity.
+        -   Discuss scenarios of price increases, decreases, and quantity changes.
+        -   Example: Analyze the impact of a decrease in production costs on equilibrium.
+        -   Exercise: Predict the outcomes of shifts in supply and demand curves.
+-   **Applications to Real-World Scenarios**
+    -   **Applying Supply and Demand Analysis to Real-World Scenarios**
+        -   Present scenarios like price ceilings, shortages, and surpluses.
+        -   Discuss the implications of government interventions on markets.
+        -   Exercise: Analyze the effects of a price ceiling on a graph.
+    -   **Understanding Market Dynamics and Changes**
+        -   Emphasize the importance of understanding supply and demand dynamics in decision-making.
+        -   Discuss how businesses and policymakers use these concepts.
+        -   Example: Explain how supply and demand analysis can help plan for seasonal products.
+-   **Conclusion and Recap**
     -   Summarize the key concepts covered in the lecture.
-    -   Highlight the importance of functions in various fields.
-    
-- **Q&A Session** 
-
+-   **Q&A Session**

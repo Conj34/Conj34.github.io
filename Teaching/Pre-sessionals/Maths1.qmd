@@ -65,7 +65,6 @@ format: html
 -   **Conclusion and Recap**
     -   Summarize the key concepts covered in the lecture.
     -   Highlight the importance of functions in various fields.
-    -   Encourage students to practice and explore more examples.
 -   **Q&A Session**
 
 
