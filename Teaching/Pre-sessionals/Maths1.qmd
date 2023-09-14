@@ -8,6 +8,7 @@ format: html
 <h2>Introduction to Functions and Linear Equations</h2>
 
 -   **Introduction to Functions**
+
     -   **What is a function?**
         -   Definition: A function is a relation between a set of inputs (domain) and a set of possible outputs (range), such that each input is related to exactly one output.
         -   Example: Temperature conversion function.
@@ -20,7 +21,9 @@ format: html
         -   Notation: $f(x)$ represents the output of function $f$ for input $x$.
         -   Terminology: Input, output, independent variable, dependent variable, etc.
         -   Exercise: Translate word problems into function notation.
+
 -   **Linear Functions**
+
     -   **Definition of Linear Functions**
         -   A linear function is a function whose graph is a straight line.
         -   Example: $f(x) = 2x + 3$ is a linear function.
@@ -34,7 +37,9 @@ format: html
         -   Calculation of slope and $y$-intercept from an equation.
         -   Example: Find the slope and $y$-intercept of $f(x) = 3x - 1$.
         -   Exercise: Calculate slope and $y$-intercept of given functions.
+
 -   **Polynomial Functions of Degree 2**
+
     -   **Definition of Polynomial Functions**
         -   A polynomial function is a function consisting of terms with non-negative integer powers.
         -   Example: $f(x) = 2x^2 - 4x + 1$ is a polynomial function.
@@ -48,7 +53,9 @@ format: html
         -   Finding vertex and axis of symmetry.
         -   Example: Graph $f(x) = x^2 - 4x + 3$ and find its vertex.
         -   Exercise: Graph given quadratic functions and locate their vertices.
+
 -   **Applications of Functions**
+
     -   **Real-World Examples of Functions**
         -   Distance-time and temperature-time functions.
         -   Example: Express the height of an object in terms of time.
@@ -62,13 +69,14 @@ format: html
         -   Solving basic problems using functions.
         -   Example: Find the time when a car reaches a certain distance.
         -   Exercise: Solve problems involving linear and quadratic functions.
+
 -   **Conclusion and Recap**
+
     -   Summarize the key concepts covered in the lecture.
     -   Highlight the importance of functions in various fields.
+
 -   **Q&A Session**
 
+-   [**Exercises**](../../Documents_files/PreSessional/Maths_Class1.pdf)
 
-
-- [**Exercises**](../../Documents_files/PreSessional/Maths_Class1.pdf)
-- [**References**](https://www.stitz-zeager.com/Precalculus4.pdf)
-
+-   [**References**](https://www.stitz-zeager.com/Precalculus4.pdf)

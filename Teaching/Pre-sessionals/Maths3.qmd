@@ -55,3 +55,8 @@ format: html
 -   **Conclusion and Recap**
     -   Summarize the key concepts covered in the lecture.
 -   **Q&A Session**
+
+-   [**Exercises**](../../Documents_files/PreSessional/Maths_Class3.pdf)
+
+-   [**References**](https://www.stitz-zeager.com/Precalculus4.pdf)
+
