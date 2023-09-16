@@ -27,9 +27,9 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 
 | Title                                      | Author           | Status                                | Compl. on |
 |------------------------|--------------|---------------------|--------------|
-| Sphere                     | Michael Crichton   | ![](../images/50.png){width="0.8cm"} |    |
-| The Buried Giant                     | Kazuo Ishiguro   | ![](../images/100.png){width="0.8cm"} |  Sep '23  |
-| La Storia                                  | Elsa Morante     | ![](../images/100.png){width="0.8cm"}  |   Sep '23        |
+| Sphere                                     | Michael Crichton | ![](../images/100.png){width="0.8cm"}  | Sep '23   |
+| The Buried Giant                           | Kazuo Ishiguro   | ![](../images/100.png){width="0.8cm"} | Sep '23   |
+| La Storia                                  | Elsa Morante     | ![](../images/100.png){width="0.8cm"} | Sep '23   |
 | Oedipus at Colonus                         | Sophocles        | ![](../images/100.png){width="0.8cm"} | Aug '23   |
 | Baol                                       | Stefano Benni    | ![](../images/100.png){width="0.8cm"} | Aug '23   |
 | Oedipus Rex                                | Sophocles        | ![](../images/100.png){width="0.8cm"} | Aug '23   |
