@@ -5,8 +5,7 @@ format: html
 
 {{< include /support/_margins_Teaching.qmd >}}
 
-<h2>Probability and Reading Table</h2> 
-
+<h2>Probability and Reading Table</h2>
 
 -   **Introduction to Probability**
     -   **Basic Concepts of Probability**
@@ -53,5 +52,4 @@ format: html
         -   Exercise: Analyze and draw conclusions from a provided data table.
 -   **Conclusion and Recap**
     -   Summarize the key concepts covered in the lecture.
-    -   Highlight the importance of functions in various fields.
 -   **Q&A Session**

@@ -5,8 +5,7 @@ format: html
 
 {{< include /support/_margins_Teaching.qmd >}}
 
-<h2>Introduction to Basic Statistics</h2> 
-
+<h2>Introduction to Basic Statistics</h2>
 
 -   **Introduction to Statistics**
     -   **What is Statistics and its Importance**
@@ -66,5 +65,4 @@ format: html
         -   Exercise: Construct box plots for given datasets and identify characteristics.
 -   **Conclusion and Recap**
     -   Summarize the key concepts covered in the lecture.
-    -   Highlight the importance of functions in various fields.
 -   **Q&A Session**
