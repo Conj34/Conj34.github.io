@@ -71,3 +71,4 @@ format: html
 -   **Conclusion and Recap**
     -   Summarize the key concepts covered in the lecture.
 -   **Q&A Session**
+- **Reference**: Statistics for Business, 2nd edition. *R. A. Stine, D. Foster*
