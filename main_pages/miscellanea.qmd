@@ -17,7 +17,7 @@ Amongst the things I like: Books, Movies, Cooking.
 
 <h1>Books</h1>
 
-I like reading books. [This](https://thegreatestbooks.org) is a great website to find your next read (if you're stuck for ideas); using the list provided on this website, [I decided](../Learning/Python/Useful/Greatest_authors.qmd) I want to put some work in reading the works of Dostoyevsky, Kafka, Hemingway, Faulkner, Woolf, Dickens, Sheakespere, Henry James, Beckett, Updike, Coetzee and Alice Munro. This will take me many years, but you got to start somewhere.
+I like reading books. [This](https://thegreatestbooks.org) is a great website to find your next read (if you're stuck for ideas); using the list provided on this website, I decided I want to put [some work](../Learning/Python/Useful/Greatest_authors.qmd) in reading the works of Dostoyevsky, Kafka, Hemingway, Faulkner, Woolf, Dickens, Sheakespere, Henry James, Beckett, Updike, Coetzee and Alice Munro. This will take me many years, but you got to start somewhere.
 
 <!--<progress id="file" max="100" value="100"></progress>-->
 
