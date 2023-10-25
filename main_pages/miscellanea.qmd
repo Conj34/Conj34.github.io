@@ -28,6 +28,7 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 | Title                                      | Author           | Status                                | Compl. on |
 |------------------------|--------------|---------------------|--------------|
 | Flights                                     | Olga Tokarczuk | ![](../images/50.png){width="0.8cm"}  |   |
+| Uno, nessuno e centomila       | Luigi Pirandello | ![](../images/50.png){width="0.8cm"}  |   |
 | Sphere                                     | Michael Crichton | ![](../images/100.png){width="0.8cm"}  | Sep '23   |
 | The Buried Giant                           | Kazuo Ishiguro   | ![](../images/100.png){width="0.8cm"} | Sep '23   |
 | La Storia                                  | Elsa Morante     | ![](../images/100.png){width="0.8cm"} | Sep '23   |
