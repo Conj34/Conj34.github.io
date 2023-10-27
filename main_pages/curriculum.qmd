@@ -40,6 +40,8 @@ gantt
     section PhD
     London School of Economics: L1, 01-09-2020, 1450d
 ```
+
+````{=html}
 <!--
 ```{mermaid}
 %%| height: auto
@@ -51,6 +53,8 @@ journey
       Teamwor: 8: LSE, Internship
 ```
 -->
+````
+
 ```{mermaid}
 journey
     title Technical Skills
