@@ -28,6 +28,7 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 | Title                                      | Author           | Status                                | Compl. on |
 |----------------------|----------------|-------------------|----------------|
 | Flights                                    | Olga Tokarczuk           | ![](../images/50.png){width="0.8cm"}  |           |
+| Persuasion                                 | Jane Austen              | ![](../images/100.png){width="0.8cm"} | Oct '23   |
 | Uno, nessuno e centomila                   | Luigi Pirandello         | ![](../images/100.png){width="0.8cm"} | Oct '23   |
 | Macbeth                                    | William Shakespeare      | ![](../images/100.png){width="0.8cm"} | Oct '23   |
 | Sphere                                     | Michael Crichton         | ![](../images/100.png){width="0.8cm"} | Sep '23   |
