@@ -11,7 +11,7 @@
     "href": "main_pages/curriculum.html",
     "title": "Curriculum",
     "section": "",
-    "text": "Contact\n\n\n\n\nName: Domenico Mergoni\nEmail: d.mergoni -at- lse.ac.uk\nWork: London School of Economics\n\n\n\nRelevant documents:\n\nCourse content of many courses I followed and all courses I taught.\nTranscript of Records of BSc and MSc.\nNormal CV.\n\n\n\n\n\n\ngantt\n    title Education\n    dateFormat DD-MM-YYYY\n    axisFormat   %b %Y\n    section BSc\n    Pisa Univ - GPA 110/110: L1, 01-09-2015, 1048d\n    section MSc\n    ETHZ - GPA 5.8/6: L1, 01-09-2018, 700d\n    section PhD\n    London School of Economics: L1, 01-09-2020, 1450d\n\n\n\n\n\n\njourney\n    title Technical Skills\n      Maths: 9: Research, Taught\n      ML, RL and Stats: 8: Taught, Research\n      Python: 7: Hobby, Taught\n      Finance: 4: Taught"
+    "text": "Contact\n\n\n\n\nName: Domenico Mergoni\nEmail: d.mergoni -at- lse.ac.uk\nWork: London School of Economics\n\n\n\nRelevant documents:\n\nCourse content of many courses I followed and all courses I taught.\nTranscript of Records of BSc and MSc.\nNormal CV.\n\n\n\n\n\n\ngantt\n    title Education\n    dateFormat DD-MM-YYYY\n    axisFormat   %b %Y\n    section BSc\n    Pisa Univ - GPA 110/110: L1, 01-09-2015, 1048d\n    section MSc\n    ETHZ - GPA 5.8/6: L1, 01-09-2018, 700d\n    section PhD\n    London School of Economics: L1, 01-09-2020, 1450d\n\n\n\n\n\n\n\n\n\njourney\n    title Technical Skills\n      Maths: 9: Research, Taught\n      ML, RL and Stats: 8: Taught, Research\n      Python: 7: Hobby, Taught\n      Finance: 4: Taught"
   },
   {
     "objectID": "main_pages/miscellanea.html",

@@ -398,27 +398,27 @@ Contact
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-lines="1" data-code-annotation="1" data-code-cell="annotated-cell-1">Import the <code>pandas</code> library. Useful for statistics.</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="1" data-code-lines="1">Import the <code>pandas</code> library. Useful for statistics.</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-lines="3,4" data-code-annotation="2" data-code-cell="annotated-cell-1">Read the <code>.csv</code> file and save in a pandas array the column with header <code>Author</code> (this is why a modification of the file was necessary).</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="2" data-code-lines="3,4">Read the <code>.csv</code> file and save in a pandas array the column with header <code>Author</code> (this is why a modification of the file was necessary).</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-lines="6,7,8" data-code-annotation="3" data-code-cell="annotated-cell-1">We create 4 lists. The first analyses the first 100 books, the second the first 500 books and so on. <code>Partial_lists</code> is a list that contains in entry <code>i</code> a pandas list with the authors of the first <code>splittings[i]</code>-many books.</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="3" data-code-lines="6,7,8">We create 4 lists. The first analyses the first 100 books, the second the first 500 books and so on. <code>Partial_lists</code> is a list that contains in entry <code>i</code> a pandas list with the authors of the first <code>splittings[i]</code>-many books.</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-lines="10" data-code-annotation="4" data-code-cell="annotated-cell-1">We count the occurrencies in each of the partial lists.</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="4" data-code-lines="10">We count the occurrencies in each of the partial lists.</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-lines="12,13,14,15,16,17,18,19" data-code-annotation="5" data-code-cell="annotated-cell-1">We select in each list <code>Partial_lists[i]</code> the first authors. These are the authors that have at least <code>Lower[i]</code> many books in that list. <code>Lower[i]</code> is choosen in such a way that the authors as as few as possible above <code>At_least</code>. So for example in the first list, if we set <code>Lower[0]=3</code> we would only obtain 5 authors, this is why we set <code>Lower[0]=2</code>.</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="5" data-code-lines="12,13,14,15,16,17,18,19">We select in each list <code>Partial_lists[i]</code> the first authors. These are the authors that have at least <code>Lower[i]</code> many books in that list. <code>Lower[i]</code> is choosen in such a way that the authors as as few as possible above <code>At_least</code>. So for example in the first list, if we set <code>Lower[0]=3</code> we would only obtain 5 authors, this is why we set <code>Lower[0]=2</code>.</span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-lines="21,22,23" data-code-annotation="6" data-code-cell="annotated-cell-1">Printing.</span>
+<span data-code-cell="annotated-cell-1" data-code-annotation="6" data-code-lines="21,22,23">Printing.</span>
 </dd>
 </dl>
 <p>The output is:</p>
