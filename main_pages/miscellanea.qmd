@@ -25,34 +25,35 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 
 <h3><small> Read since Jan. 2023 </small></h3>
 
-| Title                                      | Author           | Status                                | Compl. on |
-|----------------------|----------------|-------------------|----------------|
-| Flights                                    | Olga Tokarczuk           | ![](../images/50.png){width="0.8cm"}  |           |
-| Persuasion                                 | Jane Austen              | ![](../images/100.png){width="0.8cm"} | Oct '23   |
-| Uno, nessuno e centomila                   | Luigi Pirandello         | ![](../images/100.png){width="0.8cm"} | Oct '23   |
-| Macbeth                                    | William Shakespeare      | ![](../images/100.png){width="0.8cm"} | Oct '23   |
-| Sphere                                     | Michael Crichton         | ![](../images/100.png){width="0.8cm"} | Sep '23   |
-| The Buried Giant                           | Kazuo Ishiguro           | ![](../images/100.png){width="0.8cm"} | Sep '23   |
-| La Storia                                  | Elsa Morante             | ![](../images/100.png){width="0.8cm"} | Sep '23   |
-| Oedipus at Colonus                         | Sophocles                | ![](../images/100.png){width="0.8cm"} | Aug '23   |
-| Baol                                       | Stefano Benni            | ![](../images/100.png){width="0.8cm"} | Aug '23   |
-| Oedipus Rex                                | Sophocles                | ![](../images/100.png){width="0.8cm"} | Aug '23   |
-| Pantera                                    | Stefano Benni            | ![](../images/100.png){width="0.8cm"} | Aug '23   |
-| Blues in Sedici                            | Stefano Benni            | ![](../images/100.png){width="0.8cm"} | Aug '23   |
-| The Pastures of Heaven                     | John Steinbeck           | ![](../images/100.png){width="0.8cm"} | Aug '23   |
-| The Remains of the Day                     | Kazuo Ishiguro           | ![](../images/100.png){width="0.8cm"} | Jul '23   |
-| The Return of the King                     | J.R.R. Tolkien           | ![](../images/100.png){width="0.8cm"} | Jul '23   |
-| Swimming in the Dark                       | Tomasz Jedrowski         | ![](../images/100.png){width="0.8cm"} | Jul '23   |
-| The Two Towers                             | J.R.R. Tolkien           | ![](../images/100.png){width="0.8cm"} | Jun '23   |
-| The Fellowship of the Ring                 | J.R.R. Tolkien           | ![](../images/100.png){width="0.8cm"} | Jun '23   |
-| Il Bar sotto il Mare                       | Stefano Benni            | ![](../images/100.png){width="0.8cm"} | May '23   |
-| 2001: A Space Odyssey                      | Arthur C. Clarke         | ![](../images/100.png){width="0.8cm"} | May '23   |
-| Never let Me go                            | Kazuo Ishiguro           | ![](../images/100.png){width="0.8cm"} | May '23   |
-| Nocturnes                                  | Kazuo Ishiguro           | ![](../images/100.png){width="0.8cm"} | May '23   |
-| The Time Machine                           | H.G. Wells               | ![](../images/100.png){width="0.8cm"} | May '23   |
-| A little Life                              | Hanya Yanagihara         | ![](../images/100.png){width="0.8cm"} | May '23   |
-| A Room with a View                         | E.M. Forster             | ![](../images/100.png){width="0.8cm"} | Apr '23   |
-| Drive your Plow over the Bones of the Dead | Olga Tokarczuk           | ![](../images/100.png){width="0.8cm"} | Mar '23   |
+| Title                                      | Author              | Status                                | Compl. on |
+|---------------------|-----------------|------------------|-----------------|
+| Flights                                    | Olga Tokarczuk      | ![](../images/50.png){width="0.8cm"}  |           |
+| Pride and Prejudice                        | Jane Austen         | ![](../images/100.png){width="0.8cm"} | Nov '23   |
+| Persuasion                                 | Jane Austen         | ![](../images/100.png){width="0.8cm"} | Oct '23   |
+| Uno, nessuno e centomila                   | Luigi Pirandello    | ![](../images/100.png){width="0.8cm"} | Oct '23   |
+| Macbeth                                    | William Shakespeare | ![](../images/100.png){width="0.8cm"} | Oct '23   |
+| Sphere                                     | Michael Crichton    | ![](../images/100.png){width="0.8cm"} | Sep '23   |
+| The Buried Giant                           | Kazuo Ishiguro      | ![](../images/100.png){width="0.8cm"} | Sep '23   |
+| La Storia                                  | Elsa Morante        | ![](../images/100.png){width="0.8cm"} | Sep '23   |
+| Oedipus at Colonus                         | Sophocles           | ![](../images/100.png){width="0.8cm"} | Aug '23   |
+| Baol                                       | Stefano Benni       | ![](../images/100.png){width="0.8cm"} | Aug '23   |
+| Oedipus Rex                                | Sophocles           | ![](../images/100.png){width="0.8cm"} | Aug '23   |
+| Pantera                                    | Stefano Benni       | ![](../images/100.png){width="0.8cm"} | Aug '23   |
+| Blues in Sedici                            | Stefano Benni       | ![](../images/100.png){width="0.8cm"} | Aug '23   |
+| The Pastures of Heaven                     | John Steinbeck      | ![](../images/100.png){width="0.8cm"} | Aug '23   |
+| The Remains of the Day                     | Kazuo Ishiguro      | ![](../images/100.png){width="0.8cm"} | Jul '23   |
+| The Return of the King                     | J.R.R. Tolkien      | ![](../images/100.png){width="0.8cm"} | Jul '23   |
+| Swimming in the Dark                       | Tomasz Jedrowski    | ![](../images/100.png){width="0.8cm"} | Jul '23   |
+| The Two Towers                             | J.R.R. Tolkien      | ![](../images/100.png){width="0.8cm"} | Jun '23   |
+| The Fellowship of the Ring                 | J.R.R. Tolkien      | ![](../images/100.png){width="0.8cm"} | Jun '23   |
+| Il Bar sotto il Mare                       | Stefano Benni       | ![](../images/100.png){width="0.8cm"} | May '23   |
+| 2001: A Space Odyssey                      | Arthur C. Clarke    | ![](../images/100.png){width="0.8cm"} | May '23   |
+| Never let Me go                            | Kazuo Ishiguro      | ![](../images/100.png){width="0.8cm"} | May '23   |
+| Nocturnes                                  | Kazuo Ishiguro      | ![](../images/100.png){width="0.8cm"} | May '23   |
+| The Time Machine                           | H.G. Wells          | ![](../images/100.png){width="0.8cm"} | May '23   |
+| A little Life                              | Hanya Yanagihara    | ![](../images/100.png){width="0.8cm"} | May '23   |
+| A Room with a View                         | E.M. Forster        | ![](../images/100.png){width="0.8cm"} | Apr '23   |
+| Drive your Plow over the Bones of the Dead | Olga Tokarczuk      | ![](../images/100.png){width="0.8cm"} | Mar '23   |
 
 : {.striped .hover tbl-colwidths="\[50,30,10, 20\]"}
 
