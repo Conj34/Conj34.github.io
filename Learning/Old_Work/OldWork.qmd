@@ -1,0 +1,12 @@
+---
+title: "University Notes"
+format: html
+---
+
+{{< include /support/_margins_Learning.qmd >}}
+
+You can find here some notes I took throught my years of education. Unfortunately, some of this material is in Italian. However, I hope it might be helpful to some students.
+
+- Geometria Analitica e Algebra Lineare: [Parte 1](GAAL1.pdf), [Parte 2](GAAL2.pdf), [Parte 3](GAAL3.pdf). Appunti completi di ottimo corso annuale tenuto dalla Prof. Fortuna presso l'università di Pisa nell'anno accademico 2015/16.
+- Algebra I: [Automorfismi di $S_n$](AutomorfismiSn.pdf), [Prodotto libero di Gruppi](ProdottoLiberoDiGruppi.pdf), [Esercitazioni 1](EsercitazioniAlgebraI.pdf), [Esercitazioni Teoria di Galois](EsercitazioniTeoriaGalois.pdf). Appunti parziali di lezioni ed esercitazioni di un corso tenuto nell'anno accademico 2016/17 dai professori Gaiffi e Callegaro.
+

@@ -51,10 +51,10 @@ website:
                 contents:
                 - href: Learning/Python/CF/Easy/1758A.qmd
                   text: 1758A
-          - section: "Machine Learning and Statistics"
+          - section: "Old Notes"
             contents:
-          - section: "Reinforcement Learning"
-            contents:
+            - href: Learning/Old_Work/OldWork.qmd
+              text: Old Work
       - href: main_pages/research.qmd
         text: Research
       - href: main_pages/curriculum.qmd
