@@ -26,9 +26,11 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 <h3><small> Read since Jan. 2023 </small></h3>
 
 | Title                                      | Author              | Status                                | Compl. on |
-|---------------------|-----------------|------------------|-----------------|
+|--------------------------------------------|---------------------|---------------------------------------|-----------|
+| The Death of Ivan Ilyich                   | Leo Tolstoy         | ![](../images/50.png){width="0.8cm"}  |           |
+| I Know Why the Caged Bird Sings            | Maya Angelou        | ![](../images/50.png){width="0.8cm"}  |           |
 | Flights                                    | Olga Tokarczuk      | ![](../images/50.png){width="0.8cm"}  |           |
-| Murtagh.                                   | Cristopher Paolini  | ![](../images/100.png){width="0.8cm"} | Nov '23   |
+| Murtagh                                    | Cristopher Paolini  | ![](../images/100.png){width="0.8cm"} | Nov '23   |
 | Emma                                       | Jane Austen         | ![](../images/100.png){width="0.8cm"} | Nov '23   |
 | Pride and Prejudice                        | Jane Austen         | ![](../images/100.png){width="0.8cm"} | Nov '23   |
 | Persuasion                                 | Jane Austen         | ![](../images/100.png){width="0.8cm"} | Oct '23   |
@@ -70,5 +72,4 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 | Howards End             | E.M. Forster      |
 | War of the Worlds       | H. G. Wells       |
 | The Line of Beauty      | Alan Hollinghurst |
-
 : {.striped .hover tbl-colwidths="\[60,40\]"}
