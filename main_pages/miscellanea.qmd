@@ -30,6 +30,7 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 | Flights                                    | Olga Tokarczuk      | ![](../images/50.png){width="0.8cm"}  |           |
 | I Know Why the Caged Bird Sings            | Maya Angelou        | ![](../images/50.png){width="0.8cm"}  |           |
 | Notes from Underground                     | Fyodor Dostoevsky   | ![](../images/50.png){width="0.8cm"}  |           |
+| Il fu Mattia Pascal                        | Luigi Pirandello    | ![](../images/100.png){width="0.8cm"} | Dec '23   |
 | First Love                                 | Ivan Turgenev       | ![](../images/100.png){width="0.8cm"} | Dec '23   |
 | The Kreutzer Sonata                        | Leo Tolstoy         | ![](../images/100.png){width="0.8cm"} | Dec '23   |
 | The Strange Case of Dr. Jekyll and Mr. Hyde| Robert L. Stevenson | ![](../images/100.png){width="0.8cm"} | Dec '23   |
