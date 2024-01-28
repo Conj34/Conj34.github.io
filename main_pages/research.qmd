@@ -21,7 +21,8 @@ format:
 | Title                                                                                                         | People                                               | Date    | Instit. | Status                                |
 |---------------|---------------|---------------|---------------|---------------|
 | Density of small diameter subgraphs in $K_r$-free graphs (II)                                                 | D.M.                                                 | 2023-   | LSE     | ![](../images/0.png){width="0.8cm"}   |
-| Partition universality for hypergraphs                                                                        | P. Allen, J. Böttcher, D.M.                          | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
+| Combinatorial Theorems                                                                                        | P. Allen, J. Böttcher, D.M.                          | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
+| Partition universality for hypergraphs                                                                        | P. Allen, J. Böttcher, J. Lada, D.M.                 | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
 | Convergence of policy-gradiente methods in repeated games                                                     | G. Ashkenazi-Golan, D.M., E. Plumb                   | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
 | Maker Breaker Games in the square lattice                                                                     | F. Illingworth, D.M., A. Pokrovskiy                  | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
 | [Product-free subsets of $[n]$](https://arxiv.org/abs/2311.18796)                                             | L. Mattos, D.M., O. Parczyk                          | 2023    | LSE     | ![](../images/100.png){width="0.8cm"} |
