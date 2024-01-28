@@ -33,6 +33,8 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 | Flights                                    | Olga Tokarczuk      | ![](../images/50.png){width="0.8cm"}  |           |
 | I Know Why the Caged Bird Sings            | Maya Angelou        | ![](../images/50.png){width="0.8cm"}  |           |
 | Notes from Underground                     | Fyodor Dostoevsky   | ![](../images/50.png){width="0.8cm"}  |           |
+| Bartleby, the Scrivaner                    | Herman Melville     | ![](../images/100.png){width="0.8cm"} | Jan '24   |
+| White Nights                               | Fyodor Dostoevsky   | ![](../images/100.png){width="0.8cm"} | Jan '24   |
 | The Idiot                                  | Fyodor Dostoevsky   | ![](../images/100.png){width="0.8cm"} | Jan '24   |
 
 : {.striped .hover tbl-colwidths="\[50,30,10, 20\]"}
