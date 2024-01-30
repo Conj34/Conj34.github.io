@@ -1,0 +1,107 @@
+% ----------------------------------------------------------
+% Abstract for talk at Postgraduate Combinatorial Conference
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% PLEASE DO NOT MODIFY THIS HEADER SECTION
+
+\documentclass[12pt,a4paper]{article}
+\newcommand{\TalkTimeLocation}{Xxxday 00:00 xxxlocation}
+
+\pagestyle{empty}
+
+\frenchspacing \setlength{\parskip}{9pt plus 3pt minus 1pt}
+\setlength{\parindent}{0pt}
+
+\setlength{\textwidth}{6.27in}
+\setlength{\textheight}{9.69in}
+\setlength{\topmargin}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{question}[theorem]{Question}
+
+\newcommand{\ifEmpty}[3]{\setbox0=\hbox{#1\unskip}\ifdim\wd0=0pt{#2}\else{#3}\fi}
+\newcommand{\nothingIfEmpty}[2]{\ifEmpty{#1}{}{#2}}
+\newcommand{\showIfNotEmpty}[1]{\nothingIfEmpty{#1}{#1}}
+\newcommand{\showTalkJointWork}[1]{\nothingIfEmpty{#1}{(This talk is based on joint work with (#1).)}}
+\newcommand{\warn}[1]{\color{red}\large\textbf{\textsf{#1}}}
+\renewcommand{\refname}{}
+\newenvironment{talkBibliog}{\vspace*{-24pt}\begin{thebibliography}{9}\footnotesize}{\end{thebibliography}}
+
+% PLEASE DO NOT MODIFY ABOVE HERE
+
+% ----------------------------------------------------------
+% PLEASE SPECIFY THE TALK INFORMATION HERE
+
+\newcommand{\TalkTitle}{Title of the Talk}
+\newcommand{\TalkPresenter}{Name and Surname of the Speaker}
+\newcommand{\TalkEmail}{Institutional Email Address}
+\newcommand{\TalkAffiliation}{Institution}
+\newcommand{\TalkJointWork}{Coauthors}     % leave blank if not joint work
+
+
+% ----------------------------------------------------------
+% PERSONAL MACROS MAY BE PLACED HERE
+
+% \newcommand{\iso}{\cong}
+
+% ----------------------------------------------------------
+% PLEASE DO NOT MODIFY THIS SECTION
+
+\begin{document}
+\hfill \textsf{\TalkTimeLocation}
+\begin{center}
+ {\Large\textsc{\TalkTitle}}
+
+ \textbf{\TalkPresenter}
+
+ \showIfNotEmpty{\texttt{\TalkEmail}}
+
+ \showIfNotEmpty{\TalkAffiliation}
+
+ \showTalkJointWork{\TalkJointWork}
+
+ \bigskip\bigskip
+\end{center}
+
+% ----------------------------------------------------------
+%PLEASE WRITE YOUR ABSTRACT HERE
+
+
+Please do the following:
+\begin{enumerate}
+\item Save this file as \texttt{\emph{YourFirstName}-\emph{YourLastName}.tex}, using your name.
+\item Add the talk information as required. 
+\item Insert your abstract. Graphics may be included using TikZ. Theorems, etc., may be included using the appropriate environments. You may also include references. The complete abstract must fit on a single page. Do not change the font size or the margins.
+\item If you haven't already done so, register for the conference by visiting the PCC's webpage \url{https://sites.google.com/view/pcc-2024/home}.
+\item Email both the .tex file and the PDF to \texttt{pcc2024@gmx.co.uk} by the 15th of March 2024.
+\end{enumerate}
+Thanks!
+
+
+
+
+
+% ----------------------------------------------------------
+% PLEASE ADD ANY REFERENCES HERE
+
+
+
+
+% ----------------------------------------------------------
+\end{document}
+% ----------------------------------------------------------
