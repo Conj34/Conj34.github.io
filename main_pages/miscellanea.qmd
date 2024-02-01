@@ -33,6 +33,7 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 | Flights                                    | Olga Tokarczuk      | ![](../images/50.png){width="0.8cm"}  |           |
 | I Know Why the Caged Bird Sings            | Maya Angelou        | ![](../images/50.png){width="0.8cm"}  |           |
 | Notes from Underground                     | Fyodor Dostoevsky   | ![](../images/50.png){width="0.8cm"}  |           |
+| Alice's Adventures in Wonderland           | Lewis Carroll       | ![](../images/100.png){width="0.8cm"} | Jan '24   |
 | The Metamorphosis                          | Franz Kafka         | ![](../images/100.png){width="0.8cm"} | Jan '24   |
 | Bartleby, the Scrivaner                    | Herman Melville     | ![](../images/100.png){width="0.8cm"} | Jan '24   |
 | White Nights                               | Fyodor Dostoevsky   | ![](../images/100.png){width="0.8cm"} | Jan '24   |
