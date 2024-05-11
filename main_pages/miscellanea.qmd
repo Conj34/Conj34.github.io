@@ -28,6 +28,10 @@ Lately I've been using a lot the platform [Audible](https://www.audible.co.uk), 
 ::: panel-tabset
 ### Read in 2024
 
+I interrupted my readings in February 2024 to improve my Spanish (was A2-B1, currently B2-C1), and my Portuguese (learning it now, currently A1-A2).
+I am planning to write a page on how I learn languages, as it's something I'm passionate about and have some experience doing
+
+
 | Title                                      | Author              | Status                                | Compl. on |
 |--------------------------------------------|---------------------|---------------------------------------|-----------|
 | Flights                                    | Olga Tokarczuk      | ![](../images/50.png){width="0.8cm"}  |           |
