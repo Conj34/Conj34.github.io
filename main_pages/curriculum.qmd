@@ -29,8 +29,11 @@ Relevant documents:
 
 ```{mermaid}
 %%| fig-height: 6.5
+---
+displayMode: compact
+---
 gantt
-    title Education
+    title Curriculum - Overview
     dateFormat DD-MM-YYYY
     axisFormat   %b %Y
     section BSc
@@ -38,7 +41,10 @@ gantt
     section MSc
     ETHZ - GPA 5.8/6: L1, 01-09-2018, 700d
     section PhD
-    London School of Economics: L1, 01-09-2020, 1450d
+    London School of Economics: L1, 01-09-2020, 1369d
+    LSE : L2, 01-01-2025, 180d
+    section Intern
+    AMZN : L1, 01-06-2024, 214d
 ```
 
 

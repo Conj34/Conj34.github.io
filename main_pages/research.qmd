@@ -18,25 +18,32 @@ format:
 ::: panel-tabset
 ## Papers
 
-| Title                                                                                                         | People                                               | Date    | Instit. | Status                                |
+| Title                                                                                                                                             | People                                               | Date    | Instit. | Status                                |
 |---------------|---------------|---------------|---------------|---------------|
-| Density of small diameter subgraphs in $K_r$-free graphs (II)                                                 | D.M.                                                 | 2023-   | LSE     | ![](../images/0.png){width="0.8cm"}   |
-| Combinatorial Theorems                                                                                        | P. Allen, J. Böttcher, D.M.                          | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
-| Partition universality for hypergraphs                                                                        | P. Allen, J. Böttcher, J. Lada, D.M.                 | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
-| Convergence of policy-gradiente methods in repeated games                                                     | G. Ashkenazi-Golan, D.M., E. Plumb                   | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
-| Maker Breaker Games in the square lattice                                                                     | F. Illingworth, D.M., A. Pokrovskiy                  | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  |
-| [Product-free subsets of $[n]$](https://arxiv.org/abs/2311.18796)                                             | L. Mattos, D.M., O. Parczyk                          | 2023    | LSE     | ![](../images/100.png){width="0.8cm"} |
-| [Graphs with large minimum degree and no small odd cycles are 3-colourable](https://arxiv.org/abs/2302.01875) | J. Böttcher, N. Frankl, D. M., O. Parczyk, J. Skokan | 2022    | LSE     | ![](../images/100.png){width="0.8cm"} |
-| [The Ramsey numbers of squares of paths and cycles](https://arxiv.org/abs/2212.14860)                         | Peter Allen, D.M., Barnaby Roberts, Jozef Skokan     | 2022    | LSE     | ![](../images/100.png){width="0.8cm"} |
-| [Density of small diameter subgraphs in $K_r$-free graphs](https://arxiv.org/abs/2207.14297)                  | Eng Keat Hng, D.M.                                   | 2021    | LSE     | ![](../images/100.png){width="0.8cm"} |
+| Methodology for carbon credit assessment                                                                                                          | A. Perrella, G. Marastoni, D.M.                      | 2024+   | LSE     | ![](../images/50.png){width="0.8cm"}  |
+| ILF for $\ell_0$-bounded local improvement                                                                                                        | Amazon ATS team                                      | 2024+   | Amazon  | ![](../images/50.png){width="0.8cm"}  |
+| Combinatorial Theorems                                                                                                                            | P. Allen, J. Böttcher, D.M.                          | 2024+   | LSE     | ![](../images/50.png){width="0.8cm"}  |
+| Partition universality for hypergraphs                                                                                                            | P. Allen, J. Böttcher, J. Lada, D.M.                 | 2024+   | LSE     | ![](../images/50.png){width="0.8cm"}  |
+| Convergence of policy-gradiente methods in repeated games                                                                                         | G. Ashkenazi-Golan, D.M., E. Plumb                   | 2024+   | LSE     | ![](../images/50.png){width="0.8cm"}  |
+| [Dirac's theorem for graphs of bounded bandwidth](https://arxiv.org/abs/2407.05889)                                                               | A.E. Díaz, P. Gupta, D.M., O. Parczyk, A. Sgueglia   | 2024    | LSE     | ![](../images/100.png){width="0.8cm"} |
+| [Product-free subsets of $[n]$](https://arxiv.org/abs/2311.18796)                                                                                 | L. Mattos, D.M., O. Parczyk                          | 2023    | LSE     | ![](../images/100.png){width="0.8cm"} |
+| [Graphs with large minimum degree and no small odd cycles are 3-colourable](https://arxiv.org/abs/2302.01875)                                     | J. Böttcher, N. Frankl, D. M., O. Parczyk, J. Skokan | 2022    | LSE     | ![](../images/100.png){width="0.8cm"} |
+| [The Ramsey numbers of squares of paths and cycles](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p11)                       | Peter Allen, D.M., Barnaby Roberts, Jozef Skokan     | 2022    | LSE     | ![](../images/100.png){width="0.8cm"} |
+| [Density of small diameter subgraphs in $K_r$-free graphs](https://arxiv.org/abs/2207.14297)                                                      | Eng Keat Hng, D.M.                                   | 2021    | LSE     | ![](../images/100.png){width="0.8cm"} |
 
 : {.striped .hover tbl-colwidths="\[40,35,10,10,5\]"}
 
-## Talks
+<!--| Maker Breaker Games in the square lattice                                                                     | F. Illingworth, D.M., A. Pokrovskiy                  | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  
+
+| Density of small diameter subgraphs in $K_r$-free graphs (II)                                                                                     | D.M.                                                 | 2023-   | LSE     | ![](../images/0.png){width="0.8cm"}   |
+
+|-->
+
+## Talks (Selected)
 
 | Title                                                                                           | Date    | Occasion              | Place       |
 |----------------------------|---------------|---------------|---------------|
-| Product-free subsets of $[n]$                                                                   | Oct '23 | LSE Seminar           | London      |
+| [Product-free subsets of $[n]$](https://arxiv.org/abs/2311.18796)                               | Oct '23 | LSE Seminar           | London      |
 | [Parititon Universality](../Documents_files/Presentations/Partit_uni.pdf)                       | Aug '23 | Eurocomb              | Prague      |
 | [The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$](../Documents_files/Presentations/Ram_num.pdf) | Sep '23 | DMV (Invited speaker) | Ilmenau     |
 |                                                                                                 | Apr '23 | Invited seminar       | Prague      |
