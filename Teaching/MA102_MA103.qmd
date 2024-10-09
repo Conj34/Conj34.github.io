@@ -9,26 +9,16 @@ format: html
 
 The course is an introduction to the use of formal definitions and proofs in mathematics, and to basic results of elementary set theory, number theory, linear algebra, algebra and analysis. Specific topics covered are as follows: Logic, sets and functions, relations, real numbers, infimum and supremum, sequences, limits and continuity, integers, prime numbers, greatest common divisor and modular arithmetic, complex numbers, groups and vector spaces.
 
-<h3>Material <small><small><small>(Official and mine)</small></small></small></h3>
+<h4> Personal notes <small><small><small>(survived)</small></small></small></h4>
 
-The following material should help the student preparing for this course. It contains both lecture notes, problem sets, and some solutions prepared by me.
+Here are the notes that survived in my OneNote.
 
-<h4>Lecture Notes</h4>
-
-| Weeks Covered | Author      | Link                                                  |
-|----------------------|-------------------------|-------------------------|
-| 1-5           | Peter Allen | [link](../Documents_files/MA103/Lectures%201-5.pdf)   |
-| 6-15          | Amol Sasane | [link](../Documents_files/MA103/Lectures%206-15.pdf)  |
-| 16-20         | Amol Sasane | [link](../Documents_files/MA103/Lectures%2016-29.pdf) |
-
-<h4>My solutions <small><small><small>(survived)</small></small></small></h4>
-
-| Week    | Problem set                                       | Solution                                                              |
-|----------------------|-------------------------|-------------------------|
-| Week 1  | [Assignment 1](../Documents_files/MA103/Ex1.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class1.compressed.pdf)  |
-| Week 2  | [Assignment 2](../Documents_files/MA103/Ex2.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class2.compressed.pdf)  |
-| Week 3  | [Assignment 3](../Documents_files/MA103/Ex3.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class3.compressed.pdf)  |
-| Week 4  | [Assignment 4](../Documents_files/MA103/Ex4.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class4.compressed.pdf)  |
-| Week 5  | [Assignment 5](../Documents_files/MA103/Ex5.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class5.compressed.pdf)  |
-| Week 7  | [Assignment 7](../Documents_files/MA103/Ex7.pdf)  | [My solutions](../Documents_files/MA103/MA103_Class7.compressed.pdf)  |
-| Week 10 | [Assignment 10](../Documents_files/MA103/Ex10.pdf) | [My solutions](../Documents_files/MA103/MA103_Class10.compressed.pdf) |
+| Week | Notes |
+|---------------------|-------------------------|
+| Week 1 |   [My solutions](../Documents_files/MA103/MA103_Class1.compressed.pdf) |
+| Week 2 |   [My solutions](../Documents_files/MA103/MA103_Class2.compressed.pdf) |
+| Week 3 |   [My solutions](../Documents_files/MA103/MA103_Class3.compressed.pdf) |
+| Week 4 |   [My solutions](../Documents_files/MA103/MA103_Class4.compressed.pdf) |
+| Week 5 |   [My solutions](../Documents_files/MA103/MA103_Class5.compressed.pdf) |
+| Week 7 |   [My solutions](../Documents_files/MA103/MA103_Class7.compressed.pdf) |
+| Week 10 |   [My solutions](../Documents_files/MA103/MA103_Class10.compressed.pdf) |

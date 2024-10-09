@@ -11,30 +11,16 @@ This is a course covering a number of concepts and techniques of discrete mathem
 
 <h3>Material <small><small><small>(Official and mine)</small></small></small></h3>
 
-The following material should help the student preparing for this course. It contains both lecture notes, problem sets, and some solutions prepared by me.
+Here are some notes I took during the course and that helped me teach it.
 
-<h4>Lecture Notes and Assignments</h4>
-
-| Weeks Covered | Author      | Link                                             |
-|----------------------|-------------------------|-------------------------|
-| 1-2           | Peter Allen | [link](../Documents_files/MA210/NotesEx1-2.pdf)  |
-| 3-4           | Peter Allen | [link](../Documents_files/MA210/NotesEx3-4.pdf)  |
-| 5-6           | Peter Allen | [link](../Documents_files/MA210/NotesEx5-6.pdf)  |
-| 7-8           | Peter Allen | [link](../Documents_files/MA210/NotesEx7-8.pdf)  |
-| 9-10          | Peter Allen | [link](../Documents_files/MA210/NotesEx9-10.pdf) |
-
-<h4>My solutions</h4>
-
-The text of the exercises is in the links above.
-
-| Week   | Solution                                                             |
+| Week | Notes |
 |----------------------------------|--------------------------------------|
-| Week 1 | [My solutions](../Documents_files/MA210/MA210_Class1.compressed.pdf) |
-| Week 2 | [My solutions](../Documents_files/MA210/MA210_Class2.compressed.pdf) |
-| Week 3 | [My solutions](../Documents_files/MA210/MA210_Class3.compressed.pdf) |
-| Week 4 | [My solutions](../Documents_files/MA210/MA210_Class4.compressed.pdf) |
-| Week 5 | [My solutions](../Documents_files/MA210/MA210_Class5.compressed.pdf) |
-| Week 6 | [My solutions](../Documents_files/MA210/MA210_Class6.compressed.pdf) |
-| Week 7 | [My solutions](../Documents_files/MA210/MA210_Class7.compressed.pdf) |
-| Week 8 | [My solutions](../Documents_files/MA210/MA210_Class8.compressed.pdf) |
-| Week 9 | [My solutions](../Documents_files/MA210/MA210_Class9.compressed.pdf) |
+| Week 1 | [Notes](../Documents_files/MA210/MA210_Class1.compressed.pdf) |
+| Week 2 | [Notes](../Documents_files/MA210/MA210_Class2.compressed.pdf) |
+| Week 3 | [Notes](../Documents_files/MA210/MA210_Class3.compressed.pdf) |
+| Week 4 | [Notes](../Documents_files/MA210/MA210_Class4.compressed.pdf) |
+| Week 5 | [Notes](../Documents_files/MA210/MA210_Class5.compressed.pdf) |
+| Week 6 | [Notes](../Documents_files/MA210/MA210_Class6.compressed.pdf) |
+| Week 7 | [Notes](../Documents_files/MA210/MA210_Class7.compressed.pdf) |
+| Week 8 | [Notes](../Documents_files/MA210/MA210_Class8.compressed.pdf) |
+| Week 9 | [Notes](../Documents_files/MA210/MA210_Class9.compressed.pdf) |

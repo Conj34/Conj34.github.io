@@ -16,3 +16,6 @@ format: html
 -   Introduction to programming in Python,
 -   Introduction to option pricing with multiple periods in financial markets.
 
+<h4>Lecture Notes</h4>
+
+Please ask for lecture notes and solutions to the teachers of this course.

@@ -9,45 +9,37 @@ format: html
 
 The primary focus of this course is on the core machine learning techniques in the context of high-dimensional or large datasets (i.e. big data). The first part of the course covers elementary and important statistical methods including nearest neighbours, linear regression, logistic regression, regularisation, cross-validation, and variable selection. The second part of the course deals with more advanced machine learning methods including regression and classification trees, random forests, bagging, boosting, deep neural networks, k-means clustering and hierarchical clustering. The course will also introduce causal inference motivated by analogy between double machine learning and two-stage least squares. All the topics will be delivered using illustrative real data examples. Students will also gain hands-on experience using R or Python (programming languages and software environments for data analysis, computing and visualisation).
 
-
-
 <h3>Material and solutions</h3>
+
 I did not write the following material, which was prepared by Joshua Loftus. My role was simply to present the content of the seminars and the solutions in class.
 
-+------------+----------------------------------------------------------------------------+
-| Week       | Seminar Material                                                           |
-+============+============================================================================+
-| Week 1     | [Seminar](../Documents_files/ST310/notebook1.html)                         |
-+------------+----------------------------------------------------------------------------+
-| Week 2     | [Seminar](../Documents_files/ST310/notebook2.html)                         | 
-+------------+----------------------------------------------------------------------------+
-| Week 3     | [Seminar](../Documents_files/ST310/notebook3.html)                         | 
-+------------+----------------------------------------------------------------------------+
-| Week 4     | - [part 1](../Documents_files/ST310/notebook4a.html)                       |
-|            | - [part 2](../Documents_files/ST310/notebook4b.html)                       |
-+------------+----------------------------------------------------------------------------+
-| Week 5     | - [part 1](../Documents_files/ST310/notebook5a.html)                       |
-|            | - [part 2](../Documents_files/ST310/notebook5b.html)                       |
-+------------+----------------------------------------------------------------------------+
-| Week 6     | - [part 1](../Documents_files/ST310/notebook6a.html)                       |
-|            | - [part 2](../Documents_files/ST310/notebook6b.html)                       |
-+------------+----------------------------------------------------------------------------+
-| Week 7     | - [part 1](../Documents_files/ST310/notebook7a.html)                       |
-|            | - [part 2](../Documents_files/ST310/notebook7b.html)                       |
-+------------+----------------------------------------------------------------------------+
-| Week 8     | - [part 1](../Documents_files/ST310/notebook8a.html)                       |
-|            | - [part 2](../Documents_files/ST310/notebook8b.html)                       |
-|            | - [part 3](../Documents_files/ST310/notebook8c.html)                       |
-|            | - [part 4](../Documents_files/ST310/notebook8d.html)                       |
-+------------+----------------------------------------------------------------------------+
-| Week 9     | [Seminar](../Documents_files/ST310/notebook9.html)                         |
-+------------+----------------------------------------------------------------------------+
-| Week 10    | [Seminar](../Documents_files/ST310/notebook10.html)                        | 
-+------------+----------------------------------------------------------------------------+
-
-
-
-
-
-
-
++---------+--------------------------------------------------------+
+| Week    | Seminar Material                                       |
++=========+========================================================+
+| Week 1  | [Seminar](../Documents_files/ST310/notebook1.html)     |
++---------+--------------------------------------------------------+
+| Week 2  | [Seminar](../Documents_files/ST310/notebook2.html)     |
++---------+--------------------------------------------------------+
+| Week 3  | [Seminar](../Documents_files/ST310/notebook3.html)     |
++---------+--------------------------------------------------------+
+| Week 4  | -   [part 1](../Documents_files/ST310/notebook4a.html) |
+|         | -   [part 2](../Documents_files/ST310/notebook4b.html) |
++---------+--------------------------------------------------------+
+| Week 5  | -   [part 1](../Documents_files/ST310/notebook5a.html) |
+|         | -   [part 2](../Documents_files/ST310/notebook5b.html) |
++---------+--------------------------------------------------------+
+| Week 6  | -   [part 1](../Documents_files/ST310/notebook6a.html) |
+|         | -   [part 2](../Documents_files/ST310/notebook6b.html) |
++---------+--------------------------------------------------------+
+| Week 7  | -   [part 1](../Documents_files/ST310/notebook7a.html) |
+|         | -   [part 2](../Documents_files/ST310/notebook7b.html) |
++---------+--------------------------------------------------------+
+| Week 8  | -   [part 1](../Documents_files/ST310/notebook8a.html) |
+|         | -   [part 2](../Documents_files/ST310/notebook8b.html) |
+|         | -   [part 3](../Documents_files/ST310/notebook8c.html) |
+|         | -   [part 4](../Documents_files/ST310/notebook8d.html) |
++---------+--------------------------------------------------------+
+| Week 9  | [Seminar](../Documents_files/ST310/notebook9.html)     |
++---------+--------------------------------------------------------+
+| Week 10 | [Seminar](../Documents_files/ST310/notebook10.html)    |
++---------+--------------------------------------------------------+
