@@ -271,8 +271,15 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#future-projects" id="toc-future-projects" class="nav-link active" data-scroll-target="#future-projects">Future Projects</a></li>
+  <li><a href="#past-and-present-projects" id="toc-past-and-present-projects" class="nav-link" data-scroll-target="#past-and-present-projects">Past and Present Projects</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
@@ -315,7 +322,19 @@ Contact
 </ul>
 </div>
 </div>
-</div></div><div class="tabset-margin-container"></div><div class="panel-tabset">
+</div></div><section id="future-projects" class="level2">
+<h2 class="anchored" data-anchor-id="future-projects">Future Projects</h2>
+<p>I welcome collaboration with anyone who would like to work with me on one (or more) of the following. <strong>These are only the projects for which I HAVE a clear research path in mind</strong>, with specific implementations, experiments, and analysis to do, I just didn’t have the time to implement them yet. Please get in touch with me even just to chat about them, or if you’re interested in collaborating.</p>
+<ul>
+<li><strong>Can RL learn Combinatorial Games?</strong> Reinforcement Learning (RL) <a href="https://www.nature.com/articles/nature24270">is really good at games</a>, but is possibly <a href="https://arxiv.org/pdf/2311.03583">really bad at Graph Theory</a> (although initial results were quite optimistic [<a href="https://arxiv.org/pdf/2411.00566">1</a>, <a href="https://arxiv.org/pdf/2104.14516">2</a>]). Would RL be good at Combinatorial Games? I am particularly interested to explore this about games on graphs. In particular the <a href="https://arxiv.org/pdf/2409.01796">Balance Game</a> or some <a href="https://en.wikipedia.org/wiki/Maker-Breaker_game">Maker Breaker games</a>.</li>
+<li><strong>What can RL do in Graph Theory?</strong> There are some results that seem to indicate that RL is not good at Graph Theoretical problems [<a href="https://arxiv.org/pdf/2311.03583">3</a>, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26470">4</a>]. However, RL is clearly good at solving certain Graph-theoretical problems, and initial results were quite optimistic [<a href="https://arxiv.org/pdf/2411.00566">1</a>, <a href="https://arxiv.org/pdf/2104.14516">2</a>]. What is the reason behind this variying behaviour?</li>
+<li><strong>Sparsity? Quantization? What about both?</strong> Two well-known memory-reduction methods in Neural Networks are Sparsity and Quantization. <a href="https://arxiv.org/abs/2405.20935">These two methods are not orthogonal</a>. However I do believe that there is a way of improving the current SotA to produce a lighter version of NN using the interplay between the two. The literature in the area seems to go towards a natural direction that hasn’t been developed, in my opinion, to the fullest.</li>
+<li><strong>Let’s make EU healthier</strong> This is a project that has a wider breath and is not only linked to research. If you’re passionate about nutrition, hardcore computer science, and want to make a tangible impact, do get in touch.</li>
+</ul>
+</section>
+<section id="past-and-present-projects" class="level2">
+<h2 class="anchored" data-anchor-id="past-and-present-projects">Past and Present Projects</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Papers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Talks (Selected)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Theses and Projects</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Trips</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Other</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
@@ -731,6 +750,7 @@ Contact
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

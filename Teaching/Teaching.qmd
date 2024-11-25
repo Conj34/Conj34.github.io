@@ -3,21 +3,21 @@ title: "Teaching"
 format: html
 ---
 
-{{< include /support/_margins_Teaching.qmd >}} These pages contain some of the material I used to aid my teaching during my years at LSE. Some of the material I created myself, some was given by the various lecturers of the courses, some I found online and I propose here again in a selected format.
+These pages contain some of the material I used to aid my teaching during my years at LSE. Some of the material I created myself, some was given by the various lecturers of the courses, some I found online and I propose here again in a selected format.
 
 For a quick overview of my teaching, you can consult the following table.
 
-| Code    | Name                                           | Year(s)        | Department | Main Lecturer    |
+| Code | Name | Year(s) | Department | Main Lecturer |
 |---------------|---------------|---------------|---------------|---------------|
-| [MA102/3](MA102_MA103.qmd)  | Introduction to Abstract Mathematics           | 2020/21; 21/22 | Maths      | Peter Allen      |
-| [ME306](ME306.qmd)          | Real Analysis                                  | 2021           | Maths      | Johannes Ruf     |
-| [MA210](MA210.qmd)          | Discrete Mathematics                           | 2021/22        | Maths      | Peter Allen      |
-| [MA423](MA423.qmd)          | Fundamentals of Operations Research            | 2021/22        | Maths      | Ahmad Abdi       |
-| [ME200](ME200.qmd)          | Computational Methods in Financial Mathematics | 2023           | Maths      | Luitgard Veraart |
-| [ST310](ST310.qmd)          | Machine Learning                               | 2022/23        | Stats      | Joshua Loftus    |
-| [ST455](ST455.qmd)          | Reinforcement Learning                         | 2022/23        | Stats      | Chengchun Shi    |
-| [FM250](FM250.qmd)          | Finance                                        | 2023           | Finance    | Ashwini Agrawal  |
-| [PR](Pre-sessionals.qmd)    | MiM/GMiM pre-sessionals                        | 2022; 23       | Manag.     | Myself           |
+| [MA102/3](MA102_MA103.qmd) | Introduction to Abstract Mathematics | 2020/21; 21/22 | Maths | Peter Allen |
+| [ME306](ME306.qmd) | Real Analysis | 2021 | Maths | Johannes Ruf |
+| [MA210](MA210.qmd) | Discrete Mathematics | 2021/22 | Maths | Peter Allen |
+| [MA423](MA423.qmd) | Fundamentals of Operations Research | 2021/22 | Maths | Ahmad Abdi |
+| [ME200](ME200.qmd) | Computational Methods in Financial Mathematics | 2023 | Maths | Luitgard Veraart |
+| [ST310](ST310.qmd) | Machine Learning | 2022/23 | Stats | Joshua Loftus |
+| [ST455](ST455.qmd) | Reinforcement Learning | 2022/23 | Stats | Chengchun Shi |
+| [FM250](FM250.qmd) | Finance | 2023 | Finance | Ashwini Agrawal |
+| [PR](Pre-sessionals.qmd) | MiM/GMiM pre-sessionals | 2022; 23 | Manag. | Myself |
 
 : Courses taught {.striped .hover tbl-colwidths="\[10,40,20,10,20\]"}
 

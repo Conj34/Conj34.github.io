@@ -15,6 +15,17 @@ format:
 :::
 ::::
 
+## Future Projects
+I welcome collaboration with anyone who would like to work with me on one (or more) of the following. **These are only the projects for which I HAVE a clear research path in mind**, with specific implementations, experiments, and analysis to do, I just didn't have the time to implement them yet. Please get in touch with me even just to chat about them, or if you're interested in collaborating.
+
+- **Can RL learn Combinatorial Games?** Reinforcement Learning (RL) [is really good at games](https://www.nature.com/articles/nature24270), but is possibly [really bad at Graph Theory](https://arxiv.org/pdf/2311.03583) (although  initial results were quite optimistic \[[1](https://arxiv.org/pdf/2411.00566),  [2](https://arxiv.org/pdf/2104.14516)]). Would RL be good at Combinatorial Games? I am particularly interested to explore this about games on graphs. In particular the [Balance Game](https://arxiv.org/pdf/2409.01796) or some [Maker Breaker games](https://en.wikipedia.org/wiki/Maker-Breaker_game).
+- **What can RL do in Graph Theory?** There are some results that seem to indicate that RL is not good at Graph Theoretical problems \[[3](https://arxiv.org/pdf/2311.03583),  [4](https://ojs.aaai.org/index.php/AAAI/article/view/26470)]. However, RL is clearly good at solving certain Graph-theoretical problems, and initial results were quite optimistic \[[1](https://arxiv.org/pdf/2411.00566),  [2](https://arxiv.org/pdf/2104.14516)]. What is the reason behind this variying behaviour?
+- **Sparsity? Quantization? What about both?** Two well-known memory-reduction methods in Neural Networks are Sparsity and Quantization. [These two methods are not orthogonal](https://arxiv.org/abs/2405.20935). However I do believe that there is a way of improving the current SotA to produce a lighter version of NN using the interplay between the two. The literature in the area seems to go towards a natural direction that hasn't been developed, in my opinion, to the fullest.
+- **Let's make EU healthier** This is a project that has a wider breath and is not only linked to research. If you're passionate about nutrition, hardcore computer science, and want to make a tangible impact, do get in touch.
+
+
+## Past and Present Projects
+
 ::: panel-tabset
 ## Papers
 
