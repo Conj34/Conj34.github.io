@@ -24,7 +24,7 @@ format:
 | ILS for $\ell_0$-bounded local improvement | Amazon ATS team | 2024+ | Amazon | ![](../images/50.png){width="0.8cm"} |
 | Combinatorial Theorems | P. Allen, J. Böttcher, D.M. | 2024+ | LSE | ![](../images/50.png){width="0.8cm"} |
 | Partition universality for hypergraphs | P. Allen, J. Böttcher, J. Lada, D.M. | 2024+ | LSE | ![](../images/50.png){width="0.8cm"} |
-| [Convergence of policy-gradiente methods in repeated games](https://arxiv.org/pdf/2411.12725) | G. Ashkenazi-Golan, D.M., E. Plumb | 2024 | LSE | ![](../images/100.png){width="0.8cm"} |
+| [Reinforcement Learning, Collusion, and the Folk Theorem](https://arxiv.org/pdf/2411.12725) | G. Ashkenazi-Golan, D.M., E. Plumb | 2024 | LSE | ![](../images/100.png){width="0.8cm"} |
 | [Dirac's theorem for graphs of bounded bandwidth](https://arxiv.org/abs/2407.05889) | A.E. Díaz, P. Gupta, D.M., O. Parczyk, A. Sgueglia | 2024 | LSE | ![](../images/100.png){width="0.8cm"} |
 | [Product-free subsets of $[n]$](https://arxiv.org/abs/2311.18796) | L. Mattos, D.M., O. Parczyk | 2023 | LSE | ![](../images/100.png){width="0.8cm"} |
 | [Graphs with large minimum degree and no small odd cycles are 3-colourable](https://arxiv.org/abs/2302.01875) | J. Böttcher, N. Frankl, D. M., O. Parczyk, J. Skokan | 2022 | LSE | ![](../images/100.png){width="0.8cm"} |
