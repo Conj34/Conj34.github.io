@@ -3,7 +3,7 @@ title: "Pre-sessionals for Management"
 format: html
 ---
 
-{{< include /support/_margins_Teaching.qmd >}} This Pre-sessional course consists of two section, four hours each. In the first section, we are gonig to see an introduction to fundamental mathematical tools, in the second, we are going to examin fundamentals of statistics.
+This Pre-sessional course consists of two section, four hours each. In the first section, we are gonig to see an introduction to fundamental mathematical tools, in the second, we are going to examin fundamentals of statistics.
 
 A summary of the course is as follows:
 
