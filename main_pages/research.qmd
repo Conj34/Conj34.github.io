@@ -16,13 +16,13 @@ format:
 ::::
 
 ## Future Projects
+
 I welcome collaboration with anyone who would like to work with me on one (or more) of the following. **These are only the projects for which I HAVE a clear research path in mind**, with specific implementations, experiments, and analysis to do, I just didn't have the time to implement them yet. Please get in touch with me even just to chat about them, or if you're interested in collaborating.
 
-- **Can RL learn Combinatorial Games?** Reinforcement Learning (RL) [is really good at games](https://www.nature.com/articles/nature24270), but is possibly [really bad at Graph Theory](https://arxiv.org/pdf/2311.03583) (although  initial results were quite optimistic \[[1](https://arxiv.org/pdf/2411.00566),  [2](https://arxiv.org/pdf/2104.14516)]). Would RL be good at Combinatorial Games? I am particularly interested to explore this about games on graphs. In particular the [Balance Game](https://arxiv.org/pdf/2409.01796) or some [Maker Breaker games](https://en.wikipedia.org/wiki/Maker-Breaker_game).
-- **What can RL do in Graph Theory?** There are some results that seem to indicate that RL is not good at Graph Theoretical problems \[[3](https://arxiv.org/pdf/2311.03583),  [4](https://ojs.aaai.org/index.php/AAAI/article/view/26470)]. However, RL is clearly good at solving certain Graph-theoretical problems, and initial results were quite optimistic \[[1](https://arxiv.org/pdf/2411.00566),  [2](https://arxiv.org/pdf/2104.14516)]. What is the reason behind this variying behaviour?
-- **Sparsity? Quantization? What about both?** Two well-known memory-reduction methods in Neural Networks are Sparsity and Quantization. [These two methods are not orthogonal](https://arxiv.org/abs/2405.20935). However I do believe that there is a way of improving the current SotA to produce a lighter version of NN using the interplay between the two. The literature in the area seems to go towards a natural direction that hasn't been developed, in my opinion, to the fullest.
-- **Let's make EU healthier** This is a project that has a wider breath and is not only linked to research. If you're passionate about nutrition, hardcore computer science, and want to make a tangible impact, do get in touch.
-
+-   **Can RL learn Combinatorial Games?** Reinforcement Learning (RL) [is really good at games](https://www.nature.com/articles/nature24270), but is possibly [really bad at Graph Theory](https://arxiv.org/pdf/2311.03583) (although initial results were quite optimistic \[[1](https://arxiv.org/pdf/2411.00566), [2](https://arxiv.org/pdf/2104.14516)\]). Would RL be good at Combinatorial Games? I am particularly interested to explore this about games on graphs. In particular the [Balance Game](https://arxiv.org/pdf/2409.01796) or some [Maker Breaker games](https://en.wikipedia.org/wiki/Maker-Breaker_game).
+-   **What can RL do in Graph Theory?** There are some results that seem to indicate that RL is not good at Graph Theoretical problems \[[3](https://arxiv.org/pdf/2311.03583), [4](https://ojs.aaai.org/index.php/AAAI/article/view/26470)\]. However, RL is clearly good at solving certain Graph-theoretical problems, and initial results were quite optimistic \[[1](https://arxiv.org/pdf/2411.00566), [2](https://arxiv.org/pdf/2104.14516)\]. What is the reason behind this variying behaviour?
+-   **Sparsity? Quantization? What about both?** Two well-known memory-reduction methods in Neural Networks are Sparsity and Quantization. [These two methods are not orthogonal](https://arxiv.org/abs/2405.20935). However I do believe that there is a way of improving the current SotA to produce a lighter version of NN using the interplay between the two. The literature in the area seems to go towards a natural direction that hasn't been developed, in my opinion, to the fullest.
+-   **Let's make EU healthier** This is a project that has a wider breath and is not only linked to research. If you're passionate about nutrition, hardcore computer science, and want to make a tangible impact, do get in touch.
 
 ## Past and Present Projects
 
@@ -31,10 +31,10 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 
 | Title | People | Date | Instit. | Status |
 |---------------|---------------|---------------|---------------|---------------|
-| Methodology for carbon credit assessment | A. Perrella, G. Marastoni, D.M. | 2024+ | LSE | ![](../images/50.png){width="0.8cm"} |
-| ILS for $\ell_0$-bounded local improvement | Amazon ATS team | 2024+ | Amazon | ![](../images/50.png){width="0.8cm"} |
-| Combinatorial Theorems | P. Allen, J. Böttcher, D.M. | 2024+ | LSE | ![](../images/50.png){width="0.8cm"} |
-| Partition universality for hypergraphs | P. Allen, J. Böttcher, J. Lada, D.M. | 2024+ | LSE | ![](../images/50.png){width="0.8cm"} |
+| Methodology for carbon credit assessment | A. Perrella, G. Marastoni, D.M. | 2025+ | LSE | ![](../images/50.png){width="0.8cm"} |
+| Combinatorial Theorems | P. Allen, J. Böttcher, D.M. | 2025+ | LSE | ![](../images/50.png){width="0.8cm"} |
+| Partition universality for hypergraphs | P. Allen, J. Böttcher, J. Lada, D.M. | 2025+ | LSE | ![](../images/50.png){width="0.8cm"} |
+| Re-ILS: a metaheuristic approach for cardinality-constrained optimization | Amazon ATS team | 2024 | Amazon | ![](../images/100.png){width="0.8cm"} |
 | [Reinforcement Learning, Collusion, and the Folk Theorem](https://arxiv.org/pdf/2411.12725) | G. Ashkenazi-Golan, D.M., E. Plumb | 2024 | LSE | ![](../images/100.png){width="0.8cm"} |
 | [Dirac's theorem for graphs of bounded bandwidth](https://arxiv.org/abs/2407.05889) | A.E. Díaz, P. Gupta, D.M., O. Parczyk, A. Sgueglia | 2024 | LSE | ![](../images/100.png){width="0.8cm"} |
 | [On product Schur triples in the integers](https://arxiv.org/abs/2311.18796) | L. Mattos, D.M., O. Parczyk | 2023 | LSE | ![](../images/100.png){width="0.8cm"} |
@@ -55,7 +55,7 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 ## Talks (Selected)
 
 | Title | Date | Occasion | Place |
-|-------------------------|----------------|----------------|----------------|
+|-----------------------|-----------------|-----------------|-----------------|
 | [Product-free subsets of $[n]$](https://arxiv.org/abs/2311.18796) | Oct '23 | LSE Seminar | London |
 | [Partition Universality](../Documents_files/Presentations/Partit_uni.pdf) | Aug '23 | Eurocomb | Prague |
 | [The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$](../Documents_files/Presentations/Ram_num.pdf) | Sep '23 | DMV (Invited speaker) | Ilmenau |
