@@ -96,11 +96,11 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 
 | What | When | Where | Why |
 |------------------|------------------|------------------|------------------|
-| [Graph-theoretical Tools in Statistics](../Documents_files/Presentations/) | 2022 | LSE | Mini-internship |
+| Graph-theoretical Tools in Statistics | 2022 | LSE | Mini-internship |
 | [A discussion about the Pentagon Problem](../Documents_files/Theses/MSc_Thesis.pdf) | 2020 | ETHZ | MSc Thesis |
 | [Separator Theorems](../Documents_files/Presentations/Semester_Paper_Separator_Theorems.pdf) | 2019 | ETHZ | Semester Paper |
 | [A Glimpse of Young's Tableaux](../Documents_files/Presentations/Reading_course_Young_Tableaux.pdf) | 2019 | ETHZ | Reading Course |
-| [On the Hausdorff Dimension of Brownian Motion](../Documents_files/Theses/BSc_Thesis.compressed.pdf) | 2018 | Pisa Univ. | BSc Thesis |
+| [On the Hausdorff Dimension of Brownian Motion](../Documents_files/Theses/BSc_Thesis.compr.pdf) | 2018 | Pisa Univ. | BSc Thesis |
 
 : {.striped .hover tbl-colwidths="\[60,10,10,20\]"}
 

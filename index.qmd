@@ -7,12 +7,12 @@ I am currently a *PhD student* in the department of Mathematics of LSE; my inter
 
 Alongside my university projects, I currently am:
 
-- Collaborating with LGBTQ+ open-spaces around London to organise scientific outreach events for the LGBTQ+ community.
-- Contributing to a project for Carbon Credit Assessment, in collaboration with the Paraguayan government.
-- Leading a cross-field project for a EU proposal of new regulations regarding nutritional information on food packaging.
-- Writing a cooking book with all my family's traditional recipes.
+-   Collaborating with LGBTQ+ open-spaces around London to organise scientific outreach events for the LGBTQ+ community.
+-   Contributing to a project for Carbon Credit Assessment, in collaboration with the Paraguayan government.
+-   Leading a cross-field project for a EU proposal of new regulations regarding nutritional information on food packaging.
+-   Writing a cooking book with all my family's traditional recipes.
 
-::: column-margin
+:::::: column-margin
 ::: callout-note
 ## Contact
 
@@ -42,4 +42,4 @@ Alongside my university projects, I currently am:
 <script src="javascripts/music.js"></script>
 ```
 :::
-:::
+::::::
