@@ -1,5 +1,4 @@
 var quotes = [
-"Be realistic, demand the impossible.  <p><center><i>-Che Guevara-</i></center></p>",
 "It took a few years, but bit by bit, Lindy began to love me. I didn’t dare believe it at first, but after a while there was nothing else to believe.  <p><center><i>-K. Ishiguro-</i></center></p>",
 "Naturally, when one looks back to such instances today, they may indeed take the appearance of being crucial, precious moments in one's life; but of course, at the time, this was not the impression one had. Rather, it was as though one had available a never-ending number of days, months, years in which to sort out the vagaries of one's relationship with Miss Kenton; an infinite number of further opportunities in which to remedy the effect of this or that misunderstanding. <p><center><i>-K. Ishiguro-</i></center></p>",
 "Lord Darlington wasn't a bad man. He wasn't a bad man at all. And at least he had the privilege of being able to say at the end of his life that he made his own mistakes. [...] I can't even say I made my own mistakes. Really - one has to ask oneself - what dignity is there in that? <p><center><i>-K. Ishiguro-</i></center></p>",
