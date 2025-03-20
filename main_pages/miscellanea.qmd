@@ -30,7 +30,8 @@ I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2
 ### Read in 2025
 | Title | Author | Status | Compl. on |
 |-----------------------|--------------|--------------------|--------------|
-| Il Barone Rampante | Italo Calvino | ![](../images/50.png){width="0.8cm"} | Mar '25 |
+| A Wizard of Earthsea | Ursula K. Le Guin | ![](../images/100.png){width="0.8cm"} | Mar '25 |
+| Il Barone Rampante | Italo Calvino | ![](../images/100.png){width="0.8cm"} | Mar '25 |
 | Brave New World | Aldous Huxley | ![](../images/100.png){width="0.8cm"} | Mar '25 |
 | Klara and the Sun | Kazuo Ishiguro | ![](../images/100.png){width="0.8cm"} | Mar '25 |
 | Wolf Hall | Hilary Mantel | ![](../images/100.png){width="0.8cm"} | Feb '25 |
