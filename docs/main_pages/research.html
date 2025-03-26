@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Miscellanea</title>
+<title>Research</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -105,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../main_pages/miscellanea.html">Miscellanea</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../main_pages/research.html">Research</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -221,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../main_pages/research.html" class="sidebar-item-text sidebar-link">
+  <a href="../main_pages/research.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Research</span></a>
   </div>
 </li>
@@ -233,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../main_pages/miscellanea.html" class="sidebar-item-text sidebar-link active">
+  <a href="../main_pages/miscellanea.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Miscellanea</span></a>
   </div>
 </li>
@@ -242,15 +271,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#future-projects" id="toc-future-projects" class="nav-link active" data-scroll-target="#future-projects">Future Projects</a></li>
+  <li><a href="#past-and-present-projects" id="toc-past-and-present-projects" class="nav-link" data-scroll-target="#past-and-present-projects">Past and Present Projects</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Miscellanea</h1>
+<h1 class="title">Research</h1>
 </div>
 
 
@@ -286,498 +322,435 @@ Contact
 </ul>
 </div>
 </div>
-</div></div><p>Amongst the things I like: Books, Movies, Cooking.</p>
+</div></div><section id="future-projects" class="level2">
+<h2 class="anchored" data-anchor-id="future-projects">Future Projects</h2>
+<p>I welcome collaboration with anyone who would like to work with me on one (or more) of the following. <strong>These are only the projects for which I HAVE a clear research path in mind</strong>, with specific implementations, experiments, and analysis to do, I just didn’t have the time to implement them yet. Please get in touch with me even just to chat about them, or if you’re interested in collaborating.</p>
+<ul>
+<li><strong>Can RL learn Combinatorial Games?</strong> Reinforcement Learning (RL) <a href="https://www.nature.com/articles/nature24270">is really good at games</a>, but is possibly <a href="https://arxiv.org/pdf/2311.03583">really bad at Graph Theory</a> (although initial results were quite optimistic [<a href="https://arxiv.org/pdf/2411.00566">1</a>, <a href="https://arxiv.org/pdf/2104.14516">2</a>]). Would RL be good at Combinatorial Games? I am particularly interested to explore this about games on graphs. In particular the <a href="https://arxiv.org/pdf/2409.01796">Balance Game</a> or some <a href="https://en.wikipedia.org/wiki/Maker-Breaker_game">Maker Breaker games</a>.</li>
+<li><strong>What can RL do in Graph Theory?</strong> There are some results that seem to indicate that RL is not good at Graph Theoretical problems [<a href="https://arxiv.org/pdf/2311.03583">3</a>, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26470">4</a>]. However, RL is clearly good at solving certain Graph-theoretical problems, and initial results were quite optimistic [<a href="https://arxiv.org/pdf/2411.00566">1</a>, <a href="https://arxiv.org/pdf/2104.14516">2</a>]. What is the reason behind this variying behaviour?</li>
+<li><strong>Sparsity? Quantization? What about both?</strong> Two well-known memory-reduction methods in Neural Networks are Sparsity and Quantization. <a href="https://arxiv.org/abs/2405.20935">These two methods are not orthogonal</a>. However I do believe that there is a way of improving the current SotA to produce a lighter version of NN using the interplay between the two. The literature in the area seems to go towards a natural direction that hasn’t been developed, in my opinion, to the fullest.</li>
+<li><strong>Let’s make EU healthier</strong> This is a project that has a wider breath and is not only linked to research. If you’re passionate about nutrition, hardcore computer science, and want to make a tangible impact, do get in touch.</li>
+</ul>
+</section>
+<section id="past-and-present-projects" class="level2">
+<h2 class="anchored" data-anchor-id="past-and-present-projects">Past and Present Projects</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" aria-current="page">Boooks</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Movies</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<h1>
-Books
-</h1>
-<p>I like reading books. <a href="https://thegreatestbooks.org">This</a> is a great website to find your next read (I also like <a href="../Learning/Python/Useful/Greatest_authors.html">my own analysis of this list</a>). I have used a lot the platform <a href="https://www.audible.co.uk">Audible</a>.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Read in 2025</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Read in 2024</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Read in 2023</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Papers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Talks (Selected)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Theses and Projects</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Trips</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Other</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <table class="table-striped table-hover caption-top table">
 <colgroup>
-<col style="width: 46%">
-<col style="width: 27%">
-<col style="width: 9%">
-<col style="width: 18%">
+<col style="width: 40%">
+<col style="width: 35%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 5%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Author</th>
+<th>People</th>
+<th>Date</th>
+<th>Instit.</th>
 <th>Status</th>
-<th>Compl. on</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Prophet Song</td>
-<td>Paul Lynch</td>
+<td>Methodology for carbon credit assessment</td>
+<td>A. Perrella, G. Marastoni, D.M.</td>
+<td>2025+</td>
+<td>LSE</td>
 <td><img src="../images/50.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
 </tr>
 <tr class="even">
-<td>Foundation</td>
-<td>Isaac Asimov</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
+<td>Combinatorial Theorems</td>
+<td>P. Allen, J. Böttcher, D.M.</td>
+<td>2025+</td>
+<td>LSE</td>
+<td><img src="../images/50.png" class="img-fluid" style="width:0.8cm"></td>
 </tr>
 <tr class="odd">
-<td>A Wizard of Earthsea</td>
-<td>Ursula K. Le Guin</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
+<td>Partition universality for hypergraphs</td>
+<td>P. Allen, J. Böttcher, J. Lada, D.M.</td>
+<td>2025+</td>
+<td>LSE</td>
+<td><img src="../images/50.png" class="img-fluid" style="width:0.8cm"></td>
 </tr>
 <tr class="even">
-<td>Il Barone Rampante</td>
-<td>Italo Calvino</td>
+<td>Re-ILS: a metaheuristic approach for cardinality-constrained optimization</td>
+<td>Amazon ATS team</td>
+<td>2024</td>
+<td>Amazon</td>
 <td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
 </tr>
 <tr class="odd">
-<td>Brave New World</td>
-<td>Aldous Huxley</td>
+<td><a href="https://arxiv.org/pdf/2411.12725">Reinforcement Learning, Collusion, and the Folk Theorem</a></td>
+<td>G. Ashkenazi-Golan, D.M., E. Plumb</td>
+<td>2024</td>
+<td>LSE</td>
 <td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
 </tr>
 <tr class="even">
-<td>Klara and the Sun</td>
-<td>Kazuo Ishiguro</td>
+<td><a href="https://arxiv.org/abs/2407.05889">Dirac’s theorem for graphs of bounded bandwidth</a></td>
+<td>A.E. Díaz, P. Gupta, D.M., O. Parczyk, A. Sgueglia</td>
+<td>2024</td>
+<td>LSE</td>
 <td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
 </tr>
 <tr class="odd">
-<td>Wolf Hall</td>
-<td>Hilary Mantel</td>
+<td><a href="https://arxiv.org/abs/2311.18796">On product Schur triples in the integers</a></td>
+<td>L. Mattos, D.M., O. Parczyk</td>
+<td>2023</td>
+<td>LSE</td>
 <td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Feb ’25</td>
 </tr>
 <tr class="even">
-<td>Dune</td>
-<td>Frank Herbert</td>
+<td><a href="https://arxiv.org/abs/2302.01875">Graphs with large minimum degree and no small odd cycles are 3-colourable</a></td>
+<td>J. Böttcher, N. Frankl, D. M., O. Parczyk, J. Skokan</td>
+<td>2022</td>
+<td>LSE</td>
 <td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Feb ’25</td>
 </tr>
 <tr class="odd">
-<td>O Natal de Poirot</td>
-<td>Agatha Christie</td>
+<td><a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p11">The Ramsey numbers of squares of paths and cycles</a></td>
+<td>Peter Allen, D.M., Barnaby Roberts, Jozef Skokan</td>
+<td>2022</td>
+<td>LSE</td>
 <td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’25</td>
 </tr>
 <tr class="even">
-<td>A noite das bruxas</td>
-<td>Agatha Christie</td>
+<td><a href="https://arxiv.org/abs/2207.14297">Density of small diameter subgraphs in <span class="math inline">\(K_r\)</span>-free graphs</a></td>
+<td>Eng Keat Hng, D.M.</td>
+<td>2021</td>
+<td>LSE</td>
 <td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’25</td>
 </tr>
 </tbody>
 </table>
+<!--| Maker Breaker Games in the square lattice                                                                     | F. Illingworth, D.M., A. Pokrovskiy                  | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  
+
+| Density of small diameter subgraphs in $K_r$-free graphs (II)                                                                                     | D.M.                                                 | 2023-   | LSE     | ![](../images/0.png){width="0.8cm"}   |
+
+|-->
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2-B1, currently C1), and my Portuguese (currently B1). I am planning to write a page on how I learn languages, as it’s something I’m passionate about and have some experience doing.</p>
-<table class="table-striped table-hover caption-top table">
-<colgroup>
-<col style="width: 46%">
-<col style="width: 27%">
-<col style="width: 9%">
-<col style="width: 18%">
-</colgroup>
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Title</th>
-<th>Author</th>
-<th>Status</th>
-<th>Compl. on</th>
+<th>Date</th>
+<th>Occasion</th>
+<th>Place</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Flights</td>
-<td>Olga Tokarczuk</td>
-<td><img src="../images/50.png" class="img-fluid" style="width:0.8cm"></td>
+<td><a href="https://arxiv.org/abs/2311.18796">Product-free subsets of <span class="math inline">\([n]\)</span></a></td>
+<td>Oct ’23</td>
+<td>LSE Seminar</td>
+<td>London</td>
+</tr>
+<tr class="even">
+<td><a href="../Documents_files/Presentations/Partit_uni.pdf">Partition Universality</a></td>
+<td>Aug ’23</td>
+<td>Eurocomb</td>
+<td>Prague</td>
+</tr>
+<tr class="odd">
+<td><a href="../Documents_files/Presentations/Ram_num.pdf">The Ramsey numbers of <span class="math inline">\(P_{3n}^2\)</span> and <span class="math inline">\(C_{3n}^2\)</span></a></td>
+<td>Sep ’23</td>
+<td>DMV (Invited speaker)</td>
+<td>Ilmenau</td>
+</tr>
+<tr class="even">
 <td></td>
+<td>Apr ’23</td>
+<td>Invited seminar</td>
+<td>Prague</td>
 </tr>
-<tr class="even">
-<td>I Know Why the Caged Bird Sings</td>
-<td>Maya Angelou</td>
-<td><img src="../images/50.png" class="img-fluid" style="width:0.8cm"></td>
+<tr class="odd">
 <td></td>
+<td>Jul ’22</td>
+<td>ICGT</td>
+<td>Montpellier</td>
 </tr>
-<tr class="odd">
-<td>Notes from Underground</td>
-<td>Fyodor Dostoevsky</td>
-<td><img src="../images/50.png" class="img-fluid" style="width:0.8cm"></td>
+<tr class="even">
 <td></td>
-</tr>
-<tr class="even">
-<td>The Call of the Wild</td>
-<td>Jack London</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Feb ’24</td>
+<td>Jul ’22</td>
+<td>Invited seminar</td>
+<td>TU Hamburg</td>
 </tr>
 <tr class="odd">
-<td>Alice’s Adventures in Wonderland</td>
-<td>Lewis Carroll</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’24</td>
+<td><a href="../Documents_files/Presentations/3_chrom.pdf">Chromatic profile of <span class="math inline">\(\{C_3,\dots{},C_{2k-1}\}\)</span></a></td>
+<td>Mar ’23</td>
+<td>PCC</td>
+<td>Birmingham</td>
 </tr>
 <tr class="even">
-<td>The Metamorphosis</td>
-<td>Franz Kafka</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’24</td>
+<td></td>
+<td>Jul ’22</td>
+<td>RSA</td>
+<td>Poznan</td>
 </tr>
 <tr class="odd">
-<td>Bartleby, the Scrivaner</td>
-<td>Herman Melville</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’24</td>
+<td></td>
+<td>Jul ’22</td>
+<td>ICGT</td>
+<td>Montpellier</td>
 </tr>
 <tr class="even">
-<td>White Nights</td>
-<td>Fyodor Dostoevsky</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’24</td>
+<td></td>
+<td>Jul ’22</td>
+<td>Invited seminar</td>
+<td>TU Hamburg</td>
 </tr>
 <tr class="odd">
-<td>The Idiot</td>
-<td>Fyodor Dostoevsky</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’24</td>
+<td><a href="../Documents_files/Theses/MSc_pres.pdf">About the Pentagon Conjecture</a></td>
+<td>Nov ’20</td>
+<td>LSE Seminar</td>
+<td>London</td>
+</tr>
+<tr class="even">
+<td><a href="../Documents_files/Presentations/Min_cicl.pdf">Minimal Ramsey Graphs for Ciclicity</a></td>
+<td>May ’19</td>
+<td>ETHZ Mittagsseminar</td>
+<td>Zurich</td>
+</tr>
+<tr class="odd">
+<td><a href="../Documents_files/Theses/BSc_Thesis.compr.pdf">Dimensione di Hausdorff del Moto Browniano</a></td>
+<td>May ’19</td>
+<td>BSc Defense</td>
+<td>Pisa</td>
 </tr>
 </tbody>
 </table>
+<!--
+[About the Pentagon Conjecture](../Documents_files/Theses/MSc_pres.pdf) 
+[Dimensione di Hausdorff del Moto Browniano](../Documents_files/Theses/BSc_Thesis.compr.pdf)
+
+| Title                                                                              | Date    | Occasion            | Place                |
+|------------------|------------------|------------------|------------------|
+| [The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$](../Documents_files/Presentations/Ram_num.pdf)              | Sep '23 | DMV (Invited)       | Ilmenau              |
+| Partition universality                                                                                                                         | Aug '23 | Eurocomb       | Prague              |
+|  The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$                                                                                               | Apr '23 | Invited seminar     | Charles Univ. Prague |
+| [Chromatic profile of $\{C_3,\dots{},C_{2k-1}\}$](../Documents_files/Presentations/3_chrom.pdf)                                  | Mar '23 | PCC                 | Birmingham           |
+|  The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$                                                                                              | Jul '22 | ICGT                | Montpellier          |
+|  Chromatic profile of $\{C_3,\dots{},C_{2k-1}\}$                                                                                              | Jul '22 | RSA                 | Poznan               |
+| The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$                                                                                                 | Jun '22 | Invited seminar     | TU Hamburg           |
+| [About the Pentagon Conjecture](../Documents_files/Theses/MSc_pres.pdf)                                                           | Nov '20 | LSE Seminar         | London               |
+| [Minimal Ramsey Graphs for Ciclicity](../Documents_files/Presentations/Min_cicl.pdf) | May '19 | ETHZ Mittagsseminar | Zurich               |
+| [Studio della dimensione di Hausdorff del Moto Browniano](../Documents_files/Theses/BSc_Thesis.compr.pdf)                                | Jul '18 | BSc defense         | Pisa                 |
+
+: {.striped .hover tbl-colwidths="\[50,30,20\]"}
+-->
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <table class="table-striped table-hover caption-top table">
 <colgroup>
-<col style="width: 46%">
-<col style="width: 27%">
-<col style="width: 9%">
-<col style="width: 18%">
+<col style="width: 60%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Title</th>
-<th>Author</th>
-<th>Status</th>
-<th>Compl. on</th>
+<th>What</th>
+<th>When</th>
+<th>Where</th>
+<th>Why</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Il fu Mattia Pascal</td>
-<td>Luigi Pirandello</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Dec ’23</td>
+<td>Graph-theoretical Tools in Statistics</td>
+<td>2022</td>
+<td>LSE</td>
+<td>Mini-internship</td>
 </tr>
 <tr class="even">
-<td>First Love</td>
-<td>Ivan Turgenev</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Dec ’23</td>
+<td><a href="../Documents_files/Theses/MSc_Thesis.pdf">A discussion about the Pentagon Problem</a></td>
+<td>2020</td>
+<td>ETHZ</td>
+<td>MSc Thesis</td>
 </tr>
 <tr class="odd">
-<td>The Kreutzer Sonata</td>
-<td>Leo Tolstoy</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Dec ’23</td>
+<td><a href="../Documents_files/Presentations/Semester_Paper_Separator_Theorems.pdf">Separator Theorems</a></td>
+<td>2019</td>
+<td>ETHZ</td>
+<td>Semester Paper</td>
 </tr>
 <tr class="even">
-<td>The Strange Case of Dr.&nbsp;Jekyll and Mr.&nbsp;Hyde</td>
-<td>Robert L. Stevenson</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Dec ’23</td>
+<td><a href="../Documents_files/Presentations/Reading_course_Young_Tableaux.pdf">A Glimpse of Young’s Tableaux</a></td>
+<td>2019</td>
+<td>ETHZ</td>
+<td>Reading Course</td>
 </tr>
 <tr class="odd">
-<td>The Death of Ivan Ilyich</td>
-<td>Leo Tolstoy</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Dec ’23</td>
-</tr>
-<tr class="even">
-<td>Murtagh</td>
-<td>Cristopher Paolini</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Nov ’23</td>
-</tr>
-<tr class="odd">
-<td>Emma</td>
-<td>Jane Austen</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Nov ’23</td>
-</tr>
-<tr class="even">
-<td>Pride and Prejudice</td>
-<td>Jane Austen</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Nov ’23</td>
-</tr>
-<tr class="odd">
-<td>Persuasion</td>
-<td>Jane Austen</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Oct ’23</td>
-</tr>
-<tr class="even">
-<td>Uno, nessuno e centomila</td>
-<td>Luigi Pirandello</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Oct ’23</td>
-</tr>
-<tr class="odd">
-<td>Macbeth</td>
-<td>William Shakespeare</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Oct ’23</td>
-</tr>
-<tr class="even">
-<td>Sphere</td>
-<td>Michael Crichton</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Sep ’23</td>
-</tr>
-<tr class="odd">
-<td>The Buried Giant</td>
-<td>Kazuo Ishiguro</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Sep ’23</td>
-</tr>
-<tr class="even">
-<td>La Storia</td>
-<td>Elsa Morante</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Sep ’23</td>
-</tr>
-<tr class="odd">
-<td>Oedipus at Colonus</td>
-<td>Sophocles</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="even">
-<td>Baol</td>
-<td>Stefano Benni</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="odd">
-<td>Oedipus Rex</td>
-<td>Sophocles</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="even">
-<td>Pantera</td>
-<td>Stefano Benni</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="odd">
-<td>Blues in Sedici</td>
-<td>Stefano Benni</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="even">
-<td>The Pastures of Heaven</td>
-<td>John Steinbeck</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="odd">
-<td>The Remains of the Day</td>
-<td>Kazuo Ishiguro</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jul ’23</td>
-</tr>
-<tr class="even">
-<td>The Return of the King</td>
-<td>J.R.R. Tolkien</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jul ’23</td>
-</tr>
-<tr class="odd">
-<td>Swimming in the Dark</td>
-<td>Tomasz Jedrowski</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jul ’23</td>
-</tr>
-<tr class="even">
-<td>The Two Towers</td>
-<td>J.R.R. Tolkien</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jun ’23</td>
-</tr>
-<tr class="odd">
-<td>The Fellowship of the Ring</td>
-<td>J.R.R. Tolkien</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jun ’23</td>
-</tr>
-<tr class="even">
-<td>Il Bar sotto il Mare</td>
-<td>Stefano Benni</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="odd">
-<td>2001: A Space Odyssey</td>
-<td>Arthur C. Clarke</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="even">
-<td>Never let Me go</td>
-<td>Kazuo Ishiguro</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="odd">
-<td>Nocturnes</td>
-<td>Kazuo Ishiguro</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="even">
-<td>The Time Machine</td>
-<td>H.G. Wells</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="odd">
-<td>A little Life</td>
-<td>Hanya Yanagihara</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="even">
-<td>A Room with a View</td>
-<td>E.M. Forster</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’23</td>
-</tr>
-<tr class="odd">
-<td>Drive your Plow over the Bones of the Dead</td>
-<td>Olga Tokarczuk</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’23</td>
+<td><a href="../Documents_files/Theses/BSc_Thesis.compr.pdf">On the Hausdorff Dimension of Brownian Motion</a></td>
+<td>2018</td>
+<td>Pisa Univ.</td>
+<td>BSc Thesis</td>
 </tr>
 </tbody>
 </table>
 </div>
-</div>
-</div>
-<h3 class="anchored">
-<small>Next up (Suggestions appreciated) </small>
-</h3>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <table class="table-striped table-hover caption-top table">
 <colgroup>
-<col style="width: 60%">
-<col style="width: 40%">
+<col style="width: 23%">
+<col style="width: 12%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 23%">
+<col style="width: 12%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Title</th>
-<th>Author</th>
+<th>What</th>
+<th>When</th>
+<th>Where</th>
+<th>Instit.</th>
+<th>Type</th>
+<th>Funded</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Demon Copperhead</td>
-<td>Barbara Kingsolver</td>
+<td>DMV</td>
+<td>Oct ’23</td>
+<td>Ilmenau</td>
+<td></td>
+<td>Conference (invited)</td>
+<td>LSE</td>
 </tr>
 <tr class="even">
-<td>A Fine Balance</td>
-<td>Rohinton Mistry</td>
+<td>CPMC</td>
+<td>Sept ’23</td>
+<td>Zagreb</td>
+<td></td>
+<td>Workshop</td>
+<td>LSE</td>
 </tr>
 <tr class="odd">
-<td>Circe</td>
-<td>Madeline Miller</td>
+<td>Eurocomb</td>
+<td>Aug ’23</td>
+<td>Prague</td>
+<td></td>
+<td>Conference</td>
+<td>LSE</td>
 </tr>
 <tr class="even">
-<td>Lincoln in the Bardo</td>
-<td>George Saunders</td>
+<td>EEML</td>
+<td>Jul ’23</td>
+<td>Košice</td>
+<td></td>
+<td>Summer School</td>
+<td>LSE</td>
 </tr>
 <tr class="odd">
-<td>Prophet Song</td>
-<td>Paul Lynch</td>
+<td>ALGA</td>
+<td>Jun ’23</td>
+<td>Ragusa</td>
+<td></td>
+<td>Conference</td>
+<td>CIVICA Grant</td>
 </tr>
 <tr class="even">
-<td>The Bell Jar</td>
-<td>Sylvia Plath</td>
+<td>UCLW</td>
+<td>May ’23</td>
+<td>London</td>
+<td>UCL</td>
+<td>Workshop</td>
+<td></td>
 </tr>
 <tr class="odd">
-<td>The Once and Future King</td>
-<td>T. H. White</td>
+<td>PSSC</td>
+<td>Apr ’23</td>
+<td>Prague</td>
+<td>Charles Uni.</td>
+<td>Summer School</td>
+<td>Charles Uni.</td>
 </tr>
 <tr class="even">
-<td>The Found and the Lost</td>
-<td>Ursula K. Le Guin</td>
+<td>PCC</td>
+<td>Mar ’23</td>
+<td>Birmingham</td>
+<td></td>
+<td>Conference</td>
+<td>LSE</td>
 </tr>
 <tr class="odd">
-<td>Il sistema periodico</td>
-<td>Primo Levi</td>
+<td>Research Visit</td>
+<td>Aug ’22</td>
+<td>Berlin</td>
+<td>FU Berlin</td>
+<td>Visit</td>
+<td>LMS Grant</td>
 </tr>
 <tr class="even">
-<td>Canne al vento</td>
-<td>Grazia Deledda</td>
+<td>RSA</td>
+<td>Aug ’22</td>
+<td>Gniezno</td>
+<td></td>
+<td>Conference</td>
+<td>LSE</td>
 </tr>
 <tr class="odd">
-<td>Beloved</td>
-<td>Toni Morrison</td>
+<td>Research visit</td>
+<td>Jul ’22</td>
+<td>Prague</td>
+<td>Czech Academy of Science</td>
+<td>Visit</td>
+<td>Czech Academy of Science</td>
 </tr>
 <tr class="even">
-<td>Song of Solomon</td>
-<td>Toni Morrison</td>
+<td>PSSDM</td>
+<td>Jul ’22</td>
+<td>Prague</td>
+<td>Charles Uni.</td>
+<td>Summer School</td>
+<td>Summer School</td>
 </tr>
 <tr class="odd">
-<td>La luna e i falò</td>
-<td>Cesare Pavese</td>
+<td>ICGT</td>
+<td>Jul ’22</td>
+<td>Montpellier</td>
+<td></td>
+<td>Conference</td>
+<td>LSE</td>
 </tr>
 <tr class="even">
-<td>Orlando</td>
-<td>Virginia Woolf</td>
-</tr>
-<tr class="odd">
-<td>Heart of Darkness</td>
-<td>Joseph Conrad</td>
-</tr>
-<tr class="even">
-<td>Adventures of Huckleberry Finn</td>
-<td>Mark Twain</td>
-</tr>
-<tr class="odd">
-<td>Lolita</td>
-<td>Vladimir Nabokov</td>
-</tr>
-<tr class="even">
-<td>I Am a Cat</td>
-<td>Soseki Natsume</td>
-</tr>
-<tr class="odd">
-<td>Three Men in a Boat</td>
-<td>Jerome K. Jerome</td>
+<td>Research visit</td>
+<td>May ’22</td>
+<td>Hamburg</td>
+<td>TU Hamburg</td>
+<td>Visit</td>
+<td>TU Hamburg</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<h1>
-Movies
-</h1>
-<p>I love watching movies. I am a proud owner of an <a href="https://www.odeon.co.uk">Odeon membership</a>, (which I stronly suggest to any UK-resident movie lover). I am also happy to pass along <a href="https://www.theyshootpictures.com/gf1000_rank1-1000.htm">a list of good movies</a> which was indicated to me from a dear cinephilic friend.</p>
-<p>If you want to follow my film-watching, you can <a href="https://letterboxd.com/conj34/">add me on Letterboxd</a> (it’s like a Facebook for movies, super nice website).</p>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<ul>
+<li>Organiser
+<ul>
+<li>PCC (Main organiser), Apr 2023, University of London and BCC. (National conference for postgraduate students).</li>
+<li>LSE PhD CGO Seminar (Main Organiser), 2022/23.</li>
+</ul></li>
+<li>Grants and invitations
+<ul>
+<li>DMV Invited Speaker. Ilmenau. 2023.</li>
+<li>LMS Computer Science Small Grant (700£). London Mathematical Society. Funded visit to Berlin. 2022.</li>
+<li>LSE Contribution Award. Dept of Mathematics. LSE. 2021.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

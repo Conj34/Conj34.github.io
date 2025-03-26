@@ -23,26 +23,27 @@ Amongst the things I like: Books, Movies, Cooking.
 I like reading books. [This](https://thegreatestbooks.org) is a great website to find your next read (I also like [my own analysis of this list](../Learning/Python/Useful/Greatest_authors.qmd)). I have used a lot the platform [Audible](https://www.audible.co.uk).
 
 
-I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2-B1, currently C1), and my Portuguese (currently B1). I am planning to write a page on how I learn languages, as it's something I'm passionate about and have some experience doing.
-
 ::: panel-tabset
 
 ### Read in 2025
-| Title | Author | Status | Compl. on |
-|-----------------------|--------------|--------------------|--------------|
-| Foundation | Isaac Asimov | ![](../images/50.png){width="0.8cm"} | Mar '25 |
-| A Wizard of Earthsea | Ursula K. Le Guin | ![](../images/100.png){width="0.8cm"} | Mar '25 |
-| Il Barone Rampante | Italo Calvino | ![](../images/100.png){width="0.8cm"} | Mar '25 |
-| Brave New World | Aldous Huxley | ![](../images/100.png){width="0.8cm"} | Mar '25 |
-| Klara and the Sun | Kazuo Ishiguro | ![](../images/100.png){width="0.8cm"} | Mar '25 |
-| Wolf Hall | Hilary Mantel | ![](../images/100.png){width="0.8cm"} | Feb '25 |
-| Dune | Frank Herbert | ![](../images/100.png){width="0.8cm"} | Feb '25 |
-| O Natal de Poirot | Agatha Christie | ![](../images/100.png){width="0.8cm"} | Jan '25 |
-| A noite das bruxas | Agatha Christie | ![](../images/100.png){width="0.8cm"} | Jan '25 |
+| Title                           | Author                | Status                                  | Compl. on |
+|---------------------------------|-----------------------|-----------------------------------------|-----------|
+| Prophet Song                    | Paul Lynch            | ![](../images/50.png){width="0.8cm"}    | Mar '25   |
+| Foundation                      | Isaac Asimov          | ![](../images/100.png){width="0.8cm"}   | Mar '25   |
+| A Wizard of Earthsea            | Ursula K. Le Guin     | ![](../images/100.png){width="0.8cm"}   | Mar '25   |
+| Il Barone Rampante              | Italo Calvino         | ![](../images/100.png){width="0.8cm"}   | Mar '25   |
+| Brave New World                 | Aldous Huxley         | ![](../images/100.png){width="0.8cm"}   | Mar '25   |
+| Klara and the Sun               | Kazuo Ishiguro        | ![](../images/100.png){width="0.8cm"}   | Mar '25   |
+| Wolf Hall                       | Hilary Mantel         | ![](../images/100.png){width="0.8cm"}   | Feb '25   |
+| Dune                            | Frank Herbert         | ![](../images/100.png){width="0.8cm"}   | Feb '25   |
+| O Natal de Poirot               | Agatha Christie       | ![](../images/100.png){width="0.8cm"}   | Jan '25   |
+| A noite das bruxas              | Agatha Christie       | ![](../images/100.png){width="0.8cm"}   | Jan '25   |
 
 : {.striped .hover tbl-colwidths="\[50,30,10, 20\]"}
 
 ### Read in 2024
+I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2-B1, currently C1), and my Portuguese (currently B1). I am planning to write a page on how I learn languages, as it's something I'm passionate about and have some experience doing.
+
 | Title | Author | Status | Compl. on |
 |-----------------------|--------------|--------------------|--------------|
 | Flights | Olga Tokarczuk | ![](../images/50.png){width="0.8cm"} |  |
@@ -100,15 +101,27 @@ I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2
 
 <h3><small>Next up (Suggestions appreciated) </small></h3>
 
-| Title                   | Author            |
-|-------------------------|-------------------|
-| Ensaio sobre a cegueira | José Saramago     |
-| To the Lighthouse       | Virginia Woolf    |
-| Atonement               | Ian McEwan        |
-| The Sense of an Ending  | Julian Barnes     |
-| Howards End             | E.M. Forster      |
-| War of the Worlds       | H. G. Wells       |
-| The Line of Beauty      | Alan Hollinghurst |
+| Title                           | Author                |
+|---------------------------------|-----------------------|
+| Demon Copperhead                | Barbara Kingsolver    |
+| A Fine Balance                  | Rohinton Mistry       |
+| Circe                           | Madeline Miller       |
+| Lincoln in the Bardo            | George Saunders       |
+| Prophet Song                    | Paul Lynch            |
+| The Bell Jar                    | Sylvia Plath          |
+| The Once and Future King        | T. H. White           |
+| The Found and the Lost          | Ursula K. Le Guin     |
+| Il sistema periodico            | Primo Levi            |
+| Canne al vento                  | Grazia Deledda        |
+| Beloved                         | Toni Morrison         |
+| Song of Solomon                 | Toni Morrison         |
+| La luna e i falò                | Cesare Pavese         |
+| Orlando                         | Virginia Woolf        |
+| Heart of Darkness               | Joseph Conrad         |
+| Adventures of Huckleberry Finn  | Mark Twain            |
+| Lolita                          | Vladimir Nabokov      |
+| I Am a Cat                      | Soseki Natsume        |
+| Three Men in a Boat             | Jerome K. Jerome      |
 
 : {.striped .hover tbl-colwidths="\[60,40\]"}
 
