@@ -28,6 +28,9 @@ I like reading books. [This](https://thegreatestbooks.org) is a great website to
 ### Read in 2025
 | Title                           | Author                | Status                                  | Compl. on |
 |---------------------------------|-----------------------|-----------------------------------------|-----------|
+| This Is How You Lose the Time War | Amal El-Mohtar and Max Gladstone | ![](../images/50.png){width="0.8cm"}    | Apr '25   |
+| Staring at the Sund.            | Irvin D. Yalom        | ![](../images/50.png){width="0.8cm"}    | Apr '25   |
+| Perfection                      | Vincenzo Latronico    | ![](../images/50.png){width="0.8cm"}    | Apr '25   |
 | Circe                           | Madeline Miller       | ![](../images/50.png){width="0.8cm"}    | Apr '25   |
 | Prophet Song                    | Paul Lynch            | ![](../images/100.png){width="0.8cm"}   | Apr '25   |
 | The Golden Enclaves             | Naomi Novik           | ![](../images/100.png){width="0.8cm"}   | Apr '25   |
