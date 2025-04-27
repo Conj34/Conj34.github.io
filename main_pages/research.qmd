@@ -28,21 +28,36 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 
 ::: panel-tabset
 ## Papers
+ **<span style="color:green;font-size:20.0pt">Work in progress</span>**
+ 
+ * **Methodology for carbon credit assessment**<br> with A. Perrella, G. Marastoni (2025++)
+ * **Partition universality for hypergraphs** <br> with P. Allen, J. Böttcher (2025++)
+ * **An extension of the transference principle**<br>with P. Allen, J. Böttcher, J. Lada (2025+)
+ * **Best Response Dynamics for Random Games**<br> with G. Ashkenazi-Golan, E. Plumb (2025+)
 
-| Title | People | Date | Instit. | Status |
-|---------------|---------------|---------------|---------------|---------------|
-| Methodology for carbon credit assessment | A. Perrella, G. Marastoni, D.M. | 2025+ | LSE | ![](../images/50.png){width="0.8cm"} |
-| Combinatorial Theorems | P. Allen, J. Böttcher, D.M. | 2025+ | LSE | ![](../images/50.png){width="0.8cm"} |
-| Partition universality for hypergraphs | P. Allen, J. Böttcher, J. Lada, D.M. | 2025+ | LSE | ![](../images/50.png){width="0.8cm"} |
-| Re-ILS: a metaheuristic approach for cardinality-constrained optimization | Amazon ATS team | 2024 | Amazon | ![](../images/100.png){width="0.8cm"} |
-| [Reinforcement Learning, Collusion, and the Folk Theorem](https://arxiv.org/pdf/2411.12725) | G. Ashkenazi-Golan, D.M., E. Plumb | 2024 | LSE | ![](../images/100.png){width="0.8cm"} |
-| [Dirac's theorem for graphs of bounded bandwidth](https://arxiv.org/abs/2407.05889) | A.E. Díaz, P. Gupta, D.M., O. Parczyk, A. Sgueglia | 2024 | LSE | ![](../images/100.png){width="0.8cm"} |
-| [On product Schur triples in the integers](https://arxiv.org/abs/2311.18796) | L. Mattos, D.M., O. Parczyk | 2023 | LSE | ![](../images/100.png){width="0.8cm"} |
-| [Graphs with large minimum degree and no small odd cycles are 3-colourable](https://arxiv.org/abs/2302.01875) | J. Böttcher, N. Frankl, D. M., O. Parczyk, J. Skokan | 2022 | LSE | ![](../images/100.png){width="0.8cm"} |
-| [The Ramsey numbers of squares of paths and cycles](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p11) | Peter Allen, D.M., Barnaby Roberts, Jozef Skokan | 2022 | LSE | ![](../images/100.png){width="0.8cm"} |
-| [Density of small diameter subgraphs in $K_r$-free graphs](https://arxiv.org/abs/2207.14297) | Eng Keat Hng, D.M. | 2021 | LSE | ![](../images/100.png){width="0.8cm"} |
+ **<span style="color:green;font-size:20.0pt">Submitted</span>**
 
-: {.striped .hover tbl-colwidths="\[40,35,10,10,5\]"}
+ * [**Reinforcement Learning, Collusion, and the Folk Theorem**]((https://arxiv.org/pdf/2411.12725)).<br>  with G. Ashkenazi-Golan, E. Plumb<br> *Submit. Econometrica* (2025)
+ *  [**Dirac's theorem for graphs of bounded bandwidth**](https://arxiv.org/abs/2407.05889).<br>  with A.E. Díaz, P. Gupta, O. Parczyk, A. Sgueglia<br> *Submit. Electron. J. Comb.* (2024)
+ 
+ 
+ **<span style="color:green;font-size:20.0pt">Accepted</span>**
+ 
+* [**On product Schur triples in the integers**](https://arxiv.org/abs/2311.18796).<br> with L. Mattos, O. Parczyk<br> *Accept. SIDMA*
+* [**Graphs with large minimum degree and no short odd cycles are 3-colourable**](https://arxiv.org/abs/2302.01875).<br>  with J. Böttcher, N. Frankl,, O. Parczyk, J. Skokan<br>*Accept. Comb. Theory*
+ 
+ 
+**<span style="color:green;font-size:20.0pt">Published</span>**
+
+* [**The Ramsey numbers of squares of paths and cycles**](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p11)<br>with P. Allen,  B. Roberts, J. Skokan <br> The Electronic Journal of Combinatorics 31 (2024), P2.11
+
+
+ **<span style="color:green;font-size:20.0pt">Notes/Not for publication</span>**
+
+* Re-ILS: a metaheuristic approach for cardinality-constrained optimization <br> 
+with Jian Shen *(internal Amazon publication)*
+
+* [**Density of small diameter subgraphs in $K_r$-free graphs**](https://arxiv.org/abs/2207.14297).<br> with E.K. Hng
 
 ```{=html}
 <!--| Maker Breaker Games in the square lattice                                                                     | F. Illingworth, D.M., A. Pokrovskiy                  | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  
@@ -55,7 +70,7 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 ## Talks (Selected)
 
 | Title | Date | Occasion | Place |
-|-----------------------|-----------------|-----------------|-----------------|
+|---------------------|-----------------|-----------------|-----------------|
 | [Product-free subsets of $[n]$](https://arxiv.org/abs/2311.18796) | Oct '23 | LSE Seminar | London |
 | [Partition Universality](../Documents_files/Presentations/Partit_uni.pdf) | Aug '23 | Eurocomb | Prague |
 | [The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$](../Documents_files/Presentations/Ram_num.pdf) | Sep '23 | DMV (Invited speaker) | Ilmenau |
