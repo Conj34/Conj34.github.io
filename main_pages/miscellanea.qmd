@@ -27,8 +27,10 @@ I like reading books. [This](https://thegreatestbooks.org) is a great website to
 
 | Title | Author | Status | Compl. on |
 |-------------------|---------------|------------------------|---------------|
-| Staring at the Sun | Irvin D. Yalom | ![](../images/50.png){width="0.8cm"} | Apr '25 |
-| Perfection | Vincenzo Latronico | ![](../images/50.png){width="0.8cm"} | Apr '25 |
+| Lincoln in the Bardo | George Saunders | ![](../images/50.png){width="0.8cm"} | May '25 |
+| Staring at the Sun | Irvin D. Yalom | ![](../images/50.png){width="0.8cm"} | May '25 |
+| Charlotte's Web | Elwyn B. White | ![](../images/100.png){width="0.8cm"} | May '25 |
+| Perfection | Vincenzo Latronico | ![](../images/100.png){width="0.8cm"} | May '25 |
 | This Is How You Lose the Time War | Amal El-Mohtar and Max Gladstone | ![](../images/100.png){width="0.8cm"} | Apr '25 |
 | Circe | Madeline Miller | ![](../images/100.png){width="0.8cm"} | Apr '25 |
 | Prophet Song | Paul Lynch | ![](../images/100.png){width="0.8cm"} | Apr '25 |
