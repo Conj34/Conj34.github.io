@@ -28,36 +28,36 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 
 ::: panel-tabset
 ## Papers
- **<span style="color:green;font-size:20.0pt">Work in progress</span>**
- 
- * **Methodology for carbon credit assessment**<br> with A. Perrella, G. Marastoni (2025++)
- * **Partition universality for hypergraphs** <br> with P. Allen, J. Böttcher (2025++)
- * **An extension of the transference principle**<br>with P. Allen, J. Böttcher, J. Lada (2025+)
- * **Best Response Dynamics for Random Games**<br> with G. Ashkenazi-Golan, E. Plumb (2025+)
 
- **<span style="color:green;font-size:20.0pt">Submitted</span>**
+[**Work in progress**]{style="color:green;font-size:20.0pt"}
 
- * [**Reinforcement Learning, Collusion, and the Folk Theorem**]((https://arxiv.org/pdf/2411.12725)).<br>  with G. Ashkenazi-Golan, E. Plumb<br> *Submit. Econometrica* (2025)
- *  [**Dirac's theorem for graphs of bounded bandwidth**](https://arxiv.org/abs/2407.05889).<br>  with A.E. Díaz, P. Gupta, O. Parczyk, A. Sgueglia<br> *Submit. Electron. J. Comb.* (2024)
- 
- 
- **<span style="color:green;font-size:20.0pt">Accepted</span>**
- 
-* [**On product Schur triples in the integers**](https://arxiv.org/abs/2311.18796).<br> with L. Mattos, O. Parczyk<br> *Accept. SIDMA*
-* [**Graphs with large minimum degree and no short odd cycles are 3-colourable**](https://arxiv.org/abs/2302.01875).<br>  with J. Böttcher, N. Frankl,, O. Parczyk, J. Skokan<br>*Accept. Comb. Theory*
- 
- 
-**<span style="color:green;font-size:20.0pt">Published</span>**
+-   **Methodology for carbon credit assessment**<br> with A. Perrella, G. Marastoni (2025++)
+-   **Partition universality for hypergraphs** <br> with P. Allen, J. Böttcher (2025++)
+-   **An extension of the transference principle**<br>with P. Allen, J. Böttcher, J. Lada (2025+)
+-   **Best Response Dynamics for Random Games**<br> with G. Ashkenazi-Golan, E. Plumb, J. Skokan (2025++)
+-   **Simultaneous Best-Response Dynamics in Random Potential Games**<br> with G. Ashkenazi-Golan, E. Plumb (2025+)
 
-* [**The Ramsey numbers of squares of paths and cycles**](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p11)<br>with P. Allen,  B. Roberts, J. Skokan <br> The Electronic Journal of Combinatorics 31 (2024), P2.11
+[**Submitted**]{style="color:green;font-size:20.0pt"}
 
+-   [**Reinforcement Learning, Collusion, and the Folk Theorem**]((https://arxiv.org/pdf/2411.12725)).<br> with G. Ashkenazi-Golan, E. Plumb<br> *Submit. Econometrica* (2025)
+-   [**Dirac's theorem for graphs of bounded bandwidth**](https://arxiv.org/abs/2407.05889).<br> with A.E. Díaz, P. Gupta, O. Parczyk, A. Sgueglia<br> *Submit. Electron. J. Comb.* (2024)
 
- **<span style="color:green;font-size:20.0pt">Notes/Not for publication</span>**
+[**Accepted**]{style="color:green;font-size:20.0pt"}
 
-* Re-ILS: a metaheuristic approach for cardinality-constrained optimization <br> 
-with Jian Shen *(internal Amazon publication)*
+-   [**Graphs with large minimum degree and no short odd cycles are 3-colourable**](https://arxiv.org/abs/2302.01875).<br> with J. Böttcher, N. Frankl,, O. Parczyk, J. Skokan<br>*Accept. Comb. Theory*
 
-* [**Density of small diameter subgraphs in $K_r$-free graphs**](https://arxiv.org/abs/2207.14297).<br> with E.K. Hng
+[**Published**]{style="color:green;font-size:20.0pt"}
+
+-   [**On product Schur triples in the integers**](https://doi.org/10.1137/24M1632875).<br> with L. Mattos, O. Parczyk<br>
+SIAM Journal on Discrete Mathematics. Vol 39, Iss. 2 (2025)
+
+-   [**The Ramsey numbers of squares of paths and cycles**](https://doi.org/10.37236/11847)<br>with P. Allen, B. Roberts, J. Skokan <br> The Electronic Journal of Combinatorics. Vol 31, Iss. 2 (2024), P2.11
+
+[**Notes/Not for publication**]{style="color:green;font-size:20.0pt"}
+
+-   Re-ILS: a metaheuristic approach for cardinality-constrained optimization <br> with Jian Shen *(internal Amazon publication)*
+
+-   [**Density of small diameter subgraphs in** $K_r$-free graphs](https://arxiv.org/abs/2207.14297).<br> with E.K. Hng
 
 ```{=html}
 <!--| Maker Breaker Games in the square lattice                                                                     | F. Illingworth, D.M., A. Pokrovskiy                  | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  
@@ -70,7 +70,7 @@ with Jian Shen *(internal Amazon publication)*
 ## Talks (Selected)
 
 | Title | Date | Occasion | Place |
-|---------------------|-----------------|-----------------|-----------------|
+|--------------------|------------------|------------------|------------------|
 | [Product-free subsets of $[n]$](https://arxiv.org/abs/2311.18796) | Oct '23 | LSE Seminar | London |
 | [Partition Universality](../Documents_files/Presentations/Partit_uni.pdf) | Aug '23 | Eurocomb | Prague |
 | [The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$](../Documents_files/Presentations/Ram_num.pdf) | Sep '23 | DMV (Invited speaker) | Ilmenau |
