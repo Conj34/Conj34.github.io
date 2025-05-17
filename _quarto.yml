@@ -20,6 +20,10 @@ website:
         contents:
           - section: "Python"
             contents:
+            - section: "Research"
+              contents:
+              - text: "SBRD in Random Games"
+                href: Learning/Python/Useful/Papers/SBRD.ipynb
             - section: "Useful"
               contents:
               - href: Learning/Python/Useful/Arxiv.qmd
