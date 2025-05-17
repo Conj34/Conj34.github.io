@@ -38,11 +38,12 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 
 [**Submitted**]{style="color:green;font-size:20.0pt"}
 
--   [**Simultaneous Best-Response Dynamics in Random Potential Games**](https://arxiv.org/abs/2505.10378)<br> with G. Ashkenazi-Golan, E. Plumb<br> *Submit. to double-blind conference*<br>Paper with [code](Learning/Python/Useful/Papers/SBRD.ipynb) 
+-   [**Simultaneous Best-Response Dynamics in Random Potential Games**](https://arxiv.org/abs/2505.10378)<br> with G. Ashkenazi-Golan, E. Plumb<br> *Submit. to double-blind conference*<br>Paper with [code](../SBRD.ipynb) 
 -   [**Reinforcement Learning, Collusion, and the Folk Theorem**](https://arxiv.org/abs/2411.12725).<br> with G. Ashkenazi-Golan, E. Plumb<br> *Submit. Econometrica* (2025)
 -   [**Dirac's theorem for graphs of bounded bandwidth**](https://arxiv.org/abs/2407.05889).<br> with A.E. Díaz, P. Gupta, O. Parczyk, A. Sgueglia<br> *Submit. Electron. J. Comb.* (2024)
 
 [**Accepted**]{style="color:green;font-size:20.0pt"}
+
 -   [**Graphs with large minimum degree and no short odd cycles are 3-colourable**](https://arxiv.org/abs/2302.01875).<br> with J. Böttcher, N. Frankl, O. Parczyk, J. Skokan<br>*Accept. Comb. Theory*
 
 [**Published**]{style="color:green;font-size:20.0pt"}

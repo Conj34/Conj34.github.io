@@ -10,17 +10,10 @@ The goal of this section is to collect resources and thougths, and to record my 
 
 These are my main motivations behind this decision.
 
-* I did not find online any resource tailored to my need,
-* I hope this might help other people to get close to these topics,
-* The best way to learn is to teach.
+-   I did not find online any resource tailored to my need,
+-   I hope this might help other people to get close to these topics,
+-   The best way to learn is to teach.
 
 <i> Caveat: I know Python is NOT the best language for competitive coding, but since my objective for now is not perfection, I will mainly use Python for now. </i>
 
 Please do let me know if you find any mistakes.
-
-
-
-
-
-
-
