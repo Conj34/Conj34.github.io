@@ -22,8 +22,8 @@ website:
             contents:
             - section: "Research"
               contents:
-              - text: "SBRD in Random Games"
-                href: SBRD.ipynb
+              - href: Research/SBRD.ipynb
+                text: "SBRD in Random Games"
             - section: "Useful"
               contents:
               - href: Learning/Python/Useful/Arxiv.qmd
@@ -40,7 +40,7 @@ website:
             contents:
             - href: Learning/Old_Work/OldWork.qmd
               text: Old Work
-      - href: main_pages/research.qmd
+      - href: Research/research.qmd
         text: Research
       - href: main_pages/curriculum.qmd
         text: Curriculum Vitae
