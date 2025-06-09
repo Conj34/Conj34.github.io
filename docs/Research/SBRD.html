@@ -347,7 +347,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> functools <span class="im">import</span> <span class="bu">reduce</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> operator <span class="im">import</span> matmul </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="0fbf9a91" class="cell" data-execution_count="33">
+<div id="0fbf9a91" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> softmax(r):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a softmax function.</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    exp_r <span class="op">=</span> np.exp(r <span class="op">-</span> np.<span class="bu">max</span>(r))</span>
@@ -416,7 +416,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>max_iterations <span class="op">=</span> <span class="dv">50_000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>These are utility function only used to plot</p>
-<div id="7be73528" class="cell" data-execution_count="115">
+<div id="7be73528" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> clopper_pearson_interval(k, n, alpha<span class="op">=</span><span class="fl">0.005</span>):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    lower <span class="op">=</span> beta.ppf(alpha <span class="op">/</span> <span class="dv">2</span>, k, n <span class="op">-</span> k <span class="op">+</span> <span class="dv">1</span>) <span class="cf">if</span> k <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="fl">0.0</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    upper <span class="op">=</span> beta.ppf(<span class="dv">1</span> <span class="op">-</span> alpha <span class="op">/</span> <span class="dv">2</span>, k <span class="op">+</span> <span class="dv">1</span>, n <span class="op">-</span> k) <span class="cf">if</span> k <span class="op">&lt;</span> n <span class="cf">else</span> <span class="fl">1.0</span></span>
@@ -568,7 +568,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-149"><a href="#cb3-149" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-150"><a href="#cb3-150" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-151"><a href="#cb3-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-152"><a href="#cb3-152" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"time"</span>, SBRD_varName<span class="op">=</span><span class="st">"time"</span>, yLabel<span class="op">=</span><span class="va">None</span>, axis<span class="op">=</span><span class="dv">0</span>, mean_1_name<span class="op">=</span><span class="va">None</span>, mean_2_name<span class="op">=</span><span class="va">None</span>, title<span class="op">=</span><span class="va">None</span>, variance<span class="op">=</span><span class="va">True</span>, only_if_conv<span class="op">=</span><span class="va">False</span>, log<span class="op">=</span><span class="va">False</span>, n_cols<span class="op">=</span><span class="dv">1</span>, number_of_plots<span class="op">=-</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">False</span>, width <span class="op">=</span> <span class="dv">6</span>, isPositive<span class="op">=</span><span class="va">False</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>):</span>
+<span id="cb3-152"><a href="#cb3-152" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"time"</span>, SBRD_varName<span class="op">=</span><span class="st">"time"</span>, yLabel<span class="op">=</span><span class="va">None</span>, axis<span class="op">=</span><span class="dv">0</span>, mean_1_name<span class="op">=</span><span class="va">None</span>, mean_2_name<span class="op">=</span><span class="va">None</span>, title<span class="op">=</span><span class="va">None</span>, variance<span class="op">=</span><span class="va">True</span>, only_if_conv<span class="op">=</span><span class="va">False</span>, log<span class="op">=</span><span class="va">False</span>, n_cols<span class="op">=</span><span class="dv">1</span>, number_of_plots<span class="op">=-</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">False</span>, width <span class="op">=</span> <span class="dv">6</span>, isPositive<span class="op">=</span><span class="va">False</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>, expnr <span class="op">=</span> <span class="st">"3"</span>):</span>
 <span id="cb3-153"><a href="#cb3-153" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb3-154"><a href="#cb3-154" aria-hidden="true" tabindex="-1"></a><span class="co">    Plot runtimes of PGD and SBRD algorithms in subplots, comparing them across one parameter.</span></span>
 <span id="cb3-155"><a href="#cb3-155" aria-hidden="true" tabindex="-1"></a></span>
@@ -593,7 +593,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-174"><a href="#cb3-174" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> process_data(alg_name, varName):</span>
 <span id="cb3-175"><a href="#cb3-175" aria-hidden="true" tabindex="-1"></a>        data <span class="op">=</span> <span class="bu">globals</span>()[<span class="ss">f"</span><span class="sc">{</span>alg_name<span class="sc">}</span><span class="ss">_</span><span class="sc">{</span>varName<span class="sc">}</span><span class="ss">"</span>]</span>
 <span id="cb3-176"><a href="#cb3-176" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> only_if_conv:</span>
-<span id="cb3-177"><a href="#cb3-177" aria-hidden="true" tabindex="-1"></a>            isNash <span class="op">=</span> <span class="bu">globals</span>()[<span class="ss">f"</span><span class="sc">{</span>alg_name<span class="sc">}</span><span class="ss">_S7_isNash"</span>]</span>
+<span id="cb3-177"><a href="#cb3-177" aria-hidden="true" tabindex="-1"></a>            isNash <span class="op">=</span> <span class="bu">globals</span>()[<span class="ss">f"</span><span class="sc">{</span>alg_name<span class="sc">}</span><span class="ss">_S</span><span class="sc">{</span>expnr<span class="sc">}</span><span class="ss">_isNash"</span>]</span>
 <span id="cb3-178"><a href="#cb3-178" aria-hidden="true" tabindex="-1"></a>            data <span class="op">=</span> np.where(isNash, data, np.nan)</span>
 <span id="cb3-179"><a href="#cb3-179" aria-hidden="true" tabindex="-1"></a>        mean_data <span class="op">=</span> np.nanmean(data, axis<span class="op">=-</span><span class="dv">1</span>)</span>
 <span id="cb3-180"><a href="#cb3-180" aria-hidden="true" tabindex="-1"></a>        n_data <span class="op">=</span> np.<span class="bu">sum</span>(<span class="op">~</span>np.isnan(data), axis<span class="op">=-</span><span class="dv">1</span>)</span>
@@ -695,7 +695,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="dynamics-definitions" class="level2">
 <h2 class="anchored" data-anchor-id="dynamics-definitions">Dynamics definitions</h2>
-<div id="5659e466" class="cell" data-execution_count="14">
+<div id="5659e466" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_reward_matrix(P, A, lam):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Generate the reward matrix for an P-player A-actions game </span></span>
@@ -725,7 +725,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Reshape to (3, N, N, N): one payoff matrix per player</span></span>
 <span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> correlated.reshape(shape)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="98c3908b-da68-45d9-a3c6-49a95a4cc537" class="cell" data-jupyter="{&quot;source_hidden&quot;:true}" data-execution_count="15">
+<div id="98c3908b-da68-45d9-a3c6-49a95a4cc537" class="cell" data-jupyter="{&quot;source_hidden&quot;:true}" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> best_response_dynamics(G, A<span class="op">=</span><span class="va">None</span>):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Simulate Best Response Dynamics (SBRD) in a 3-player game.</span></span>
@@ -775,13 +775,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Log the current profile and continue</span></span>
 <span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>        history[x] <span class="op">=</span> index</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="64783d88" class="cell" data-execution_count="16">
+<div id="64783d88" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> softmax(r):</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a softmax function.</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    exp_r <span class="op">=</span> np.exp(r <span class="op">-</span> np.<span class="bu">max</span>(r))</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> exp_r <span class="op">/</span> np.<span class="bu">sum</span>(exp_r)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="974f9633" class="cell" data-execution_count="17">
+<div id="974f9633" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> new_SPGD(G, eta<span class="op">=</span><span class="fl">1.0</span>, max_iter<span class="op">=</span><span class="dv">50_000</span>, T_max<span class="op">=</span><span class="dv">10</span>): </span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The following function implements a (softmax) gradient ascent algorithm for a 3-player game with n actions.</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># It takes the number of actions n, a correlation parameter lam, a learning rate eta, a max iteration count,</span></span>
@@ -840,7 +840,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Main Results</h1>
 <section id="section-1.-finding-2-player-random-potential-games-converge-fast-to-a-two-cycle" class="level2">
 <h2 class="anchored" data-anchor-id="section-1.-finding-2-player-random-potential-games-converge-fast-to-a-two-cycle">Section 1. Finding: 2-player random potential games converge fast to a two-cycle</h2>
-<div id="d16f302c-569f-43b7-960a-c0516c082b7a" class="cell" data-execution_count="68">
+<p>Setting of the experiment: - 10000 independent simulations - Each simulation takes lambda in a range of values between 0 and 1 - The number of actions is set to 50 - The number of players is set to two</p>
+<p>Statistics analysed: - SBRD_S1_twoCycles[l, 0, t]: True if the t-th test with the l-th value of lambda converges to a 2-cycle - SBRD_S1_nrSteps[l, 0, t]: number of steps to convergence (or cycle) of the t-th test with the l-th value of lambda</p>
+<div id="d16f302c-569f-43b7-960a-c0516c082b7a" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of simulations per (λ, N) setting</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">10_000</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.5</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">21</span>)]</span>
@@ -849,7 +851,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>SBRD_S1_twoCycles <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="dv">1</span>, samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>)</span>
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>SBRD_S1_nrSteps <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="9c27a533" class="cell" data-execution_count="69">
+<p>We now run the experiment, setting the numpy random seed to 2025. We print the time it takes to run the whole experiment in seconds.</p>
+<div id="9c27a533" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>T_0 <span class="op">=</span> time()  <span class="co"># Start timer for entire experiment</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> <span class="bu">max</span>(A_vals)</span>
@@ -867,11 +870,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>Total_time <span class="op">=</span> time() <span class="op">-</span> T_0</span>
 <span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Total_time)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>22.372665882110596</code></pre>
+<pre><code>23.52963089942932</code></pre>
 </div>
 </div>
-<div id="9d5885ac" class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S1_twoCycles"</span>, title<span class="op">=</span><span class="st">""</span>, mean_name<span class="op">=</span><span class="st">"A"</span>, ylabel<span class="op">=</span><span class="st">"Prob. conver. to two-cycle"</span>, axis<span class="op">=</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We now begin to plot our results. The first plot represents the probability of SBRD to converge to a 2-cycle. It is plotted with a 99.5% Clopper-Pearson CI.</p>
+<div id="9d5885ac" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S1_twoCycles"</span>, title<span class="op">=</span><span class="st">""</span>, mean_name<span class="op">=</span><span class="st">"Prob"</span>, ylabel<span class="op">=</span><span class="st">"Prob. conver. to two-cycle"</span>, axis<span class="op">=</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -880,7 +884,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="24813df6" class="cell" data-execution_count="71">
+<p>The second plot represents the average number of steps before convergence. It is plotted with a 2SE interval around the mean.</p>
+<div id="24813df6" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S1_nrSteps"</span>, mean_name<span class="op">=</span><span class="st">"nrSteps"</span>, title<span class="op">=</span><span class="st">""</span>, ylabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">False</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -890,7 +895,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="c84b7566" class="cell" data-execution_count="22">
+<p>With the following script, we investigate the thresholds of lambda for which the probability of SBRD to converge to a 2-cycle surpasses 50% and 90% respectively. Which is, we find that if lambda is at least 0.55, then the probability of SBRD to converge to a 2-cycle is at least 50%. If lambda is at least 0.9, the probability is at least 90%.</p>
+<div id="c84b7566" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">round</span>(lambda_vals[<span class="bu">int</span>(np.argmax(np.mean(SBRD_S1_twoCycles, axis<span class="op">=-</span><span class="dv">1</span>)<span class="op">&gt;</span><span class="fl">0.5</span>))],<span class="dv">2</span>))</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">round</span>(lambda_vals[<span class="bu">int</span>(np.argmax(np.mean(SBRD_S1_twoCycles, axis<span class="op">=-</span><span class="dv">1</span>)<span class="op">&gt;</span><span class="fl">0.9</span>))],<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -901,7 +907,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="section-2.-finding-3-player-random-potential-games-converge-fast-to-a-ne" class="level2">
 <h2 class="anchored" data-anchor-id="section-2.-finding-3-player-random-potential-games-converge-fast-to-a-ne">Section 2. Finding: 3-player random potential games converge fast to a NE</h2>
-<div id="55ca9d45" class="cell" data-execution_count="72">
+<p>We now consider the setting with three players. Setting of the experiment: - 10000 independent simulations - Each simulation takes lambda in a range of values between 0 and 1 - The number of actions is set to 50 - The number of players is set to three</p>
+<p>Statistics analysed: - SBRD_S2_isNash[l, 0, t]: True if the t-th test with the l-th value of lambda converges to a NE - SBRD_S2_nrSteps[l, 0, t]: number of steps to convergence (or cycle) of the t-th test with the l-th value of lambda</p>
+<div id="55ca9d45" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of simulations per (λ, N) setting</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">10_000</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.5</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">21</span>)]</span>
@@ -910,7 +918,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>SBRD_S2_isNash <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="dv">1</span>, samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>)</span>
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>SBRD_S2_nrSteps <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="2879eb3a" class="cell" data-execution_count="73">
+<p>We now run the experiment, setting the numpy random seed to 2025. We print the time it takes to run the whole experiment in seconds.</p>
+<div id="2879eb3a" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>T_0 <span class="op">=</span> time()  <span class="co"># Start timer for entire experiment</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> <span class="bu">max</span>(A_vals)</span>
@@ -928,10 +937,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>Total_time <span class="op">=</span> time() <span class="op">-</span> T_0</span>
 <span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Total_time)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>1235.6397669315338</code></pre>
+<pre><code>1237.7669422626495</code></pre>
 </div>
 </div>
-<div id="ab942410" class="cell" data-execution_count="74">
+<p>We are now ready to plot our results. We first plot the probability of SBRD to converge to a NE. We plot a 99.5% Clopper-Pearson CI</p>
+<div id="ab942410" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S2_isNash"</span>, title<span class="op">=</span><span class="st">""</span>, mean_name<span class="op">=</span><span class="st">"isNash"</span>, ylabel<span class="op">=</span><span class="st">"Prob. conver. to NE"</span>, axis<span class="op">=</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -941,7 +951,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="c2621eed" class="cell" data-execution_count="75">
+<p>And then the expected number of steps before convergence (or reaching a cycle). We add a 2SE interval to the plot.</p>
+<div id="c2621eed" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S2_nrSteps"</span>, mean_name<span class="op">=</span><span class="st">"nrSteps"</span>, title<span class="op">=</span><span class="st">""</span>, ylabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">False</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -954,7 +965,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="section-3.-finding-comparison-of-sbrd-and-spgd-in-3-player-random-potential-games" class="level2">
 <h2 class="anchored" data-anchor-id="section-3.-finding-comparison-of-sbrd-and-spgd-in-3-player-random-potential-games">Section 3. Finding: comparison of SBRD and SPGD in 3-player random potential games</h2>
-<div id="6f425416" class="cell" data-execution_count="77">
+<p>We now compare SBRD with SPGD for 3-player games. Setting of the experiment: - 1000 independent simulations - Each simulation takes lambda in a range of values between 0.85 and 1 - The number of actions is set to 50 - The number of players is set to three</p>
+<p>Statistics analysed: - For SPGD: - PGD_S3_isNash[l, 0, t]: True if for the t-th test with the l-th value of lambda, SPGD converges to a NE - PGD_S3_numIte[l, 0, t]: number of steps to convergence (or cycle) for SPGD of the t-th test with the l-th value of lambda - PGD_S3_valFin[l, 0, t]: final payoff reached by SBPD in the t-th test with l-th value of lambda - PGD_S3_valAvg[l, 0, t]: average payoff during the trajectory of SBPD in the t-th test with the l-th value of lambda - PGD_S3_time[l, 0, t]: time to run SBPD in the t-th test with l-th value of lambda. - Remark: SPGD is automatically stopped at the first check-point after 10 seconds run. - for SBRD: - SBRD_S3_isNash[l, 0, t]: True if for the t-th test with the l-th value of lambda, SBRD converges to a NE - SBRD_S3_numIte[l, 0, t]: number of steps to convergence (or cycle) for SBRD of the t-th test with the l-th value of lambda - SBRD_S3_val[l, 0, t]: NE payoff reached by SBRD in the t-th test with l-th value of lambda if SBRD converges to a NE, or average payoff along the cycle if SBRD converges to a cycle. - SBRD_S3_time[l, 0, t]: time to run SBRD in the t-th test with l-th value of lambda.</p>
+<div id="6f425416" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Experimental setup</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">1000</span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.85</span><span class="op">+</span><span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.25</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">7</span>)] <span class="co"># List of lambda values to test</span></span>
@@ -974,7 +987,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>SBRD_S3_val <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Final payoff for player 0 in Best Response Dynamics</span></span>
 <span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>SBRD_S3_time <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))   <span class="co"># Runtime in Best Response Dynamics</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="1582ee88" class="cell" data-execution_count="47">
+<div id="1582ee88" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> A_vals[<span class="op">-</span><span class="dv">1</span>]  <span class="co"># Maximum number of actions (fixed at 50)</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1019,30 +1032,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb21-42"><a href="#cb21-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of the time spent on SBRD algorithm: </span><span class="sc">{</span><span class="bu">round</span>((Tot_time_SBRD <span class="op">/</span> Tot_time) <span class="op">*</span> <span class="dv">100</span>, <span class="dv">1</span>)<span class="sc">}</span><span class="ss">%"</span>)</span>
 <span id="cb21-43"><a href="#cb21-43" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of the time spent on PGD algorithm: </span><span class="sc">{</span><span class="bu">round</span>((Tot_time_PGD <span class="op">/</span> Tot_time) <span class="op">*</span> <span class="dv">100</span>, <span class="dv">1</span>)<span class="sc">}</span><span class="ss">%"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Total time to run: 4802.2 s
-Percentage of the time spent on random generation of matrix: 0.7%
-Percentage of the time spent on SBRD algorithm: 0.1%
-Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
+<pre><code>Total time to run: 5859.2 s
+Percentage of the time spent on random generation of matrix: 0.6%
+Percentage of the time spent on SBRD algorithm: 0.0%
+Percentage of the time spent on PGD algorithm: 99.4%</code></pre>
 </div>
 </div>
-<div id="022bce4b" class="cell" data-execution_count="78">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S3_time"</span>, SBRD_varName<span class="op">=</span><span class="st">"S3_time"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Seconds"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/var/folders/v1/4466w3pn1216dm8152kjp_3r0000gn/T/ipykernel_18423/3723386220.py:260: UserWarning: Data has no positive values, and therefore cannot be log-scaled.
-  ax.fill_between(x_vals, y_lower, y_upper, color=color, alpha=0.2)#, label=f"{label_ci}")
-/var/folders/v1/4466w3pn1216dm8152kjp_3r0000gn/T/ipykernel_18423/3723386220.py:273: UserWarning: Data has no positive values, and therefore cannot be log-scaled.
-  plt.tight_layout(rect=[0, 0, 1, 0.96])</code></pre>
-</div>
+<p>Additional remark: We print what percentage of the time each part of the experiment takes. We consistently obtain that SPGD counts for over 99% of the whole time, SBRD accounts for less than 0.1% of the running time.</p>
+<p>We are now ready to plot our findings. We first compare the average running time of both algorithms. Note that SPGD is stopped at the first checkpoint after 10 seconds. Further notice that the scale used is logarithmic!</p>
+<div id="022bce4b" class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S3_time"</span>, SBRD_varName<span class="op">=</span><span class="st">"S3_time"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Seconds"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">True</span>, expnr<span class="op">=</span><span class="st">"3"</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="SBRD_files/figure-html/cell-20-output-2.png" class="img-fluid figure-img"></p>
+<p><img src="SBRD_files/figure-html/cell-20-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<div id="26a368a7" class="cell" data-execution_count="61">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S3_valFin"</span>, SBRD_varName<span class="op">=</span><span class="st">"S3_val"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Value"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, only_if_conv<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We now compare the final payoffs of the two algorithms. As the plotting function is called with parameter `only_if_conv=True’, we only consider the cases in which both algorithms converge. Notice that this happens with probability at least 90% at these regimes of lambda for both algorithms, as analysed above.</p>
+<div id="26a368a7" class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S3_valFin"</span>, SBRD_varName<span class="op">=</span><span class="st">"S3_val"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, expnr<span class="op">=</span><span class="st">"3"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Value"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, only_if_conv<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1051,8 +1061,9 @@ Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
 </div>
 </div>
 </div>
-<div id="0de63d70" class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S3_numIte"</span>, SBRD_varName<span class="op">=</span><span class="st">"S3_numIte"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"SSteps"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We compare now the number of steps required to converge (to a NE or a cycle) for both algorithms. The scale is again logarithmic.</p>
+<div id="0de63d70" class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S3_numIte"</span>, SBRD_varName<span class="op">=</span><span class="st">"S3_numIte"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1061,8 +1072,9 @@ Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
 </div>
 </div>
 </div>
-<div id="91812bd7" class="cell" data-execution_count="80">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S3_valAvg"</span>, SBRD_varName<span class="op">=</span><span class="st">"S3_val"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Value"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We finally compare, over all the experiments (both converging and not), the average payoff of SPGD along its learning curve with the final payoff of SBRD. As described in the main paper, this makes sense as the number of steps to convergence of SBRD is much lower than the number of steps to convergence of SPGD.</p>
+<div id="91812bd7" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S3_valAvg"</span>, SBRD_varName<span class="op">=</span><span class="st">"S3_val"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Value"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1077,38 +1089,41 @@ Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
 <h1>Appendix</h1>
 <section id="section-a.-results-of-section-1.-also-hold-for-more-actions" class="level2">
 <h2 class="anchored" data-anchor-id="section-a.-results-of-section-1.-also-hold-for-more-actions">Section A. Results of Section 1. also hold for more actions</h2>
-<div id="9f22fd88" class="cell" data-execution_count="83">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of simulations per (λ, N) setting</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">1_000</span></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.5</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">21</span>)]</span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>A_vals <span class="op">=</span> [<span class="dv">500</span>]</span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>SBRD_S4_twoCycles <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="dv">1</span>, samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>)</span>
-<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>SBRD_S4_nrSteps <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We now show that what we showed in Section 1. still holds for more actions. Setting of the experiment: - 1000 independent simulations - Each simulation takes lambda in a range of values between 0 and 1 - The number of actions is set to 500 - The number of players is set to two</p>
+<p>Statistics analysed: - SBRD_S4_twoCycles[l, 0, t]: True if the t-th test with the l-th value of lambda converges to a 2-cycle - SBRD_S4_nrSteps[l, 0, t]: number of steps to convergence (or cycle) of the t-th test with the l-th value of lambda</p>
+<div id="9f22fd88" class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of simulations per (λ, N) setting</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">1_000</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.5</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">21</span>)]</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>A_vals <span class="op">=</span> [<span class="dv">500</span>]</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>SBRD_S4_twoCycles <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="dv">1</span>, samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>)</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>SBRD_S4_nrSteps <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="e6379472" class="cell" data-execution_count="84">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>T_0 <span class="op">=</span> time()  <span class="co"># Start timer for entire experiment</span></span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> <span class="bu">max</span>(A_vals)</span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> count_lam, lam <span class="kw">in</span> <span class="bu">enumerate</span>(lambda_vals):  <span class="co"># Loop over each lambda value</span></span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(samples):  <span class="co"># Repeat experiment for statistical robustness</span></span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> generate_reward_matrix(<span class="dv">2</span>, max_A, lam)  <span class="co"># Generate a payoff matrix with max_n actions and correlation lambda</span></span>
-<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> count_A, A <span class="kw">in</span> <span class="bu">enumerate</span>(A_vals):  <span class="co"># Now restrict to smaller N if needed</span></span>
-<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Run Best Response Dynamics and time it</span></span>
-<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>            SBRD_len, SBRD_it, SBRD_val_curr <span class="op">=</span> best_response_dynamics(G, A)</span>
-<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>            SBRD_S4_twoCycles[count_lam, count_A, i] <span class="op">=</span> (SBRD_len <span class="op">==</span> <span class="dv">2</span>)</span>
-<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>            SBRD_S4_nrSteps[count_lam, count_A, i] <span class="op">=</span> SBRD_it</span>
-<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Final time report</span></span>
-<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>Total_time <span class="op">=</span> time() <span class="op">-</span> T_0</span>
-<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Total_time)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="e6379472" class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>T_0 <span class="op">=</span> time()  <span class="co"># Start timer for entire experiment</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> <span class="bu">max</span>(A_vals)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> count_lam, lam <span class="kw">in</span> <span class="bu">enumerate</span>(lambda_vals):  <span class="co"># Loop over each lambda value</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(samples):  <span class="co"># Repeat experiment for statistical robustness</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> generate_reward_matrix(<span class="dv">2</span>, max_A, lam)  <span class="co"># Generate a payoff matrix with max_n actions and correlation lambda</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> count_A, A <span class="kw">in</span> <span class="bu">enumerate</span>(A_vals):  <span class="co"># Now restrict to smaller N if needed</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Run Best Response Dynamics and time it</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>            SBRD_len, SBRD_it, SBRD_val_curr <span class="op">=</span> best_response_dynamics(G, A)</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>            SBRD_S4_twoCycles[count_lam, count_A, i] <span class="op">=</span> (SBRD_len <span class="op">==</span> <span class="dv">2</span>)</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>            SBRD_S4_nrSteps[count_lam, count_A, i] <span class="op">=</span> SBRD_it</span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Final time report</span></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>Total_time <span class="op">=</span> time() <span class="op">-</span> T_0</span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Total_time)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>127.52515482902527</code></pre>
+<pre><code>126.69464802742004</code></pre>
 </div>
 </div>
-<div id="1057be00" class="cell" data-execution_count="85">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S4_twoCycles"</span>, title<span class="op">=</span><span class="st">""</span>, mean_name<span class="op">=</span><span class="st">"twoCycle"</span>, ylabel<span class="op">=</span><span class="st">"Prob. conver. to two-cycle"</span>, axis<span class="op">=</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Exactly as before, we plot the probability of SBRD to converge to a two-cycle (with 99.5% Clopper-Pearson CI)</p>
+<div id="1057be00" class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S4_twoCycles"</span>, title<span class="op">=</span><span class="st">""</span>, mean_name<span class="op">=</span><span class="st">"twoCycle"</span>, ylabel<span class="op">=</span><span class="st">"Prob. conver. to two-cycle"</span>, axis<span class="op">=</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1117,8 +1132,9 @@ Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
 </div>
 </div>
 </div>
-<div id="291dcab2" class="cell" data-execution_count="86">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S4_nrSteps"</span>, mean_name<span class="op">=</span><span class="st">"nrSteps"</span>, title<span class="op">=</span><span class="st">""</span>, ylabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">False</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And now the number of steps to convergence, with a 2SE range.</p>
+<div id="291dcab2" class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S4_nrSteps"</span>, mean_name<span class="op">=</span><span class="st">"nrSteps"</span>, title<span class="op">=</span><span class="st">""</span>, ylabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">False</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1127,9 +1143,10 @@ Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
 </div>
 </div>
 </div>
-<div id="50b7ed26" class="cell" data-execution_count="87">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">round</span>(lambda_vals[<span class="bu">int</span>(np.argmax(np.mean(SBRD_S4_twoCycles, axis<span class="op">=-</span><span class="dv">1</span>)<span class="op">&gt;</span><span class="fl">0.5</span>))],<span class="dv">2</span>))</span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">round</span>(lambda_vals[<span class="bu">int</span>(np.argmax(np.mean(SBRD_S4_twoCycles, axis<span class="op">=-</span><span class="dv">1</span>)<span class="op">&gt;</span><span class="fl">0.9</span>))],<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And, as before, the threshold values of lambda. Notice that now SBRD converges to a two-cycle with 90% probability for all the values of lambda over 0.75.</p>
+<div id="50b7ed26" class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">round</span>(lambda_vals[<span class="bu">int</span>(np.argmax(np.mean(SBRD_S4_twoCycles, axis<span class="op">=-</span><span class="dv">1</span>)<span class="op">&gt;</span><span class="fl">0.5</span>))],<span class="dv">2</span>))</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">round</span>(lambda_vals[<span class="bu">int</span>(np.argmax(np.mean(SBRD_S4_twoCycles, axis<span class="op">=-</span><span class="dv">1</span>)<span class="op">&gt;</span><span class="fl">0.9</span>))],<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>0.5
 0.75</code></pre>
@@ -1138,38 +1155,41 @@ Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
 </section>
 <section id="section-b.1.-results-of-section-2.-also-hold-for-more-actions" class="level2">
 <h2 class="anchored" data-anchor-id="section-b.1.-results-of-section-2.-also-hold-for-more-actions">Section B.1. Results of Section 2. also hold for more actions</h2>
-<div id="ca2812e2" class="cell" data-execution_count="99">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of simulations per (λ, N) setting</span></span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">1000</span></span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.5</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">21</span>)]</span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>A_vals <span class="op">=</span> [<span class="dv">100</span>]</span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>SBRD_S5_isNash <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="dv">1</span>, samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>)</span>
-<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>SBRD_S5_nrSteps <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We now show that what we showed in Section 1. still holds for more actions. Setting of the experiment: - 1000 independent simulations - Each simulation takes lambda in a range of values between 0 and 1 - The number of actions is set to 100 - The number of players is set to three</p>
+<p>Statistics analysed: - SBRD_S5_isNash[l, 0, t]: True if the t-th test with the l-th value of lambda converges to a NE - SBRD_S5_nrSteps[l, 0, t]: number of steps to convergence (or cycle) of the t-th test with the l-th value of lambda</p>
+<div id="ca2812e2" class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of simulations per (λ, N) setting</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.5</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">21</span>)]</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>A_vals <span class="op">=</span> [<span class="dv">100</span>]</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>SBRD_S5_isNash <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="dv">1</span>, samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>)</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>SBRD_S5_nrSteps <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="c3b4a0fc" class="cell" data-execution_count="100">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>T_0 <span class="op">=</span> time()  <span class="co"># Start timer for entire experiment</span></span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> <span class="bu">max</span>(A_vals)</span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> count_lam, lam <span class="kw">in</span> <span class="bu">enumerate</span>(lambda_vals):  <span class="co"># Loop over each lambda value</span></span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(samples):  <span class="co"># Repeat experiment for statistical robustness</span></span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> generate_reward_matrix(<span class="dv">3</span>, max_A, lam)  <span class="co"># Generate a payoff matrix with max_n actions and correlation lambda</span></span>
-<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> count_A, A <span class="kw">in</span> <span class="bu">enumerate</span>(A_vals):  <span class="co"># Now restrict to smaller N if needed</span></span>
-<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Run Best Response Dynamics and time it</span></span>
-<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>            SBRD_len, SBRD_it, SBRD_val_curr <span class="op">=</span> best_response_dynamics(G, A)</span>
-<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>            SBRD_S5_isNash[count_lam, count_A, i] <span class="op">=</span> (SBRD_len <span class="op">==</span> <span class="dv">1</span>)</span>
-<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>            SBRD_S5_nrSteps[count_lam, count_A, i] <span class="op">=</span> SBRD_it</span>
-<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Final time report</span></span>
-<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a>Total_time <span class="op">=</span> time() <span class="op">-</span> T_0</span>
-<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Total_time)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="c3b4a0fc" class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>T_0 <span class="op">=</span> time()  <span class="co"># Start timer for entire experiment</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> <span class="bu">max</span>(A_vals)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> count_lam, lam <span class="kw">in</span> <span class="bu">enumerate</span>(lambda_vals):  <span class="co"># Loop over each lambda value</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(samples):  <span class="co"># Repeat experiment for statistical robustness</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> generate_reward_matrix(<span class="dv">3</span>, max_A, lam)  <span class="co"># Generate a payoff matrix with max_n actions and correlation lambda</span></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> count_A, A <span class="kw">in</span> <span class="bu">enumerate</span>(A_vals):  <span class="co"># Now restrict to smaller N if needed</span></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Run Best Response Dynamics and time it</span></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>            SBRD_len, SBRD_it, SBRD_val_curr <span class="op">=</span> best_response_dynamics(G, A)</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>            SBRD_S5_isNash[count_lam, count_A, i] <span class="op">=</span> (SBRD_len <span class="op">==</span> <span class="dv">1</span>)</span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>            SBRD_S5_nrSteps[count_lam, count_A, i] <span class="op">=</span> SBRD_it</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Final time report</span></span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>Total_time <span class="op">=</span> time() <span class="op">-</span> T_0</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Total_time)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>860.9745609760284</code></pre>
+<pre><code>853.8707270622253</code></pre>
 </div>
 </div>
-<div id="1c106cf4" class="cell" data-execution_count="101">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S5_isNash"</span>, title<span class="op">=</span><span class="st">""</span>, mean_name<span class="op">=</span><span class="st">"isNash"</span>, ylabel<span class="op">=</span><span class="st">"Prob. conver. to NE"</span>, axis<span class="op">=</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>As before, we print the probability of SBRD to converge to a NE</p>
+<div id="1c106cf4" class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S5_isNash"</span>, title<span class="op">=</span><span class="st">""</span>, mean_name<span class="op">=</span><span class="st">"isNash"</span>, ylabel<span class="op">=</span><span class="st">"Prob. conver. to NE"</span>, axis<span class="op">=</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1178,8 +1198,9 @@ Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
 </div>
 </div>
 </div>
-<div id="6cbed524" class="cell" data-execution_count="102">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S5_nrSteps"</span>, mean_name<span class="op">=</span><span class="st">"nrSteps"</span>, title<span class="op">=</span><span class="st">""</span>, ylabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">False</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And then the average number of steps to convergence</p>
+<div id="6cbed524" class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S5_nrSteps"</span>, mean_name<span class="op">=</span><span class="st">"nrSteps"</span>, title<span class="op">=</span><span class="st">""</span>, ylabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">False</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1191,38 +1212,41 @@ Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
 </section>
 <section id="section-b.2.-results-of-section-2.-also-hold-for-more-players" class="level2">
 <h2 class="anchored" data-anchor-id="section-b.2.-results-of-section-2.-also-hold-for-more-players">Section B.2. Results of Section 2. also hold for more players</h2>
-<div id="88ae7fcc" class="cell" data-execution_count="105">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of simulations per (λ, N) setting</span></span>
-<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">1_000</span></span>
-<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.5</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">21</span>)]</span>
-<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>A_vals <span class="op">=</span> [<span class="dv">50</span>]</span>
-<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>SBRD_S6_isNash <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="dv">1</span>, samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>)</span>
-<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>SBRD_S6_nrSteps <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We now test SBRD for 4 players. Setting of the experiment: - 1000 independent simulations - Each simulation takes lambda in a range of values between 0 and 1 - The number of actions is set to 50 - The number of players is set to four</p>
+<p>Statistics analysed: - SBRD_S6_isNash[l, 0, t]: True if the t-th test with the l-th value of lambda converges to a NE - SBRD_S6_nrSteps[l, 0, t]: number of steps to convergence (or cycle) of the t-th test with the l-th value of lambda</p>
+<div id="88ae7fcc" class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of simulations per (λ, N) setting</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">1_000</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.5</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">21</span>)]</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>A_vals <span class="op">=</span> [<span class="dv">50</span>]</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>SBRD_S6_isNash <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="dv">1</span>, samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>)</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>SBRD_S6_nrSteps <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="b443668f" class="cell" data-execution_count="106">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>T_0 <span class="op">=</span> time()  <span class="co"># Start timer for entire experiment</span></span>
-<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> <span class="bu">max</span>(A_vals)</span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> count_lam, lam <span class="kw">in</span> <span class="bu">enumerate</span>(lambda_vals):  <span class="co"># Loop over each lambda value</span></span>
-<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(samples):  <span class="co"># Repeat experiment for statistical robustness</span></span>
-<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> generate_reward_matrix(<span class="dv">4</span>, max_A, lam)  <span class="co"># Generate a payoff matrix with max_n actions and correlation lambda</span></span>
-<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> count_A, A <span class="kw">in</span> <span class="bu">enumerate</span>(A_vals):  <span class="co"># Now restrict to smaller N if needed</span></span>
-<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Run Best Response Dynamics and time it</span></span>
-<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>            SBRD_len, SBRD_it, SBRD_val_curr <span class="op">=</span> best_response_dynamics(G, A)</span>
-<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>            SBRD_S6_isNash[count_lam, count_A, i] <span class="op">=</span> (SBRD_len <span class="op">==</span> <span class="dv">1</span>)</span>
-<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>            SBRD_S6_nrSteps[count_lam, count_A, i] <span class="op">=</span> SBRD_it</span>
-<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Final time report</span></span>
-<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>Total_time <span class="op">=</span> time() <span class="op">-</span> T_0</span>
-<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Total_time)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b443668f" class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>T_0 <span class="op">=</span> time()  <span class="co"># Start timer for entire experiment</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> <span class="bu">max</span>(A_vals)</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> count_lam, lam <span class="kw">in</span> <span class="bu">enumerate</span>(lambda_vals):  <span class="co"># Loop over each lambda value</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(samples):  <span class="co"># Repeat experiment for statistical robustness</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> generate_reward_matrix(<span class="dv">4</span>, max_A, lam)  <span class="co"># Generate a payoff matrix with max_n actions and correlation lambda</span></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> count_A, A <span class="kw">in</span> <span class="bu">enumerate</span>(A_vals):  <span class="co"># Now restrict to smaller N if needed</span></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Run Best Response Dynamics and time it</span></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>            SBRD_len, SBRD_it, SBRD_val_curr <span class="op">=</span> best_response_dynamics(G, A)</span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>            SBRD_S6_isNash[count_lam, count_A, i] <span class="op">=</span> (SBRD_len <span class="op">==</span> <span class="dv">1</span>)</span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>            SBRD_S6_nrSteps[count_lam, count_A, i] <span class="op">=</span> SBRD_it</span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Final time report</span></span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a>Total_time <span class="op">=</span> time() <span class="op">-</span> T_0</span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Total_time)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>8539.04519701004</code></pre>
+<pre><code>25260.329627752304</code></pre>
 </div>
 </div>
-<div id="b6fa2d1a" class="cell" data-execution_count="107">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S6_isNash"</span>, title<span class="op">=</span><span class="st">""</span>, mean_name<span class="op">=</span><span class="st">"isNash"</span>, ylabel<span class="op">=</span><span class="st">"Prob. conver. to NE"</span>, axis<span class="op">=</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We see that the probability of convergence to a NE follows the same pattern as above. We plot, as before, a confidence interval of 99.5% Clopper-Pearson.</p>
+<div id="b6fa2d1a" class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S6_isNash"</span>, title<span class="op">=</span><span class="st">""</span>, mean_name<span class="op">=</span><span class="st">"isNash"</span>, ylabel<span class="op">=</span><span class="st">"Prob. conver. to NE"</span>, axis<span class="op">=</span><span class="dv">1</span>, binomial<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1231,8 +1255,9 @@ Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
 </div>
 </div>
 </div>
-<div id="e934874d" class="cell" data-execution_count="108">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S6_nrSteps"</span>, mean_name<span class="op">=</span><span class="st">"nrSteps"</span>, title<span class="op">=</span><span class="st">""</span>, ylabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">False</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We also plot the average number of steps taken to convergence</p>
+<div id="e934874d" class="cell" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>plot_single_algorithm(alg_name<span class="op">=</span><span class="st">"SBRD"</span>, varName<span class="op">=</span><span class="st">"S6_nrSteps"</span>, mean_name<span class="op">=</span><span class="st">"nrSteps"</span>, title<span class="op">=</span><span class="st">""</span>, ylabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">False</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1244,79 +1269,94 @@ Percentage of the time spent on PGD algorithm: 99.2%</code></pre>
 </section>
 <section id="section-c.1.-results-of-section-3.-also-hold-for-more-actions" class="level2">
 <h2 class="anchored" data-anchor-id="section-c.1.-results-of-section-3.-also-hold-for-more-actions">Section C.1. Results of Section 3. also hold for more actions</h2>
-<div id="bd73fe68" class="cell" data-execution_count="122">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Experimental setup</span></span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">1000</span></span>
-<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.85</span><span class="op">+</span><span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.25</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">7</span>)] <span class="co"># List of lambda values to test</span></span>
-<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>A_vals <span class="op">=</span> [<span class="dv">100</span>]</span>
+<p>Finally, we compare SBRD and SPGD over more actions to show that the behaviour is similar. Setting of the experiment: - 1000 independent simulations - Each simulation takes lambda in a range of values between 0.85 and 1 - The number of actions is set to 100 - The number of players is set to three</p>
+<p>Statistics analysed: - For SPGD: - PGD_S7_isNash[l, 0, t]: True if for the t-th test with the l-th value of lambda, SPGD converges to a NE - PGD_S7_numIte[l, 0, t]: number of steps to convergence (or cycle) for SPGD of the t-th test with the l-th value of lambda - PGD_S7_valFin[l, 0, t]: final payoff reached by SBPD in the t-th test with l-th value of lambda - PGD_S7_valAvg[l, 0, t]: average payoff during the trajectory of SBPD in the t-th test with the l-th value of lambda - PGD_S7_time[l, 0, t]: time to run SBPD in the t-th test with l-th value of lambda. - Remark: SPGD is automatically stopped at the first check-point after 10 seconds run. - for SBRD: - SBRD_S7_isNash[l, 0, t]: True if for the t-th test with the l-th value of lambda, SBRD converges to a NE - SBRD_S7_numIte[l, 0, t]: number of steps to convergence (or cycle) for SBRD of the t-th test with the l-th value of lambda - SBRD_S7_val[l, 0, t]: NE payoff reached by SBRD in the t-th test with l-th value of lambda if SBRD converges to a NE, or average payoff along the cycle if SBRD converges to a cycle. - SBRD_S7_time[l, 0, t]: time to run SBRD in the t-th test with l-th value of lambda.</p>
+<div id="bd73fe68" class="cell" data-execution_count="42">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Experimental setup</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>lambda_vals <span class="op">=</span> [<span class="fl">0.85</span><span class="op">+</span><span class="fl">0.09999999999</span><span class="op">*</span><span class="fl">0.25</span><span class="op">*</span>i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">7</span>)] <span class="co"># List of lambda values to test</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>A_vals <span class="op">=</span> [<span class="dv">100</span>]</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Outputs to Track</span></span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a><span class="co">## Policy Gradient Dynamics</span></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>PGD_S7_isNash <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>) <span class="co"># {0,1} veridicity of Nash in Policy Gradient Dynamics</span></span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>PGD_S7_numIte <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Number of iterations in Policy Gradient Dynamics</span></span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>PGD_S7_valFin <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Final payoff for player 0 in Policy Gradient Dynamics</span></span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>PGD_S7_valAvg <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Average payoff for player 0 in Policy Gradient Dynamics</span></span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a>PGD_S7_time <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))   <span class="co"># Runtime in Policy Gradient Dynamics</span></span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a><span class="co">## Best Response Dynamics</span></span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a>SBRD_S7_isNash <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>) <span class="co"># {0,1} veridicity of Nash in Best Response Dynamics</span></span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a>SBRD_S7_numIte <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Number of iterations in Best Response Dynamics</span></span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a>SBRD_S7_val <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Final payoff for player 0 in Best Response Dynamics</span></span>
+<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a>SBRD_S7_time <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))   <span class="co"># Runtime in Best Response Dynamics</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="0b199b92" class="cell" data-execution_count="43">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> A_vals[<span class="op">-</span><span class="dv">1</span>]  <span class="co"># Maximum number of actions (fixed at 50)</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>T_0 <span class="op">=</span> time()  <span class="co"># Start the global timer</span></span>
 <span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Outputs to Track</span></span>
-<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="co">## Policy Gradient Dynamics</span></span>
-<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>PGD_S7_isNash <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>) <span class="co"># {0,1} veridicity of Nash in Policy Gradient Dynamics</span></span>
-<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>PGD_S7_numIte <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Number of iterations in Policy Gradient Dynamics</span></span>
-<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>PGD_S7_valFin <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Final payoff for player 0 in Policy Gradient Dynamics</span></span>
-<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>PGD_S7_valAvg <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Average payoff for player 0 in Policy Gradient Dynamics</span></span>
-<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>PGD_S7_time <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))   <span class="co"># Runtime in Policy Gradient Dynamics</span></span>
-<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a><span class="co">## Best Response Dynamics</span></span>
-<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a>SBRD_S7_isNash <span class="op">=</span> np.full((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples), <span class="va">False</span>, dtype<span class="op">=</span><span class="bu">bool</span>) <span class="co"># {0,1} veridicity of Nash in Best Response Dynamics</span></span>
-<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>SBRD_S7_numIte <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Number of iterations in Best Response Dynamics</span></span>
-<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>SBRD_S7_val <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples)) <span class="co"># Final payoff for player 0 in Best Response Dynamics</span></span>
-<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a>SBRD_S7_time <span class="op">=</span> np.zeros((<span class="bu">len</span>(lambda_vals), <span class="bu">len</span>(A_vals), samples))   <span class="co"># Runtime in Best Response Dynamics</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="0b199b92" class="cell" data-execution_count="123">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>max_A <span class="op">=</span> A_vals[<span class="op">-</span><span class="dv">1</span>]  <span class="co"># Maximum number of actions (fixed at 50)</span></span>
-<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">2025</span>) <span class="co">#We set the random seed for reproducibility </span></span>
-<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>T_0 <span class="op">=</span> time()  <span class="co"># Start the global timer</span></span>
-<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> count_lam, lam <span class="kw">in</span> <span class="bu">enumerate</span>(lambda_vals):  <span class="co"># Loop over correlation values</span></span>
-<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(samples):  <span class="co"># Loop over sample repetitions</span></span>
-<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Generate a shared reward matrix for both algorithms</span></span>
-<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> generate_reward_matrix(<span class="dv">3</span>, max_A, lam)</span>
-<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> count_A, A <span class="kw">in</span> <span class="bu">enumerate</span>(A_vals):  <span class="co"># Loop over population sizes (fixed here)</span></span>
-<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>            t_0 <span class="op">=</span> time()  <span class="co"># Start timer for PGD</span></span>
-<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>            PGD_it, PGD_avg_val, PGD_val <span class="op">=</span> gradient_ascent_dynamics(G, A)</span>
-<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a>            t <span class="op">=</span> time() <span class="op">-</span> t_0  <span class="co"># Elapsed time</span></span>
-<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-16"><a href="#cb46-16" aria-hidden="true" tabindex="-1"></a>            PGD_S7_isNash[count_lam, count_A, i] <span class="op">=</span> (PGD_it <span class="op">&lt;</span> <span class="dv">50_000</span> <span class="op">-</span> <span class="dv">1</span>)  <span class="co"># Converged?</span></span>
-<span id="cb46-17"><a href="#cb46-17" aria-hidden="true" tabindex="-1"></a>            PGD_S7_numIte[count_lam, count_A, i] <span class="op">=</span> PGD_it</span>
-<span id="cb46-18"><a href="#cb46-18" aria-hidden="true" tabindex="-1"></a>            PGD_S7_valFin[count_lam, count_A, i] <span class="op">=</span> PGD_val</span>
-<span id="cb46-19"><a href="#cb46-19" aria-hidden="true" tabindex="-1"></a>            PGD_S7_valAvg[count_lam, count_A, i] <span class="op">=</span> PGD_avg_val</span>
-<span id="cb46-20"><a href="#cb46-20" aria-hidden="true" tabindex="-1"></a>            PGD_S7_time[count_lam, count_A, i] <span class="op">=</span> t</span>
-<span id="cb46-21"><a href="#cb46-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-22"><a href="#cb46-22" aria-hidden="true" tabindex="-1"></a>            <span class="co"># === Best Response Dynamics (SBRD) ===</span></span>
-<span id="cb46-23"><a href="#cb46-23" aria-hidden="true" tabindex="-1"></a>            t_0 <span class="op">=</span> time()  <span class="co"># Start timer for SBRD</span></span>
-<span id="cb46-24"><a href="#cb46-24" aria-hidden="true" tabindex="-1"></a>            SBRD_len, SBRD_it, SBRD_val_curr <span class="op">=</span> best_response_dynamics(G, A)</span>
-<span id="cb46-25"><a href="#cb46-25" aria-hidden="true" tabindex="-1"></a>            t <span class="op">=</span> time() <span class="op">-</span> t_0  <span class="co"># Elapsed time</span></span>
-<span id="cb46-26"><a href="#cb46-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-27"><a href="#cb46-27" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Store SBRD results</span></span>
-<span id="cb46-28"><a href="#cb46-28" aria-hidden="true" tabindex="-1"></a>            SBRD_S7_isNash[count_lam, count_A, i] <span class="op">=</span> (SBRD_len <span class="op">==</span> <span class="dv">1</span>)  <span class="co"># Converged to pure NE?</span></span>
-<span id="cb46-29"><a href="#cb46-29" aria-hidden="true" tabindex="-1"></a>            SBRD_S7_numIte[count_lam, count_A, i] <span class="op">=</span> SBRD_it</span>
-<span id="cb46-30"><a href="#cb46-30" aria-hidden="true" tabindex="-1"></a>            SBRD_S7_val[count_lam, count_A, i] <span class="op">=</span> SBRD_val_curr</span>
-<span id="cb46-31"><a href="#cb46-31" aria-hidden="true" tabindex="-1"></a>            SBRD_S7_time[count_lam, count_A, i] <span class="op">=</span> t</span>
-<span id="cb46-32"><a href="#cb46-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-33"><a href="#cb46-33" aria-hidden="true" tabindex="-1"></a><span class="co"># === Time Summary ===</span></span>
-<span id="cb46-34"><a href="#cb46-34" aria-hidden="true" tabindex="-1"></a>Tot_time <span class="op">=</span> time() <span class="op">-</span> T_0</span>
-<span id="cb46-35"><a href="#cb46-35" aria-hidden="true" tabindex="-1"></a>Tot_time_SBRD <span class="op">=</span> np.<span class="bu">sum</span>(SBRD_S7_time)</span>
-<span id="cb46-36"><a href="#cb46-36" aria-hidden="true" tabindex="-1"></a>Tot_time_PGD <span class="op">=</span> np.<span class="bu">sum</span>(PGD_S7_time)</span>
-<span id="cb46-37"><a href="#cb46-37" aria-hidden="true" tabindex="-1"></a>Tot_time_gener <span class="op">=</span> Tot_time <span class="op">-</span> Tot_time_SBRD <span class="op">-</span> Tot_time_PGD</span>
-<span id="cb46-38"><a href="#cb46-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-39"><a href="#cb46-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Print runtime breakdown</span></span>
-<span id="cb46-40"><a href="#cb46-40" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Total time to run: </span><span class="sc">{</span><span class="bu">round</span>(Tot_time, <span class="dv">1</span>)<span class="sc">}</span><span class="ss"> s"</span>)</span>
-<span id="cb46-41"><a href="#cb46-41" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of the time spent on random generation of matrix: </span><span class="sc">{</span><span class="bu">round</span>((Tot_time_gener <span class="op">/</span> Tot_time) <span class="op">*</span> <span class="dv">100</span>, <span class="dv">1</span>)<span class="sc">}</span><span class="ss">%"</span>)</span>
-<span id="cb46-42"><a href="#cb46-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of the time spent on SBRD algorithm: </span><span class="sc">{</span><span class="bu">round</span>((Tot_time_SBRD <span class="op">/</span> Tot_time) <span class="op">*</span> <span class="dv">100</span>, <span class="dv">1</span>)<span class="sc">}</span><span class="ss">%"</span>)</span>
-<span id="cb46-43"><a href="#cb46-43" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of the time spent on PGD algorithm: </span><span class="sc">{</span><span class="bu">round</span>((Tot_time_PGD <span class="op">/</span> Tot_time) <span class="op">*</span> <span class="dv">100</span>, <span class="dv">1</span>)<span class="sc">}</span><span class="ss">%"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> count_lam, lam <span class="kw">in</span> <span class="bu">enumerate</span>(lambda_vals):  <span class="co"># Loop over correlation values</span></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(samples):  <span class="co"># Loop over sample repetitions</span></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Generate a shared reward matrix for both algorithms</span></span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>        G <span class="op">=</span> generate_reward_matrix(<span class="dv">3</span>, max_A, lam)</span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> count_A, A <span class="kw">in</span> <span class="bu">enumerate</span>(A_vals):  <span class="co"># Loop over population sizes (fixed here)</span></span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>            t_0 <span class="op">=</span> time()  <span class="co"># Start timer for PGD</span></span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>            PGD_it, PGD_avg_val, PGD_val <span class="op">=</span> gradient_ascent_dynamics(G, A)</span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>            t <span class="op">=</span> time() <span class="op">-</span> t_0  <span class="co"># Elapsed time</span></span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>            PGD_S7_isNash[count_lam, count_A, i] <span class="op">=</span> (PGD_it <span class="op">&lt;</span> <span class="dv">50_000</span> <span class="op">-</span> <span class="dv">1</span>)  <span class="co"># Converged?</span></span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>            PGD_S7_numIte[count_lam, count_A, i] <span class="op">=</span> PGD_it</span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a>            PGD_S7_valFin[count_lam, count_A, i] <span class="op">=</span> PGD_val</span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a>            PGD_S7_valAvg[count_lam, count_A, i] <span class="op">=</span> PGD_avg_val</span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a>            PGD_S7_time[count_lam, count_A, i] <span class="op">=</span> t</span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a>            <span class="co"># === Best Response Dynamics (SBRD) ===</span></span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a>            t_0 <span class="op">=</span> time()  <span class="co"># Start timer for SBRD</span></span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a>            SBRD_len, SBRD_it, SBRD_val_curr <span class="op">=</span> best_response_dynamics(G, A)</span>
+<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a>            t <span class="op">=</span> time() <span class="op">-</span> t_0  <span class="co"># Elapsed time</span></span>
+<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Store SBRD results</span></span>
+<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a>            SBRD_S7_isNash[count_lam, count_A, i] <span class="op">=</span> (SBRD_len <span class="op">==</span> <span class="dv">1</span>)  <span class="co"># Converged to pure NE?</span></span>
+<span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a>            SBRD_S7_numIte[count_lam, count_A, i] <span class="op">=</span> SBRD_it</span>
+<span id="cb45-30"><a href="#cb45-30" aria-hidden="true" tabindex="-1"></a>            SBRD_S7_val[count_lam, count_A, i] <span class="op">=</span> SBRD_val_curr</span>
+<span id="cb45-31"><a href="#cb45-31" aria-hidden="true" tabindex="-1"></a>            SBRD_S7_time[count_lam, count_A, i] <span class="op">=</span> t</span>
+<span id="cb45-32"><a href="#cb45-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-33"><a href="#cb45-33" aria-hidden="true" tabindex="-1"></a><span class="co"># === Time Summary ===</span></span>
+<span id="cb45-34"><a href="#cb45-34" aria-hidden="true" tabindex="-1"></a>Tot_time <span class="op">=</span> time() <span class="op">-</span> T_0</span>
+<span id="cb45-35"><a href="#cb45-35" aria-hidden="true" tabindex="-1"></a>Tot_time_SBRD <span class="op">=</span> np.<span class="bu">sum</span>(SBRD_S7_time)</span>
+<span id="cb45-36"><a href="#cb45-36" aria-hidden="true" tabindex="-1"></a>Tot_time_PGD <span class="op">=</span> np.<span class="bu">sum</span>(PGD_S7_time)</span>
+<span id="cb45-37"><a href="#cb45-37" aria-hidden="true" tabindex="-1"></a>Tot_time_gener <span class="op">=</span> Tot_time <span class="op">-</span> Tot_time_SBRD <span class="op">-</span> Tot_time_PGD</span>
+<span id="cb45-38"><a href="#cb45-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-39"><a href="#cb45-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Print runtime breakdown</span></span>
+<span id="cb45-40"><a href="#cb45-40" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Total time to run: </span><span class="sc">{</span><span class="bu">round</span>(Tot_time, <span class="dv">1</span>)<span class="sc">}</span><span class="ss"> s"</span>)</span>
+<span id="cb45-41"><a href="#cb45-41" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of the time spent on random generation of matrix: </span><span class="sc">{</span><span class="bu">round</span>((Tot_time_gener <span class="op">/</span> Tot_time) <span class="op">*</span> <span class="dv">100</span>, <span class="dv">1</span>)<span class="sc">}</span><span class="ss">%"</span>)</span>
+<span id="cb45-42"><a href="#cb45-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of the time spent on SBRD algorithm: </span><span class="sc">{</span><span class="bu">round</span>((Tot_time_SBRD <span class="op">/</span> Tot_time) <span class="op">*</span> <span class="dv">100</span>, <span class="dv">1</span>)<span class="sc">}</span><span class="ss">%"</span>)</span>
+<span id="cb45-43"><a href="#cb45-43" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage of the time spent on PGD algorithm: </span><span class="sc">{</span><span class="bu">round</span>((Tot_time_PGD <span class="op">/</span> Tot_time) <span class="op">*</span> <span class="dv">100</span>, <span class="dv">1</span>)<span class="sc">}</span><span class="ss">%"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Total time to run: 35111.9 s
-Percentage of the time spent on random generation of matrix: 0.7%
+<pre><code>Total time to run: 21041.3 s
+Percentage of the time spent on random generation of matrix: 1.2%
 Percentage of the time spent on SBRD algorithm: 0.0%
-Percentage of the time spent on PGD algorithm: 99.3%</code></pre>
+Percentage of the time spent on PGD algorithm: 98.7%</code></pre>
 </div>
 </div>
-<div id="9c9347de" class="cell" data-execution_count="124">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S7_time"</span>, SBRD_varName<span class="op">=</span><span class="st">"S7_time"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Seconds"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>As before, we see that SBRD takes less that 0.1% of the total running time. The largest proportion of the time is taken by SPGD. As before, SPGD is stopped at the first checkpoint after 10 seconds if convergence is not reached by then.</p>
+<p>We first plot the average time as before. Notice that the scale is logarithmic!</p>
+<div id="9c9347de" class="cell" data-execution_count="44">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S7_time"</span>, SBRD_varName<span class="op">=</span><span class="st">"S7_time"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, expnr<span class="op">=</span><span class="st">"7"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Seconds"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="SBRD_files/figure-html/cell-39-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We now plot the average value of equilibria attained by the two algorithms. As mentioned above, they both converge with high probability, therefore these values have statistical significance.</p>
+<div id="cf9e58d0" class="cell" data-execution_count="45">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S7_valFin"</span>, SBRD_varName<span class="op">=</span><span class="st">"S7_val"</span>, title<span class="op">=</span><span class="st">""</span>, expnr<span class="op">=</span><span class="st">"7"</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Value"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, only_if_conv<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1325,8 +1365,9 @@ Percentage of the time spent on PGD algorithm: 99.3%</code></pre>
 </div>
 </div>
 </div>
-<div id="cf9e58d0" class="cell" data-execution_count="125">
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S7_valFin"</span>, SBRD_varName<span class="op">=</span><span class="st">"S7_val"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Value"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, only_if_conv<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We plot the average number of steps to convergence (to a NE or to a cycle)</p>
+<div id="99cabac1" class="cell" data-execution_count="46">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S7_numIte"</span>, SBRD_varName<span class="op">=</span><span class="st">"S7_numIte"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>,expnr<span class="op">=</span><span class="st">"7"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1335,22 +1376,13 @@ Percentage of the time spent on PGD algorithm: 99.3%</code></pre>
 </div>
 </div>
 </div>
-<div id="99cabac1" class="cell" data-execution_count="126">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S7_numIte"</span>, SBRD_varName<span class="op">=</span><span class="st">"S7_numIte"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Steps"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, log<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And finally, as before we compare the average final value (equilibrium or not) of SBRD against the average value attained by SPGD in its trajectory.</p>
+<div id="c32aa08c" class="cell" data-execution_count="47">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S7_valAvg"</span>, SBRD_varName<span class="op">=</span><span class="st">"S7_val"</span>, title<span class="op">=</span><span class="st">""</span>, expnr<span class="op">=</span><span class="st">"7"</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Value"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
 <p><img src="SBRD_files/figure-html/cell-42-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<div id="c32aa08c" class="cell" data-execution_count="127">
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>compare_algorithms(PGD_varName<span class="op">=</span><span class="st">"S7_valAvg"</span>, SBRD_varName<span class="op">=</span><span class="st">"S7_val"</span>, title<span class="op">=</span><span class="st">""</span>, mean_1_name<span class="op">=</span><span class="st">"SPGD±2SE"</span>, mean_2_name<span class="op">=</span><span class="st">"SBRD±2SE"</span>, yLabel<span class="op">=</span><span class="st">"Value"</span>, axis<span class="op">=</span><span class="dv">1</span>, variance<span class="op">=</span><span class="va">True</span>, isPositive<span class="op">=</span><span class="va">True</span>, legend_loc<span class="op">=</span><span class="st">"upper right"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="SBRD_files/figure-html/cell-43-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
