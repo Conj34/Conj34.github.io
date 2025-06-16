@@ -27,8 +27,9 @@ I like reading books. [This](https://thegreatestbooks.org) is a great website to
 
 | Title | Author | Status | Compl. on |
 |-------------------|---------------|------------------------|---------------|
-| Lincoln in the Bardo | George Saunders | ![](../images/50.png){width="0.8cm"} | May '25 |
-| Staring at the Sun | Irvin D. Yalom | ![](../images/50.png){width="0.8cm"} | May '25 |
+| Staring at the Sun | Irvin D. Yalom | ![](../images/50.png){width="0.8cm"} |  |
+| The Bell Jar | Sylvia Plath | ![](../images/50.png){width="0.8cm"} |  |
+| Lincoln in the Bardo | George Saunders | ![](../images/100.png){width="0.8cm"} | Jun '25 |
 | Babel | R. F. Kuang | ![](../images/100.png){width="0.8cm"} | Jun '25 |
 | A Shining | Jon Fosse | ![](../images/100.png){width="0.8cm"} | May '25 |
 | It Lasts Forever and Then It's Over | Anne de Marcken | ![](../images/100.png){width="0.8cm"} | May '25 |
