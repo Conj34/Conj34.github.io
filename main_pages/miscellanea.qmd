@@ -28,6 +28,7 @@ I like reading books. [This](https://thegreatestbooks.org) is a great website to
 | Title | Author | Status | Compl. on |
 |-------------------|---------------|------------------------|---------------|
 | Staring at the Sun | Irvin D. Yalom | ![](../images/50.png){width="0.8cm"} |  |
+| Essays in Love | Alain de Botton | ![](../images/50.png){width="0.8cm"} |  |
 | Canne al vento | Grazia Deledda | ![](../images/100.png){width="0.8cm"} | Jun '25 |
 | The Bell Jar | Sylvia Plath | ![](../images/100.png){width="0.8cm"} | Jun '25  |
 | Lincoln in the Bardo | George Saunders | ![](../images/100.png){width="0.8cm"} | Jun '25 |
