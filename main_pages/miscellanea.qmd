@@ -26,11 +26,12 @@ I like reading books. [This](https://thegreatestbooks.org) is a great website to
 ### Read in 2025
 
 | Title | Author | Status | Compl. on |
-|-------------------|---------------|------------------------|---------------|
+|-----------------|-----------------|----------------------|-----------------|
 | Staring at the Sun | Irvin D. Yalom | ![](../images/50.png){width="0.8cm"} |  |
-| Essays in Love | Alain de Botton | ![](../images/50.png){width="0.8cm"} |  |
+| The 39 Steps | John Buchan | ![](../images/100.png){width="0.8cm"} | Jul '25 |
+| Essays in Love | Alain de Botton | ![](../images/100.png){width="0.8cm"} | Jun '25 |
 | Canne al vento | Grazia Deledda | ![](../images/100.png){width="0.8cm"} | Jun '25 |
-| The Bell Jar | Sylvia Plath | ![](../images/100.png){width="0.8cm"} | Jun '25  |
+| The Bell Jar | Sylvia Plath | ![](../images/100.png){width="0.8cm"} | Jun '25 |
 | Lincoln in the Bardo | George Saunders | ![](../images/100.png){width="0.8cm"} | Jun '25 |
 | Babel | R. F. Kuang | ![](../images/100.png){width="0.8cm"} | Jun '25 |
 | A Shining | Jon Fosse | ![](../images/100.png){width="0.8cm"} | May '25 |
@@ -60,7 +61,7 @@ I like reading books. [This](https://thegreatestbooks.org) is a great website to
 I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2-B1, currently C1), and my Portuguese (currently B1). I am planning to write a page on how I learn languages, as it's something I'm passionate about and have some experience doing.
 
 | Title | Author | Status | Compl. on |
-|-------------------|---------------|------------------------|---------------|
+|-----------------|-----------------|----------------------|-----------------|
 | Flights | Olga Tokarczuk | ![](../images/50.png){width="0.8cm"} |  |
 | I Know Why the Caged Bird Sings | Maya Angelou | ![](../images/50.png){width="0.8cm"} |  |
 | Notes from Underground | Fyodor Dostoevsky | ![](../images/50.png){width="0.8cm"} |  |
@@ -76,7 +77,7 @@ I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2
 ### Read in 2023
 
 | Title | Author | Status | Compl. on |
-|-------------------|---------------|------------------------|---------------|
+|-----------------|-----------------|----------------------|-----------------|
 | Il fu Mattia Pascal | Luigi Pirandello | ![](../images/100.png){width="0.8cm"} | Dec '23 |
 | First Love | Ivan Turgenev | ![](../images/100.png){width="0.8cm"} | Dec '23 |
 | The Kreutzer Sonata | Leo Tolstoy | ![](../images/100.png){width="0.8cm"} | Dec '23 |
