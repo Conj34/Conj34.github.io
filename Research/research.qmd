@@ -25,6 +25,7 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 -   **Let's make EU healthier** This is a project that has a wider breath and is not only linked to research. If you're passionate about nutrition, hardcore computer science, and want to make a tangible impact, do get in touch.
 
 ## Past and Present Projects
+If you want an overlook of my research so far, you can give a look at the introduction to my PhD Thesis: [Colours, Giants, and Games](../Documents_files/Theses/Colours_Giants_and_Games.pdf).
 
 ::: panel-tabset
 ## Papers
@@ -33,7 +34,7 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 
 -   **Methodology for carbon credit assessment**<br> with A. Perrella, G. Marastoni (2025++)
 -   **Partition universality for hypergraphs** <br> with P. Allen, J. Böttcher (2025++)
--   **An extension of the transference principle**<br>with P. Allen, J. Böttcher, J. Lada (2025+)
+-   [**A Transference Principle and a Counting Lemma for Sparse Hypergraphs**](../Documents_files/Secret_papers/A_Transference_Principle.pdf)<br>with P. Allen, J. Böttcher, J. Lada (2025+)
 -   **Best Response Dynamics for Random Games**<br> with G. Ashkenazi-Golan, E. Plumb, J. Skokan (2025++)
 
 [**Submitted**]{style="color:green;font-size:20.0pt"}
@@ -56,7 +57,7 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 
 -   Re-ILS: a metaheuristic approach for cardinality-constrained optimization <br> with Jian Shen *(internal Amazon publication)*
 
--   [**Density of small diameter subgraphs in $K_r$-free graphs**](https://arxiv.org/abs/2207.14297).<br> with E.K. Hng
+-   [**Density of small diameter subgraphs in** $K_r$-free graphs](https://arxiv.org/abs/2207.14297).<br> with E.K. Hng
 
 ```{=html}
 <!--| Maker Breaker Games in the square lattice                                                                     | F. Illingworth, D.M., A. Pokrovskiy                  | 2023-   | LSE     | ![](../images/50.png){width="0.8cm"}  
@@ -110,6 +111,7 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 
 | What | When | Where | Why |
 |------------------|------------------|------------------|------------------|
+| [Colours, Giants, and Games](../Documents_files/Theses/Colours_Giants_and_Games.pdf) | 2025 | LSE | PhD Thesis |
 | Graph-theoretical Tools in Statistics | 2022 | LSE | Mini-internship |
 | [A discussion about the Pentagon Problem](../Documents_files/Theses/MSc_Thesis.pdf) | 2020 | ETHZ | MSc Thesis |
 | [Separator Theorems](../Documents_files/Presentations/Semester_Paper_Separator_Theorems.pdf) | 2019 | ETHZ | Semester Paper |
