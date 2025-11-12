@@ -42,11 +42,11 @@ If you want an overlook of my research so far, you can give a look at the introd
 -   [**Simultaneous Best-Response Dynamics in Random Potential Games**](https://arxiv.org/abs/2505.10378).<br> with G. Ashkenazi-Golan, E. Plumb<br> *Submit. to double-blind conference*<br>Paper with [code](../Research/SBRD.ipynb)
 -   [**Reinforcement Learning, Collusion, and the Folk Theorem**](https://arxiv.org/abs/2411.12725).<br> with G. Ashkenazi-Golan, E. Plumb<br> *Submit. Econometrica* (2025)
 
-[**Accepted**]{style="color:green;font-size:20.0pt"}
+[**To Appear**]{style="color:green;font-size:20.0pt"}
 
--   [**Dirac's theorem for graphs of bounded bandwidth**](https://arxiv.org/abs/2407.05889).<br> with A.E. Díaz, P. Gupta, O. Parczyk, A. Sgueglia<br> *Accept. Electron. J. Comb.*
+-   [**Dirac's theorem for graphs of bounded bandwidth**](https://arxiv.org/abs/2407.05889).<br> with A.E. Díaz, P. Gupta, O. Parczyk, A. Sgueglia<br> *To appear Electron. J. Comb.*
 
--   [**Graphs with large minimum degree and no short odd cycles are 3-colourable**](https://arxiv.org/abs/2302.01875).<br> with J. Böttcher, N. Frankl, O. Parczyk, J. Skokan<br>*Accept. Comb. Theory*
+-   [**Graphs with large minimum degree and no short odd cycles are 3-colourable**](https://arxiv.org/abs/2302.01875).<br> with J. Böttcher, N. Frankl, O. Parczyk, J. Skokan<br>*To appear Comb. Theory*
 
 [**Published**]{style="color:green;font-size:20.0pt"}
 
@@ -72,7 +72,8 @@ If you want an overlook of my research so far, you can give a look at the introd
 
 | Title | Date | Occasion | Place |
 |-------------------|------------------|------------------|------------------|
-| [Product-free subsets of $[n]$](https://arxiv.org/abs/2311.18796) | Oct '23 | LSE Seminar | London |
+| [Product-free subsets of $[n]$](../Documents_files/Presentations/Product_Schur_Triples___Slides.pdf) | Nov '25 | Coloquio de Matematica | Uniandes, Bogota |
+| [Product-free subsets of $[n]$](../Documents_files/Presentations/Product_Schur_Triples___Slides.pdf) | Oct '23 | LSE Seminar | London |
 | [Partition Universality](../Documents_files/Presentations/Partit_uni.pdf) | Aug '23 | Eurocomb | Prague |
 | [The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$](../Documents_files/Presentations/Ram_num.pdf) | Sep '23 | DMV (Invited speaker) | Ilmenau |
 |  | Apr '23 | Invited seminar | Prague |
@@ -125,6 +126,7 @@ If you want an overlook of my research so far, you can give a look at the introd
 
 | What | When | Where | Instit. | Type | Funded |
 |------------|------------|------------|------------|------------|------------|
+| Coloquio | Oct '25 | Bogota | Uniandes | Visiting |  |
 | DMV | Oct '23 | Ilmenau |  | Conference (invited) | LSE |
 | CPMC | Sept '23 | Zagreb |  | Workshop | LSE |
 | Eurocomb | Aug '23 | Prague |  | Conference | LSE |
