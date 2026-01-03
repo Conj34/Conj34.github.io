@@ -23,11 +23,21 @@ Amongst the things I like: Books, Movies, Cooking.
 I like reading books. [This](https://thegreatestbooks.org) is a great website to find your next read (I also like [my own analysis of this list](../Learning/Python/Useful/Greatest_authors.qmd)). I have used a lot the platform [Audible](https://www.audible.co.uk).
 
 ::: panel-tabset
-### Read in 2025
+### Read in 2026
 
 | Title | Author | Status | Compl. on |
 |-----------------|-----------------|----------------------|-----------------|
 | Staring at the Sun | Irvin D. Yalom | ![](../images/50.png){width="0.8cm"} |  |
+| 1Q84 | Haruki Murakami | ![](../images/50.png){width="0.8cm"} |  |
+| Quer pasticciaccio brutto de via Merulana | Carlo Emilio Gadda | ![](../images/100.png){width="0.8cm"} | Jan '26 |
+| The Three-Body Problem | Liu Cixin | ![](../images/100.png){width="0.8cm"} | Jan '26 |
+
+: {.striped .hover tbl-colwidths="\[50,30,10, 20\]"}
+
+### Read in 2025
+
+| Title | Author | Status | Compl. on |
+|-----------------|-----------------|----------------------|-----------------|
 | Frankenstein | Mary Shelley | ![](../images/100.png){width="0.8cm"} | Jul '25 |
 | The Chimes | Charles Dickens | ![](../images/100.png){width="0.8cm"} | Jul '25 |
 | The Cricket on the Hearth | Charles Dickens | ![](../images/100.png){width="0.8cm"} | Jul '25 |
