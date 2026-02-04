@@ -25,6 +25,7 @@ I welcome collaboration with anyone who would like to work with me on one (or mo
 -   **Let's make EU healthier** This is a project that has a wider breath and is not only linked to research. If you're passionate about nutrition, hardcore computer science, and want to make a tangible impact, do get in touch.
 
 ## Past and Present Projects
+
 If you want an overlook of my research so far, you can give a look at the introduction to my PhD Thesis: [Colours, Giants, and Games](../Documents_files/Theses/Colours_Giants_and_Games.pdf).
 
 ::: panel-tabset
@@ -32,23 +33,26 @@ If you want an overlook of my research so far, you can give a look at the introd
 
 [**Work in progress**]{style="color:green;font-size:20.0pt"}
 
--   **Methodology for carbon credit assessment**<br> with A. Perrella, G. Marastoni (2025++)
--   **Partition universality for hypergraphs** <br> with P. Allen, J. Böttcher (2025++)
--   [**A Transference Principle and a Counting Lemma for Sparse Hypergraphs**](../Documents_files/Secret_papers/A_Transference_Principle.pdf)<br>with P. Allen, J. Böttcher, J. Lada (2025+)
--   **Best Response Dynamics for Random Games**<br> with G. Ashkenazi-Golan, E. Plumb, J. Skokan (2025++)
+-   **Methodology for carbon credit assessment**<br> with A. Perrella, G. Marastoni (2026++)
+-   **Partition universality for hypergraphs** <br> with P. Allen, J. Böttcher (2026++)
+-   [**A Transference Principle and a Counting Lemma for Sparse Hypergraphs**](../Documents_files/Secret_papers/A_Transference_Principle.pdf)<br>with P. Allen, J. Böttcher, J. Lada (2026+)
+-   **Best Response Dynamics for Random Games**<br> with G. Ashkenazi-Golan, E. Plumb, J. Skokan (2026++)
 
 [**Submitted**]{style="color:green;font-size:20.0pt"}
 
--   [**Simultaneous Best-Response Dynamics in Random Potential Games**](https://arxiv.org/abs/2505.10378).<br> with G. Ashkenazi-Golan, E. Plumb<br> *Submit. to double-blind conference*<br>Paper with [code](../Research/SBRD.ipynb)
+-   [**No-Regret Dynamics Do Not Eliminate Dominated Strategies**](../Documents_files/Secret_papers/projected_gradient_and_dominated_strategies.pdf).<br> with G. Ashkenazi-Golan, E. Plumb, B. Tarbush<br> *Submit. EC2026* 
+
+-   [**Simultaneous Best-Response Dynamics in Random Potential Games**](https://arxiv.org/abs/2505.10378).<br> with G. Ashkenazi-Golan, E. Plumb<br> *Submit. to ICML2026*<br>Paper with [code](../Research/SBRD.ipynb)
+
 -   [**Reinforcement Learning, Collusion, and the Folk Theorem**](https://arxiv.org/abs/2411.12725).<br> with G. Ashkenazi-Golan, E. Plumb<br> *Submit. Econometrica* (2025)
 
 [**To Appear**]{style="color:green;font-size:20.0pt"}
 
--   [**Dirac's theorem for graphs of bounded bandwidth**](https://arxiv.org/abs/2407.05889).<br> with A.E. Díaz, P. Gupta, O. Parczyk, A. Sgueglia<br> *To appear Electron. J. Comb.*
-
 -   [**Graphs with large minimum degree and no short odd cycles are 3-colourable**](https://arxiv.org/abs/2302.01875).<br> with J. Böttcher, N. Frankl, O. Parczyk, J. Skokan<br>*To appear Comb. Theory*
 
 [**Published**]{style="color:green;font-size:20.0pt"}
+
+-   [**Dirac's theorem for graphs of bounded bandwidth**](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i1p21).<br> with A.E. Díaz, P. Gupta, O. Parczyk, A. Sgueglia<br> The Electronic Journal of Combinatorics. Vol 33, Iss. 1 (2026), P1.22
 
 -   [**On product Schur triples in the integers**](https://doi.org/10.1137/24M1632875).<br> with L. Mattos, O. Parczyk<br> SIAM Journal on Discrete Mathematics. Vol 39, Iss. 2 (2025)
 
