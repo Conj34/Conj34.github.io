@@ -3,7 +3,7 @@ title: "Homepage"
 format: html
 ---
 
-I am Domenico Mergoni Cecchelli! I completed my PhD in the department of Mathematics of LSE on September 2025 (you can find my thesis [here](https://etheses.lse.ac.uk/4922/)!). My interests are mainly in Graph Theory, Game Theory, and Reinforcement Learning, but I'm always happy to explore new areas.
+I am Domenico Mergoni Cecchelli! I completed my PhD in the department of Mathematics of LSE on September 2025 (you can find my thesis [here](https://etheses.lse.ac.uk/4922/)!). My interests are mainly in Graph Theory, Game Theory, and Reinforcement Learning, but I'm always happy to explore new areas. You can find more details about my research [here](https://conj34.github.io/Research/research.html), and about my career so far [here](https://conj34.github.io/main_pages/curriculum.html)!
 
 Alongside my university projects, I currently am:
 

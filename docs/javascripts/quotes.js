@@ -1,4 +1,5 @@
 var quotes = [
+"There's three times in a man's life when he has the right to yell at the moon. When he marries, when his children come, and when he finishes a job he had to be crazy to start. <p><center><i>-Red River-</i></center></p>",
 "<<How do you know that? I suppose other people have felt that way before.>> <<They have>>. <p><center><i>-Red River-</i></center></p>",
 "I’m surprised someone would desire so much a path that would leave her in loneliness. <p><center><i>-K. Ishiguro-</i></center></p>",
 "A part of us refuses to let go. The part that wants to keep believing there’s something unreachable inside each of us. Something that’s unique and won’t transfer. But there’s nothing like that, we know that now. <p><center><i>-K. Ishiguro-</i></center></p>",
