@@ -3,14 +3,17 @@ title: "Homepage"
 format: html
 ---
 
-I am Domenico Mergoni Cecchelli! I completed my PhD in the department of Mathematics of LSE on September 2025 (you can find my thesis [here](https://etheses.lse.ac.uk/4922/)!). My interests are mainly in Graph Theory, Game Theory, and Reinforcement Learning, but I'm always happy to explore new areas. You can find more details about my research [here](https://conj34.github.io/Research/research.html), and about my career so far [here](https://conj34.github.io/main_pages/curriculum.html)!
+Hey! \
+I am Domenico Mergoni Cecchelli. Born and raised in Italy, I've been wandering around Europe studying mathematics. Currently in London, soon to move to Madrid (September 2026), my areas of interest at the moment are Graph Theory and Learning in Games. You can find more about my work and research interests [here](https://conj34.github.io/Research/research.html).
 
-Alongside my university projects, I currently am:
+Otherwise, please be welcome to look around this page. You'll find some of the teaching material I prepared for various courses, some notes of courses I took when I was a student, and some more personal details (like what am I reading at the moment).
 
--   Collaborating with the [UGUALI!](https://firmereferendum.giustizia.it/referendum/open/dettaglio-open/3600000) referendum, aiming to introduce equality between marriage and civil unions in Italy (de-facto introducing same-sex marriage in Italy).
+
+Besides my university projects, I currently am:
+
 -   Leading a cross-field project for a EU proposal of new regulations regarding nutritional information on food packaging.
--   Contributing to a project for Carbon Credit Assessment, in collaboration with the Paraguayan government.
--   Writing a cooking book with all my family's traditional recipes.
+-   Contributing to a project for Carbon Credit Assessment, in collaboration with a Swiss startup.
+-   Writing a cookbook with all my family's traditional recipes.
 
 :::::: column-margin
 ::: callout-note
