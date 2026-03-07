@@ -6,15 +6,6 @@ format: html
 Hey! \
 I am Domenico Mergoni Cecchelli. Born and raised in Italy, I've been wandering around Europe studying mathematics. Currently in London, soon to move to Madrid (September 2026), my areas of interest at the moment are Graph Theory and Learning in Games. You can find more about my work and research interests [here](https://conj34.github.io/Research/research.html).
 
-Otherwise, please be welcome to look around this page. You'll find some of the teaching material I prepared for various courses, some notes of courses I took when I was a student, and some more personal details (like what am I reading at the moment).
-
-
-Besides my university projects, I currently am:
-
--   Leading a cross-field project for a EU proposal of new regulations regarding nutritional information on food packaging.
--   Contributing to a project for Carbon Credit Assessment, in collaboration with a Swiss startup.
--   Writing a cookbook with all my family's traditional recipes.
-
 :::::: column-margin
 ::: callout-note
 ## Contact
@@ -46,3 +37,14 @@ Besides my university projects, I currently am:
 ```
 :::
 ::::::
+
+
+Otherwise, please be welcome to look around this page. You'll find some of the teaching material I prepared for various courses, some notes of courses I took when I was a student, and some more personal details (like what am I reading at the moment).
+
+
+Besides my university projects, I currently am:
+
+-   Leading a cross-field project for a EU proposal of new regulations regarding nutritional information on food packaging.
+-   Contributing to a project for Carbon Credit Assessment, in collaboration with a Swiss startup.
+-   Writing a cookbook with all my family's traditional recipes.
+
