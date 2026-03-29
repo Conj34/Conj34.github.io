@@ -28,7 +28,9 @@ I like reading books. [This](https://thegreatestbooks.org) is a great website to
 | Title | Author | Status | Compl. on |
 |-----------------|-----------------|--------------------|-----------------|
 | Staring at the Sun | Irvin D. Yalom | ![](../images/50.png){width="0.8cm"} |  |
-| Rebecca | Daphne du Maurier | ![](../images/50.png){width="0.8cm"} |  |
+| The Sword of Shannara | Terry Brooks | ![](../images/100.png){width="0.8cm"} | Apr '26 |
+| To Kill a Mockingbird | Harper Lee | ![](../images/100.png){width="0.8cm"} | Mar '26 |
+| Rebecca | Daphne du Maurier | ![](../images/100.png){width="0.8cm"} | Mar '26 |
 | A Connecticut Yankee in King Arthur's Court | Mark Twain | ![](../images/100.png){width="0.8cm"} | Mar '26 |
 | A Tale of Love and Darkness | Amos Oz | ![](../images/100.png){width="0.8cm"} | Mar '26 |
 | Uprooted | Naomi Novik | ![](../images/100.png){width="0.8cm"} | Feb '26 |
@@ -138,7 +140,6 @@ I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2
 |--------------------------------|--------------------|
 | Demon Copperhead               | Barbara Kingsolver |
 | A Fine Balance                 | Rohinton Mistry    |
-| The Bell Jar                   | Sylvia Plath       |
 | The Once and Future King       | T. H. White        |
 | The Found and the Lost         | Ursula K. Le Guin  |
 | Il sistema periodico           | Primo Levi         |
