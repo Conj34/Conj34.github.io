@@ -4,7 +4,7 @@ format: html
 ---
 
 Hey! \
-I am Domenico Mergoni Cecchelli. Born and raised in Italy, I've been wandering around Europe studying mathematics. My last adventure: completing my PhD in mathematics at the London School of Economics, where I am now a Visiting Fellow. My areas of interest are Graph Theory and Learning in Games. You can find more about my work and research interests [here](https://conj34.github.io/Research/research.html).
+I am Domenico Mergoni Cecchelli. Born and raised in Italy, I've been wandering around Europe studying mathematics. My last adventure: completing my PhD in mathematics at the London School of Economics, where I am now a Visiting Fellow. M ey areas of interest are Graph Theory and Learning in Games. You can find more about my work and research interests [here](https://conj34.github.io/Research/research.html).
 
 :::::: column-margin
 ::: callout-note
