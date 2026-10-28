@@ -1,21 +1,23 @@
 ---
 title: "Code and notes"
-subtitle: "<i>One learns from books and example only that certain things can be done. Actual learning requires that you do those things.</i><br><small><small>- F. Herbert -</small></small>"
+subtitle: "Small projects, code and notes, from competitive programming to the code behind my papers."
 format: html
 aliases:
   - /Learning/Learning.html
 ---
 
-::: column-margin
-{{< include /support/_contact.qmd >}}
-:::
+> One learns from books and example only that certain things can be done. Actual learning requires that you do those things.
+>
+> F. Herbert
 
-A collection of small projects, code and notes, from competitive programming to the code behind my papers. The best way to learn is to teach, and I hope some of this is useful to others.
+```{=html}
+<ul class="rows">
+  <li><div class="when code">Notebook</div><div><div class="what"><a href="../Research/SBRD.html">SBRD in Random Games</a></div><div class="detail">The code accompanying <a href="https://arxiv.org/abs/2505.10378">Simultaneous Best-Response Dynamics in Random Potential Games</a>.</div></div></li>
+  <li><div class="when code">Python</div><div><div class="what"><a href="../Learning/Python/Useful/Greatest_authors.html">Greatest Authors</a></div><div class="detail">An analysis of the greatest-books list.</div></div></li>
+  <li><div class="when code">Python</div><div><div class="what"><a href="../Learning/Python/Useful/Arxiv.html">Arxiv email</a></div><div class="detail">A small script to go from the daily arXiv email straight to the PDFs.</div></div></li>
+  <li><div class="when code">Python</div><div><div class="what"><a href="../Learning/Python/CF/Easy/1758A.html">Codeforces 1758A</a></div><div class="detail">Competitive programming in Python (I know Python is not the best language for it).</div></div></li>
+  <li><div class="when code">Notes</div><div><div class="what"><a href="../Learning/Old_Work/OldWork.html">University notes</a></div><div class="detail">Notes from my BSc in Pisa, mostly in Italian.</div></div></li>
+</ul>
+```
 
--   [Greatest Authors](../Learning/Python/Useful/Greatest_authors.qmd): an analysis of the greatest-books list.
--   [Arxiv email](../Learning/Python/Useful/Arxiv.qmd): a small script to go from the daily arXiv email straight to the PDFs.
--   [Codeforces 1758A](../Learning/Python/CF/Easy/1758A.qmd): competitive programming in Python (I know Python is not the best language for it).
--   [University notes](../Learning/Old_Work/OldWork.qmd): notes from my BSc in Pisa, mostly in Italian.
--   [SBRD in Random Games](../Research/SBRD.ipynb): the code accompanying one of my papers.
-
-Please do let me know if you find any mistakes.
+The best way to learn is to teach, and I hope some of this is useful to others. Please do let me know if you find any mistakes.

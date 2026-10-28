@@ -1,34 +1,35 @@
 ---
 title: "Teaching"
+subtitle: "Courses I teach and have taught, with the material I prepared for them."
 format: html
 ---
 
-{{< include /support/_margins_Teaching.qmd >}}
-
 ## CUNEF Universidad
 
-| Course | Programme | Year(s) | Institution | Notes |
-|---------------|---------------|---------------|---------------|---------------|
-| Machine Learning | BSc Economics (group G42) | 2026/27 | CUNEF | Parallel section, coordinated by Ricardo Queralt |
-
-: Courses at CUNEF {.striped .hover tbl-colwidths="\[25,25,15,10,25\]"}
+```{=html}
+<ul class="rows">
+  <li><div class="when code">G42</div><div><div class="what">Machine Learning</div><div class="detail">BSc in Economics, 2026/27. Parallel section, coordinated by Ricardo Queralt.</div></div></li>
+</ul>
+```
 
 ## London School of Economics
 
-These pages contain some of the material I used to aid my teaching at LSE. Some of the material I created myself, some was given by the various lecturers of the courses, and some I found online and propose here again in a selected format.
+Some of the material below I created myself, some was given by the lecturers of the courses, and some I found online and propose here again in a selected format.
 
-| Code | Name | Year(s) | Department | Main Lecturer |
-|---------------|---------------|---------------|---------------|---------------|
-| [MA102/3](MA102_MA103.qmd) | Introduction to Abstract Mathematics | 2020/21; 21/22 | Maths | Peter Allen |
-| [ME306](ME306.qmd) | Real Analysis | 2021 | Maths | Johannes Ruf |
-| [MA210](MA210.qmd) | Discrete Mathematics | 2021/22 | Maths | Peter Allen |
-| [MA423](MA423.qmd) | Fundamentals of Operations Research | 2021/22 | Maths | Ahmad Abdi |
-| [ME200](ME200.qmd) | Computational Methods in Financial Mathematics | 2023 | Maths | Luitgard Veraart |
-| [ST310](ST310.qmd) | Machine Learning | 2022/23 | Stats | Joshua Loftus |
-| [ST455](ST455.qmd) | Reinforcement Learning | 2022/23 | Stats | Chengchun Shi |
-| [FM250](FM250.qmd) | Finance | 2023 | Finance | Ashwini Agrawal |
-| [PR](Pre-sessionals.qmd) | MiM/GMiM pre-sessionals | 2022; 23 | Manag. | Myself |
+```{=html}
+<ul class="rows">
+  <li><div class="when code">MA102/3</div><div><div class="what"><a href="MA102_MA103.html">Introduction to Abstract Mathematics</a></div><div class="detail">Mathematics, 2020/21 and 2021/22. Lecturer: Peter Allen</div></div></li>
+  <li><div class="when code">ME306</div><div><div class="what"><a href="ME306.html">Real Analysis</a></div><div class="detail">Mathematics, 2021. Lecturer: Johannes Ruf</div></div></li>
+  <li><div class="when code">MA210</div><div><div class="what"><a href="MA210.html">Discrete Mathematics</a></div><div class="detail">Mathematics, 2021/22. Lecturer: Peter Allen</div></div></li>
+  <li><div class="when code">MA423</div><div><div class="what"><a href="MA423.html">Fundamentals of Operations Research</a></div><div class="detail">Mathematics, 2021/22. Lecturer: Ahmad Abdi</div></div></li>
+  <li><div class="when code">ME200</div><div><div class="what"><a href="ME200.html">Computational Methods in Financial Mathematics</a></div><div class="detail">Mathematics, 2023. Lecturer: Luitgard Veraart</div></div></li>
+  <li><div class="when code">ST310</div><div><div class="what"><a href="ST310.html">Machine Learning</a></div><div class="detail">Statistics, 2022/23. Lecturer: Joshua Loftus</div></div></li>
+  <li><div class="when code">ST455</div><div><div class="what"><a href="ST455.html">Reinforcement Learning</a></div><div class="detail">Statistics, 2022/23. Lecturer: Chengchun Shi</div></div></li>
+  <li><div class="when code">FM250</div><div><div class="what"><a href="FM250.html">Finance</a></div><div class="detail">Finance, 2023. Lecturer: Ashwini Agrawal</div></div></li>
+  <li><div class="when code">MiM/GMiM</div><div><div class="what"><a href="Pre-sessionals.html">Pre-sessional courses in mathematics and statistics</a></div><div class="detail">Management, 2022 and 2023. Designed and taught by me</div></div></li>
+</ul>
+```
 
-: Courses taught at LSE {.striped .hover tbl-colwidths="\[10,40,20,10,20\]"}
+For privacy reasons, I don't publish my students' feedback here. If you would like more information about my teaching, please get in touch.
 
-For privacy reasons, I won't add my students' feedback to this page. If you are interested in additional information about my teaching, please contact me.
+Free lectures I often recommend: [MIT OpenCourseWare](https://www.youtube.com/c/mitocw/featured), [Stanford](https://www.youtube.com/c/stanford/featured) and [Harvard](https://www.youtube.com/c/harvard).

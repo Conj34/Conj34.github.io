@@ -410,9 +410,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#future-projects" id="toc-future-projects" class="nav-link active" data-scroll-target="#future-projects">Future Projects</a></li>
-  <li><a href="#papers" id="toc-papers" class="nav-link" data-scroll-target="#papers">Papers</a></li>
+  <li><a href="#papers" id="toc-papers" class="nav-link active" data-scroll-target="#papers">Papers</a></li>
   <li><a href="#talks" id="toc-talks" class="nav-link" data-scroll-target="#talks">Talks</a></li>
+  <li><a href="#future-projects" id="toc-future-projects" class="nav-link" data-scroll-target="#future-projects">Future projects</a></li>
   <li><a href="#theses-and-projects" id="toc-theses-and-projects" class="nav-link" data-scroll-target="#theses-and-projects">Theses and projects</a></li>
   <li><a href="#service-and-awards" id="toc-service-and-awards" class="nav-link" data-scroll-target="#service-and-awards">Service and awards</a></li>
   </ul>
@@ -425,6 +425,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Research</h1>
+<p class="subtitle lead">Graph theory and learning in games: papers, talks and open projects.</p>
 </div>
 
 
@@ -442,16 +443,6 @@ window.Quarto = {
 
 
 <p>My research sits between two worlds. From the combinatorics side, I work on extremal and probabilistic questions about graphs and hypergraphs (colourings, Ramsey numbers, embeddings, sparse regularity). From the game theory side, I study what learning dynamics actually do when several agents use them at once: when they reach equilibria, when they collude, and when they fail to discard strategies a rational player never would.</p>
-<section id="future-projects" class="level2">
-<h2 class="anchored" data-anchor-id="future-projects">Future Projects</h2>
-<p>I welcome collaboration with anyone who would like to work with me on one (or more) of the following. <strong>These are only the projects for which I HAVE a clear research path in mind</strong>, with specific implementations, experiments, and analysis to do, I just didn’t have the time to implement them yet. Please get in touch with me even just to chat about them, or if you’re interested in collaborating.</p>
-<ul>
-<li><strong>Can RL learn Combinatorial Games?</strong> Reinforcement Learning (RL) <a href="https://www.nature.com/articles/nature24270">is really good at games</a>, but is possibly <a href="https://arxiv.org/pdf/2311.03583">really bad at Graph Theory</a> (although initial results were quite optimistic [<a href="https://arxiv.org/pdf/2411.00566">1</a>, <a href="https://arxiv.org/pdf/2104.14516">2</a>]). Would RL be good at Combinatorial Games? I am particularly interested to explore this about games on graphs. In particular the <a href="https://arxiv.org/pdf/2409.01796">Balance Game</a> or some <a href="https://en.wikipedia.org/wiki/Maker-Breaker_game">Maker Breaker games</a>.</li>
-<li><strong>What can RL do in Graph Theory?</strong> There are some results that seem to indicate that RL is not good at Graph Theoretical problems [<a href="https://arxiv.org/pdf/2311.03583">3</a>, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26470">4</a>]. However, RL is clearly good at solving certain Graph-theoretical problems, and initial results were quite optimistic [<a href="https://arxiv.org/pdf/2411.00566">1</a>, <a href="https://arxiv.org/pdf/2104.14516">2</a>]. What is the reason behind this varying behaviour?</li>
-<li><strong>Sparsity? Quantization? What about both?</strong> Two well-known memory-reduction methods in Neural Networks are Sparsity and Quantization. <a href="https://arxiv.org/abs/2405.20935">These two methods are not orthogonal</a>. However I do believe that there is a way of improving the current SotA to produce a lighter version of NN using the interplay between the two. The literature in the area seems to go towards a natural direction that hasn’t been developed, in my opinion, to the fullest.</li>
-<li><strong>Let’s make EU healthier</strong> This is a project that has a wider breadth and is not only linked to research. If you’re passionate about nutrition, hardcore computer science, and want to make a tangible impact, do get in touch.</li>
-</ul>
-</section>
 <section id="papers" class="level2">
 <h2 class="anchored" data-anchor-id="papers">Papers</h2>
 <p>If you want an overview of my research so far, have a look at the introduction to my PhD Thesis: <a href="../Documents_files/Theses/Colours_Giants_and_Games.pdf">Colours, Giants, and Games</a>.</p>
@@ -770,62 +761,38 @@ root.querySelectorAll('.paper').forEach(function (p) { p.hidden = !(t === 'all' 
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
+<section id="future-projects" class="level2">
+<h2 class="anchored" data-anchor-id="future-projects">Future projects</h2>
+<p>I welcome collaboration with anyone who would like to work with me on one (or more) of the following. <strong>These are only the projects for which I HAVE a clear research path in mind</strong>, with specific implementations, experiments, and analysis to do, I just didn’t have the time to implement them yet. Please get in touch with me even just to chat about them, or if you’re interested in collaborating.</p>
+<div class="projects">
+<div class="project topic-games">
+<p><span class="project-title">Can RL learn Combinatorial Games?</span></p>
+<p>Reinforcement Learning (RL) <a href="https://www.nature.com/articles/nature24270">is really good at games</a>, but is possibly <a href="https://arxiv.org/pdf/2311.03583">really bad at Graph Theory</a> (although initial results were quite optimistic [<a href="https://arxiv.org/pdf/2411.00566">1</a>, <a href="https://arxiv.org/pdf/2104.14516">2</a>]). Would RL be good at Combinatorial Games? I am particularly interested to explore this about games on graphs. In particular the <a href="https://arxiv.org/pdf/2409.01796">Balance Game</a> or some <a href="https://en.wikipedia.org/wiki/Maker-Breaker_game">Maker Breaker games</a>.</p>
+</div>
+<div class="project topic-combinatorics">
+<p><span class="project-title">What can RL do in Graph Theory?</span></p>
+<p>There are some results that seem to indicate that RL is not good at Graph Theoretical problems [<a href="https://arxiv.org/pdf/2311.03583">3</a>, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26470">4</a>]. However, RL is clearly good at solving certain Graph-theoretical problems, and initial results were quite optimistic [<a href="https://arxiv.org/pdf/2411.00566">1</a>, <a href="https://arxiv.org/pdf/2104.14516">2</a>]. What is the reason behind this varying behaviour?</p>
+</div>
+<div class="project topic-applied">
+<p><span class="project-title">Sparsity? Quantization? What about both?</span></p>
+<p>Two well-known memory-reduction methods in Neural Networks are Sparsity and Quantization. <a href="https://arxiv.org/abs/2405.20935">These two methods are not orthogonal</a>. However I do believe that there is a way of improving the current SotA to produce a lighter version of NN using the interplay between the two. The literature in the area seems to go towards a natural direction that hasn’t been developed, in my opinion, to the fullest.</p>
+</div>
+<div class="project topic-applied">
+<p><span class="project-title">Let’s make EU healthier</span></p>
+<p>This is a project that has a wider breadth and is not only linked to research. If you’re passionate about nutrition, hardcore computer science, and want to make a tangible impact, do get in touch.</p>
+</div>
+</div>
+</section>
 <section id="theses-and-projects" class="level2">
 <h2 class="anchored" data-anchor-id="theses-and-projects">Theses and projects</h2>
-<table class="table-striped table-hover caption-top table">
-<colgroup>
-<col style="width: 60%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>What</th>
-<th>When</th>
-<th>Where</th>
-<th>Why</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="../Documents_files/Theses/Colours_Giants_and_Games.pdf">Colours, Giants, and Games</a></td>
-<td>2025</td>
-<td>LSE</td>
-<td>PhD Thesis</td>
-</tr>
-<tr class="even">
-<td>Graph-theoretical Tools in Statistics</td>
-<td>2022</td>
-<td>LSE</td>
-<td>Mini-internship</td>
-</tr>
-<tr class="odd">
-<td><a href="../Documents_files/Theses/MSc_Thesis.pdf">A discussion about the Pentagon Problem</a></td>
-<td>2020</td>
-<td>ETHZ</td>
-<td>MSc Thesis</td>
-</tr>
-<tr class="even">
-<td><a href="../Documents_files/Presentations/Semester_Paper_Separator_Theorems.pdf">Separator Theorems</a></td>
-<td>2019</td>
-<td>ETHZ</td>
-<td>Semester Paper</td>
-</tr>
-<tr class="odd">
-<td><a href="../Documents_files/Presentations/Reading_course_Young_Tableaux.pdf">A Glimpse of Young’s Tableaux</a></td>
-<td>2019</td>
-<td>ETHZ</td>
-<td>Reading Course</td>
-</tr>
-<tr class="even">
-<td><a href="../Documents_files/Theses/BSc_Thesis.compr.pdf">On the Hausdorff Dimension of Brownian Motion</a></td>
-<td>2018</td>
-<td>Pisa Univ.</td>
-<td>BSc Thesis</td>
-</tr>
-</tbody>
-</table>
+<ul class="rows">
+  <li><div class="when">2025</div><div><div class="what"><a href="../Documents_files/Theses/Colours_Giants_and_Games.pdf">Colours, Giants, and Games</a></div><div class="detail">PhD thesis, LSE</div></div></li>
+  <li><div class="when">2022</div><div><div class="what">Graph-theoretical Tools in Statistics</div><div class="detail">Mini-internship, LSE</div></div></li>
+  <li><div class="when">2020</div><div><div class="what"><a href="../Documents_files/Theses/MSc_Thesis.pdf">A discussion about the Pentagon Problem</a></div><div class="detail">MSc thesis, ETH Zurich</div></div></li>
+  <li><div class="when">2019</div><div><div class="what"><a href="../Documents_files/Presentations/Semester_Paper_Separator_Theorems.pdf">Separator Theorems</a></div><div class="detail">Semester paper, ETH Zurich</div></div></li>
+  <li><div class="when">2019</div><div><div class="what"><a href="../Documents_files/Presentations/Reading_course_Young_Tableaux.pdf">A Glimpse of Young's Tableaux</a></div><div class="detail">Reading course, ETH Zurich</div></div></li>
+  <li><div class="when">2018</div><div><div class="what"><a href="../Documents_files/Theses/BSc_Thesis.compr.pdf">On the Hausdorff Dimension of Brownian Motion</a></div><div class="detail">BSc thesis, University of Pisa</div></div></li>
+</ul>
 </section>
 <section id="service-and-awards" class="level2">
 <h2 class="anchored" data-anchor-id="service-and-awards">Service and awards</h2>

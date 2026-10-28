@@ -1,0 +1,8 @@
+<ul class="books queue">
+<% for (const b of items) { %>
+<li class="book" <%= metadataAttrs(b) %>>
+<span class="book-title"><%= b.title %></span>
+<span class="book-author"><%= b.author %></span>
+</li>
+<% } %>
+</ul>

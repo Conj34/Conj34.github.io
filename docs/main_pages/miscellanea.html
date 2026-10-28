@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Miscellanea – Domenico Mergoni Cecchelli</title>
+<title>Books – Domenico Mergoni Cecchelli</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,6 +37,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../images/logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -78,12 +80,99 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-shelf .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-year','listing-status','listing-finished',{ data: ['index'] },{ data: ['categories'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-year","listing-status","listing-finished"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-shelf'] = new List('listing-shelf', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-queue .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-queue'] = new List('listing-queue', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -317,22 +406,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#books" id="toc-books" class="nav-link active" data-scroll-target="#books">Books</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Miscellanea</h1>
+<h1 class="title">Books</h1>
+<p class="subtitle lead">What I’m reading, and what I’ve read since 2023.</p>
 </div>
 
 
@@ -349,685 +431,346 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<div class="no-row-height column-margin column-container"><div class="">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>I read in English, Italian and Spanish (and, slowly, other languages). I have a soft spot for Russian short stories, which I am happy to read in translation, and I am part of a book club, currently working through Raymond Chandler. <a href="https://thegreatestbooks.org">This list</a> is a great place to find your next read (I also like <a href="../Learning/Python/Useful/Greatest_authors.html">my own analysis of it</a>), and I have used <a href="https://www.audible.co.uk">Audible</a> a lot.</p>
+<div id="listing-shelf" class="quarto-listing quarto-listing-container-custom">
+<div class="reading-now">
+<p><span class="reading-label">Reading now</span> <span class="reading-book"><span class="reading-title">Staring at the Sun</span><span class="reading-author">Irvin D. Yalom</span></span></p>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Contact
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Name: Domenico Mergoni</li>
-<li>Email: domenico.mergoni -at- cunef.edu</li>
-<li>Work: <a href="https://www.cunef.edu">CUNEF Universidad</a>, Madrid</li>
-<li>Also: Visiting Fellow, <a href="https://www.lse.ac.uk/people/dr-domenico-mergoni">London School of Economics</a></li>
+<section class="shelf">
+<h2 id="read-2026" class="anchored">
+2026 <small>12 books</small>
+</h2>
+<ul class="books">
+<li class="book is-reading" data-index="0">
+<span class="book-title">Staring at the Sun</span> <span class="book-author">Irvin D. Yalom</span> <span class="book-when">In progress</span>
+</li>
+<li class="book" data-index="1">
+<span class="book-title">Il Sistema Periodico</span> <span class="book-author">Primo Levi</span> <span class="book-when">Apr ’26</span>
+</li>
+<li class="book" data-index="2">
+<span class="book-title">Dune</span> <span class="book-author">Frank Herbert</span> <span class="book-when">Apr ’26</span>
+</li>
+<li class="book" data-index="3">
+<span class="book-title">The Sword of Shannara</span> <span class="book-author">Terry Brooks</span> <span class="book-when">Apr ’26</span>
+</li>
+<li class="book" data-index="4">
+<span class="book-title">To Kill a Mockingbird</span> <span class="book-author">Harper Lee</span> <span class="book-when">Mar ’26</span>
+</li>
+<li class="book" data-index="5">
+<span class="book-title">Rebecca</span> <span class="book-author">Daphne du Maurier</span> <span class="book-when">Mar ’26</span>
+</li>
+<li class="book" data-index="6">
+<span class="book-title">A Connecticut Yankee in King Arthur’s Court</span> <span class="book-author">Mark Twain</span> <span class="book-when">Mar ’26</span>
+</li>
+<li class="book" data-index="7">
+<span class="book-title">A Tale of Love and Darkness</span> <span class="book-author">Amos Oz</span> <span class="book-when">Mar ’26</span>
+</li>
+<li class="book" data-index="8">
+<span class="book-title">Uprooted</span> <span class="book-author">Naomi Novik</span> <span class="book-when">Feb ’26</span>
+</li>
+<li class="book" data-index="9">
+<span class="book-title">The Name of the Wind</span> <span class="book-author">Patrick Rothfuss</span> <span class="book-when">Feb ’26</span>
+</li>
+<li class="book" data-index="10">
+<span class="book-title">Quer pasticciaccio brutto de via Merulana</span> <span class="book-author">Carlo Emilio Gadda</span> <span class="book-when">Jan ’26</span>
+</li>
+<li class="book" data-index="11">
+<span class="book-title">The Three-Body Problem</span> <span class="book-author">Liu Cixin</span> <span class="book-when">Jan ’26</span>
+</li>
 </ul>
+</section>
+<section class="shelf">
+<h2 id="read-2025" class="anchored">
+2025 <small>28 books</small>
+</h2>
+<ul class="books">
+<li class="book" data-index="12">
+<span class="book-title">Frankenstein</span> <span class="book-author">Mary Shelley</span> <span class="book-when">Jul ’25</span>
+</li>
+<li class="book" data-index="13">
+<span class="book-title">The Chimes</span> <span class="book-author">Charles Dickens</span> <span class="book-when">Jul ’25</span>
+</li>
+<li class="book" data-index="14">
+<span class="book-title">The Cricket on the Hearth</span> <span class="book-author">Charles Dickens</span> <span class="book-when">Jul ’25</span>
+</li>
+<li class="book" data-index="15">
+<span class="book-title">The 39 Steps</span> <span class="book-author">John Buchan</span> <span class="book-when">Jul ’25</span>
+</li>
+<li class="book" data-index="16">
+<span class="book-title">Essays in Love</span> <span class="book-author">Alain de Botton</span> <span class="book-when">Jun ’25</span>
+</li>
+<li class="book" data-index="17">
+<span class="book-title">Canne al vento</span> <span class="book-author">Grazia Deledda</span> <span class="book-when">Jun ’25</span>
+</li>
+<li class="book" data-index="18">
+<span class="book-title">The Bell Jar</span> <span class="book-author">Sylvia Plath</span> <span class="book-when">Jun ’25</span>
+</li>
+<li class="book" data-index="19">
+<span class="book-title">Lincoln in the Bardo</span> <span class="book-author">George Saunders</span> <span class="book-when">Jun ’25</span>
+</li>
+<li class="book" data-index="20">
+<span class="book-title">Babel</span> <span class="book-author">R. F. Kuang</span> <span class="book-when">Jun ’25</span>
+</li>
+<li class="book" data-index="21">
+<span class="book-title">A Shining</span> <span class="book-author">Jon Fosse</span> <span class="book-when">May ’25</span>
+</li>
+<li class="book" data-index="22">
+<span class="book-title">It Lasts Forever and Then It’s Over</span> <span class="book-author">Anne de Marcken</span> <span class="book-when">May ’25</span>
+</li>
+<li class="book" data-index="23">
+<span class="book-title">Charlotte’s Web</span> <span class="book-author">Elwyn B. White</span> <span class="book-when">May ’25</span>
+</li>
+<li class="book" data-index="24">
+<span class="book-title">Perfection</span> <span class="book-author">Vincenzo Latronico</span> <span class="book-when">May ’25</span>
+</li>
+<li class="book" data-index="25">
+<span class="book-title">This Is How You Lose the Time War</span> <span class="book-author">Amal El-Mohtar and Max Gladstone</span> <span class="book-when">Apr ’25</span>
+</li>
+<li class="book" data-index="26">
+<span class="book-title">Circe</span> <span class="book-author">Madeline Miller</span> <span class="book-when">Apr ’25</span>
+</li>
+<li class="book" data-index="27">
+<span class="book-title">Prophet Song</span> <span class="book-author">Paul Lynch</span> <span class="book-when">Apr ’25</span>
+</li>
+<li class="book" data-index="28">
+<span class="book-title">The Golden Enclaves</span> <span class="book-author">Naomi Novik</span> <span class="book-when">Apr ’25</span>
+</li>
+<li class="book" data-index="29">
+<span class="book-title">The Last Graduate</span> <span class="book-author">Naomi Novik</span> <span class="book-when">Apr ’25</span>
+</li>
+<li class="book" data-index="30">
+<span class="book-title">A Deadly Education</span> <span class="book-author">Naomi Novik</span> <span class="book-when">Apr ’25</span>
+</li>
+<li class="book" data-index="31">
+<span class="book-title">Foundation</span> <span class="book-author">Isaac Asimov</span> <span class="book-when">Mar ’25</span>
+</li>
+<li class="book" data-index="32">
+<span class="book-title">A Wizard of Earthsea</span> <span class="book-author">Ursula K. Le Guin</span> <span class="book-when">Mar ’25</span>
+</li>
+<li class="book" data-index="33">
+<span class="book-title">Il Barone Rampante</span> <span class="book-author">Italo Calvino</span> <span class="book-when">Mar ’25</span>
+</li>
+<li class="book" data-index="34">
+<span class="book-title">Brave New World</span> <span class="book-author">Aldous Huxley</span> <span class="book-when">Mar ’25</span>
+</li>
+<li class="book" data-index="35">
+<span class="book-title">Klara and the Sun</span> <span class="book-author">Kazuo Ishiguro</span> <span class="book-when">Mar ’25</span>
+</li>
+<li class="book" data-index="36">
+<span class="book-title">Wolf Hall</span> <span class="book-author">Hilary Mantel</span> <span class="book-when">Feb ’25</span>
+</li>
+<li class="book" data-index="37">
+<span class="book-title">Dune</span> <span class="book-author">Frank Herbert</span> <span class="book-when">Feb ’25</span>
+</li>
+<li class="book" data-index="38">
+<span class="book-title">O Natal de Poirot</span> <span class="book-author">Agatha Christie</span> <span class="book-when">Jan ’25</span>
+</li>
+<li class="book" data-index="39">
+<span class="book-title">A noite das bruxas</span> <span class="book-author">Agatha Christie</span> <span class="book-when">Jan ’25</span>
+</li>
+</ul>
+</section>
+<section class="shelf">
+<h2 id="read-2024" class="anchored">
+2024 <small>9 books</small>
+</h2>
+<p class="shelf-note">
+Between February and December 2024 I paused to improve my Spanish (from A2/B1 to C1) and my Portuguese (B1).
+</p>
+<ul class="books">
+<li class="book is-reading" data-index="40">
+<span class="book-title">Flights</span> <span class="book-author">Olga Tokarczuk</span> <span class="book-when">In progress</span>
+</li>
+<li class="book is-reading" data-index="41">
+<span class="book-title">I Know Why the Caged Bird Sings</span> <span class="book-author">Maya Angelou</span> <span class="book-when">In progress</span>
+</li>
+<li class="book is-reading" data-index="42">
+<span class="book-title">Notes from Underground</span> <span class="book-author">Fyodor Dostoevsky</span> <span class="book-when">In progress</span>
+</li>
+<li class="book" data-index="43">
+<span class="book-title">The Call of the Wild</span> <span class="book-author">Jack London</span> <span class="book-when">Feb ’24</span>
+</li>
+<li class="book" data-index="44">
+<span class="book-title">Alice’s Adventures in Wonderland</span> <span class="book-author">Lewis Carroll</span> <span class="book-when">Jan ’24</span>
+</li>
+<li class="book" data-index="45">
+<span class="book-title">The Metamorphosis</span> <span class="book-author">Franz Kafka</span> <span class="book-when">Jan ’24</span>
+</li>
+<li class="book" data-index="46">
+<span class="book-title">Bartleby, the Scrivaner</span> <span class="book-author">Herman Melville</span> <span class="book-when">Jan ’24</span>
+</li>
+<li class="book" data-index="47">
+<span class="book-title">White Nights</span> <span class="book-author">Fyodor Dostoevsky</span> <span class="book-when">Jan ’24</span>
+</li>
+<li class="book" data-index="48">
+<span class="book-title">The Idiot</span> <span class="book-author">Fyodor Dostoevsky</span> <span class="book-when">Jan ’24</span>
+</li>
+</ul>
+</section>
+<section class="shelf">
+<h2 id="read-2023" class="anchored">
+2023 <small>33 books</small>
+</h2>
+<ul class="books">
+<li class="book" data-index="49">
+<span class="book-title">Il fu Mattia Pascal</span> <span class="book-author">Luigi Pirandello</span> <span class="book-when">Dec ’23</span>
+</li>
+<li class="book" data-index="50">
+<span class="book-title">First Love</span> <span class="book-author">Ivan Turgenev</span> <span class="book-when">Dec ’23</span>
+</li>
+<li class="book" data-index="51">
+<span class="book-title">The Kreutzer Sonata</span> <span class="book-author">Leo Tolstoy</span> <span class="book-when">Dec ’23</span>
+</li>
+<li class="book" data-index="52">
+<span class="book-title">The Strange Case of Dr.&nbsp;Jekyll and Mr.&nbsp;Hyde</span> <span class="book-author">Robert L. Stevenson</span> <span class="book-when">Dec ’23</span>
+</li>
+<li class="book" data-index="53">
+<span class="book-title">The Death of Ivan Ilyich</span> <span class="book-author">Leo Tolstoy</span> <span class="book-when">Dec ’23</span>
+</li>
+<li class="book" data-index="54">
+<span class="book-title">Murtagh</span> <span class="book-author">Cristopher Paolini</span> <span class="book-when">Nov ’23</span>
+</li>
+<li class="book" data-index="55">
+<span class="book-title">Emma</span> <span class="book-author">Jane Austen</span> <span class="book-when">Nov ’23</span>
+</li>
+<li class="book" data-index="56">
+<span class="book-title">Pride and Prejudice</span> <span class="book-author">Jane Austen</span> <span class="book-when">Nov ’23</span>
+</li>
+<li class="book" data-index="57">
+<span class="book-title">Persuasion</span> <span class="book-author">Jane Austen</span> <span class="book-when">Oct ’23</span>
+</li>
+<li class="book" data-index="58">
+<span class="book-title">Uno, nessuno e centomila</span> <span class="book-author">Luigi Pirandello</span> <span class="book-when">Oct ’23</span>
+</li>
+<li class="book" data-index="59">
+<span class="book-title">Macbeth</span> <span class="book-author">William Shakespeare</span> <span class="book-when">Oct ’23</span>
+</li>
+<li class="book" data-index="60">
+<span class="book-title">Sphere</span> <span class="book-author">Michael Crichton</span> <span class="book-when">Sep ’23</span>
+</li>
+<li class="book" data-index="61">
+<span class="book-title">The Buried Giant</span> <span class="book-author">Kazuo Ishiguro</span> <span class="book-when">Sep ’23</span>
+</li>
+<li class="book" data-index="62">
+<span class="book-title">La Storia</span> <span class="book-author">Elsa Morante</span> <span class="book-when">Sep ’23</span>
+</li>
+<li class="book" data-index="63">
+<span class="book-title">Oedipus at Colonus</span> <span class="book-author">Sophocles</span> <span class="book-when">Aug ’23</span>
+</li>
+<li class="book" data-index="64">
+<span class="book-title">Baol</span> <span class="book-author">Stefano Benni</span> <span class="book-when">Aug ’23</span>
+</li>
+<li class="book" data-index="65">
+<span class="book-title">Oedipus Rex</span> <span class="book-author">Sophocles</span> <span class="book-when">Aug ’23</span>
+</li>
+<li class="book" data-index="66">
+<span class="book-title">Pantera</span> <span class="book-author">Stefano Benni</span> <span class="book-when">Aug ’23</span>
+</li>
+<li class="book" data-index="67">
+<span class="book-title">Blues in Sedici</span> <span class="book-author">Stefano Benni</span> <span class="book-when">Aug ’23</span>
+</li>
+<li class="book" data-index="68">
+<span class="book-title">The Pastures of Heaven</span> <span class="book-author">John Steinbeck</span> <span class="book-when">Aug ’23</span>
+</li>
+<li class="book" data-index="69">
+<span class="book-title">The Remains of the Day</span> <span class="book-author">Kazuo Ishiguro</span> <span class="book-when">Jul ’23</span>
+</li>
+<li class="book" data-index="70">
+<span class="book-title">The Return of the King</span> <span class="book-author">J.R.R. Tolkien</span> <span class="book-when">Jul ’23</span>
+</li>
+<li class="book" data-index="71">
+<span class="book-title">Swimming in the Dark</span> <span class="book-author">Tomasz Jedrowski</span> <span class="book-when">Jul ’23</span>
+</li>
+<li class="book" data-index="72">
+<span class="book-title">The Two Towers</span> <span class="book-author">J.R.R. Tolkien</span> <span class="book-when">Jun ’23</span>
+</li>
+<li class="book" data-index="73">
+<span class="book-title">The Fellowship of the Ring</span> <span class="book-author">J.R.R. Tolkien</span> <span class="book-when">Jun ’23</span>
+</li>
+<li class="book" data-index="74">
+<span class="book-title">Il Bar sotto il Mare</span> <span class="book-author">Stefano Benni</span> <span class="book-when">May ’23</span>
+</li>
+<li class="book" data-index="75">
+<span class="book-title">2001: A Space Odyssey</span> <span class="book-author">Arthur C. Clarke</span> <span class="book-when">May ’23</span>
+</li>
+<li class="book" data-index="76">
+<span class="book-title">Never let Me go</span> <span class="book-author">Kazuo Ishiguro</span> <span class="book-when">May ’23</span>
+</li>
+<li class="book" data-index="77">
+<span class="book-title">Nocturnes</span> <span class="book-author">Kazuo Ishiguro</span> <span class="book-when">May ’23</span>
+</li>
+<li class="book" data-index="78">
+<span class="book-title">The Time Machine</span> <span class="book-author">H.G. Wells</span> <span class="book-when">May ’23</span>
+</li>
+<li class="book" data-index="79">
+<span class="book-title">A little Life</span> <span class="book-author">Hanya Yanagihara</span> <span class="book-when">May ’23</span>
+</li>
+<li class="book" data-index="80">
+<span class="book-title">A Room with a View</span> <span class="book-author">E.M. Forster</span> <span class="book-when">Apr ’23</span>
+</li>
+<li class="book" data-index="81">
+<span class="book-title">Drive your Plow over the Bones of the Dead</span> <span class="book-author">Olga Tokarczuk</span> <span class="book-when">Mar ’23</span>
+</li>
+</ul>
+</section>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="shelf-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
+<section id="next-up-suggestions-appreciated" class="level2">
+<h2 class="anchored" data-anchor-id="next-up-suggestions-appreciated">Next up <small>suggestions appreciated</small></h2>
+<div id="listing-queue" class="quarto-listing quarto-listing-container-custom">
+<ul class="books queue">
+<li class="book" data-index="0">
+<span class="book-title">Demon Copperhead</span> <span class="book-author">Barbara Kingsolver</span>
+</li>
+<li class="book" data-index="1">
+<span class="book-title">A Fine Balance</span> <span class="book-author">Rohinton Mistry</span>
+</li>
+<li class="book" data-index="2">
+<span class="book-title">The Once and Future King</span> <span class="book-author">T. H. White</span>
+</li>
+<li class="book" data-index="3">
+<span class="book-title">The Found and the Lost</span> <span class="book-author">Ursula K. Le Guin</span>
+</li>
+<li class="book" data-index="4">
+<span class="book-title">Il sistema periodico</span> <span class="book-author">Primo Levi</span>
+</li>
+<li class="book" data-index="5">
+<span class="book-title">Canne al vento</span> <span class="book-author">Grazia Deledda</span>
+</li>
+<li class="book" data-index="6">
+<span class="book-title">Beloved</span> <span class="book-author">Toni Morrison</span>
+</li>
+<li class="book" data-index="7">
+<span class="book-title">Song of Solomon</span> <span class="book-author">Toni Morrison</span>
+</li>
+<li class="book" data-index="8">
+<span class="book-title">La luna e i falò</span> <span class="book-author">Cesare Pavese</span>
+</li>
+<li class="book" data-index="9">
+<span class="book-title">Orlando</span> <span class="book-author">Virginia Woolf</span>
+</li>
+<li class="book" data-index="10">
+<span class="book-title">Heart of Darkness</span> <span class="book-author">Joseph Conrad</span>
+</li>
+<li class="book" data-index="11">
+<span class="book-title">Adventures of Huckleberry Finn</span> <span class="book-author">Mark Twain</span>
+</li>
+<li class="book" data-index="12">
+<span class="book-title">Lolita</span> <span class="book-author">Vladimir Nabokov</span>
+</li>
+<li class="book" data-index="13">
+<span class="book-title">I Am a Cat</span> <span class="book-author">Soseki Natsume</span>
+</li>
+<li class="book" data-index="14">
+<span class="book-title">Three Men in a Boat</span> <span class="book-author">Jerome K. Jerome</span>
+</li>
+</ul>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-</div></div><p>Amongst the things I like: books. Two of my favourite songs and quotes rotate on the <a href="../index.html">homepage</a>.</p>
-<section id="books" class="level2">
-<h2 class="anchored" data-anchor-id="books">Books</h2>
-<p>I like reading books, in English, Italian and Spanish (and, slowly, other languages). I have a soft spot for Russian short stories, which I am happy to read in translation, and I am part of a book club, currently working through Raymond Chandler. <a href="https://thegreatestbooks.org">This</a> is a great website to find your next read (I also like <a href="../Learning/Python/Useful/Greatest_authors.html">my own analysis of this list</a>). I have used the platform <a href="https://www.audible.co.uk">Audible</a> a lot.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Read in 2026</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Read in 2025</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Read in 2024</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Read in 2023</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<table class="table-striped table-hover caption-top table">
-<colgroup>
-<col style="width: 46%">
-<col style="width: 27%">
-<col style="width: 9%">
-<col style="width: 18%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Author</th>
-<th>Status</th>
-<th>Compl. on</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Staring at the Sun</td>
-<td>Irvin D. Yalom</td>
-<td><img src="../images/50.png" class="img-fluid" style="width:0.8cm"></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Il Sistema Periodico</td>
-<td>Primo Levi</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’26</td>
-</tr>
-<tr class="odd">
-<td>Dune</td>
-<td>Frank Herbert</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’26</td>
-</tr>
-<tr class="even">
-<td>The Sword of Shannara</td>
-<td>Terry Brooks</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’26</td>
-</tr>
-<tr class="odd">
-<td>To Kill a Mockingbird</td>
-<td>Harper Lee</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’26</td>
-</tr>
-<tr class="even">
-<td>Rebecca</td>
-<td>Daphne du Maurier</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’26</td>
-</tr>
-<tr class="odd">
-<td>A Connecticut Yankee in King Arthur’s Court</td>
-<td>Mark Twain</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’26</td>
-</tr>
-<tr class="even">
-<td>A Tale of Love and Darkness</td>
-<td>Amos Oz</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’26</td>
-</tr>
-<tr class="odd">
-<td>Uprooted</td>
-<td>Naomi Novik</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Feb ’26</td>
-</tr>
-<tr class="even">
-<td>The Name of the Wind</td>
-<td>Patrick Rothfuss</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Feb ’26</td>
-</tr>
-<tr class="odd">
-<td>Quer pasticciaccio brutto de via Merulana</td>
-<td>Carlo Emilio Gadda</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’26</td>
-</tr>
-<tr class="even">
-<td>The Three-Body Problem</td>
-<td>Liu Cixin</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’26</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<table class="table-striped table-hover caption-top table">
-<colgroup>
-<col style="width: 46%">
-<col style="width: 27%">
-<col style="width: 9%">
-<col style="width: 18%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Author</th>
-<th>Status</th>
-<th>Compl. on</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Frankenstein</td>
-<td>Mary Shelley</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jul ’25</td>
-</tr>
-<tr class="even">
-<td>The Chimes</td>
-<td>Charles Dickens</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jul ’25</td>
-</tr>
-<tr class="odd">
-<td>The Cricket on the Hearth</td>
-<td>Charles Dickens</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jul ’25</td>
-</tr>
-<tr class="even">
-<td>The 39 Steps</td>
-<td>John Buchan</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jul ’25</td>
-</tr>
-<tr class="odd">
-<td>Essays in Love</td>
-<td>Alain de Botton</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jun ’25</td>
-</tr>
-<tr class="even">
-<td>Canne al vento</td>
-<td>Grazia Deledda</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jun ’25</td>
-</tr>
-<tr class="odd">
-<td>The Bell Jar</td>
-<td>Sylvia Plath</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jun ’25</td>
-</tr>
-<tr class="even">
-<td>Lincoln in the Bardo</td>
-<td>George Saunders</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jun ’25</td>
-</tr>
-<tr class="odd">
-<td>Babel</td>
-<td>R. F. Kuang</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jun ’25</td>
-</tr>
-<tr class="even">
-<td>A Shining</td>
-<td>Jon Fosse</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’25</td>
-</tr>
-<tr class="odd">
-<td>It Lasts Forever and Then It’s Over</td>
-<td>Anne de Marcken</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’25</td>
-</tr>
-<tr class="even">
-<td>Charlotte’s Web</td>
-<td>Elwyn B. White</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’25</td>
-</tr>
-<tr class="odd">
-<td>Perfection</td>
-<td>Vincenzo Latronico</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’25</td>
-</tr>
-<tr class="even">
-<td>This Is How You Lose the Time War</td>
-<td>Amal El-Mohtar and Max Gladstone</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’25</td>
-</tr>
-<tr class="odd">
-<td>Circe</td>
-<td>Madeline Miller</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’25</td>
-</tr>
-<tr class="even">
-<td>Prophet Song</td>
-<td>Paul Lynch</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’25</td>
-</tr>
-<tr class="odd">
-<td>The Golden Enclaves</td>
-<td>Naomi Novik</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’25</td>
-</tr>
-<tr class="even">
-<td>The Last Graduate</td>
-<td>Naomi Novik</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’25</td>
-</tr>
-<tr class="odd">
-<td>A Deadly Education</td>
-<td>Naomi Novik</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’25</td>
-</tr>
-<tr class="even">
-<td>Foundation</td>
-<td>Isaac Asimov</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
-</tr>
-<tr class="odd">
-<td>A Wizard of Earthsea</td>
-<td>Ursula K. Le Guin</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
-</tr>
-<tr class="even">
-<td>Il Barone Rampante</td>
-<td>Italo Calvino</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
-</tr>
-<tr class="odd">
-<td>Brave New World</td>
-<td>Aldous Huxley</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
-</tr>
-<tr class="even">
-<td>Klara and the Sun</td>
-<td>Kazuo Ishiguro</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’25</td>
-</tr>
-<tr class="odd">
-<td>Wolf Hall</td>
-<td>Hilary Mantel</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Feb ’25</td>
-</tr>
-<tr class="even">
-<td>Dune</td>
-<td>Frank Herbert</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Feb ’25</td>
-</tr>
-<tr class="odd">
-<td>O Natal de Poirot</td>
-<td>Agatha Christie</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’25</td>
-</tr>
-<tr class="even">
-<td>A noite das bruxas</td>
-<td>Agatha Christie</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’25</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2-B1, now C1) and my Portuguese (B1).</p>
-<table class="table-striped table-hover caption-top table">
-<colgroup>
-<col style="width: 46%">
-<col style="width: 27%">
-<col style="width: 9%">
-<col style="width: 18%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Author</th>
-<th>Status</th>
-<th>Compl. on</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Flights</td>
-<td>Olga Tokarczuk</td>
-<td><img src="../images/50.png" class="img-fluid" style="width:0.8cm"></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>I Know Why the Caged Bird Sings</td>
-<td>Maya Angelou</td>
-<td><img src="../images/50.png" class="img-fluid" style="width:0.8cm"></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Notes from Underground</td>
-<td>Fyodor Dostoevsky</td>
-<td><img src="../images/50.png" class="img-fluid" style="width:0.8cm"></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>The Call of the Wild</td>
-<td>Jack London</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Feb ’24</td>
-</tr>
-<tr class="odd">
-<td>Alice’s Adventures in Wonderland</td>
-<td>Lewis Carroll</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’24</td>
-</tr>
-<tr class="even">
-<td>The Metamorphosis</td>
-<td>Franz Kafka</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’24</td>
-</tr>
-<tr class="odd">
-<td>Bartleby, the Scrivaner</td>
-<td>Herman Melville</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’24</td>
-</tr>
-<tr class="even">
-<td>White Nights</td>
-<td>Fyodor Dostoevsky</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’24</td>
-</tr>
-<tr class="odd">
-<td>The Idiot</td>
-<td>Fyodor Dostoevsky</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jan ’24</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<table class="table-striped table-hover caption-top table">
-<colgroup>
-<col style="width: 46%">
-<col style="width: 27%">
-<col style="width: 9%">
-<col style="width: 18%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Author</th>
-<th>Status</th>
-<th>Compl. on</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il fu Mattia Pascal</td>
-<td>Luigi Pirandello</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Dec ’23</td>
-</tr>
-<tr class="even">
-<td>First Love</td>
-<td>Ivan Turgenev</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Dec ’23</td>
-</tr>
-<tr class="odd">
-<td>The Kreutzer Sonata</td>
-<td>Leo Tolstoy</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Dec ’23</td>
-</tr>
-<tr class="even">
-<td>The Strange Case of Dr.&nbsp;Jekyll and Mr.&nbsp;Hyde</td>
-<td>Robert L. Stevenson</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Dec ’23</td>
-</tr>
-<tr class="odd">
-<td>The Death of Ivan Ilyich</td>
-<td>Leo Tolstoy</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Dec ’23</td>
-</tr>
-<tr class="even">
-<td>Murtagh</td>
-<td>Cristopher Paolini</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Nov ’23</td>
-</tr>
-<tr class="odd">
-<td>Emma</td>
-<td>Jane Austen</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Nov ’23</td>
-</tr>
-<tr class="even">
-<td>Pride and Prejudice</td>
-<td>Jane Austen</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Nov ’23</td>
-</tr>
-<tr class="odd">
-<td>Persuasion</td>
-<td>Jane Austen</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Oct ’23</td>
-</tr>
-<tr class="even">
-<td>Uno, nessuno e centomila</td>
-<td>Luigi Pirandello</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Oct ’23</td>
-</tr>
-<tr class="odd">
-<td>Macbeth</td>
-<td>William Shakespeare</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Oct ’23</td>
-</tr>
-<tr class="even">
-<td>Sphere</td>
-<td>Michael Crichton</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Sep ’23</td>
-</tr>
-<tr class="odd">
-<td>The Buried Giant</td>
-<td>Kazuo Ishiguro</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Sep ’23</td>
-</tr>
-<tr class="even">
-<td>La Storia</td>
-<td>Elsa Morante</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Sep ’23</td>
-</tr>
-<tr class="odd">
-<td>Oedipus at Colonus</td>
-<td>Sophocles</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="even">
-<td>Baol</td>
-<td>Stefano Benni</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="odd">
-<td>Oedipus Rex</td>
-<td>Sophocles</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="even">
-<td>Pantera</td>
-<td>Stefano Benni</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="odd">
-<td>Blues in Sedici</td>
-<td>Stefano Benni</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="even">
-<td>The Pastures of Heaven</td>
-<td>John Steinbeck</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Aug ’23</td>
-</tr>
-<tr class="odd">
-<td>The Remains of the Day</td>
-<td>Kazuo Ishiguro</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jul ’23</td>
-</tr>
-<tr class="even">
-<td>The Return of the King</td>
-<td>J.R.R. Tolkien</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jul ’23</td>
-</tr>
-<tr class="odd">
-<td>Swimming in the Dark</td>
-<td>Tomasz Jedrowski</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jul ’23</td>
-</tr>
-<tr class="even">
-<td>The Two Towers</td>
-<td>J.R.R. Tolkien</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jun ’23</td>
-</tr>
-<tr class="odd">
-<td>The Fellowship of the Ring</td>
-<td>J.R.R. Tolkien</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Jun ’23</td>
-</tr>
-<tr class="even">
-<td>Il Bar sotto il Mare</td>
-<td>Stefano Benni</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="odd">
-<td>2001: A Space Odyssey</td>
-<td>Arthur C. Clarke</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="even">
-<td>Never let Me go</td>
-<td>Kazuo Ishiguro</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="odd">
-<td>Nocturnes</td>
-<td>Kazuo Ishiguro</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="even">
-<td>The Time Machine</td>
-<td>H.G. Wells</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="odd">
-<td>A little Life</td>
-<td>Hanya Yanagihara</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>May ’23</td>
-</tr>
-<tr class="even">
-<td>A Room with a View</td>
-<td>E.M. Forster</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Apr ’23</td>
-</tr>
-<tr class="odd">
-<td>Drive your Plow over the Bones of the Dead</td>
-<td>Olga Tokarczuk</td>
-<td><img src="../images/100.png" class="img-fluid" style="width:0.8cm"></td>
-<td>Mar ’23</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<h3 class="anchored">
-<small>Next up (Suggestions appreciated) </small>
-</h3>
-<table class="table-striped table-hover caption-top table">
-<colgroup>
-<col style="width: 60%">
-<col style="width: 40%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Author</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Demon Copperhead</td>
-<td>Barbara Kingsolver</td>
-</tr>
-<tr class="even">
-<td>A Fine Balance</td>
-<td>Rohinton Mistry</td>
-</tr>
-<tr class="odd">
-<td>The Once and Future King</td>
-<td>T. H. White</td>
-</tr>
-<tr class="even">
-<td>The Found and the Lost</td>
-<td>Ursula K. Le Guin</td>
-</tr>
-<tr class="odd">
-<td>Il sistema periodico</td>
-<td>Primo Levi</td>
-</tr>
-<tr class="even">
-<td>Canne al vento</td>
-<td>Grazia Deledda</td>
-</tr>
-<tr class="odd">
-<td>Beloved</td>
-<td>Toni Morrison</td>
-</tr>
-<tr class="even">
-<td>Song of Solomon</td>
-<td>Toni Morrison</td>
-</tr>
-<tr class="odd">
-<td>La luna e i falò</td>
-<td>Cesare Pavese</td>
-</tr>
-<tr class="even">
-<td>Orlando</td>
-<td>Virginia Woolf</td>
-</tr>
-<tr class="odd">
-<td>Heart of Darkness</td>
-<td>Joseph Conrad</td>
-</tr>
-<tr class="even">
-<td>Adventures of Huckleberry Finn</td>
-<td>Mark Twain</td>
-</tr>
-<tr class="odd">
-<td>Lolita</td>
-<td>Vladimir Nabokov</td>
-</tr>
-<tr class="even">
-<td>I Am a Cat</td>
-<td>Soseki Natsume</td>
-</tr>
-<tr class="odd">
-<td>Three Men in a Boat</td>
-<td>Jerome K. Jerome</td>
-</tr>
-</tbody>
-</table>
+
 
 
 </section>

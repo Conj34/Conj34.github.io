@@ -1,151 +1,24 @@
 ---
-title: "Miscellanea"
+title: "Books"
+subtitle: "What I'm reading, and what I've read since 2023."
 format: html
+listing:
+  - id: shelf
+    contents: books.yml
+    template: books.ejs
+    sort: false
+  - id: queue
+    contents: queue.yml
+    template: queue.ejs
+    sort: false
 ---
 
-::: column-margin
-{{< include /support/_contact.qmd >}}
+I read in English, Italian and Spanish (and, slowly, other languages). I have a soft spot for Russian short stories, which I am happy to read in translation, and I am part of a book club, currently working through Raymond Chandler. [This list](https://thegreatestbooks.org) is a great place to find your next read (I also like [my own analysis of it](../Learning/Python/Useful/Greatest_authors.qmd)), and I have used [Audible](https://www.audible.co.uk) a lot.
+
+::: {#shelf}
 :::
 
+## Next up <small>suggestions appreciated</small>
 
-Amongst the things I like: books. Two of my favourite songs and quotes rotate on the [homepage](../index.qmd).
-
-## Books
-
-I like reading books, in English, Italian and Spanish (and, slowly, other languages). I have a soft spot for Russian short stories, which I am happy to read in translation, and I am part of a book club, currently working through Raymond Chandler. [This](https://thegreatestbooks.org) is a great website to find your next read (I also like [my own analysis of this list](../Learning/Python/Useful/Greatest_authors.qmd)). I have used the platform [Audible](https://www.audible.co.uk) a lot.
-
-::: panel-tabset
-### Read in 2026
-
-| Title | Author | Status | Compl. on |
-|-----------------|-----------------|--------------------|-----------------|
-| Staring at the Sun | Irvin D. Yalom | ![](../images/50.png){width="0.8cm"} |  |
-| Il Sistema Periodico | Primo Levi | ![](../images/100.png){width="0.8cm"} | Apr '26 |
-| Dune | Frank Herbert | ![](../images/100.png){width="0.8cm"} | Apr '26 |
-| The Sword of Shannara | Terry Brooks | ![](../images/100.png){width="0.8cm"} | Apr '26 |
-| To Kill a Mockingbird | Harper Lee | ![](../images/100.png){width="0.8cm"} | Mar '26 |
-| Rebecca | Daphne du Maurier | ![](../images/100.png){width="0.8cm"} | Mar '26 |
-| A Connecticut Yankee in King Arthur's Court | Mark Twain | ![](../images/100.png){width="0.8cm"} | Mar '26 |
-| A Tale of Love and Darkness | Amos Oz | ![](../images/100.png){width="0.8cm"} | Mar '26 |
-| Uprooted | Naomi Novik | ![](../images/100.png){width="0.8cm"} | Feb '26 |
-| The Name of the Wind | Patrick Rothfuss | ![](../images/100.png){width="0.8cm"} | Feb '26 |
-| Quer pasticciaccio brutto de via Merulana | Carlo Emilio Gadda | ![](../images/100.png){width="0.8cm"} | Jan '26 |
-| The Three-Body Problem | Liu Cixin | ![](../images/100.png){width="0.8cm"} | Jan '26 |
-
-: {.striped .hover tbl-colwidths="\[50,30,10, 20\]"}
-
-### Read in 2025
-
-| Title | Author | Status | Compl. on |
-|-----------------|-----------------|--------------------|-----------------|
-| Frankenstein | Mary Shelley | ![](../images/100.png){width="0.8cm"} | Jul '25 |
-| The Chimes | Charles Dickens | ![](../images/100.png){width="0.8cm"} | Jul '25 |
-| The Cricket on the Hearth | Charles Dickens | ![](../images/100.png){width="0.8cm"} | Jul '25 |
-| The 39 Steps | John Buchan | ![](../images/100.png){width="0.8cm"} | Jul '25 |
-| Essays in Love | Alain de Botton | ![](../images/100.png){width="0.8cm"} | Jun '25 |
-| Canne al vento | Grazia Deledda | ![](../images/100.png){width="0.8cm"} | Jun '25 |
-| The Bell Jar | Sylvia Plath | ![](../images/100.png){width="0.8cm"} | Jun '25 |
-| Lincoln in the Bardo | George Saunders | ![](../images/100.png){width="0.8cm"} | Jun '25 |
-| Babel | R. F. Kuang | ![](../images/100.png){width="0.8cm"} | Jun '25 |
-| A Shining | Jon Fosse | ![](../images/100.png){width="0.8cm"} | May '25 |
-| It Lasts Forever and Then It's Over | Anne de Marcken | ![](../images/100.png){width="0.8cm"} | May '25 |
-| Charlotte's Web | Elwyn B. White | ![](../images/100.png){width="0.8cm"} | May '25 |
-| Perfection | Vincenzo Latronico | ![](../images/100.png){width="0.8cm"} | May '25 |
-| This Is How You Lose the Time War | Amal El-Mohtar and Max Gladstone | ![](../images/100.png){width="0.8cm"} | Apr '25 |
-| Circe | Madeline Miller | ![](../images/100.png){width="0.8cm"} | Apr '25 |
-| Prophet Song | Paul Lynch | ![](../images/100.png){width="0.8cm"} | Apr '25 |
-| The Golden Enclaves | Naomi Novik | ![](../images/100.png){width="0.8cm"} | Apr '25 |
-| The Last Graduate | Naomi Novik | ![](../images/100.png){width="0.8cm"} | Apr '25 |
-| A Deadly Education | Naomi Novik | ![](../images/100.png){width="0.8cm"} | Apr '25 |
-| Foundation | Isaac Asimov | ![](../images/100.png){width="0.8cm"} | Mar '25 |
-| A Wizard of Earthsea | Ursula K. Le Guin | ![](../images/100.png){width="0.8cm"} | Mar '25 |
-| Il Barone Rampante | Italo Calvino | ![](../images/100.png){width="0.8cm"} | Mar '25 |
-| Brave New World | Aldous Huxley | ![](../images/100.png){width="0.8cm"} | Mar '25 |
-| Klara and the Sun | Kazuo Ishiguro | ![](../images/100.png){width="0.8cm"} | Mar '25 |
-| Wolf Hall | Hilary Mantel | ![](../images/100.png){width="0.8cm"} | Feb '25 |
-| Dune | Frank Herbert | ![](../images/100.png){width="0.8cm"} | Feb '25 |
-| O Natal de Poirot | Agatha Christie | ![](../images/100.png){width="0.8cm"} | Jan '25 |
-| A noite das bruxas | Agatha Christie | ![](../images/100.png){width="0.8cm"} | Jan '25 |
-
-: {.striped .hover tbl-colwidths="\[50,30,10, 20\]"}
-
-### Read in 2024
-
-I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2-B1, now C1) and my Portuguese (B1).
-
-| Title | Author | Status | Compl. on |
-|-----------------|-----------------|--------------------|-----------------|
-| Flights | Olga Tokarczuk | ![](../images/50.png){width="0.8cm"} |  |
-| I Know Why the Caged Bird Sings | Maya Angelou | ![](../images/50.png){width="0.8cm"} |  |
-| Notes from Underground | Fyodor Dostoevsky | ![](../images/50.png){width="0.8cm"} |  |
-| The Call of the Wild | Jack London | ![](../images/100.png){width="0.8cm"} | Feb '24 |
-| Alice's Adventures in Wonderland | Lewis Carroll | ![](../images/100.png){width="0.8cm"} | Jan '24 |
-| The Metamorphosis | Franz Kafka | ![](../images/100.png){width="0.8cm"} | Jan '24 |
-| Bartleby, the Scrivaner | Herman Melville | ![](../images/100.png){width="0.8cm"} | Jan '24 |
-| White Nights | Fyodor Dostoevsky | ![](../images/100.png){width="0.8cm"} | Jan '24 |
-| The Idiot | Fyodor Dostoevsky | ![](../images/100.png){width="0.8cm"} | Jan '24 |
-
-: {.striped .hover tbl-colwidths="\[50,30,10, 20\]"}
-
-### Read in 2023
-
-| Title | Author | Status | Compl. on |
-|-----------------|-----------------|--------------------|-----------------|
-| Il fu Mattia Pascal | Luigi Pirandello | ![](../images/100.png){width="0.8cm"} | Dec '23 |
-| First Love | Ivan Turgenev | ![](../images/100.png){width="0.8cm"} | Dec '23 |
-| The Kreutzer Sonata | Leo Tolstoy | ![](../images/100.png){width="0.8cm"} | Dec '23 |
-| The Strange Case of Dr. Jekyll and Mr. Hyde | Robert L. Stevenson | ![](../images/100.png){width="0.8cm"} | Dec '23 |
-| The Death of Ivan Ilyich | Leo Tolstoy | ![](../images/100.png){width="0.8cm"} | Dec '23 |
-| Murtagh | Cristopher Paolini | ![](../images/100.png){width="0.8cm"} | Nov '23 |
-| Emma | Jane Austen | ![](../images/100.png){width="0.8cm"} | Nov '23 |
-| Pride and Prejudice | Jane Austen | ![](../images/100.png){width="0.8cm"} | Nov '23 |
-| Persuasion | Jane Austen | ![](../images/100.png){width="0.8cm"} | Oct '23 |
-| Uno, nessuno e centomila | Luigi Pirandello | ![](../images/100.png){width="0.8cm"} | Oct '23 |
-| Macbeth | William Shakespeare | ![](../images/100.png){width="0.8cm"} | Oct '23 |
-| Sphere | Michael Crichton | ![](../images/100.png){width="0.8cm"} | Sep '23 |
-| The Buried Giant | Kazuo Ishiguro | ![](../images/100.png){width="0.8cm"} | Sep '23 |
-| La Storia | Elsa Morante | ![](../images/100.png){width="0.8cm"} | Sep '23 |
-| Oedipus at Colonus | Sophocles | ![](../images/100.png){width="0.8cm"} | Aug '23 |
-| Baol | Stefano Benni | ![](../images/100.png){width="0.8cm"} | Aug '23 |
-| Oedipus Rex | Sophocles | ![](../images/100.png){width="0.8cm"} | Aug '23 |
-| Pantera | Stefano Benni | ![](../images/100.png){width="0.8cm"} | Aug '23 |
-| Blues in Sedici | Stefano Benni | ![](../images/100.png){width="0.8cm"} | Aug '23 |
-| The Pastures of Heaven | John Steinbeck | ![](../images/100.png){width="0.8cm"} | Aug '23 |
-| The Remains of the Day | Kazuo Ishiguro | ![](../images/100.png){width="0.8cm"} | Jul '23 |
-| The Return of the King | J.R.R. Tolkien | ![](../images/100.png){width="0.8cm"} | Jul '23 |
-| Swimming in the Dark | Tomasz Jedrowski | ![](../images/100.png){width="0.8cm"} | Jul '23 |
-| The Two Towers | J.R.R. Tolkien | ![](../images/100.png){width="0.8cm"} | Jun '23 |
-| The Fellowship of the Ring | J.R.R. Tolkien | ![](../images/100.png){width="0.8cm"} | Jun '23 |
-| Il Bar sotto il Mare | Stefano Benni | ![](../images/100.png){width="0.8cm"} | May '23 |
-| 2001: A Space Odyssey | Arthur C. Clarke | ![](../images/100.png){width="0.8cm"} | May '23 |
-| Never let Me go | Kazuo Ishiguro | ![](../images/100.png){width="0.8cm"} | May '23 |
-| Nocturnes | Kazuo Ishiguro | ![](../images/100.png){width="0.8cm"} | May '23 |
-| The Time Machine | H.G. Wells | ![](../images/100.png){width="0.8cm"} | May '23 |
-| A little Life | Hanya Yanagihara | ![](../images/100.png){width="0.8cm"} | May '23 |
-| A Room with a View | E.M. Forster | ![](../images/100.png){width="0.8cm"} | Apr '23 |
-| Drive your Plow over the Bones of the Dead | Olga Tokarczuk | ![](../images/100.png){width="0.8cm"} | Mar '23 |
-
-: {.striped .hover tbl-colwidths="\[50,30,10, 20\]"}
+::: {#queue}
 :::
-
-<h3><small>Next up (Suggestions appreciated) </small></h3>
-
-| Title                          | Author             |
-|--------------------------------|--------------------|
-| Demon Copperhead               | Barbara Kingsolver |
-| A Fine Balance                 | Rohinton Mistry    |
-| The Once and Future King       | T. H. White        |
-| The Found and the Lost         | Ursula K. Le Guin  |
-| Il sistema periodico           | Primo Levi         |
-| Canne al vento                 | Grazia Deledda     |
-| Beloved                        | Toni Morrison      |
-| Song of Solomon                | Toni Morrison      |
-| La luna e i falò               | Cesare Pavese      |
-| Orlando                        | Virginia Woolf     |
-| Heart of Darkness              | Joseph Conrad      |
-| Adventures of Huckleberry Finn | Mark Twain         |
-| Lolita                         | Vladimir Nabokov   |
-| I Am a Cat                     | Soseki Natsume     |
-| Three Men in a Boat            | Jerome K. Jerome   |
-
-: {.striped .hover tbl-colwidths="\[60,40\]"}

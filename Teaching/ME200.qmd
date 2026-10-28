@@ -3,8 +3,6 @@ title: "ME200 <small><small><small>(Computational Methods in Financial Mathemati
 format: html
 ---
 
-{{< include /support/_margins_Teaching.qmd >}}
-
 <h3>Course content <small><small><small>(Official)</small></small></small></h3>
 
 -   Methods for generating samples from a given probability distribution,

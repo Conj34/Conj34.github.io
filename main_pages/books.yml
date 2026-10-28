@@ -1,0 +1,490 @@
+# Books read, newest first within each year.
+# status: reading | read. finished: month you finished it.
+
+- title: "Staring at the Sun"
+  author: "Irvin D. Yalom"
+  year: 2026
+  status: reading
+
+- title: "Il Sistema Periodico"
+  author: "Primo Levi"
+  year: 2026
+  status: read
+  finished: "Apr '26"
+
+- title: "Dune"
+  author: "Frank Herbert"
+  year: 2026
+  status: read
+  finished: "Apr '26"
+
+- title: "The Sword of Shannara"
+  author: "Terry Brooks"
+  year: 2026
+  status: read
+  finished: "Apr '26"
+
+- title: "To Kill a Mockingbird"
+  author: "Harper Lee"
+  year: 2026
+  status: read
+  finished: "Mar '26"
+
+- title: "Rebecca"
+  author: "Daphne du Maurier"
+  year: 2026
+  status: read
+  finished: "Mar '26"
+
+- title: "A Connecticut Yankee in King Arthur's Court"
+  author: "Mark Twain"
+  year: 2026
+  status: read
+  finished: "Mar '26"
+
+- title: "A Tale of Love and Darkness"
+  author: "Amos Oz"
+  year: 2026
+  status: read
+  finished: "Mar '26"
+
+- title: "Uprooted"
+  author: "Naomi Novik"
+  year: 2026
+  status: read
+  finished: "Feb '26"
+
+- title: "The Name of the Wind"
+  author: "Patrick Rothfuss"
+  year: 2026
+  status: read
+  finished: "Feb '26"
+
+- title: "Quer pasticciaccio brutto de via Merulana"
+  author: "Carlo Emilio Gadda"
+  year: 2026
+  status: read
+  finished: "Jan '26"
+
+- title: "The Three-Body Problem"
+  author: "Liu Cixin"
+  year: 2026
+  status: read
+  finished: "Jan '26"
+
+- title: "Frankenstein"
+  author: "Mary Shelley"
+  year: 2025
+  status: read
+  finished: "Jul '25"
+
+- title: "The Chimes"
+  author: "Charles Dickens"
+  year: 2025
+  status: read
+  finished: "Jul '25"
+
+- title: "The Cricket on the Hearth"
+  author: "Charles Dickens"
+  year: 2025
+  status: read
+  finished: "Jul '25"
+
+- title: "The 39 Steps"
+  author: "John Buchan"
+  year: 2025
+  status: read
+  finished: "Jul '25"
+
+- title: "Essays in Love"
+  author: "Alain de Botton"
+  year: 2025
+  status: read
+  finished: "Jun '25"
+
+- title: "Canne al vento"
+  author: "Grazia Deledda"
+  year: 2025
+  status: read
+  finished: "Jun '25"
+
+- title: "The Bell Jar"
+  author: "Sylvia Plath"
+  year: 2025
+  status: read
+  finished: "Jun '25"
+
+- title: "Lincoln in the Bardo"
+  author: "George Saunders"
+  year: 2025
+  status: read
+  finished: "Jun '25"
+
+- title: "Babel"
+  author: "R. F. Kuang"
+  year: 2025
+  status: read
+  finished: "Jun '25"
+
+- title: "A Shining"
+  author: "Jon Fosse"
+  year: 2025
+  status: read
+  finished: "May '25"
+
+- title: "It Lasts Forever and Then It's Over"
+  author: "Anne de Marcken"
+  year: 2025
+  status: read
+  finished: "May '25"
+
+- title: "Charlotte's Web"
+  author: "Elwyn B. White"
+  year: 2025
+  status: read
+  finished: "May '25"
+
+- title: "Perfection"
+  author: "Vincenzo Latronico"
+  year: 2025
+  status: read
+  finished: "May '25"
+
+- title: "This Is How You Lose the Time War"
+  author: "Amal El-Mohtar and Max Gladstone"
+  year: 2025
+  status: read
+  finished: "Apr '25"
+
+- title: "Circe"
+  author: "Madeline Miller"
+  year: 2025
+  status: read
+  finished: "Apr '25"
+
+- title: "Prophet Song"
+  author: "Paul Lynch"
+  year: 2025
+  status: read
+  finished: "Apr '25"
+
+- title: "The Golden Enclaves"
+  author: "Naomi Novik"
+  year: 2025
+  status: read
+  finished: "Apr '25"
+
+- title: "The Last Graduate"
+  author: "Naomi Novik"
+  year: 2025
+  status: read
+  finished: "Apr '25"
+
+- title: "A Deadly Education"
+  author: "Naomi Novik"
+  year: 2025
+  status: read
+  finished: "Apr '25"
+
+- title: "Foundation"
+  author: "Isaac Asimov"
+  year: 2025
+  status: read
+  finished: "Mar '25"
+
+- title: "A Wizard of Earthsea"
+  author: "Ursula K. Le Guin"
+  year: 2025
+  status: read
+  finished: "Mar '25"
+
+- title: "Il Barone Rampante"
+  author: "Italo Calvino"
+  year: 2025
+  status: read
+  finished: "Mar '25"
+
+- title: "Brave New World"
+  author: "Aldous Huxley"
+  year: 2025
+  status: read
+  finished: "Mar '25"
+
+- title: "Klara and the Sun"
+  author: "Kazuo Ishiguro"
+  year: 2025
+  status: read
+  finished: "Mar '25"
+
+- title: "Wolf Hall"
+  author: "Hilary Mantel"
+  year: 2025
+  status: read
+  finished: "Feb '25"
+
+- title: "Dune"
+  author: "Frank Herbert"
+  year: 2025
+  status: read
+  finished: "Feb '25"
+
+- title: "O Natal de Poirot"
+  author: "Agatha Christie"
+  year: 2025
+  status: read
+  finished: "Jan '25"
+
+- title: "A noite das bruxas"
+  author: "Agatha Christie"
+  year: 2025
+  status: read
+  finished: "Jan '25"
+
+- title: "Flights"
+  author: "Olga Tokarczuk"
+  year: 2024
+  status: reading
+
+- title: "I Know Why the Caged Bird Sings"
+  author: "Maya Angelou"
+  year: 2024
+  status: reading
+
+- title: "Notes from Underground"
+  author: "Fyodor Dostoevsky"
+  year: 2024
+  status: reading
+
+- title: "The Call of the Wild"
+  author: "Jack London"
+  year: 2024
+  status: read
+  finished: "Feb '24"
+
+- title: "Alice's Adventures in Wonderland"
+  author: "Lewis Carroll"
+  year: 2024
+  status: read
+  finished: "Jan '24"
+
+- title: "The Metamorphosis"
+  author: "Franz Kafka"
+  year: 2024
+  status: read
+  finished: "Jan '24"
+
+- title: "Bartleby, the Scrivaner"
+  author: "Herman Melville"
+  year: 2024
+  status: read
+  finished: "Jan '24"
+
+- title: "White Nights"
+  author: "Fyodor Dostoevsky"
+  year: 2024
+  status: read
+  finished: "Jan '24"
+
+- title: "The Idiot"
+  author: "Fyodor Dostoevsky"
+  year: 2024
+  status: read
+  finished: "Jan '24"
+
+- title: "Il fu Mattia Pascal"
+  author: "Luigi Pirandello"
+  year: 2023
+  status: read
+  finished: "Dec '23"
+
+- title: "First Love"
+  author: "Ivan Turgenev"
+  year: 2023
+  status: read
+  finished: "Dec '23"
+
+- title: "The Kreutzer Sonata"
+  author: "Leo Tolstoy"
+  year: 2023
+  status: read
+  finished: "Dec '23"
+
+- title: "The Strange Case of Dr. Jekyll and Mr. Hyde"
+  author: "Robert L. Stevenson"
+  year: 2023
+  status: read
+  finished: "Dec '23"
+
+- title: "The Death of Ivan Ilyich"
+  author: "Leo Tolstoy"
+  year: 2023
+  status: read
+  finished: "Dec '23"
+
+- title: "Murtagh"
+  author: "Cristopher Paolini"
+  year: 2023
+  status: read
+  finished: "Nov '23"
+
+- title: "Emma"
+  author: "Jane Austen"
+  year: 2023
+  status: read
+  finished: "Nov '23"
+
+- title: "Pride and Prejudice"
+  author: "Jane Austen"
+  year: 2023
+  status: read
+  finished: "Nov '23"
+
+- title: "Persuasion"
+  author: "Jane Austen"
+  year: 2023
+  status: read
+  finished: "Oct '23"
+
+- title: "Uno, nessuno e centomila"
+  author: "Luigi Pirandello"
+  year: 2023
+  status: read
+  finished: "Oct '23"
+
+- title: "Macbeth"
+  author: "William Shakespeare"
+  year: 2023
+  status: read
+  finished: "Oct '23"
+
+- title: "Sphere"
+  author: "Michael Crichton"
+  year: 2023
+  status: read
+  finished: "Sep '23"
+
+- title: "The Buried Giant"
+  author: "Kazuo Ishiguro"
+  year: 2023
+  status: read
+  finished: "Sep '23"
+
+- title: "La Storia"
+  author: "Elsa Morante"
+  year: 2023
+  status: read
+  finished: "Sep '23"
+
+- title: "Oedipus at Colonus"
+  author: "Sophocles"
+  year: 2023
+  status: read
+  finished: "Aug '23"
+
+- title: "Baol"
+  author: "Stefano Benni"
+  year: 2023
+  status: read
+  finished: "Aug '23"
+
+- title: "Oedipus Rex"
+  author: "Sophocles"
+  year: 2023
+  status: read
+  finished: "Aug '23"
+
+- title: "Pantera"
+  author: "Stefano Benni"
+  year: 2023
+  status: read
+  finished: "Aug '23"
+
+- title: "Blues in Sedici"
+  author: "Stefano Benni"
+  year: 2023
+  status: read
+  finished: "Aug '23"
+
+- title: "The Pastures of Heaven"
+  author: "John Steinbeck"
+  year: 2023
+  status: read
+  finished: "Aug '23"
+
+- title: "The Remains of the Day"
+  author: "Kazuo Ishiguro"
+  year: 2023
+  status: read
+  finished: "Jul '23"
+
+- title: "The Return of the King"
+  author: "J.R.R. Tolkien"
+  year: 2023
+  status: read
+  finished: "Jul '23"
+
+- title: "Swimming in the Dark"
+  author: "Tomasz Jedrowski"
+  year: 2023
+  status: read
+  finished: "Jul '23"
+
+- title: "The Two Towers"
+  author: "J.R.R. Tolkien"
+  year: 2023
+  status: read
+  finished: "Jun '23"
+
+- title: "The Fellowship of the Ring"
+  author: "J.R.R. Tolkien"
+  year: 2023
+  status: read
+  finished: "Jun '23"
+
+- title: "Il Bar sotto il Mare"
+  author: "Stefano Benni"
+  year: 2023
+  status: read
+  finished: "May '23"
+
+- title: "2001: A Space Odyssey"
+  author: "Arthur C. Clarke"
+  year: 2023
+  status: read
+  finished: "May '23"
+
+- title: "Never let Me go"
+  author: "Kazuo Ishiguro"
+  year: 2023
+  status: read
+  finished: "May '23"
+
+- title: "Nocturnes"
+  author: "Kazuo Ishiguro"
+  year: 2023
+  status: read
+  finished: "May '23"
+
+- title: "The Time Machine"
+  author: "H.G. Wells"
+  year: 2023
+  status: read
+  finished: "May '23"
+
+- title: "A little Life"
+  author: "Hanya Yanagihara"
+  year: 2023
+  status: read
+  finished: "May '23"
+
+- title: "A Room with a View"
+  author: "E.M. Forster"
+  year: 2023
+  status: read
+  finished: "Apr '23"
+
+- title: "Drive your Plow over the Bones of the Dead"
+  author: "Olga Tokarczuk"
+  year: 2023
+  status: read
+  finished: "Mar '23"

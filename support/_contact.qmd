@@ -1,8 +1,0 @@
-::: callout-note
-## Contact
-
--   Name: Domenico Mergoni
--   Email: domenico.mergoni -at- cunef.edu
--   Work: [CUNEF Universidad](https://www.cunef.edu), Madrid
--   Also: Visiting Fellow, [London School of Economics](https://www.lse.ac.uk/people/dr-domenico-mergoni)
-:::

@@ -1,3 +1,0 @@
-::: column-margin
-{{< include /support/_contact.qmd >}}
-:::

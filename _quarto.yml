@@ -60,7 +60,7 @@ format:
       light: [cosmo, theme/light.scss]
       dark: [cosmo, theme/dark.scss]
     css: styles.css
-    toc: true
+    toc: false
     include-after-body: theme/footer.html
     respect-user-color-scheme: true
 
