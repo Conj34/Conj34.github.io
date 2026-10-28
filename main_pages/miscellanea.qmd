@@ -1,8 +1,6 @@
 ---
 title: "Miscellanea"
 format: html
-aliases:
-  - /Learning/Learning.html
 ---
 
 ::: column-margin

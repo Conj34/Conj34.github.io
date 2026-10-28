@@ -26,6 +26,7 @@ website:
         href: main_pages/miscellanea.qmd
         contents:
           - section: "Code and notes"
+            href: main_pages/code-notes.qmd
             contents:
               - href: Learning/Python/Useful/Greatest_authors.qmd
                 text: "Greatest Authors"
