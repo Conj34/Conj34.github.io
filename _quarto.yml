@@ -15,38 +15,27 @@ website:
         text: Homepage
       - href: Teaching/Teaching.qmd
         text: Teaching
-      - section: "Learning"
-        href: Learning/Learning.qmd
+      - section: "Research"
+        href: Research/research.qmd
         contents:
-          - section: "Python"
-            contents:
-            - section: "Research"
-              contents:
-              - href: Research/SBRD.ipynb
-                text: "SBRD in Random Games"
-            - section: "Useful"
-              contents:
-              - href: Learning/Python/Useful/Arxiv.qmd
-                text: "Arxiv"
-              - href: Learning/Python/Useful/Greatest_authors.qmd
-                text: "Greatest Authors"
-            - section: "Codeforces"
-              contents:
-              - section: "Easy"
-                contents:
-                - href: Learning/Python/CF/Easy/1758A.qmd
-                  text: 1758A
-          - section: "Old Notes"
-            contents:
-            - href: Learning/Old_Work/OldWork.qmd
-              text: Old Work
-      - href: Research/research.qmd
-        text: Research
+          - href: Research/SBRD.ipynb
+            text: "SBRD in Random Games (code)"
       - href: main_pages/curriculum.qmd
         text: Curriculum Vitae
-      - href: main_pages/miscellanea.qmd
-        text: Miscellanea
-          
+      - section: "Miscellanea"
+        href: main_pages/miscellanea.qmd
+        contents:
+          - section: "Code and notes"
+            contents:
+              - href: Learning/Python/Useful/Greatest_authors.qmd
+                text: "Greatest Authors"
+              - href: Learning/Python/Useful/Arxiv.qmd
+                text: "Arxiv email"
+              - href: Learning/Python/CF/Easy/1758A.qmd
+                text: "Codeforces 1758A"
+              - href: Learning/Old_Work/OldWork.qmd
+                text: "University notes"
+
   navbar:
     logo: images/logo.png
     left:

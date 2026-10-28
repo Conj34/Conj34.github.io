@@ -3,9 +3,23 @@ title: "Teaching"
 format: html
 ---
 
-These pages contain some of the material I used to aid my teaching during my years at LSE. Some of the material I created myself, some was given by the various lecturers of the courses, some I found online and I propose here again in a selected format.
+{{< include /support/_margins_Teaching.qmd >}}
 
-For a quick overview of my teaching, you can consult the following table.
+## Current teaching
+
+Since September 2026 I teach at CUNEF Universidad in Madrid.
+
+| Course | Programme | Year(s) | Institution | Notes |
+|---------------|---------------|---------------|---------------|---------------|
+| Machine Learning | BSc Economics (group G42) | 2026/27 | CUNEF | Parallel section, coordinated by Ricardo Queralt |
+
+: Current courses {.striped .hover tbl-colwidths="\[25,25,15,10,25\]"}
+
+Course materials are shared with students through the university's learning platform.
+
+## Past teaching (LSE, 2020 to 2023)
+
+These pages contain some of the material I used to aid my teaching during my years at LSE. Some of the material I created myself, some was given by the various lecturers of the courses, and some I found online and propose here again in a selected format.
 
 | Code | Name | Year(s) | Department | Main Lecturer |
 |---------------|---------------|---------------|---------------|---------------|
@@ -19,6 +33,6 @@ For a quick overview of my teaching, you can consult the following table.
 | [FM250](FM250.qmd) | Finance | 2023 | Finance | Ashwini Agrawal |
 | [PR](Pre-sessionals.qmd) | MiM/GMiM pre-sessionals | 2022; 23 | Manag. | Myself |
 
-: Courses taught {.striped .hover tbl-colwidths="\[10,40,20,10,20\]"}
+: Courses taught at LSE {.striped .hover tbl-colwidths="\[10,40,20,10,20\]"}
 
-For privacy reasons, I won't add my students' feedbacks in this page. If you are interested in additional information about my teaching, please contact me.
+For privacy reasons, I won't add my students' feedback to this page. If you are interested in additional information about my teaching, please contact me.

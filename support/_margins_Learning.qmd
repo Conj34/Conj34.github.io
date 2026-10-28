@@ -1,9 +1,3 @@
 ::: column-margin
-::: callout-note
-## Contact
-
--   Name: Domenico Mergoni
--   Email: d.mergoni -at- lse.ac.uk
--   Work: [London School of Economics](https://www.lse.ac.uk/mathematics)
-:::
+{{< include /support/_contact.qmd >}}
 :::

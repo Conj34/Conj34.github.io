@@ -4,13 +4,7 @@ format: html
 ---
 
 ::: column-margin
-::: callout-note
-## Contact
-
--   Name: Domenico Mergoni
--   Email: d.mergoni -at- lse.ac.uk
--   Work: [London School of Economics](https://www.lse.ac.uk/mathematics)
-:::
+{{< include /support/_contact.qmd >}}
 :::
 
 Relevant documents:
@@ -21,11 +15,7 @@ Relevant documents:
 
 -   Normal [CV](../Documents_files/Other/CV.pdf).
 
-    ```{=html}
-    <style>
-    .mermaid svg { height: auto; }
-    </style>
-    ```
+In short: BSc in Pisa, MSc at ETH Zurich, PhD at the London School of Economics (followed by a Visiting Fellowship there and a research internship at Amazon), and since September 2026 faculty at CUNEF Universidad in Madrid.
 
 ```{mermaid}
 %%| fig-height: 6.5
@@ -42,7 +32,10 @@ gantt
     ETHZ - GPA 5.8/6: L1, 01-09-2018, 700d
     section PhD
     London School of Economics: L1, 01-09-2020, 1369d
-    LSE : L2, 01-01-2025, 180d
+    section Fellow
+    LSE Visiting Fellow : L1, 01-01-2025, 607d
+    section Faculty
+    CUNEF Universidad : L1, 01-09-2026, 302d
     section Intern
     AMZN : L1, 01-06-2024, 214d
 ```
