@@ -285,6 +285,6 @@ main small small small, #title-block-header small small small { font-size: 1em; 
 
 /* Hero portrait: kept at its natural 3:2 shape */
 .hero-id { display: flex; flex-direction: column; gap: 1.25rem; }
-.portrait { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1400 / 936; object-fit: cover; border-radius: 8px; }
+.portrait { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1616 / 1080; object-fit: cover; border-radius: 8px; }
 .hero h1 { margin-top: 0; }
 @media (max-width: 420px) { .hero-id { gap: 1rem; } }
