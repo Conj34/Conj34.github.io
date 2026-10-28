@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Homepage</title>
+<title>Domenico Mergoni Cecchelli</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -43,10 +43,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c74b1423cc01a68076a7ecdde4c355ae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-52ce72221270c7918b4c992b9eadf5e7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-c063222875065f9b4e226f525193f1ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-52ce72221270c7918b4c992b9eadf5e7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,7 +83,178 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -87,135 +262,65 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="" class="navbar-logo light-content">
-    <img src="./images/logo.png" alt="" class="navbar-logo dark-content">
+    <img src="./images/logo.png" alt="Graph logo" class="navbar-logo light-content">
+    <img src="./images/logo.png" alt="Graph logo" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Domenico Mergoni Cecchelli</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Domenico Mergoni Cecchelli</span>
-    </span>
+    <a class="nav-link" href="./Research/research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Teaching/Teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./main_pages/curriculum.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-miscellanea" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Miscellanea</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-miscellanea">    
+        <li>
+    <a class="dropdown-item" href="./main_pages/miscellanea.html">
+ <span class="dropdown-text">Books</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./main_pages/code-notes.html">
+ <span class="dropdown-text">Code and notes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Research/SBRD.html">
+ <span class="dropdown-text">SBRD code</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Homepage</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Homepage</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Teaching/Teaching.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Teaching</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./Research/research.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Research</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Research/SBRD.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SBRD in Random Games (code)</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./main_pages/curriculum.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Curriculum Vitae</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./main_pages/miscellanea.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Miscellanea</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./main_pages/code-notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Code and notes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Learning/Python/Useful/Greatest_authors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Greatest Authors</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Learning/Python/Useful/Arxiv.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Arxiv email</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Learning/Python/CF/Easy/1758A.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Codeforces 1758A</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Learning/Old_Work/OldWork.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">University notes</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -224,7 +329,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -236,75 +341,250 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Hey!<br>
-I am Domenico Mergoni Cecchelli. Born and raised in Italy, I’ve spent the last decade wandering around Europe doing mathematics: a BSc in Pisa, an MSc at ETH Zurich, and a PhD at the London School of Economics, where I am still a Visiting Fellow. Since September 2026 I am also a professor at <a href="https://www.cunef.edu">CUNEF Universidad</a> in Madrid, where I teach Machine Learning to Economics students.</p>
-<p>My areas of interest are Graph Theory and Learning in Games: on one side, extremal and probabilistic questions about graphs and hypergraphs; on the other, what happens when learning algorithms (best-response dynamics, no-regret learners, reinforcement learning) play games against each other. You can find more about my work <a href="./Research/research.html">here</a>.</p>
+<style>#title-block-header { display: none; }</style>
+<div class="home">
+<section class="hero">
+  <div class="hero-id">
+    <div class="photo-slot" role="img" aria-label="Photo placeholder">Photo</div>
+    <div>
+      <h1>Domenico Mergoni Cecchelli</h1>
+      <p class="lede">Mathematician working between graph theory and learning in games.</p>
+      <ul class="affils">
+        <li>Professor, <a href="https://www.cunef.edu">CUNEF Universidad</a>, Madrid</li>
+        <li>Visiting Fellow, <a href="https://www.lse.ac.uk/mathematics">London School of Economics</a></li>
+      </ul>
+      <div class="links">
+        <span class="email" title="Email">domenico.mergoni -at- cunef.edu</span>
+        <a href="https://github.com/Conj34"><i class="bi bi-github" aria-hidden="true"></i>GitHub</a>
+        <a href="https://arxiv.org/search/?searchtype=author&amp;query=Mergoni">arXiv</a>
+        <a href="main_pages/curriculum.html">CV</a>
+        <!-- TODO: add Google Scholar and ORCID links here -->
+      </div>
+    </div>
+  </div>
 
-<div class="no-row-height column-margin column-container"><div class="">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+  <figure class="game figure" aria-label="A colouring game: each vertex best-responds to its neighbours until no edge joins two vertices of the same colour.">
+    <canvas id="colouring-game"></canvas>
+    <figcaption class="game-caption">
+      <span>Each vertex switches to the colour its neighbours use least. Red edges are conflicts. <span class="game-status" id="game-status"></span></span>
+      <button type="button" id="game-restart">New game</button>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="highlights" aria-label="Highlights">
+  <div class="topic-combinatorics">
+    <h2 class="anchored">Latest paper</h2>
+    <p><a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i1p21">Dirac's theorem for graphs of bounded bandwidth</a></p>
+    <p class="meta"><span class="dot"></span> Electronic Journal of Combinatorics, 2026</p>
+  </div>
+  <div>
+    <h2 class="anchored">Teaching</h2>
+    <p><a href="Teaching/Teaching.html">Machine Learning</a> for the BSc in Economics at CUNEF</p>
+    <p class="meta">2026/27</p>
+  </div>
+  <div>
+    <h2 class="anchored">Reading</h2>
+    <p><a href="main_pages/miscellanea.html">Staring at the Sun</a>, Irvin D. Yalom</p>
+    <p class="meta">and the rest of the shelf</p>
+  </div>
+</section>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Contact
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Name: Domenico Mergoni</li>
-<li>Email: domenico.mergoni -at- cunef.edu</li>
-<li>Work: <a href="https://www.cunef.edu">CUNEF Universidad</a>, Madrid</li>
-<li>Also: Visiting Fellow, <a href="https://www.lse.ac.uk/mathematics">London School of Economics</a></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Favourite quotes
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div id="quoteDisplay">
-</div>
-<center><button onclick="newQuote()">New Quote</button></center>
-<script src="javascripts/quotes.js"></script>
-</div>
-</div>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Songs I like
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div id="musicDisplay">
-</div>
-<center><button onclick="newMusic()">New Song</button></center>
-<script src="javascripts/music.js"></script>
-</div>
-</div>
-</div></div><p>Otherwise, please be welcome to look around. You’ll find the <a href="./Teaching/Teaching.html">teaching material</a> I prepared over the years, my <a href="./main_pages/curriculum.html">CV</a>, and some more personal details in <a href="./main_pages/miscellanea.html">Miscellanea</a>: what I am reading at the moment.</p>
-<p>Besides teaching and research, I am currently:</p>
+<div class="home-more">
+<section id="research-in-brief" class="level2">
+<h2 class="anchored" data-anchor-id="research-in-brief">Research in brief</h2>
+<p>On one side, extremal and probabilistic questions about graphs and hypergraphs: colourings, Ramsey numbers, embeddings, sparse regularity. On the other, what learning algorithms (best-response dynamics, no-regret learners, reinforcement learning) actually do when they play games against each other. The <a href="./Research/research.html">research page</a> has papers, talks and open projects; the <a href="./Teaching/Teaching.html">teaching page</a> collects course material.</p>
+</section>
+<section id="besides-research" class="level2">
+<h2 class="anchored" data-anchor-id="besides-research">Besides research</h2>
 <ul>
 <li>Leading a cross-field project for an EU proposal of new regulations regarding nutritional information on food packaging.</li>
 <li>Contributing to a project for Carbon Credit Assessment, in collaboration with a Swiss startup.</li>
 <li>Writing a cookbook with all my family’s traditional recipes.</li>
 <li>Training for the Barcelona marathon (March 2027).</li>
 </ul>
+</section>
+</div>
+<script>
+(function () {
+  var canvas = document.getElementById('colouring-game');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var statusEl = document.getElementById('game-status');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nodes = [], edges = [], adj = [], timer = null, moves = 0, pulse = -1;
+
+  function css(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#888'; }
+  function palette() { return [css('--dm-teal'), css('--dm-plum'), css('--dm-ochre')]; }
+
+  function build() {
+    nodes = []; edges = [];
+    var n = 22, tries = 0;
+    while (nodes.length < n && tries < 4000) {
+      tries++;
+      var p = { x: 0.06 + Math.random() * 0.88, y: 0.08 + Math.random() * 0.84 };
+      if (nodes.every(function (q) { return Math.hypot(p.x - q.x, p.y - q.y) > 0.15; })) {
+        p.hidden = Math.floor(Math.random() * 3);   // a proper 3-colouring exists by construction
+        nodes.push(p);
+      }
+    }
+    var seen = {};
+    nodes.forEach(function (p, i) {
+      var cand = nodes.map(function (q, j) { return { j: j, d: Math.hypot(p.x - q.x, p.y - q.y) }; })
+        .filter(function (c) { return c.j !== i && nodes[c.j].hidden !== p.hidden && c.d < 0.32; })
+        .sort(function (a, b) { return a.d - b.d; }).slice(0, 3);
+      cand.forEach(function (c) {
+        var key = Math.min(i, c.j) + '-' + Math.max(i, c.j);
+        if (!seen[key]) { seen[key] = 1; edges.push([i, c.j]); }
+      });
+    });
+    adj = nodes.map(function () { return []; });
+    edges.forEach(function (e) { adj[e[0]].push(e[1]); adj[e[1]].push(e[0]); });
+  }
+
+  function shuffleColours() { nodes.forEach(function (p) { p.c = Math.floor(Math.random() * 3); }); moves = 0; }
+  function counts(i) { var k = [0, 0, 0]; adj[i].forEach(function (j) { k[nodes[j].c]++; }); return k; }
+  function bestResponse(i) {
+    var k = counts(i), best = Math.min.apply(null, k);
+    if (k[nodes[i].c] === best) return -1;            // already a best response
+    var opts = [0, 1, 2].filter(function (c) { return k[c] === best; });
+    return opts[Math.floor(Math.random() * opts.length)];
+  }
+  function conflicts() { return edges.filter(function (e) { return nodes[e[0]].c === nodes[e[1]].c; }).length; }
+
+  function size() {
+    var r = canvas.getBoundingClientRect(), d = window.devicePixelRatio || 1;
+    canvas.width = Math.round(r.width * d); canvas.height = Math.round(r.height * d);
+    ctx.setTransform(d, 0, 0, d, 0, 0);
+    draw();
+  }
+
+  function draw() {
+    var r = canvas.getBoundingClientRect(), w = r.width, h = r.height;
+    if (!w) return;
+    var cols = palette(), line = css('--dm-line'), bad = css('--dm-conflict'), bg = css('--dm-bg');
+    ctx.clearRect(0, 0, w, h);
+    edges.forEach(function (e) {
+      var a = nodes[e[0]], b = nodes[e[1]], clash = a.c === b.c;
+      ctx.beginPath(); ctx.moveTo(a.x * w, a.y * h); ctx.lineTo(b.x * w, b.y * h);
+      ctx.strokeStyle = clash ? bad : line; ctx.lineWidth = clash ? 2.2 : 1.4; ctx.stroke();
+    });
+    var rad = Math.max(6, Math.min(11, w / 45));
+    nodes.forEach(function (p, i) {
+      if (i === pulse) {
+        ctx.beginPath(); ctx.arc(p.x * w, p.y * h, rad + 6, 0, 2 * Math.PI);
+        ctx.strokeStyle = cols[p.c]; ctx.lineWidth = 1.5; ctx.stroke();
+      }
+      ctx.beginPath(); ctx.arc(p.x * w, p.y * h, rad, 0, 2 * Math.PI);
+      ctx.fillStyle = cols[p.c]; ctx.fill();
+      ctx.strokeStyle = bg; ctx.lineWidth = 2; ctx.stroke();
+    });
+    var c = conflicts();
+    if (statusEl) statusEl.textContent = c === 0
+      ? 'Proper colouring after ' + moves + ' moves.'
+      : (stuck() ? 'Stuck: an equilibrium with ' + c + ' conflict' + (c > 1 ? 's' : '') + '.' : c + ' conflict' + (c > 1 ? 's' : '') + '.');
+  }
+
+  function stuck() { for (var i = 0; i < nodes.length; i++) if (bestResponse(i) >= 0) return false; return true; }
+
+  function step() {
+    var unhappy = [];
+    nodes.forEach(function (p, i) { if (bestResponse(i) >= 0) unhappy.push(i); });
+    if (!unhappy.length) { pulse = -1; draw(); clearInterval(timer); timer = setTimeout(restart, 3500); return; }
+    var i = unhappy[Math.floor(Math.random() * unhappy.length)];
+    nodes[i].c = bestResponse(i); moves++; pulse = i; draw();
+  }
+
+  function restart(newGraph) {
+    clearInterval(timer); clearTimeout(timer);
+    if (newGraph || !nodes.length) build();
+    shuffleColours(); pulse = -1;
+    if (reduce) { var guard = 0; while (!stuck() && guard++ < 500) { var i = nodes.findIndex(function (p, k) { return bestResponse(k) >= 0; }); nodes[i].c = bestResponse(i); moves++; } draw(); return; }
+    draw();
+    timer = setInterval(step, 650);
+  }
+
+  document.getElementById('game-restart').addEventListener('click', function () { restart(true); });
+  canvas.addEventListener('click', function () { restart(true); });
+  if (window.ResizeObserver) new ResizeObserver(size).observe(canvas); else window.addEventListener('resize', size);
+  new MutationObserver(draw).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  restart(true); size();
+})();
+</script>
 
 
 
 </main> <!-- /main -->
+<div id="quoteDisplay" hidden=""></div>
+<div id="musicDisplay" hidden=""></div>
+<script>
+(function () {
+  var offsetMeta = document.querySelector('meta[name="quarto:offset"]');
+  var base = offsetMeta ? offsetMeta.getAttribute('content') : './';
+  var pending = 2;
+  function load(src) {
+    var s = document.createElement('script');
+    s.src = base + src;
+    s.onload = s.onerror = function () { if (--pending === 0) start(); };
+    document.body.appendChild(s);
+  }
+  function split(entry) {
+    var tmp = document.createElement('div');
+    var parts = entry.split(/<p>/i);
+    tmp.innerHTML = parts[0];
+    var text = tmp.textContent.replace(/\s+/g, ' ').trim();
+    tmp.innerHTML = parts.slice(1).join(' ');
+    var who = tmp.textContent.replace(/[-\s]+$/, '').replace(/^[-\s]+/, '').trim();
+    return { text: text, who: who };
+  }
+  function start() {
+    var el = document.getElementById('footer-line');
+    if (!el) return;
+    var pool = [];
+    if (typeof quotes !== 'undefined') quotes.forEach(function (q) {
+      var p = split(q); if (p.text.length <= 140) pool.push({ kind: 'quote', text: p.text, who: p.who });
+    });
+    if (typeof music !== 'undefined') music.forEach(function (m) {
+      var p = split(m); pool.push({ kind: 'song', text: p.text, who: p.who });
+    });
+    if (!pool.length) return;
+    var last = -1;
+    function show() {
+      var i;
+      do { i = Math.floor(Math.random() * pool.length); } while (pool.length > 1 && i === last);
+      last = i;
+      var item = pool[i];
+      el.innerHTML = '';
+      var lead = document.createElement('span');
+      lead.className = 'footer-kind';
+      lead.textContent = item.kind === 'song' ? 'Listening to' : 'Quote';
+      var body = document.createElement('span');
+      body.textContent = item.kind === 'song' ? item.text + ', ' + item.who : '“' + item.text + '” ' + item.who;
+      el.appendChild(lead); el.appendChild(body);
+    }
+    show();
+    el.addEventListener('click', show);
+    el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(); } });
+  }
+  load('javascripts/quotes.js');
+  load('javascripts/music.js');
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -376,7 +656,7 @@ I am Domenico Mergoni Cecchelli. Born and raised in Italy, I’ve spent the last
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/conj34\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -704,6 +984,19 @@ I am Domenico Mergoni Cecchelli. Born and raised in Italy, I’ve spent the last
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><span id="footer-line" class="footer-line" role="button" tabindex="0" title="Show another"></span></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>domenico.mergoni -at- cunef.edu</p>
+</div>
+  </div>
+</footer>
 
 
 

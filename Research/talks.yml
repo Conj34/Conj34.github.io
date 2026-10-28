@@ -1,0 +1,43 @@
+# One entry per talk; each occasion is one time it was given.
+
+- title: "Product-free subsets of $[n]$"
+  url: "../Documents_files/Presentations/Product_Schur_Triples___Slides.pdf"
+  occasions:
+    - { date: "Nov '25", event: "Coloquio de Matemática", place: "Uniandes, Bogotá" }
+    - { date: "Oct '23", event: "LSE Seminar", place: "London" }
+
+- title: "Partition Universality"
+  url: "../Documents_files/Presentations/Partit_uni.pdf"
+  occasions:
+    - { date: "Aug '23", event: "Eurocomb", place: "Prague" }
+
+- title: "The Ramsey numbers of $P_{3n}^2$ and $C_{3n}^2$"
+  url: "../Documents_files/Presentations/Ram_num.pdf"
+  occasions:
+    - { date: "Sep '23", event: "DMV (Invited speaker)", place: "Ilmenau" }
+    - { date: "Apr '23", event: "Invited seminar", place: "Prague" }
+    - { date: "Jul '22", event: "ICGT", place: "Montpellier" }
+    - { date: "Jul '22", event: "Invited seminar", place: "TU Hamburg" }
+
+- title: "Chromatic profile of $\\{C_3,\\dots,C_{2k-1}\\}$"
+  url: "../Documents_files/Presentations/3_chrom.pdf"
+  occasions:
+    - { date: "Mar '23", event: "PCC", place: "Birmingham" }
+    - { date: "Jul '22", event: "RSA", place: "Poznan" }
+    - { date: "Jul '22", event: "ICGT", place: "Montpellier" }
+    - { date: "Jul '22", event: "Invited seminar", place: "TU Hamburg" }
+
+- title: "About the Pentagon Conjecture"
+  url: "../Documents_files/Theses/MSc_pres.pdf"
+  occasions:
+    - { date: "Nov '20", event: "LSE Seminar", place: "London" }
+
+- title: "Minimal Ramsey Graphs for Ciclicity"
+  url: "../Documents_files/Presentations/Min_cicl.pdf"
+  occasions:
+    - { date: "May '19", event: "ETHZ Mittagsseminar", place: "Zurich" }
+
+- title: "Dimensione di Hausdorff del Moto Browniano"
+  url: "../Documents_files/Theses/BSc_Thesis.compr.pdf"
+  occasions:
+    - { date: "May '19", event: "BSc Defense", place: "Pisa" }

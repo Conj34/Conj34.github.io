@@ -1,0 +1,28 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Public+Sans:wght@400;500;600&display=swap');
+$font-family-sans-serif: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$headings-font-family: "Literata", Georgia, "Times New Roman", serif;
+$headings-font-weight: 600;
+$body-bg: #FFFFFF;
+$body-color: #1B2333;
+$link-color: #0E6F6E;
+$primary: #0E6F6E;
+$navbar-bg: #FFFFFF;
+$navbar-fg: #1B2333;
+$navbar-hl: #0E6F6E;
+$footer-bg: #FFFFFF;
+$footer-fg: #5B6475;
+$border-color: #E3E6EB;
+
+/*-- scss:rules --*/
+:root {
+  --dm-bg: #FFFFFF;
+  --dm-surface: #F4F6F8;
+  --dm-ink: #1B2333;
+  --dm-muted: #5B6475;
+  --dm-line: #E3E6EB;
+  --dm-teal: #0E6F6E;      /* combinatorics, vertex colour 1 */
+  --dm-plum: #8A3A6E;      /* games and learning, vertex colour 2 */
+  --dm-ochre: #9A6A00;     /* applied, vertex colour 3 */
+  --dm-conflict: #C2412D;
+}

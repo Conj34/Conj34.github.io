@@ -1,0 +1,29 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Public+Sans:wght@400;500;600&display=swap');
+$font-family-sans-serif: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$headings-font-family: "Literata", Georgia, "Times New Roman", serif;
+$headings-font-weight: 600;
+$body-bg: #121826;
+$body-color: #E4E8EF;
+$link-color: #5CC6C3;
+$primary: #5CC6C3;
+$navbar-bg: #121826;
+$navbar-fg: #E4E8EF;
+$navbar-hl: #5CC6C3;
+$footer-bg: #121826;
+$footer-fg: #9AA3B2;
+$border-color: #2A3447;
+$code-block-bg: #1A2132;
+
+/*-- scss:rules --*/
+:root {
+  --dm-bg: #121826;
+  --dm-surface: #1A2132;
+  --dm-ink: #E4E8EF;
+  --dm-muted: #9AA3B2;
+  --dm-line: #2A3447;
+  --dm-teal: #5CC6C3;
+  --dm-plum: #D884B9;
+  --dm-ochre: #E2B54A;
+  --dm-conflict: #F07A62;
+}

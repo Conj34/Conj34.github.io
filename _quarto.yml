@@ -6,47 +6,61 @@ execute:
 
 website:
   favicon: images/logo.png
-  title: ""
-  sidebar:
-    style: "docked"
-    search: false
-    contents:
-      - href: index.qmd
-        text: Homepage
-      - href: Teaching/Teaching.qmd
-        text: Teaching
-      - section: "Research"
-        href: Research/research.qmd
-        contents:
-          - href: Research/SBRD.ipynb
-            text: "SBRD in Random Games (code)"
-      - href: main_pages/curriculum.qmd
-        text: Curriculum Vitae
-      - section: "Miscellanea"
-        href: main_pages/miscellanea.qmd
-        contents:
-          - section: "Code and notes"
-            href: main_pages/code-notes.qmd
-            contents:
-              - href: Learning/Python/Useful/Greatest_authors.qmd
-                text: "Greatest Authors"
-              - href: Learning/Python/Useful/Arxiv.qmd
-                text: "Arxiv email"
-              - href: Learning/Python/CF/Easy/1758A.qmd
-                text: "Codeforces 1758A"
-              - href: Learning/Old_Work/OldWork.qmd
-                text: "University notes"
-
+  title: "Domenico Mergoni Cecchelli"
+  site-url: https://conj34.github.io
+  page-navigation: false
   navbar:
     logo: images/logo.png
-    left:
-      - text: Domenico Mergoni Cecchelli
+    logo-alt: "Graph logo"
+    search: false
+    right:
+      - href: Research/research.qmd
+        text: Research
+      - href: Teaching/Teaching.qmd
+        text: Teaching
+      - href: main_pages/curriculum.qmd
+        text: CV
+      - text: Miscellanea
+        menu:
+          - href: main_pages/miscellanea.qmd
+            text: Books
+          - href: main_pages/code-notes.qmd
+            text: Code and notes
+          - href: Research/SBRD.ipynb
+            text: "SBRD code"
+  sidebar:
+    - id: teaching
+      title: "Teaching"
+      style: "floating"
+      contents:
+        - href: Teaching/Teaching.qmd
+          text: Overview
+        - section: "LSE courses"
+          contents:
+            - Teaching/MA102_MA103.qmd
+            - Teaching/ME306.qmd
+            - Teaching/MA210.qmd
+            - Teaching/MA423.qmd
+            - Teaching/ME200.qmd
+            - Teaching/ST310.qmd
+            - Teaching/ST455.qmd
+            - Teaching/FM250.qmd
+            - Teaching/Pre-sessionals.qmd
+  page-footer:
+    left: |
+      <span id="footer-line" class="footer-line" role="button" tabindex="0" title="Show another"></span>
+    right: |
+      domenico.mergoni -at- cunef.edu
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: [cosmo, theme/light.scss]
+      dark: [cosmo, theme/dark.scss]
     css: styles.css
     toc: true
+    include-after-body: theme/footer.html
+    respect-user-color-scheme: true
 
 editor: visual
 

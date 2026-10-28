@@ -1,0 +1,105 @@
+# One entry per paper. Order here is the order on the page.
+# status: in-progress | submitted | to-appear | published | note
+# topic:  combinatorics | games | applied
+# Math in titles uses \( ... \).
+
+- title: "Methodology for carbon credit assessment"
+  authors: "with A. Perrella, G. Marastoni"
+  status: in-progress
+  status-label: "In progress"
+  venue: "2026++"
+  topic: applied
+
+- title: "Partition universality for hypergraphs"
+  authors: "with P. Allen, J. Böttcher"
+  status: in-progress
+  status-label: "In progress"
+  venue: "2026++"
+  topic: combinatorics
+
+- title: "A Transference Principle and a Counting Lemma for Sparse Hypergraphs"
+  url: "../Documents_files/Secret_papers/A_Transference_Principle.pdf"
+  authors: "with P. Allen, J. Böttcher, J. Lada"
+  status: in-progress
+  status-label: "In progress"
+  venue: "2026+"
+  topic: combinatorics
+
+- title: "Best Response Dynamics for Random Games"
+  authors: "with G. Ashkenazi-Golan, E. Plumb, J. Skokan"
+  status: in-progress
+  status-label: "In progress"
+  venue: "2026++"
+  topic: games
+
+- title: "No-Regret Dynamics Do Not Eliminate Dominated Strategies"
+  url: "../Documents_files/Secret_papers/projected_gradient_and_dominated_strategies.pdf"
+  authors: "with G. Ashkenazi-Golan, E. Plumb, B. Tarbush"
+  status: submitted
+  status-label: "Submitted"
+  venue: "Submitted to EC 2026"
+  topic: games
+
+- title: "Simultaneous Best-Response Dynamics in Random Potential Games"
+  url: "https://arxiv.org/abs/2505.10378"
+  authors: "with G. Ashkenazi-Golan, E. Plumb"
+  status: submitted
+  status-label: "Submitted"
+  venue: "Submitted to ICML 2026"
+  topic: games
+  code: "SBRD.ipynb"
+
+- title: "Reinforcement Learning, Collusion, and the Folk Theorem"
+  url: "https://arxiv.org/abs/2411.12725"
+  authors: "with G. Ashkenazi-Golan, E. Plumb"
+  status: submitted
+  status-label: "Submitted"
+  venue: "Submitted to Econometrica (2025)"
+  topic: games
+
+- title: "Graphs with large minimum degree and no short odd cycles are 3-colourable"
+  url: "https://arxiv.org/abs/2302.01875"
+  authors: "with J. Böttcher, N. Frankl, O. Parczyk, J. Skokan"
+  status: to-appear
+  status-label: "To appear"
+  venue: "Combinatorial Theory"
+  topic: combinatorics
+
+- title: "Dirac's theorem for graphs of bounded bandwidth"
+  url: "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i1p21"
+  authors: "with A.E. Díaz, P. Gupta, O. Parczyk, A. Sgueglia"
+  status: published
+  status-label: "Published"
+  venue: "The Electronic Journal of Combinatorics, Vol 33, Iss. 1 (2026), P1.22"
+  topic: combinatorics
+
+- title: "On product Schur triples in the integers"
+  url: "https://doi.org/10.1137/24M1632875"
+  authors: "with L. Mattos, O. Parczyk"
+  status: published
+  status-label: "Published"
+  venue: "SIAM Journal on Discrete Mathematics, Vol 39, Iss. 2 (2025)"
+  topic: combinatorics
+
+- title: "The Ramsey numbers of squares of paths and cycles"
+  url: "https://doi.org/10.37236/11847"
+  authors: "with P. Allen, B. Roberts, J. Skokan"
+  status: published
+  status-label: "Published"
+  venue: "The Electronic Journal of Combinatorics, Vol 31, Iss. 2 (2024), P2.11"
+  topic: combinatorics
+
+- title: "Re-ILS: a metaheuristic approach for cardinality-constrained optimization"
+  authors: "with Jian Shen"
+  status: note
+  status-label: "Note"
+  venue: "Internal Amazon publication"
+  topic: applied
+
+- title: "Density of small diameter subgraphs in $K_r$-free graphs"
+  url: "https://arxiv.org/abs/2207.14297"
+  authors: "with E.K. Hng"
+  status: note
+  status-label: "Note"
+  venue: "arXiv preprint"
+  topic: combinatorics

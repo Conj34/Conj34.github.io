@@ -1,47 +1,139 @@
-.box-container {
-  display: flex;
-}
-
-.box {
-  border: 1px solid black;
-  padding: 10px;
-  background-color: #f0f0f0;
-  flex: 1;
-  margin-right: 10px; /* Adjust the space between the boxes */
-}
+/* Layout concept: one quiet text column; the only loud element is the
+   colouring-game graph in the homepage hero. The three vertex colours
+   (teal, plum, ochre) double as research-topic colours everywhere else. */
 
 .mermaid svg { height: auto; }
 
-#quoteDisplay {
-  padding-bottom: 3%;
-  padding-left: 7%;
-  padding-right: 7%
+body { font-size: 1.0625rem; line-height: 1.6; }
+h1, h2, h3, .h1, .h2, .h3 { text-wrap: balance; letter-spacing: -0.005em; }
+main p, main li { max-width: 72ch; }
+.navbar { border-bottom: 1px solid var(--dm-line); box-shadow: none; }
+.navbar-brand .navbar-title { font-family: "Literata", Georgia, serif; font-weight: 600; }
+:focus-visible { outline: 2px solid var(--dm-teal); outline-offset: 2px; border-radius: 2px; }
+
+/* ---------- Footer line (rotating quote or song) ---------- */
+.nav-footer { border-top: 1px solid var(--dm-line); font-size: 0.875rem; }
+.footer-line { cursor: pointer; display: inline-flex; gap: 0.6em; align-items: baseline; color: var(--dm-muted); text-align: left; }
+.footer-line:hover span:last-child { color: var(--dm-ink); }
+.footer-kind { font-weight: 600; color: var(--dm-ink); white-space: nowrap; }
+
+/* ---------- Homepage hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 2.5rem;
+  align-items: center;
+  padding-block: 2rem 2.5rem;
+  border-bottom: 1px solid var(--dm-line);
 }
-button {
-  appearance: none;
-  background-color: #ecf4e1;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 2px;
-  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-  box-sizing: border-box;
-  color: #24292E;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 15px;
-  list-style: none;
-  margin-bottom: 10px;
-  padding: 6px 12px;
-  position: relative;
-  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  word-wrap: break-word;
+.hero-id { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 1.25rem; align-items: start; }
+.photo-slot {
+  width: 112px; aspect-ratio: 4 / 5; max-width: 100%;
+  border: 1.5px dashed var(--dm-line); border-radius: 6px;
+  display: grid; place-items: center;
+  color: var(--dm-muted); font-size: 0.8rem; background: var(--dm-surface);
+}
+.hero h1 { font-size: clamp(1.9rem, 1.4rem + 2vw, 2.75rem); line-height: 1.12; margin: 0 0 0.6rem; }
+.hero .lede { font-size: 1.15rem; color: var(--dm-ink); margin: 0 0 1rem; max-width: 34ch; }
+.affils { list-style: none; padding: 0; margin: 0 0 1.1rem; color: var(--dm-muted); font-size: 0.95rem; }
+.affils li { margin: 0.1rem 0; }
+.links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.1rem; font-size: 0.95rem; }
+.links a { text-decoration: none; display: inline-flex; gap: 0.35rem; align-items: center; }
+.links a:hover { text-decoration: underline; }
+.links .email { color: var(--dm-muted); user-select: all; flex-basis: 100%; }
+
+.game { min-width: 0; }
+.game canvas { width: 100%; aspect-ratio: 6 / 5; display: block; cursor: pointer; }
+.game-caption { display: flex; gap: 1rem; align-items: baseline; justify-content: space-between; font-size: 0.85rem; color: var(--dm-muted); margin-top: 0.4rem; }
+.game-caption button {
+  appearance: none; background: none; border: 1px solid var(--dm-line); color: var(--dm-ink);
+  border-radius: 4px; padding: 0.15rem 0.6rem; font-size: 0.85rem; white-space: nowrap; cursor: pointer;
+}
+.game-caption button:hover { border-color: var(--dm-muted); }
+.game-status { font-variant-numeric: tabular-nums; }
+
+/* ---------- Homepage highlights ---------- */
+.highlights {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0;
+  padding-block: 1.75rem; border-bottom: 1px solid var(--dm-line);
+}
+.highlights > div { padding-inline: 1.25rem; border-left: 1px solid var(--dm-line); min-width: 0; }
+.highlights > div:first-child { padding-left: 0; border-left: 0; }
+.highlights h2 { font-size: 0.95rem; font-family: inherit; font-weight: 600; color: var(--dm-muted); margin: 0 0 0.4rem; border: 0; padding: 0; }
+.highlights p { margin: 0; font-size: 0.98rem; }
+.highlights .meta { color: var(--dm-muted); font-size: 0.875rem; margin-top: 0.3rem; }
+.home-more { padding-top: 1.5rem; }
+.home-more h2 { font-size: 1.35rem; border: 0; }
+
+/* ---------- Topic colours ---------- */
+.topic-combinatorics { --topic: var(--dm-teal); }
+.topic-games { --topic: var(--dm-plum); }
+.topic-applied { --topic: var(--dm-ochre); }
+.dot { display: inline-block; width: 0.62em; height: 0.62em; border-radius: 50%; background: var(--topic, var(--dm-muted)); flex: none; }
+
+/* ---------- Research: filters and paper list ---------- */
+.filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.5rem 0 1.25rem; }
+.filters button {
+  appearance: none; display: inline-flex; gap: 0.45rem; align-items: center;
+  background: var(--dm-bg); color: var(--dm-ink); border: 1px solid var(--dm-line);
+  border-radius: 999px; padding: 0.3rem 0.85rem; font-size: 0.9rem; cursor: pointer;
+}
+.filters button[aria-pressed="true"] { border-color: var(--dm-ink); background: var(--dm-surface); font-weight: 600; }
+
+.papers { list-style: none; padding: 0; margin: 0; }
+.paper {
+  display: grid; grid-template-columns: 1.1rem minmax(0, 1fr); gap: 0 0.5rem;
+  padding: 0.95rem 0; border-top: 1px solid var(--dm-line);
+}
+.paper:last-child { border-bottom: 1px solid var(--dm-line); }
+.paper .dot { margin-top: 0.55em; }
+.paper-title { font-weight: 600; font-size: 1.02rem; line-height: 1.4; }
+.paper-title a { font-weight: inherit; color: var(--dm-ink); text-decoration-color: var(--dm-line); text-underline-offset: 3px; }
+.paper-title a:hover { text-decoration-color: var(--topic); }
+.paper-authors { color: var(--dm-muted); font-size: 0.93rem; }
+.paper-foot { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; align-items: center; margin-top: 0.35rem; font-size: 0.9rem; }
+.paper-venue { color: var(--dm-ink); font-style: italic; }
+.paper-links { display: inline-flex; gap: 0.75rem; }
+.paper-foot p { margin: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; align-items: center; }
+.paper-title p, .paper-authors p { margin: 0; }
+.paper-links a { font-weight: 500; }
+
+.pill {
+  display: inline-block; font-size: 0.78rem; font-weight: 600; line-height: 1.5;
+  padding: 0 0.55rem; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap;
+}
+.pill-published { color: var(--dm-teal); }
+.pill-to-appear { color: var(--dm-teal); border-style: dashed; }
+.pill-submitted { color: var(--dm-plum); }
+.pill-in-progress { color: var(--dm-ochre); }
+.pill-note { color: var(--dm-muted); }
+
+/* ---------- Research: talks ---------- */
+.talks { list-style: none; padding: 0; margin: 0; }
+.talk { padding: 0.8rem 0; border-top: 1px solid var(--dm-line); }
+.talk:last-child { border-bottom: 1px solid var(--dm-line); }
+.talk-title { font-weight: 600; }
+.talk-title a { color: var(--dm-ink); text-underline-offset: 3px; text-decoration-color: var(--dm-line); }
+.occasions { list-style: none; padding: 0; margin: 0.3rem 0 0; display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; }
+.occasions li {
+  font-size: 0.85rem; color: var(--dm-muted); background: var(--dm-surface);
+  border-radius: 4px; padding: 0.1rem 0.5rem; font-variant-numeric: tabular-nums;
+}
+.occasions strong { color: var(--dm-ink); font-weight: 600; }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 860px) {
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .highlights { grid-template-columns: minmax(0, 1fr); gap: 1.1rem; }
+  .highlights > div { border-left: 0; padding-inline: 0; }
+}
+@media (max-width: 420px) {
+  .hero-id { grid-template-columns: 84px minmax(0, 1fr); gap: 0.9rem; }
+  .photo-slot { width: 84px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
 }
 
-
+/* ---------- Homepage width ---------- */
+.home, .home-more { max-width: 1080px; margin-inline: auto; }
