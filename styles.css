@@ -288,3 +288,11 @@ main small small small, #title-block-header small small small { font-size: 1em; 
 .portrait { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1616 / 1080; object-fit: cover; border-radius: 8px; }
 .hero h1 { margin-top: 0; }
 @media (max-width: 420px) { .hero-id { gap: 1rem; } }
+
+/* Code: follow the theme tokens in both light and dark */
+main :not(pre) > code { color: var(--dm-plum); background: var(--dm-surface); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; }
+main pre, main pre code, main div.sourceCode, main pre.sourceCode { color: var(--dm-ink); }
+main pre:not(.sourceCode), main div.sourceCode { background: var(--dm-surface); border: 1px solid var(--dm-line); border-radius: 6px; }
+main pre:not(.sourceCode) { padding: 0.85rem 1rem; }
+main pre code { background: transparent; padding: 0; font-size: 0.875em; }
+.trail-sep { color: var(--dm-muted); }
