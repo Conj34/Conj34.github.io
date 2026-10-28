@@ -1,0 +1,57 @@
+<script>
+(function () {
+  ['quoteDisplay', 'musicDisplay'].forEach(function (id) {
+    if (!document.getElementById(id)) { var d = document.createElement('div'); d.id = id; d.hidden = true; document.body.appendChild(d); }
+  });
+  var offsetMeta = document.querySelector('meta[name="quarto:offset"]');
+  var base = offsetMeta ? offsetMeta.getAttribute('content') : './';
+  var pending = 2;
+  function load(src) {
+    var s = document.createElement('script');
+    s.src = base + src;
+    s.onload = s.onerror = function () { if (--pending === 0) start(); };
+    document.body.appendChild(s);
+  }
+  function split(entry) {
+    var tmp = document.createElement('div');
+    var parts = entry.split(/<p>/i);
+    tmp.innerHTML = parts[0];
+    var text = tmp.textContent.replace(/\s+/g, ' ').trim();
+    tmp.innerHTML = parts.slice(1).join(' ');
+    var who = tmp.textContent.replace(/[-\s]+$/, '').replace(/^[-\s]+/, '').trim();
+    return { text: text, who: who };
+  }
+  function start() {
+    var el = document.getElementById('footer-line');
+    if (!el) return;
+    if (document.querySelector('.quotes')) { el.hidden = true; return; }
+    var pool = [];
+    if (typeof quotes !== 'undefined') quotes.forEach(function (q) {
+      var p = split(q); if (p.text.length <= 140) pool.push({ kind: 'quote', text: p.text, who: p.who });
+    });
+    if (typeof music !== 'undefined') music.forEach(function (m) {
+      var p = split(m); pool.push({ kind: 'song', text: p.text, who: p.who });
+    });
+    if (!pool.length) return;
+    var last = -1;
+    function show() {
+      var i;
+      do { i = Math.floor(Math.random() * pool.length); } while (pool.length > 1 && i === last);
+      last = i;
+      var item = pool[i];
+      el.innerHTML = '';
+      var lead = document.createElement('span');
+      lead.className = 'footer-kind';
+      lead.textContent = item.kind === 'song' ? 'Listening to' : 'Quote';
+      var body = document.createElement('span');
+      body.textContent = item.kind === 'song' ? item.text + ', ' + item.who : '“' + item.text + '” ' + item.who;
+      el.appendChild(lead); el.appendChild(body);
+    }
+    show();
+    el.addEventListener('click', show);
+    el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(); } });
+  }
+  load('javascripts/quotes.js');
+  load('javascripts/music.js');
+})();
+</script>

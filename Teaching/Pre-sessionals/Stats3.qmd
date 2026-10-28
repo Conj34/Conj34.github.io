@@ -3,8 +3,6 @@ title: "Pre-sessionals - Stats 3"
 format: html
 ---
 
-{{< include /support/_margins_Teaching.qmd >}}
-
 <h2>Probability and Reading Table</h2>
 
 -   **Introduction to Probability**

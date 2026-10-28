@@ -1,0 +1,27 @@
+<%
+const years = [...new Set(items.map(b => b.year))].sort((a, b) => b - a);
+const latest = years[0];
+const now = items.filter(b => b.year === latest && b.status === 'reading');
+const notes = { 2024: "Between February and December 2024 I paused to improve my Spanish (from A2/B1 to C1) and my Portuguese (B1)." };
+%>
+<% if (now.length) { %>
+<div class="reading-now">
+<span class="reading-label">Reading now</span>
+<% for (const b of now) { %><span class="reading-book"><span class="reading-title"><%= b.title %></span><span class="reading-author"><%= b.author %></span></span><% } %>
+</div>
+<% } %>
+<% for (const y of years) { const shelf = items.filter(b => b.year === y); %>
+<section class="shelf">
+<h2 id="read-<%= y %>"><%= y %> <small><%= shelf.length %> books</small></h2>
+<% if (notes[y]) { %><p class="shelf-note"><%= notes[y] %></p><% } %>
+<ul class="books">
+<% for (const b of shelf) { %>
+<li class="book<%= b.status === 'reading' ? ' is-reading' : '' %>" <%= metadataAttrs(b) %>>
+<span class="book-title"><%= b.title %></span>
+<span class="book-author"><%= b.author %></span>
+<span class="book-when"><%= b.status === 'reading' ? 'In progress' : (b.finished || '') %></span>
+</li>
+<% } %>
+</ul>
+</section>
+<% } %>

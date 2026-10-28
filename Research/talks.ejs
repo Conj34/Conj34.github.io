@@ -1,0 +1,10 @@
+<ul class="talks">
+<% for (const item of items) { %>
+<li class="talk" <%= metadataAttrs(item) %>>
+<div class="talk-title"><% if (item.url) { %><a href="<%- item.url %>"><%= item.title %></a><% } else { %><%= item.title %><% } %></div>
+<ul class="occasions">
+<% for (const o of (item.occasions || [])) { %><li><strong><%= o.date %></strong> <%= o.event %>, <%= o.place %></li><% } %>
+</ul>
+</li>
+<% } %>
+</ul>

@@ -4,8 +4,6 @@ format: html
 code-annotations: below
 ---
 
-{{< include /support/_margins_Learning.qmd >}}
-
 I appreciate a lot [this project](https://thegreatestbooks.org) by Shane Sherman, which is an attempt to create a list of "best books" based on the compound information found on various highly accredited lists (there are obvious critiques, about western, white, male biases etc., but I don't think this is relevant in the context of this page). What I am going to do in this page is to have an idea of which authors have more works considered the best.
 
 One can proceed as follows: download the .csv file from the website of the [aforementioned project](https://thegreatestbooks.org). Modify the .csv file such that the first row reads:

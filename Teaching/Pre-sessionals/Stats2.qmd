@@ -3,8 +3,6 @@ title: "Pre-sessionals - Stats 2"
 format: html
 ---
 
-{{< include /support/_margins_Teaching.qmd >}}
-
 <h2>Exploring Data and Plots</h2>
 
 -   **Histograms and Frequency Distributions**

@@ -1,0 +1,35 @@
+<div class="filters" role="group" aria-label="Filter papers by topic">
+<button type="button" data-topic="all" aria-pressed="true">All</button>
+<button type="button" data-topic="combinatorics" aria-pressed="false" class="topic-combinatorics"><span class="dot"></span>Combinatorics</button>
+<button type="button" data-topic="games" aria-pressed="false" class="topic-games"><span class="dot"></span>Games and learning</button>
+<button type="button" data-topic="applied" aria-pressed="false" class="topic-applied"><span class="dot"></span>Applied</button>
+</div>
+<ul class="papers">
+<% for (const item of items) { %>
+<li class="paper topic-<%= item.topic %>" data-topic="<%= item.topic %>" <%= metadataAttrs(item) %>>
+<span class="dot" aria-hidden="true"></span>
+<div>
+<div class="paper-title"><% if (item.url) { %><a href="<%- item.url %>"><%= item.title %></a><% } else { %><%= item.title %><% } %></div>
+<div class="paper-authors"><%= item.authors %></div>
+<div class="paper-foot">
+<span class="pill pill-<%= item.status %>"><%= item['status-label'] %></span>
+<% if (item.venue) { %><span class="paper-venue"><%= item.venue %></span><% } %>
+<% if (item.code) { %><span class="paper-links"><a href="<%- item.code %>">Code</a></span><% } %>
+</div>
+</div>
+</li>
+<% } %>
+</ul>
+<script>
+(function () {
+var root = document.currentScript.parentElement;
+var buttons = root.querySelectorAll('.filters button');
+buttons.forEach(function (b) {
+b.addEventListener('click', function () {
+var t = b.getAttribute('data-topic');
+buttons.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+root.querySelectorAll('.paper').forEach(function (p) { p.hidden = !(t === 'all' || p.getAttribute('data-topic') === t); });
+});
+});
+})();
+</script>

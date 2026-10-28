@@ -3,8 +3,6 @@ title: "ME306 <small><small><small>(Real Analysis)</small></small></small>"
 format: html
 ---
 
-{{< include /support/_margins_Teaching.qmd >}}
-
 I do not have anymore any material I created during the teaching of this course. I can quote however the course overview. Because the material is quite basic, I don't think it's worth the effort to go and try to find more details about what was done and taught.
 
 <h3>Course content <small><small><small>(Official)</small></small></small></h3>

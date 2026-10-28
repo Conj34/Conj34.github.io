@@ -3,8 +3,6 @@ title: "Pre-sessionals - Maths 2"
 format: html
 ---
 
-{{< include /support/_margins_Teaching.qmd >}}
-
 <h2>Introduction to Derivatives</h2>
 
 -   **Introduction to Derivatives**

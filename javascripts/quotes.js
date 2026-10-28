@@ -100,5 +100,4 @@ newQuote();
 
 
 
-Shakespeare
 

@@ -3,8 +3,6 @@ title: "ST455 <small><small><small>(Reinforcement Learning)</small></small></sma
 format: html
 ---
 
-{{< include /support/_margins_Teaching.qmd >}}
-
 <h3>Course content <small><small><small>(Official)</small></small></small></h3>
 
 This course is about reinforcement learning, covering the fundamental concepts of reinforcement learning framework and solution methods. The focus is on the underlying methodology as well as practical implementation and evaluation using software code. The course will cover the following topics:

@@ -1,62 +1,46 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - javascripts/*.js
 execute:
   freeze: auto
 
 website:
   favicon: images/logo.png
-  title: ""
-  sidebar:
-    style: "docked"
-    search: false
-    contents:
-      - href: index.qmd
-        text: Homepage
-      - href: Teaching/Teaching.qmd
-        text: Teaching
-      - section: "Learning"
-        href: Learning/Learning.qmd
-        contents:
-          - section: "Python"
-            contents:
-            - section: "Research"
-              contents:
-              - href: Research/SBRD.ipynb
-                text: "SBRD in Random Games"
-            - section: "Useful"
-              contents:
-              - href: Learning/Python/Useful/Arxiv.qmd
-                text: "Arxiv"
-              - href: Learning/Python/Useful/Greatest_authors.qmd
-                text: "Greatest Authors"
-            - section: "Codeforces"
-              contents:
-              - section: "Easy"
-                contents:
-                - href: Learning/Python/CF/Easy/1758A.qmd
-                  text: 1758A
-          - section: "Old Notes"
-            contents:
-            - href: Learning/Old_Work/OldWork.qmd
-              text: Old Work
-      - href: Research/research.qmd
-        text: Research
-      - href: main_pages/curriculum.qmd
-        text: Curriculum Vitae
-      - href: main_pages/miscellanea.qmd
-        text: Miscellanea
-          
+  title: "Domenico Mergoni Cecchelli"
+  site-url: https://conj34.github.io
+  page-navigation: false
   navbar:
     logo: images/logo.png
-    left:
-      - text: Domenico Mergoni Cecchelli
+    logo-alt: "Graph logo"
+    search: false
+    right:
+      - href: Research/research.qmd
+        text: Research
+      - href: Teaching/Teaching.qmd
+        text: Teaching
+      - href: main_pages/curriculum.qmd
+        text: CV
+      - href: main_pages/miscellanea.qmd
+        text: Miscellanea
+  page-footer:
+    left: |
+      <span id="footer-line" class="footer-line" role="button" tabindex="0" title="Show another"></span>
+    right: |
+      domenico.mergoni -at- cunef.edu
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: [cosmo, theme/light.scss]
+      dark: [cosmo, theme/dark.scss]
     css: styles.css
-    toc: true
+    toc: false
+    include-after-body:
+      - theme/footer.html
+      - theme/nav.html
+    respect-user-color-scheme: true
 
 editor: visual
 

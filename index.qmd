@@ -1,50 +1,203 @@
 ---
 title: "Homepage"
-format: html
+pagetitle: "Domenico Mergoni Cecchelli"
+page-layout: full
+toc: false
 ---
 
-Hey! \
-I am Domenico Mergoni Cecchelli. Born and raised in Italy, I've been wandering around Europe studying mathematics. My last adventure: completing my PhD in mathematics at the London School of Economics, where I am now a Visiting Fellow. M ey areas of interest are Graph Theory and Learning in Games. You can find more about my work and research interests [here](https://conj34.github.io/Research/research.html).
-
-:::::: column-margin
-::: callout-note
-## Contact
-
--   Name: Domenico Mergoni
--   Email: d.mergoni -at- lse.ac.uk
--   Work: [London School of Economics](https://www.lse.ac.uk/mathematics)
-:::
-
-::: callout-tip
-## Favourite quotes
-
 ```{=html}
-<div id = "quoteDisplay">
+<style>#title-block-header { display: none; }</style>
+<div class="home">
+<section class="hero">
+  <div class="hero-id">
+    <div class="photo-slot" role="img" aria-label="Photo placeholder">Photo</div>
+    <div>
+      <h1>Domenico Mergoni Cecchelli</h1>
+      <p class="lede">Mathematician working between graph theory and learning in games.</p>
+      <ul class="affils">
+        <li>Tenure Track Assistant Professor, <a href="https://www.cunef.edu">CUNEF Universidad</a>, Madrid</li>
+        <li>Visiting Fellow, <a href="https://www.lse.ac.uk/people/dr-domenico-mergoni">London School of Economics</a></li>
+      </ul>
+      <div class="links">
+        <span class="email" title="Email">domenico.mergoni -at- cunef.edu</span>
+        <a href="https://github.com/Conj34"><i class="bi bi-github" aria-hidden="true"></i>GitHub</a>
+        <a href="https://arxiv.org/search/?searchtype=author&amp;query=Mergoni">arXiv</a>
+        <a href="main_pages/curriculum.html">CV</a>
+        <a href="https://scholar.google.com/citations?user=P5N-z88AAAAJ"><i class="bi bi-mortarboard" aria-hidden="true"></i>Google Scholar</a>
+      </div>
+    </div>
+  </div>
+
+  <figure class="game" aria-label="Simultaneous best-response dynamics in a random two-player potential game, drawn as a heatmap of the potential with the path of play.">
+    <canvas id="sbrd" role="img" aria-label="Heatmap of a random potential with the path of simultaneous best responses"></canvas>
+    <figcaption class="game-caption">
+      <span>Simultaneous best responses in a random two-player potential game: the stronger the colour, the higher the potential, and rings mark pure Nash equilibria. <span class="game-status" id="sbrd-status"></span> <a href="https://arxiv.org/abs/2505.10378">Paper</a></span>
+      <button type="button" id="sbrd-new">New game</button>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="highlights" aria-label="Highlights">
+  <div class="topic-combinatorics">
+    <h2>Latest paper</h2>
+    <p><a href="https://doi.org/10.5070/C6.69944">Graphs with large minimum degree and no short odd cycles are 3-colourable</a></p>
+    <p class="meta"><span class="dot"></span> Combinatorial Theory, 2026</p>
+  </div>
+  <div>
+    <h2>Teaching</h2>
+    <p><a href="Teaching/Teaching.html">Machine Learning</a> for the BSc in Economics at CUNEF</p>
+    <p class="meta">2026/27</p>
+  </div>
+  <div>
+    <h2>Reading</h2>
+    <p><a href="main_pages/miscellanea.html">Staring at the Sun</a>, Irvin D. Yalom</p>
+    <p class="meta">and the rest of the shelf</p>
+  </div>
+</section>
+
+<section class="quotes" aria-label="Quotes and songs">
+  <figure class="quote-block">
+    <h2>Favourite quotes</h2>
+    <blockquote id="quoteDisplay" aria-live="polite"></blockquote>
+    <button type="button" onclick="newQuote()">New quote</button>
+  </figure>
+  <figure class="song-block">
+    <h2>Songs I like</h2>
+    <div id="musicDisplay" aria-live="polite"></div>
+    <button type="button" onclick="newMusic()">New song</button>
+  </figure>
+</section>
 </div>
-<center><button onclick="newQuote()">New Quote</button></center>
-<script src="javascripts/quotes.js"></script>
 ```
-:::
 
-::: callout-caution
-## Songs I like
+::: home-more
+## Research in brief
 
-```{=html}
-<div id = "musicDisplay">
-</div>
-<center><button onclick="newMusic()">New Song</button></center>
-<script src="javascripts/music.js"></script>
-```
-:::
-::::::
+On one side, extremal and probabilistic questions about graphs and hypergraphs: colourings, Ramsey numbers, embeddings, sparse regularity. On the other, what learning algorithms (best-response dynamics, no-regret learners, reinforcement learning) actually do when they play games against each other. The [research page](Research/research.qmd) has papers, talks and open projects; the [teaching page](Teaching/Teaching.qmd) collects course material.
 
+## Besides research
 
-Otherwise, please be welcome to look around this page. You'll find some of the teaching material I prepared for various courses, some notes of courses I took when I was a student, and some more personal details (like what am I reading at the moment).
-
-
-Besides my university projects, I currently am:
-
--   Leading a cross-field project for a EU proposal of new regulations regarding nutritional information on food packaging.
+-   Leading a cross-field project for an EU proposal of new regulations regarding nutritional information on food packaging.
 -   Contributing to a project for Carbon Credit Assessment, in collaboration with a Swiss startup.
 -   Writing a cookbook with all my family's traditional recipes.
+-   Training for the Barcelona marathon (March 2027).
+:::
 
+```{=html}
+<script>
+(function () {
+  var canvas = document.getElementById('sbrd');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var statusEl = document.getElementById('sbrd-status');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var M = 10;                       // actions per player
+  var psi, ne, path, outcome, cycleAt, timer = null;
+
+  function css(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim() || '#888'; }
+  function hex(h) { h = h.replace('#', ''); if (h.length === 3) h = h.split('').map(function (c) { return c + c; }).join(''); return [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
+  function mix(a, b, t) { var A = hex(a), B = hex(b); return 'rgb(' + A.map(function (v, i) { return Math.round(v + (B[i] - v) * t); }).join(',') + ')'; }
+  function gauss() { var u = 1 - Math.random(), v = Math.random(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); }
+
+  function br1(b) { var best = 0; for (var i = 1; i < M; i++) if (psi[i][b] > psi[best][b]) best = i; return best; }   // player 1 picks a row
+  function br2(a) { var best = 0; for (var j = 1; j < M; j++) if (psi[a][j] > psi[a][best]) best = j; return best; }   // player 2 picks a column
+
+  function newGame() {
+    psi = []; for (var i = 0; i < M; i++) { psi.push([]); for (var j = 0; j < M; j++) psi[i].push(gauss()); }
+    // rank-normalise for shading
+    var flat = []; psi.forEach(function (r) { flat = flat.concat(r); }); flat.sort(function (x, y) { return x - y; });
+    psi.rank = psi.map(function (r) { return r.map(function (v) { return flat.indexOf(v) / (flat.length - 1); }); });
+    ne = []; for (i = 0; i < M; i++) for (j = 0; j < M; j++) if (br1(j) === i && br2(i) === j) ne.push([i, j]);
+    path = [[Math.floor(Math.random() * M), Math.floor(Math.random() * M)]];
+    outcome = null; cycleAt = -1;
+  }
+
+  function advance() {
+    var cur = path[path.length - 1], nxt = [br1(cur[1]), br2(cur[0])];
+    path.push(nxt);
+    var n = path.length;
+    if (!outcome) {
+      if (nxt[0] === cur[0] && nxt[1] === cur[1]) { outcome = 'ne'; cycleAt = n - 2; }
+      else if (n >= 3 && nxt[0] === path[n - 3][0] && nxt[1] === path[n - 3][1]) { outcome = 'cycle'; cycleAt = n - 3; }
+    }
+  }
+
+  function geometry() {
+    var r = canvas.getBoundingClientRect(), w = r.width, h = r.height;
+    var pad = Math.max(18, w * 0.05), side = Math.min(w - 2 * pad, h - 2 * pad);
+    return { w: w, h: h, cell: side / M, x0: (w - side) / 2 + 6, y0: (h - side) / 2 };
+  }
+  function centre(g, p) { return [g.x0 + (p[1] + 0.5) * g.cell, g.y0 + (p[0] + 0.5) * g.cell]; }
+
+  function draw() {
+    var g = geometry(); if (!g.w || !psi) return;
+    var lo = css('--dm-surface'), hi = css('--dm-teal'), ink = css('--dm-ink'), muted = css('--dm-muted'),
+        plum = css('--dm-plum'), ochre = css('--dm-ochre'), bg = css('--dm-bg');
+    ctx.clearRect(0, 0, g.w, g.h);
+    for (var i = 0; i < M; i++) for (var j = 0; j < M; j++) {
+      ctx.fillStyle = mix(lo, hi, 0.08 + 0.8 * psi.rank[i][j]);
+      ctx.fillRect(g.x0 + j * g.cell + 1, g.y0 + i * g.cell + 1, g.cell - 2, g.cell - 2);
+    }
+    ctx.fillStyle = muted; ctx.font = '12px "Public Sans", system-ui, sans-serif';
+    ctx.textAlign = 'center'; ctx.fillText("player 2's action", g.x0 + M * g.cell / 2, g.y0 + M * g.cell + 15);
+    ctx.save(); ctx.translate(g.x0 - 8, g.y0 + M * g.cell / 2); ctx.rotate(-Math.PI / 2); ctx.fillText("player 1's action", 0, 0); ctx.restore();
+
+    var cyc = outcome === 'cycle' ? path.slice(cycleAt, cycleAt + 2) : [];
+    var special = cyc.length === 2 ? [[cyc[0][0], cyc[1][1]], [cyc[1][0], cyc[0][1]]] : [];
+    ne.forEach(function (p) {
+      var c = centre(g, p), isSpecial = special.some(function (q) { return q[0] === p[0] && q[1] === p[1]; });
+      ctx.beginPath(); ctx.arc(c[0], c[1], g.cell * 0.36, 0, 2 * Math.PI);
+      ctx.strokeStyle = isSpecial ? ochre : ink; ctx.lineWidth = isSpecial ? 3 : 1.6; ctx.stroke();
+    });
+
+    var start = Math.max(0, path.length - 8);
+    ctx.lineWidth = 2; ctx.strokeStyle = plum;
+    for (var k = start + 1; k < path.length; k++) {
+      var a = centre(g, path[k - 1]), b = centre(g, path[k]);
+      ctx.globalAlpha = 0.25 + 0.75 * (k - start) / (path.length - start);
+      ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+    if (path.length > 1) {
+      var prev = centre(g, path[path.length - 2]);
+      ctx.beginPath(); ctx.arc(prev[0], prev[1], g.cell * 0.17, 0, 2 * Math.PI);
+      ctx.strokeStyle = plum; ctx.lineWidth = 2; ctx.stroke();
+    }
+    var cur = centre(g, path[path.length - 1]);
+    ctx.beginPath(); ctx.arc(cur[0], cur[1], g.cell * 0.2, 0, 2 * Math.PI);
+    ctx.fillStyle = plum; ctx.fill(); ctx.strokeStyle = bg; ctx.lineWidth = 2; ctx.stroke();
+
+    var t = path.length - 1;
+    if (!statusEl) return;
+    var when = cycleAt === 0 ? 'from the start' : 'after ' + cycleAt + ' round' + (cycleAt === 1 ? '' : 's');
+    if (outcome === 'ne') statusEl.textContent = cycleAt === 0 ? 'Started at a pure Nash equilibrium.' : 'Reached a pure Nash equilibrium ' + when + '.';
+    else if (outcome === 'cycle') statusEl.textContent = 'Trapped in a 2-cycle ' + when + ': the players keep missing the two equilibria ringed in yellow.';
+    else statusEl.textContent = 'Round ' + t + '.';
+  }
+
+  function size() {
+    var r = canvas.getBoundingClientRect(), d = window.devicePixelRatio || 1;
+    canvas.width = Math.round(r.width * d); canvas.height = Math.round(r.height * d);
+    ctx.setTransform(d, 0, 0, d, 0, 0); draw();
+  }
+
+  function run() {
+    clearInterval(timer); clearTimeout(timer);
+    newGame();
+    if (reduce) { for (var s = 0; s < 40 && !outcome; s++) advance(); advance(); draw(); return; }
+    draw();
+    var extra = 0;
+    timer = setInterval(function () {
+      advance(); draw();
+      if (outcome && ++extra > 5) { clearInterval(timer); timer = setTimeout(run, 4500); }
+    }, 900);
+  }
+
+  document.getElementById('sbrd-new').addEventListener('click', run);
+  canvas.addEventListener('click', run);
+  if (window.ResizeObserver) new ResizeObserver(size).observe(canvas); else window.addEventListener('resize', size);
+  new MutationObserver(draw).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  run(); size();
+})();
+</script>
+```
