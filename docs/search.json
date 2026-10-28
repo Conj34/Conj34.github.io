@@ -93,21 +93,21 @@
     ]
   },
   {
-    "objectID": "Teaching/Teaching.html#current-teaching",
-    "href": "Teaching/Teaching.html#current-teaching",
+    "objectID": "Teaching/Teaching.html#cunef-universidad",
+    "href": "Teaching/Teaching.html#cunef-universidad",
     "title": "Teaching",
-    "section": "Current teaching",
-    "text": "Current teaching\nSince September 2026 I teach at CUNEF Universidad in Madrid (I also remain a Visiting Fellow at LSE).\n\nCurrent courses\n\n\n\n\n\n\n\n\n\nCourse\nProgramme\nYear(s)\nInstitution\nNotes\n\n\n\n\nMachine Learning\nBSc Economics (group G42)\n2026/27\nCUNEF\nParallel section, coordinated by Ricardo Queralt\n\n\n\nCourse materials are shared with students through the university’s learning platform.",
+    "section": "CUNEF Universidad",
+    "text": "CUNEF Universidad\n\nCourses at CUNEF\n\n\n\n\n\n\n\n\n\nCourse\nProgramme\nYear(s)\nInstitution\nNotes\n\n\n\n\nMachine Learning\nBSc Economics (group G42)\n2026/27\nCUNEF\nParallel section, coordinated by Ricardo Queralt",
     "crumbs": [
       "Teaching"
     ]
   },
   {
-    "objectID": "Teaching/Teaching.html#past-teaching-lse-2020-to-2023",
-    "href": "Teaching/Teaching.html#past-teaching-lse-2020-to-2023",
+    "objectID": "Teaching/Teaching.html#london-school-of-economics",
+    "href": "Teaching/Teaching.html#london-school-of-economics",
     "title": "Teaching",
-    "section": "Past teaching (LSE, 2020 to 2023)",
-    "text": "Past teaching (LSE, 2020 to 2023)\nThese pages contain some of the material I used to aid my teaching during my years at LSE. Some of the material I created myself, some was given by the various lecturers of the courses, and some I found online and propose here again in a selected format.\n\nCourses taught at LSE\n\n\n\n\n\n\n\n\n\nCode\nName\nYear(s)\nDepartment\nMain Lecturer\n\n\n\n\nMA102/3\nIntroduction to Abstract Mathematics\n2020/21; 21/22\nMaths\nPeter Allen\n\n\nME306\nReal Analysis\n2021\nMaths\nJohannes Ruf\n\n\nMA210\nDiscrete Mathematics\n2021/22\nMaths\nPeter Allen\n\n\nMA423\nFundamentals of Operations Research\n2021/22\nMaths\nAhmad Abdi\n\n\nME200\nComputational Methods in Financial Mathematics\n2023\nMaths\nLuitgard Veraart\n\n\nST310\nMachine Learning\n2022/23\nStats\nJoshua Loftus\n\n\nST455\nReinforcement Learning\n2022/23\nStats\nChengchun Shi\n\n\nFM250\nFinance\n2023\nFinance\nAshwini Agrawal\n\n\nPR\nMiM/GMiM pre-sessionals\n2022; 23\nManag.\nMyself\n\n\n\nFor privacy reasons, I won’t add my students’ feedback to this page. If you are interested in additional information about my teaching, please contact me.",
+    "section": "London School of Economics",
+    "text": "London School of Economics\nThese pages contain some of the material I used to aid my teaching at LSE. Some of the material I created myself, some was given by the various lecturers of the courses, and some I found online and propose here again in a selected format.\n\nCourses taught at LSE\n\n\n\n\n\n\n\n\n\nCode\nName\nYear(s)\nDepartment\nMain Lecturer\n\n\n\n\nMA102/3\nIntroduction to Abstract Mathematics\n2020/21; 21/22\nMaths\nPeter Allen\n\n\nME306\nReal Analysis\n2021\nMaths\nJohannes Ruf\n\n\nMA210\nDiscrete Mathematics\n2021/22\nMaths\nPeter Allen\n\n\nMA423\nFundamentals of Operations Research\n2021/22\nMaths\nAhmad Abdi\n\n\nME200\nComputational Methods in Financial Mathematics\n2023\nMaths\nLuitgard Veraart\n\n\nST310\nMachine Learning\n2022/23\nStats\nJoshua Loftus\n\n\nST455\nReinforcement Learning\n2022/23\nStats\nChengchun Shi\n\n\nFM250\nFinance\n2023\nFinance\nAshwini Agrawal\n\n\nPR\nMiM/GMiM pre-sessionals\n2022; 23\nManag.\nMyself\n\n\n\nFor privacy reasons, I won’t add my students’ feedback to this page. If you are interested in additional information about my teaching, please contact me.",
     "crumbs": [
       "Teaching"
     ]
@@ -216,7 +216,7 @@
     "href": "main_pages/code-notes.html",
     "title": "Code and notes",
     "section": "",
-    "text": "NoteContact\n\n\n\n\nName: Domenico Mergoni\nEmail: domenico.mergoni -at- cunef.edu\nWork: CUNEF Universidad, Madrid\nAlso: Visiting Fellow, London School of Economics\n\n\n\nThis used to be the “Learning” section of the site: resources, thoughts and records of my progress on topics I was not proficient in. I keep it here because the best way to learn is to teach, and because I hope it might help other people.\n\nGreatest Authors: an analysis of the greatest-books list.\nArxiv email: a small script to go from the daily arXiv email straight to the PDFs.\nCodeforces 1758A: competitive programming in Python (I know Python is not the best language for it).\nUniversity notes: notes from my BSc in Pisa, mostly in Italian.\nSBRD in Random Games: the code accompanying one of my papers.\n\nPlease do let me know if you find any mistakes.",
+    "text": "NoteContact\n\n\n\n\nName: Domenico Mergoni\nEmail: domenico.mergoni -at- cunef.edu\nWork: CUNEF Universidad, Madrid\nAlso: Visiting Fellow, London School of Economics\n\n\n\nA collection of small projects, code and notes, from competitive programming to the code behind my papers. The best way to learn is to teach, and I hope some of this is useful to others.\n\nGreatest Authors: an analysis of the greatest-books list.\nArxiv email: a small script to go from the daily arXiv email straight to the PDFs.\nCodeforces 1758A: competitive programming in Python (I know Python is not the best language for it).\nUniversity notes: notes from my BSc in Pisa, mostly in Italian.\nSBRD in Random Games: the code accompanying one of my papers.\n\nPlease do let me know if you find any mistakes.",
     "crumbs": [
       "Miscellanea",
       "Code and notes"

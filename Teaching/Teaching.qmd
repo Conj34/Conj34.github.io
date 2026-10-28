@@ -5,21 +5,17 @@ format: html
 
 {{< include /support/_margins_Teaching.qmd >}}
 
-## Current teaching
-
-Since September 2026 I teach at CUNEF Universidad in Madrid (I also remain a Visiting Fellow at LSE).
+## CUNEF Universidad
 
 | Course | Programme | Year(s) | Institution | Notes |
 |---------------|---------------|---------------|---------------|---------------|
 | Machine Learning | BSc Economics (group G42) | 2026/27 | CUNEF | Parallel section, coordinated by Ricardo Queralt |
 
-: Current courses {.striped .hover tbl-colwidths="\[25,25,15,10,25\]"}
+: Courses at CUNEF {.striped .hover tbl-colwidths="\[25,25,15,10,25\]"}
 
-Course materials are shared with students through the university's learning platform.
+## London School of Economics
 
-## Past teaching (LSE, 2020 to 2023)
-
-These pages contain some of the material I used to aid my teaching during my years at LSE. Some of the material I created myself, some was given by the various lecturers of the courses, and some I found online and propose here again in a selected format.
+These pages contain some of the material I used to aid my teaching at LSE. Some of the material I created myself, some was given by the various lecturers of the courses, and some I found online and propose here again in a selected format.
 
 | Code | Name | Year(s) | Department | Main Lecturer |
 |---------------|---------------|---------------|---------------|---------------|

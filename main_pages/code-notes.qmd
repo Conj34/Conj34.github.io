@@ -10,7 +10,7 @@ aliases:
 {{< include /support/_contact.qmd >}}
 :::
 
-This used to be the "Learning" section of the site: resources, thoughts and records of my progress on topics I was not proficient in. I keep it here because the best way to learn is to teach, and because I hope it might help other people.
+A collection of small projects, code and notes, from competitive programming to the code behind my papers. The best way to learn is to teach, and I hope some of this is useful to others.
 
 -   [Greatest Authors](../Learning/Python/Useful/Greatest_authors.qmd): an analysis of the greatest-books list.
 -   [Arxiv email](../Learning/Python/Useful/Arxiv.qmd): a small script to go from the daily arXiv email straight to the PDFs.
