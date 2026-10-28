@@ -1,6 +1,6 @@
 var quotes = [
 "There's three times in a man's life when he has the right to yell at the moon. When he marries, when his children come, and when he finishes a job he had to be crazy to start. <p><center><i>-Red River-</i></center></p>",
-"<<How do you know that? I suppose other people have felt that way before.>> <<They have>>. <p><center><i>-Red River-</i></center></p>",
+"«How do you know that? I suppose other people have felt that way before.» «They have». <p><center><i>-Red River-</i></center></p>",
 "I’m surprised someone would desire so much a path that would leave her in loneliness. <p><center><i>-K. Ishiguro-</i></center></p>",
 "A part of us refuses to let go. The part that wants to keep believing there’s something unreachable inside each of us. Something that’s unique and won’t transfer. But there’s nothing like that, we know that now. <p><center><i>-K. Ishiguro-</i></center></p>",
 "I think I hate Capaldi because deep down I suspect he may be right. That what he claims is true. That science has now proved beyond doubt there’s nothing so unique about my daughter, nothing there our modern tools can’t excavate, copy, transfer. <p><center><i>-K. Ishiguro-</i></center></p>",
