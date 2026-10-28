@@ -34,7 +34,7 @@ My areas of interest are Graph Theory and Learning in Games: on one side, extrem
 :::
 ::::::
 
-Otherwise, please be welcome to look around. You'll find the [teaching material](Teaching/Teaching.qmd) I prepared over the years, my [CV](main_pages/curriculum.qmd), and some more personal details in [Miscellanea](main_pages/miscellanea.qmd): what I am reading, the films I watch, how I learn languages, what I cook, and the small apps I build for myself.
+Otherwise, please be welcome to look around. You'll find the [teaching material](Teaching/Teaching.qmd) I prepared over the years, my [CV](main_pages/curriculum.qmd), and some more personal details in [Miscellanea](main_pages/miscellanea.qmd): what I am reading at the moment.
 
 Besides teaching and research, I am currently:
 

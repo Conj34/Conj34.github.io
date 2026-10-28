@@ -9,9 +9,9 @@ aliases:
 {{< include /support/_contact.qmd >}}
 :::
 
-Amongst the things I like: books, movies, languages, cooking, running, and building small tools for myself. Two of my favourite songs and quotes rotate on the [homepage](../index.qmd).
 
-:::: panel-tabset
+Amongst the things I like: books. Two of my favourite songs and quotes rotate on the [homepage](../index.qmd).
+
 ## Books
 
 I like reading books, in English, Italian and Spanish (and, slowly, other languages). I have a soft spot for Russian short stories, which I am happy to read in translation, and I am part of a book club, currently working through Raymond Chandler. [This](https://thegreatestbooks.org) is a great website to find your next read (I also like [my own analysis of this list](../Learning/Python/Useful/Greatest_authors.qmd)). I have used the platform [Audible](https://www.audible.co.uk) a lot.
@@ -73,7 +73,7 @@ I like reading books, in English, Italian and Spanish (and, slowly, other langua
 
 ### Read in 2024
 
-I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2-B1, now C1) and my Portuguese (B1). More on that in the Languages tab.
+I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2-B1, now C1) and my Portuguese (B1).
 
 | Title | Author | Status | Compl. on |
 |-----------------|-----------------|--------------------|-----------------|
@@ -151,67 +151,3 @@ I interrupted my readings between Feb and Dec 2024 to improve my Spanish (was A2
 | Three Men in a Boat            | Jerome K. Jerome   |
 
 : {.striped .hover tbl-colwidths="\[60,40\]"}
-
-## Movies
-
-I love watching movies. When I lived in London I was a proud owner of an [Odeon membership](https://www.odeon.co.uk), which I strongly suggest to any UK-resident movie lover. I am also happy to pass along [a list of good movies](https://www.theyshootpictures.com/gf1000_rank1-1000.htm) which was indicated to me by a dear cinephile friend.
-
-If you want to follow my film-watching, you can [add me on Letterboxd](https://letterboxd.com/conj34/) (it's like a Facebook for movies, super nice website).
-
-## Languages
-
-Learning languages is something I am passionate about and have some experience doing.
-
-| Language | Level | Notes |
-|-----------------|-----------------|---------------------------------|
-| Italian | Native | |
-| English | Fluent | Language of my research and of most of my reading |
-| Spanish | C1 | Studied intensively in 2024 |
-| Portuguese | B1 | Studied in 2024 |
-| Russian | Beginner | Started from zero |
-
-: {.striped .hover tbl-colwidths="\[20,20,60\]"}
-
-My favourite method is reading: the same book, side by side, in a language I know and one I am learning. Since no tool did exactly what I wanted, I built one: **Leggio**, a parallel reader that aligns the same book across languages (I am using it with Harry Potter in Russian, English, Spanish and Italian), with links between words, pronunciation, and a section to review new vocabulary.
-
-## Kitchen
-
-I mostly cook Italian, and I am writing a cookbook collecting my family's traditional recipes, many of which only existed as handwritten notes.
-
-Two things are always going in my kitchen:
-
--   **Yogurt**, made at home every day.
--   **Sourdough**, a whole wheat starter, with bread baked in a cast iron Dutch oven. Still learning, especially how to manage a kitchen that swings from very hot during the day to cool at night.
-
-## Running
-
-I started training for my first marathon in October 2026: the Barcelona marathon in March 2027. Progress so far: from a few 7 km runs to my first 10 km. The road is long.
-
-## Apps I build
-
-I like building small, single-purpose tools for myself, each one a single HTML file that keeps its data locally. Some I use every day:
-
--   **Leggio**: a parallel multilingual reader (see Languages).
--   **A private journal**: an encrypted diary that runs in the browser.
--   **A Bradbury challenge app**: following Ray Bradbury's advice, it suggests a short story, a poem and an essay to read every day, picked from a large and varied catalogue, and keeps my notes and ratings.
--   **Quaderno** (in progress): a Scrivener-like space to write a book, organised around moving excerpts between chapters and cataloguing notes.
--   **A running log and a reading diary** (in progress).
-
-## Recording and photography
-
-I record audiobooks at home as a hobby, with a simple home setup: a dynamic microphone, a laptop and Audacity. I also have a camera, and the 2026 solar eclipse over Spain was a good excuse to learn about solar filters.
-
-## Code and notes
-
-*One learns from books and example only that certain things can be done. Actual learning requires that you do those things.* (F. Herbert)
-
-This used to be the "Learning" section of the site: resources, thoughts and records of my progress on topics I was not proficient in. I keep it here because the best way to learn is to teach, and because I hope it might help other people.
-
--   [Greatest Authors](../Learning/Python/Useful/Greatest_authors.qmd): an analysis of the greatest-books list.
--   [Arxiv email](../Learning/Python/Useful/Arxiv.qmd): a small script to go from the daily arXiv email straight to the PDFs.
--   [Codeforces 1758A](../Learning/Python/CF/Easy/1758A.qmd): competitive programming in Python (I know Python is not the best language for it).
--   [University notes](../Learning/Old_Work/OldWork.qmd): notes from my BSc in Pisa, mostly in Italian.
--   [SBRD in Random Games](../Research/SBRD.ipynb): the code accompanying one of my papers.
-
-Please do let me know if you find any mistakes.
-::::
