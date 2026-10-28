@@ -16,9 +16,9 @@ format: html
 
 ```{=html}
 <ul class="rows">
-  <li><div class="when">Since 2026</div><div><div class="what">Professor, <a href="https://www.cunef.edu">CUNEF Universidad</a></div><div class="detail">Madrid. Teaching Machine Learning in the BSc in Economics.</div></div></li>
+  <li><div class="when">Since 2026</div><div><div class="what">Tenure Track Assistant Professor, <a href="https://www.cunef.edu">CUNEF Universidad</a></div><div class="detail">Department of Quantitative Methods, Madrid. Teaching Machine Learning in the BSc in Economics.</div></div></li>
   <li><div class="when">Since 2025</div><div><div class="what">Visiting Fellow, <a href="https://www.lse.ac.uk/people/dr-domenico-mergoni">London School of Economics</a></div><div class="detail">Department of Mathematics, combinatorics and game theory.</div></div></li>
-  <li><div class="when">2024</div><div><div class="what">Intern, Amazon</div><div class="detail">Optimisation; internal publication on cardinality-constrained optimisation.</div></div></li>
+  <li><div class="when">2024</div><div><div class="what">Applied Scientist Intern, Amazon</div><div class="detail">Optimisation; internal publication on cardinality-constrained optimisation.</div></div></li>
 </ul>
 ```
 

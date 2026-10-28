@@ -17,19 +17,27 @@
   venue: "2026++"
   topic: combinatorics
 
-- title: "A Transference Principle and a Counting Lemma for Sparse Hypergraphs"
-  url: "../Documents_files/Secret_papers/A_Transference_Principle.pdf"
-  authors: "with P. Allen, J. Böttcher, J. Lada"
-  status: in-progress
-  status-label: "In progress"
-  venue: "2026+"
-  topic: combinatorics
-
 - title: "Best Response Dynamics for Random Games"
-  authors: "with G. Ashkenazi-Golan, E. Plumb, J. Skokan"
+  authors: "with G. Ashkenazi-Golan, E. Plumb, J. Skokan, N. Tamam"
   status: in-progress
   status-label: "In progress"
   venue: "2026++"
+  topic: games
+
+- title: "A generalised transference principle"
+  url: "https://arxiv.org/abs/2608.17982"
+  authors: "with P. Allen, J. Böttcher, J. Lada"
+  status: submitted
+  status-label: "Submitted"
+  venue: "Submitted to Advances in Mathematics"
+  topic: combinatorics
+
+- title: "Refundable Deposits: How to Restore Cooperation in Finitely Repeated Games"
+  url: "https://arxiv.org/abs/2608.27536"
+  authors: "with G. Salizzoni, E. Plumb, M. Kamgarpour, G. Ashkenazi-Golan"
+  status: submitted
+  status-label: "Submitted"
+  venue: "Submitted to the European Journal of Operational Research"
   topic: games
 
 - title: "No-Regret Dynamics Do Not Eliminate Dominated Strategies"
