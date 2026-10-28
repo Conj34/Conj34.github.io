@@ -137,3 +137,26 @@ main p, main li { max-width: 72ch; }
 
 /* ---------- Homepage width ---------- */
 .home, .home-more { max-width: 1080px; margin-inline: auto; }
+
+/* ---------- Homepage quotes and songs ---------- */
+.quotes {
+  display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 2.5rem;
+  padding-block: 2rem; border-bottom: 1px solid var(--dm-line);
+}
+.quotes figure { margin: 0; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+.quotes h2 { font-size: 0.95rem; font-family: inherit; font-weight: 600; color: var(--dm-muted); margin: 0; border: 0; padding: 0; }
+#quoteDisplay {
+  margin: 0; padding: 0 0 0 1.1rem; border-left: 3px solid var(--dm-plum);
+  font-family: "Literata", Georgia, serif; font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem); line-height: 1.55;
+  color: var(--dm-ink); max-width: 62ch;
+}
+#musicDisplay { font-family: "Literata", Georgia, serif; font-size: 1.2rem; line-height: 1.4; color: var(--dm-ink); }
+#quoteDisplay p, #musicDisplay p { margin: 0.6rem 0 0; }
+#quoteDisplay center, #musicDisplay center { text-align: left; }
+#quoteDisplay i, #musicDisplay i { font-family: "Public Sans", system-ui, sans-serif; font-style: normal; font-size: 0.95rem; color: var(--dm-muted); }
+.quotes button {
+  appearance: none; background: none; border: 1px solid var(--dm-line); color: var(--dm-ink);
+  border-radius: 4px; padding: 0.2rem 0.75rem; font-size: 0.875rem; cursor: pointer;
+}
+.quotes button:hover { border-color: var(--dm-muted); }
+@media (max-width: 860px) { .quotes { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; } }

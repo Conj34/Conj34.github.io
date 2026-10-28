@@ -1453,10 +1453,11 @@ Percentage of the time spent on PGD algorithm: 98.7%</code></pre>
 </section>
 
 </main> <!-- /main -->
-<div id="quoteDisplay" hidden=""></div>
-<div id="musicDisplay" hidden=""></div>
 <script>
 (function () {
+  ['quoteDisplay', 'musicDisplay'].forEach(function (id) {
+    if (!document.getElementById(id)) { var d = document.createElement('div'); d.id = id; d.hidden = true; document.body.appendChild(d); }
+  });
   var offsetMeta = document.querySelector('meta[name="quarto:offset"]');
   var base = offsetMeta ? offsetMeta.getAttribute('content') : './';
   var pending = 2;
@@ -1478,6 +1479,7 @@ Percentage of the time spent on PGD algorithm: 98.7%</code></pre>
   function start() {
     var el = document.getElementById('footer-line');
     if (!el) return;
+    if (document.querySelector('.quotes')) { el.hidden = true; return; }
     var pool = [];
     if (typeof quotes !== 'undefined') quotes.forEach(function (q) {
       var p = split(q); if (p.text.length <= 140) pool.push({ kind: 'quote', text: p.text, who: p.who });

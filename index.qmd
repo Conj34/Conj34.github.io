@@ -54,6 +54,19 @@ toc: false
     <p class="meta">and the rest of the shelf</p>
   </div>
 </section>
+
+<section class="quotes" aria-label="Quotes and songs">
+  <figure class="quote-block">
+    <h2>Favourite quotes</h2>
+    <blockquote id="quoteDisplay" aria-live="polite"></blockquote>
+    <button type="button" onclick="newQuote()">New quote</button>
+  </figure>
+  <figure class="song-block">
+    <h2>Songs I like</h2>
+    <div id="musicDisplay" aria-live="polite"></div>
+    <button type="button" onclick="newMusic()">New song</button>
+  </figure>
+</section>
 </div>
 ```
 
