@@ -7,7 +7,7 @@ format: html
 
 ## Current teaching
 
-Since September 2026 I teach at CUNEF Universidad in Madrid.
+Since September 2026 I teach at CUNEF Universidad in Madrid (I also remain a Visiting Fellow at LSE).
 
 | Course | Programme | Year(s) | Institution | Notes |
 |---------------|---------------|---------------|---------------|---------------|

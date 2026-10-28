@@ -15,7 +15,7 @@ Relevant documents:
 
 -   Normal [CV](../Documents_files/Other/CV.pdf).
 
-In short: BSc in Pisa, MSc at ETH Zurich, PhD at the London School of Economics (followed by a Visiting Fellowship there and a research internship at Amazon), and since September 2026 faculty at CUNEF Universidad in Madrid.
+In short: BSc in Pisa, MSc at ETH Zurich, PhD at the London School of Economics (followed by a research internship at Amazon and a Visiting Fellowship at LSE, which I still hold), and since September 2026 faculty at CUNEF Universidad in Madrid.
 
 ```{mermaid}
 %%| fig-height: 6.5
@@ -33,7 +33,7 @@ gantt
     section PhD
     London School of Economics: L1, 01-09-2020, 1369d
     section Fellow
-    LSE Visiting Fellow : L1, 01-01-2025, 607d
+    LSE Visiting Fellow : L1, 01-01-2025, 910d
     section Faculty
     CUNEF Universidad : L1, 01-09-2026, 302d
     section Intern
