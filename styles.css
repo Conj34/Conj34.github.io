@@ -282,3 +282,9 @@ main small small small, #title-block-header small small small { font-size: 1em; 
 .switch a { color: var(--dm-muted); }
 .switch a:hover { color: var(--dm-ink); background: var(--dm-surface); }
 .switch [aria-current="page"] { background: var(--dm-ink); color: var(--dm-bg); font-weight: 600; }
+
+/* Hero portrait: kept at its natural 3:2 shape */
+.hero-id { display: flex; flex-direction: column; gap: 1.25rem; }
+.portrait { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1400 / 936; object-fit: cover; border-radius: 8px; }
+.hero h1 { margin-top: 0; }
+@media (max-width: 420px) { .hero-id { gap: 1rem; } }
