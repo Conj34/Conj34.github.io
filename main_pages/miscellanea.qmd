@@ -13,6 +13,10 @@ listing:
     sort: false
 ---
 
+```{=html}
+<nav class="switch" aria-label="Miscellanea"><span aria-current="page">Books</span><a href="code-notes.html">Code and notes</a></nav>
+```
+
 I read in English, Italian and Spanish (and, slowly, other languages). I have a soft spot for Russian short stories, which I am happy to read in translation, and I am part of a book club, currently working through Raymond Chandler. [This list](https://thegreatestbooks.org) is a great place to find your next read (I also like [my own analysis of it](../Learning/Python/Useful/Greatest_authors.qmd)), and I have used [Audible](https://www.audible.co.uk) a lot.
 
 ::: {#shelf}

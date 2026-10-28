@@ -6,6 +6,10 @@ aliases:
   - /Learning/Learning.html
 ---
 
+```{=html}
+<nav class="switch" aria-label="Miscellanea"><a href="miscellanea.html">Books</a><span aria-current="page">Code and notes</span></nav>
+```
+
 > One learns from books and example only that certain things can be done. Actual learning requires that you do those things.
 >
 > F. Herbert

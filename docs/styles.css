@@ -259,3 +259,26 @@ main small small, #title-block-header small small { font-size: 1em; }
 main small small small, #title-block-header small small small { font-size: 1em; }
 .doc-links { margin-bottom: 2.25rem; }
 #title-block-header .title small small { font-size: 1em; margin-left: 0; }
+
+/* Trail (replaces side menus) */
+.trail { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: baseline; font-size: 0.9rem; color: var(--dm-muted); margin: 0 0 0.75rem; }
+.trail a { color: var(--dm-teal); text-decoration: none; }
+.trail a:hover { text-decoration: underline; }
+.trail-sep { color: var(--dm-line); }
+
+/* Previous / next course */
+.pager { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--dm-line); }
+.pager a { display: grid; gap: 0.1rem; text-decoration: none; padding: 0.75rem 1rem; border: 1px solid var(--dm-line); border-radius: 6px; color: var(--dm-ink); min-width: 0; }
+.pager a:hover { border-color: var(--dm-teal); }
+.pager-next { text-align: right; }
+.pager-dir { font-size: 0.8rem; color: var(--dm-muted); }
+.pager-code { font-weight: 600; color: var(--dm-teal); }
+.pager-name { font-size: 0.95rem; }
+@media (max-width: 560px) { .pager { grid-template-columns: minmax(0, 1fr); } .pager-next { text-align: left; } }
+
+/* Books | Code and notes switch */
+.switch { display: inline-flex; gap: 0.25rem; padding: 0.25rem; border: 1px solid var(--dm-line); border-radius: 999px; margin: -0.5rem 0 1.75rem; }
+.switch a, .switch span { padding: 0.3rem 0.95rem; border-radius: 999px; font-size: 0.92rem; text-decoration: none; }
+.switch a { color: var(--dm-muted); }
+.switch a:hover { color: var(--dm-ink); background: var(--dm-surface); }
+.switch [aria-current="page"] { background: var(--dm-ink); color: var(--dm-bg); font-weight: 600; }
