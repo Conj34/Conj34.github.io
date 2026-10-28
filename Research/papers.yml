@@ -24,6 +24,12 @@
   venue: "2026++"
   topic: games
 
+- title: "The Pure–Strict Limit Set $M$: A Self-Generation Construction with $\\delta$-Independent Scores"
+  authors: "with G. Ashkenazi-Golan, E. Plumb, C. Possnig"
+  status: in-progress
+  status-label: "In progress"
+  topic: games
+
 - title: "A generalised transference principle"
   url: "https://arxiv.org/abs/2608.17982"
   authors: "with P. Allen, J. Böttcher, J. Lada"
@@ -59,7 +65,7 @@
 
 - title: "Reinforcement Learning, Collusion, and the Folk Theorem"
   url: "https://arxiv.org/abs/2411.12725"
-  authors: "with G. Ashkenazi-Golan, E. Plumb"
+  authors: "with G. Ashkenazi-Golan, E. Plumb, C. Possnig"
   status: submitted
   status-label: "Submitted"
   venue: "Submitted to Econometrica (2025)"
