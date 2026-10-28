@@ -16,7 +16,7 @@ toc: false
       <p class="lede">Mathematician working between graph theory and learning in games.</p>
       <ul class="affils">
         <li>Professor, <a href="https://www.cunef.edu">CUNEF Universidad</a>, Madrid</li>
-        <li>Visiting Fellow, <a href="https://www.lse.ac.uk/mathematics">London School of Economics</a></li>
+        <li>Visiting Fellow, <a href="https://www.lse.ac.uk/people/dr-domenico-mergoni">London School of Economics</a></li>
       </ul>
       <div class="links">
         <span class="email" title="Email">domenico.mergoni -at- cunef.edu</span>
