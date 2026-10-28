@@ -363,11 +363,11 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 
-  <figure class="game figure" aria-label="A colouring game: each vertex best-responds to its neighbours until no edge joins two vertices of the same colour.">
-    <canvas id="colouring-game"></canvas>
+  <figure class="game figure" aria-label="Simultaneous best-response dynamics in a random two-player potential game, drawn as a heatmap of the potential with the path of play.">
+    <canvas id="sbrd" role="img" aria-label="Heatmap of a random potential with the path of simultaneous best responses"></canvas>
     <figcaption class="game-caption">
-      <span>Each vertex switches to the colour its neighbours use least. Red edges are conflicts. <span class="game-status" id="game-status"></span></span>
-      <button type="button" id="game-restart">New game</button>
+      <span>Simultaneous best responses in a random two-player potential game: the stronger the colour, the higher the potential, and rings mark pure Nash equilibria. <span class="game-status" id="sbrd-status"></span> <a href="https://arxiv.org/abs/2505.10378">Paper</a></span>
+      <button type="button" id="sbrd-new">New game</button>
     </figcaption>
   </figure>
 </section>
@@ -420,108 +420,118 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <script>
 (function () {
-  var canvas = document.getElementById('colouring-game');
+  var canvas = document.getElementById('sbrd');
   if (!canvas) return;
   var ctx = canvas.getContext('2d');
-  var statusEl = document.getElementById('game-status');
+  var statusEl = document.getElementById('sbrd-status');
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var nodes = [], edges = [], adj = [], timer = null, moves = 0, pulse = -1;
+  var M = 10;                       // actions per player
+  var psi, ne, path, outcome, cycleAt, timer = null;
 
-  function css(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#888'; }
-  function palette() { return [css('--dm-teal'), css('--dm-plum'), css('--dm-ochre')]; }
+  function css(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim() || '#888'; }
+  function hex(h) { h = h.replace('#', ''); if (h.length === 3) h = h.split('').map(function (c) { return c + c; }).join(''); return [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
+  function mix(a, b, t) { var A = hex(a), B = hex(b); return 'rgb(' + A.map(function (v, i) { return Math.round(v + (B[i] - v) * t); }).join(',') + ')'; }
+  function gauss() { var u = 1 - Math.random(), v = Math.random(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); }
 
-  function build() {
-    nodes = []; edges = [];
-    var n = 22, tries = 0;
-    while (nodes.length < n && tries < 4000) {
-      tries++;
-      var p = { x: 0.06 + Math.random() * 0.88, y: 0.08 + Math.random() * 0.84 };
-      if (nodes.every(function (q) { return Math.hypot(p.x - q.x, p.y - q.y) > 0.15; })) {
-        p.hidden = Math.floor(Math.random() * 3);   // a proper 3-colouring exists by construction
-        nodes.push(p);
-      }
+  function br1(b) { var best = 0; for (var i = 1; i < M; i++) if (psi[i][b] > psi[best][b]) best = i; return best; }   // player 1 picks a row
+  function br2(a) { var best = 0; for (var j = 1; j < M; j++) if (psi[a][j] > psi[a][best]) best = j; return best; }   // player 2 picks a column
+
+  function newGame() {
+    psi = []; for (var i = 0; i < M; i++) { psi.push([]); for (var j = 0; j < M; j++) psi[i].push(gauss()); }
+    // rank-normalise for shading
+    var flat = []; psi.forEach(function (r) { flat = flat.concat(r); }); flat.sort(function (x, y) { return x - y; });
+    psi.rank = psi.map(function (r) { return r.map(function (v) { return flat.indexOf(v) / (flat.length - 1); }); });
+    ne = []; for (i = 0; i < M; i++) for (j = 0; j < M; j++) if (br1(j) === i && br2(i) === j) ne.push([i, j]);
+    path = [[Math.floor(Math.random() * M), Math.floor(Math.random() * M)]];
+    outcome = null; cycleAt = -1;
+  }
+
+  function advance() {
+    var cur = path[path.length - 1], nxt = [br1(cur[1]), br2(cur[0])];
+    path.push(nxt);
+    var n = path.length;
+    if (!outcome) {
+      if (nxt[0] === cur[0] && nxt[1] === cur[1]) { outcome = 'ne'; cycleAt = n - 2; }
+      else if (n >= 3 && nxt[0] === path[n - 3][0] && nxt[1] === path[n - 3][1]) { outcome = 'cycle'; cycleAt = n - 3; }
     }
-    var seen = {};
-    nodes.forEach(function (p, i) {
-      var cand = nodes.map(function (q, j) { return { j: j, d: Math.hypot(p.x - q.x, p.y - q.y) }; })
-        .filter(function (c) { return c.j !== i && nodes[c.j].hidden !== p.hidden && c.d < 0.32; })
-        .sort(function (a, b) { return a.d - b.d; }).slice(0, 3);
-      cand.forEach(function (c) {
-        var key = Math.min(i, c.j) + '-' + Math.max(i, c.j);
-        if (!seen[key]) { seen[key] = 1; edges.push([i, c.j]); }
-      });
-    });
-    adj = nodes.map(function () { return []; });
-    edges.forEach(function (e) { adj[e[0]].push(e[1]); adj[e[1]].push(e[0]); });
   }
 
-  function shuffleColours() { nodes.forEach(function (p) { p.c = Math.floor(Math.random() * 3); }); moves = 0; }
-  function counts(i) { var k = [0, 0, 0]; adj[i].forEach(function (j) { k[nodes[j].c]++; }); return k; }
-  function bestResponse(i) {
-    var k = counts(i), best = Math.min.apply(null, k);
-    if (k[nodes[i].c] === best) return -1;            // already a best response
-    var opts = [0, 1, 2].filter(function (c) { return k[c] === best; });
-    return opts[Math.floor(Math.random() * opts.length)];
+  function geometry() {
+    var r = canvas.getBoundingClientRect(), w = r.width, h = r.height;
+    var pad = Math.max(18, w * 0.05), side = Math.min(w - 2 * pad, h - 2 * pad);
+    return { w: w, h: h, cell: side / M, x0: (w - side) / 2 + 6, y0: (h - side) / 2 };
   }
-  function conflicts() { return edges.filter(function (e) { return nodes[e[0]].c === nodes[e[1]].c; }).length; }
+  function centre(g, p) { return [g.x0 + (p[1] + 0.5) * g.cell, g.y0 + (p[0] + 0.5) * g.cell]; }
+
+  function draw() {
+    var g = geometry(); if (!g.w || !psi) return;
+    var lo = css('--dm-surface'), hi = css('--dm-teal'), ink = css('--dm-ink'), muted = css('--dm-muted'),
+        plum = css('--dm-plum'), ochre = css('--dm-ochre'), bg = css('--dm-bg');
+    ctx.clearRect(0, 0, g.w, g.h);
+    for (var i = 0; i < M; i++) for (var j = 0; j < M; j++) {
+      ctx.fillStyle = mix(lo, hi, 0.08 + 0.8 * psi.rank[i][j]);
+      ctx.fillRect(g.x0 + j * g.cell + 1, g.y0 + i * g.cell + 1, g.cell - 2, g.cell - 2);
+    }
+    ctx.fillStyle = muted; ctx.font = '12px "Public Sans", system-ui, sans-serif';
+    ctx.textAlign = 'center'; ctx.fillText("player 2's action", g.x0 + M * g.cell / 2, g.y0 + M * g.cell + 15);
+    ctx.save(); ctx.translate(g.x0 - 8, g.y0 + M * g.cell / 2); ctx.rotate(-Math.PI / 2); ctx.fillText("player 1's action", 0, 0); ctx.restore();
+
+    var cyc = outcome === 'cycle' ? path.slice(cycleAt, cycleAt + 2) : [];
+    var special = cyc.length === 2 ? [[cyc[0][0], cyc[1][1]], [cyc[1][0], cyc[0][1]]] : [];
+    ne.forEach(function (p) {
+      var c = centre(g, p), isSpecial = special.some(function (q) { return q[0] === p[0] && q[1] === p[1]; });
+      ctx.beginPath(); ctx.arc(c[0], c[1], g.cell * 0.36, 0, 2 * Math.PI);
+      ctx.strokeStyle = isSpecial ? ochre : ink; ctx.lineWidth = isSpecial ? 3 : 1.6; ctx.stroke();
+    });
+
+    var start = Math.max(0, path.length - 8);
+    ctx.lineWidth = 2; ctx.strokeStyle = plum;
+    for (var k = start + 1; k < path.length; k++) {
+      var a = centre(g, path[k - 1]), b = centre(g, path[k]);
+      ctx.globalAlpha = 0.25 + 0.75 * (k - start) / (path.length - start);
+      ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+    if (path.length > 1) {
+      var prev = centre(g, path[path.length - 2]);
+      ctx.beginPath(); ctx.arc(prev[0], prev[1], g.cell * 0.17, 0, 2 * Math.PI);
+      ctx.strokeStyle = plum; ctx.lineWidth = 2; ctx.stroke();
+    }
+    var cur = centre(g, path[path.length - 1]);
+    ctx.beginPath(); ctx.arc(cur[0], cur[1], g.cell * 0.2, 0, 2 * Math.PI);
+    ctx.fillStyle = plum; ctx.fill(); ctx.strokeStyle = bg; ctx.lineWidth = 2; ctx.stroke();
+
+    var t = path.length - 1;
+    if (!statusEl) return;
+    var when = cycleAt === 0 ? 'from the start' : 'after ' + cycleAt + ' round' + (cycleAt === 1 ? '' : 's');
+    if (outcome === 'ne') statusEl.textContent = cycleAt === 0 ? 'Started at a pure Nash equilibrium.' : 'Reached a pure Nash equilibrium ' + when + '.';
+    else if (outcome === 'cycle') statusEl.textContent = 'Trapped in a 2-cycle ' + when + ': the players keep missing the two equilibria ringed in yellow.';
+    else statusEl.textContent = 'Round ' + t + '.';
+  }
 
   function size() {
     var r = canvas.getBoundingClientRect(), d = window.devicePixelRatio || 1;
     canvas.width = Math.round(r.width * d); canvas.height = Math.round(r.height * d);
-    ctx.setTransform(d, 0, 0, d, 0, 0);
-    draw();
+    ctx.setTransform(d, 0, 0, d, 0, 0); draw();
   }
 
-  function draw() {
-    var r = canvas.getBoundingClientRect(), w = r.width, h = r.height;
-    if (!w) return;
-    var cols = palette(), line = css('--dm-line'), bad = css('--dm-conflict'), bg = css('--dm-bg');
-    ctx.clearRect(0, 0, w, h);
-    edges.forEach(function (e) {
-      var a = nodes[e[0]], b = nodes[e[1]], clash = a.c === b.c;
-      ctx.beginPath(); ctx.moveTo(a.x * w, a.y * h); ctx.lineTo(b.x * w, b.y * h);
-      ctx.strokeStyle = clash ? bad : line; ctx.lineWidth = clash ? 2.2 : 1.4; ctx.stroke();
-    });
-    var rad = Math.max(6, Math.min(11, w / 45));
-    nodes.forEach(function (p, i) {
-      if (i === pulse) {
-        ctx.beginPath(); ctx.arc(p.x * w, p.y * h, rad + 6, 0, 2 * Math.PI);
-        ctx.strokeStyle = cols[p.c]; ctx.lineWidth = 1.5; ctx.stroke();
-      }
-      ctx.beginPath(); ctx.arc(p.x * w, p.y * h, rad, 0, 2 * Math.PI);
-      ctx.fillStyle = cols[p.c]; ctx.fill();
-      ctx.strokeStyle = bg; ctx.lineWidth = 2; ctx.stroke();
-    });
-    var c = conflicts();
-    if (statusEl) statusEl.textContent = c === 0
-      ? 'Proper colouring after ' + moves + ' moves.'
-      : (stuck() ? 'Stuck: an equilibrium with ' + c + ' conflict' + (c > 1 ? 's' : '') + '.' : c + ' conflict' + (c > 1 ? 's' : '') + '.');
-  }
-
-  function stuck() { for (var i = 0; i < nodes.length; i++) if (bestResponse(i) >= 0) return false; return true; }
-
-  function step() {
-    var unhappy = [];
-    nodes.forEach(function (p, i) { if (bestResponse(i) >= 0) unhappy.push(i); });
-    if (!unhappy.length) { pulse = -1; draw(); clearInterval(timer); timer = setTimeout(restart, 3500); return; }
-    var i = unhappy[Math.floor(Math.random() * unhappy.length)];
-    nodes[i].c = bestResponse(i); moves++; pulse = i; draw();
-  }
-
-  function restart(newGraph) {
+  function run() {
     clearInterval(timer); clearTimeout(timer);
-    if (newGraph || !nodes.length) build();
-    shuffleColours(); pulse = -1;
-    if (reduce) { var guard = 0; while (!stuck() && guard++ < 500) { var i = nodes.findIndex(function (p, k) { return bestResponse(k) >= 0; }); nodes[i].c = bestResponse(i); moves++; } draw(); return; }
+    newGame();
+    if (reduce) { for (var s = 0; s < 40 && !outcome; s++) advance(); advance(); draw(); return; }
     draw();
-    timer = setInterval(step, 650);
+    var extra = 0;
+    timer = setInterval(function () {
+      advance(); draw();
+      if (outcome && ++extra > 5) { clearInterval(timer); timer = setTimeout(run, 4500); }
+    }, 900);
   }
 
-  document.getElementById('game-restart').addEventListener('click', function () { restart(true); });
-  canvas.addEventListener('click', function () { restart(true); });
+  document.getElementById('sbrd-new').addEventListener('click', run);
+  canvas.addEventListener('click', run);
   if (window.ResizeObserver) new ResizeObserver(size).observe(canvas); else window.addEventListener('resize', size);
   new MutationObserver(draw).observe(document.body, { attributes: true, attributeFilter: ['class'] });
-  restart(true); size();
+  run(); size();
 })();
 </script>
 

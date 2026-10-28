@@ -43,7 +43,8 @@ main p, main li { max-width: 72ch; }
 .links .email { color: var(--dm-muted); user-select: all; flex-basis: 100%; }
 
 .game { min-width: 0; }
-.game canvas { width: 100%; aspect-ratio: 6 / 5; display: block; cursor: pointer; }
+.game canvas { width: 100%; aspect-ratio: 1 / 1; max-height: 480px; display: block; cursor: pointer; }
+.game-caption a { white-space: nowrap; }
 .game-caption { display: flex; gap: 1rem; align-items: baseline; justify-content: space-between; font-size: 0.85rem; color: var(--dm-muted); margin-top: 0.4rem; }
 .game-caption button {
   appearance: none; background: none; border: 1px solid var(--dm-line); color: var(--dm-ink);
