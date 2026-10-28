@@ -58,11 +58,11 @@
   topic: games
 
 - title: "Graphs with large minimum degree and no short odd cycles are 3-colourable"
-  url: "https://arxiv.org/abs/2302.01875"
+  url: "https://doi.org/10.5070/C6.69944"
   authors: "with J. Böttcher, N. Frankl, O. Parczyk, J. Skokan"
-  status: to-appear
-  status-label: "To appear"
-  venue: "Combinatorial Theory"
+  status: published
+  status-label: "Published"
+  venue: "Combinatorial Theory, Vol 6, Iss. 3 (2026)"
   topic: combinatorics
 
 - title: "Dirac's theorem for graphs of bounded bandwidth"

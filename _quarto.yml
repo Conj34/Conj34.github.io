@@ -22,14 +22,8 @@ website:
         text: Teaching
       - href: main_pages/curriculum.qmd
         text: CV
-      - text: Miscellanea
-        menu:
-          - href: main_pages/miscellanea.qmd
-            text: Books
-          - href: main_pages/code-notes.qmd
-            text: Code and notes
-          - href: Research/SBRD.ipynb
-            text: "SBRD code"
+      - href: main_pages/miscellanea.qmd
+        text: Miscellanea
   sidebar:
     - id: teaching
       title: "Teaching"
@@ -48,6 +42,25 @@ website:
             - Teaching/ST455.qmd
             - Teaching/FM250.qmd
             - Teaching/Pre-sessionals.qmd
+    - id: miscellanea
+      title: "Miscellanea"
+      style: "floating"
+      contents:
+        - href: main_pages/miscellanea.qmd
+          text: Books
+        - section: "Code and notes"
+          href: main_pages/code-notes.qmd
+          contents:
+            - href: Research/SBRD.ipynb
+              text: "SBRD in Random Games"
+            - href: Learning/Python/Useful/Greatest_authors.qmd
+              text: "Greatest Authors"
+            - href: Learning/Python/Useful/Arxiv.qmd
+              text: "Arxiv email"
+            - href: Learning/Python/CF/Easy/1758A.qmd
+              text: "Codeforces 1758A"
+            - href: Learning/Old_Work/OldWork.qmd
+              text: "University notes"
   page-footer:
     left: |
       <span id="footer-line" class="footer-line" role="button" tabindex="0" title="Show another"></span>

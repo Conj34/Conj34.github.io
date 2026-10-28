@@ -40,8 +40,8 @@ toc: false
 <section class="highlights" aria-label="Highlights">
   <div class="topic-combinatorics">
     <h2>Latest paper</h2>
-    <p><a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i1p21">Dirac's theorem for graphs of bounded bandwidth</a></p>
-    <p class="meta"><span class="dot"></span> Electronic Journal of Combinatorics, 2026</p>
+    <p><a href="https://doi.org/10.5070/C6.69944">Graphs with large minimum degree and no short odd cycles are 3-colourable</a></p>
+    <p class="meta"><span class="dot"></span> Combinatorial Theory, 2026</p>
   </div>
   <div>
     <h2>Teaching</h2>

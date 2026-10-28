@@ -1,6 +1,6 @@
 ---
-title: "Books"
-subtitle: "What I'm reading, and what I've read since 2023."
+title: "Miscellanea"
+subtitle: "Books: what I'm reading, and what I've read since 2023."
 format: html
 listing:
   - id: shelf
