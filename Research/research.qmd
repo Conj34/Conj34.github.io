@@ -74,10 +74,22 @@ This is a project that has a wider breadth and is not only linked to research. I
 
 ## Service and awards
 
--   Organiser
-    -   PCC (Main organiser), Apr 2023, University of London and BCC. (National conference for postgraduate students).
-    -   LSE PhD CGO Seminar (Main Organiser), 2022/23.
--   Grants and invitations
-    -   DMV Invited Speaker. Ilmenau. 2023.
-    -   LMS Computer Science Small Grant (700£). London Mathematical Society. Funded visit to Berlin. 2022.
-    -   LSE Contribution Award. Dept of Mathematics. LSE. 2021.
+-   Awards
+    -   PhD Prize for Outstanding Academic Performance (joint winner), Department of Mathematics, LSE, 2026.
+    -   LSE Contribution Award, Department of Mathematics, LSE, 2021.
+-   Grants and fellowships
+    -   LSE PhD Studentship (full fees and stipend), 2020 to 2025.
+    -   Conference grants from the LMS, the Heilbronn Institute and the BCC (£5,100) for PCC 2024.
+    -   LMS Computer Science Small Grant (£660), research visit to FU Berlin, 2022.
+-   Invitations
+    -   Invited speaker, DMV Annual Meeting, Ilmenau, 2023.
+    -   Invited colloquium, Universidad de los Andes, Bogotá, 2025.
+-   Organisation
+    -   Postgraduate Combinatorial Conference (PCC) 2024, LSE and UCL (lead organiser). National conference for postgraduate students.
+    -   LSE PhD Seminar on Combinatorics, Games and Optimisation (organiser), 2022 to 2024.
+-   Refereeing
+    -   Random Structures & Algorithms; Mathematics of Operations Research; Research in the Mathematical Sciences; Electronic Journal of Combinatorics.
+-   Schools
+    -   Eastern European Machine Learning Summer School (EEML) 2023, with Google DeepMind.
+    -   Spring School of Combinatorics 2023, Charles University (invited participant).
+    -   Prague Summer School on Discrete Mathematics 2022.

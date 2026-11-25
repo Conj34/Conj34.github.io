@@ -17,15 +17,19 @@
     - { date: "Sep '23", event: "DMV (Invited speaker)", place: "Ilmenau" }
     - { date: "Apr '23", event: "Invited seminar", place: "Prague" }
     - { date: "Jul '22", event: "ICGT", place: "Montpellier" }
-    - { date: "Jul '22", event: "Invited seminar", place: "TU Hamburg" }
+    - { date: "Jun '22", event: "Invited seminar", place: "TU Hamburg" }
 
 - title: "Chromatic profile of $\\{C_3,\\dots,C_{2k-1}\\}$"
   url: "../Documents_files/Presentations/3_chrom.pdf"
   occasions:
     - { date: "Mar '23", event: "PCC", place: "Birmingham" }
-    - { date: "Jul '22", event: "RSA", place: "Poznan" }
+    - { date: "Aug '22", event: "Random Structures & Algorithms", place: "Gniezno" }
     - { date: "Jul '22", event: "ICGT", place: "Montpellier" }
-    - { date: "Jul '22", event: "Invited seminar", place: "TU Hamburg" }
+    - { date: "Jun '22", event: "Invited seminar", place: "TU Hamburg" }
+
+- title: "Homomorphism thresholds"
+  occasions:
+    - { date: "Dec '22", event: "LSE Workshop in Extremal and Probabilistic Combinatorics", place: "London" }
 
 - title: "About the Pentagon Conjecture"
   url: "../Documents_files/Theses/MSc_pres.pdf"

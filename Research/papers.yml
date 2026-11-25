@@ -10,24 +10,11 @@
   venue: "2026++"
   topic: applied
 
-- title: "Partition universality for hypergraphs"
-  authors: "with P. Allen, J. Böttcher"
-  status: in-progress
-  status-label: "In progress"
-  venue: "2026++"
-  topic: combinatorics
-
-- title: "Best Response Dynamics for Random Games"
+- title: "Simultaneous best-response dynamics in random games"
   authors: "with G. Ashkenazi-Golan, E. Plumb, J. Skokan, N. Tamam"
   status: in-progress
   status-label: "In progress"
   venue: "2026++"
-  topic: games
-
-- title: "The Pure–Strict Limit Set $M$: A Self-Generation Construction with $\\delta$-Independent Scores"
-  authors: "with G. Ashkenazi-Golan, E. Plumb, C. Possnig"
-  status: in-progress
-  status-label: "In progress"
   topic: games
 
 - title: "A generalised transference principle"
@@ -43,32 +30,32 @@
   authors: "with G. Salizzoni, E. Plumb, M. Kamgarpour, G. Ashkenazi-Golan"
   status: submitted
   status-label: "Submitted"
-  venue: "Submitted to the European Journal of Operational Research"
+  venue: "NeurIPS 2026 Workshop on Trustworthy AI for Good (poster); submitted to the European Journal of Operational Research"
   topic: games
 
-- title: "No-Regret Dynamics Do Not Eliminate Dominated Strategies"
+- title: "Survival of dominated strategies under no-regret dynamics"
   url: "../Documents_files/Secret_papers/projected_gradient_and_dominated_strategies.pdf"
-  authors: "with G. Ashkenazi-Golan, E. Plumb, B. Tarbush"
+  authors: "with G. Ashkenazi-Golan, P. Mertikopoulos, E. Plumb, B. Tarbush, Y. Viossat"
   status: submitted
   status-label: "Submitted"
-  venue: "Submitted to EC 2026"
+  venue: "Submitted to ACM EC"
   topic: games
 
 - title: "Simultaneous Best-Response Dynamics in Random Potential Games"
   url: "https://arxiv.org/abs/2505.10378"
   authors: "with G. Ashkenazi-Golan, E. Plumb"
   status: submitted
-  status-label: "Submitted"
-  venue: "Submitted to ICML 2026"
+  status-label: "Under revision"
+  venue: "Under revision"
   topic: games
   code: "SBRD.ipynb"
 
 - title: "Reinforcement Learning, Collusion, and the Folk Theorem"
   url: "https://arxiv.org/abs/2411.12725"
   authors: "with G. Ashkenazi-Golan, E. Plumb, C. Possnig"
-  status: submitted
-  status-label: "Submitted"
-  venue: "Submitted to Econometrica (2025)"
+  status: in-progress
+  status-label: "In preparation"
+  venue: "In preparation for journal submission"
   topic: games
 
 - title: "Graphs with large minimum degree and no short odd cycles are 3-colourable"
@@ -81,10 +68,10 @@
 
 - title: "Dirac's theorem for graphs of bounded bandwidth"
   url: "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i1p21"
-  authors: "with A.E. Díaz, P. Gupta, O. Parczyk, A. Sgueglia"
+  authors: "with A. Espuny Díaz, P. Gupta, O. Parczyk, A. Sgueglia"
   status: published
   status-label: "Published"
-  venue: "The Electronic Journal of Combinatorics, Vol 33, Iss. 1 (2026), P1.22"
+  venue: "The Electronic Journal of Combinatorics, Vol 33, Iss. 1 (2026), P1.21"
   topic: combinatorics
 
 - title: "On product Schur triples in the integers"
@@ -101,6 +88,13 @@
   status: published
   status-label: "Published"
   venue: "The Electronic Journal of Combinatorics, Vol 31, Iss. 2 (2024), P2.11"
+  topic: combinatorics
+
+- title: "Partition universality for hypergraphs of bounded degeneracy and degree"
+  authors: "with P. Allen, J. Böttcher"
+  status: published
+  status-label: "Conference paper"
+  venue: "Eurocomb 2023, Prague"
   topic: combinatorics
 
 - title: "Re-ILS: a metaheuristic approach for cardinality-constrained optimization"

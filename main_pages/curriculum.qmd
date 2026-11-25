@@ -26,9 +26,9 @@ format: html
 
 ```{=html}
 <ul class="rows">
-  <li><div class="when">2020 to 2025</div><div><div class="what">PhD in Mathematics, London School of Economics</div><div class="detail">Thesis: <a href="../Documents_files/Theses/Colours_Giants_and_Games.pdf">Colours, Giants, and Games</a></div></div></li>
-  <li><div class="when">2018 to 2020</div><div><div class="what">MSc in Mathematics, ETH Zurich</div><div class="detail">GPA 5.8/6. Thesis: <a href="../Documents_files/Theses/MSc_Thesis.pdf">A discussion about the Pentagon Problem</a></div></div></li>
-  <li><div class="when">2015 to 2018</div><div><div class="what">BSc in Mathematics, University of Pisa</div><div class="detail">110/110. Thesis: <a href="../Documents_files/Theses/BSc_Thesis.compr.pdf">On the Hausdorff Dimension of Brownian Motion</a></div></div></li>
+  <li><div class="when">2020 to 2025</div><div><div class="what">PhD in Mathematics, London School of Economics</div><div class="detail">Thesis: <a href="../Documents_files/Theses/Colours_Giants_and_Games.pdf">Colours, Giants, and Games</a>. PhD Prize for Outstanding Academic Performance, Department of Mathematics, LSE (2026, joint winner).</div></div></li>
+  <li><div class="when">2018 to 2020</div><div><div class="what">MSc in Mathematics, ETH Zurich</div><div class="detail">With distinction (5.77/6). Thesis: <a href="../Documents_files/Theses/MSc_Thesis.pdf">A discussion about the Pentagon Problem</a></div></div></li>
+  <li><div class="when">2015 to 2018</div><div><div class="what">BSc in Mathematics, University of Pisa</div><div class="detail">110/110 cum laude. Thesis: <a href="../Documents_files/Theses/BSc_Thesis.compr.pdf">On the Hausdorff Dimension of Brownian Motion</a></div></div></li>
 </ul>
 ```
 
